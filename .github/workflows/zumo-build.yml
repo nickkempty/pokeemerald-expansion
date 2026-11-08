@@ -6,6 +6,9 @@ on:
       - zumo-hoenn-kanto
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build-rom:
     runs-on: ubuntu-latest
@@ -33,3 +36,13 @@ jobs:
         with:
           name: build-log-${{ github.run_number }}
           path: build.log
+
+      - name: Publish release (easy phone download)
+        run: |
+          cp pokeemerald.gba zumo-emerald-build${{ github.run_number }}.gba
+          gh release create "build-${{ github.run_number }}" "zumo-emerald-build${{ github.run_number }}.gba" \
+            --target "${{ github.sha }}" --prerelease \
+            --title "Zumo Emerald build ${{ github.run_number }}" \
+            --notes "Auto build from commit ${{ github.sha }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
