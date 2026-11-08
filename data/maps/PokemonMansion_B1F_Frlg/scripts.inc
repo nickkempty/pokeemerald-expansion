@@ -30,6 +30,21 @@ PokemonMansion_B1F_EventScript_Ivan::
 	msgbox PokemonMansion_B1F_Text_IvanPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+PokemonMansion_B1F_EventScript_ZkMaxie::
+	trainerbattle_single TRAINER_ZK_MANSION_MAXIE, PokemonMansion_B1F_Text_ZkMaxieIntro, PokemonMansion_B1F_Text_ZkMaxieDefeat, PokemonMansion_B1F_EventScript_ZkMaxieDefeated
+	end
+
+PokemonMansion_B1F_EventScript_ZkMaxieDefeated::
+	msgbox PokemonMansion_B1F_Text_ZkMaxieAfter
+	giveitem ITEM_SECRET_KEY
+	msgbox PokemonMansion_B1F_Text_ZkMaxieBye
+	closemessage
+	fadescreen FADE_TO_BLACK
+	removeobject LOCALID_ZK_MANSION_MAXIE
+	fadescreen FADE_FROM_BLACK
+	release
+	end
+
 PokemonMansion_B1F_Text_LewisIntro::
 	.string "Uh-oh…\n"
 	.string "Where am I now?$"
@@ -53,8 +68,38 @@ PokemonMansion_B1F_Text_IvanPostBattle::
 	.string "It's conducive to my studies.$"
 
 PokemonMansion_B1F_Text_MewtwoIsFarTooPowerful::
-	.string "Diary: Sept. 1\n"
-	.string "MEWTWO is far too powerful.\p"
-	.string "We have failed to curb its vicious\n"
-	.string "tendencies…$"
+    .string "The last page is written in shaky\n"
+    .string "letters…\p"
+    .string "If I can command the sea, no storm\n"
+    .string "will ever take anything from me\l"
+    .string "again. I will build a machine that\n"
+    .string "calls the guardian of the sea. -NOX$"
 
+
+PokemonMansion_B1F_Text_ZkMaxieIntro::
+    .string "MAXIE: …You again, child.\p"
+    .string "This mansion was where M-CORE\n"
+    .string "PHASE 3 was to begin.\p"
+    .string "But last night, NOX's men took\n"
+    .string "the RED ORB from me. Right here.\p"
+    .string "Our alliance was a lie from the\n"
+    .string "very start…\p"
+    .string "Show me you have the strength to\n"
+    .string "stop him!$"
+
+PokemonMansion_B1F_Text_ZkMaxieDefeat::
+    .string "…Hmph. You are the real thing.$"
+
+PokemonMansion_B1F_Text_ZkMaxieAfter::
+    .string "NOX will finish M-CORE under his\n"
+    .string "own GYM in VIRIDIAN CITY.\p"
+    .string "If GROUDON wakes under his control,\n"
+    .string "the sea between KANTO and HOENN\l"
+    .string "will turn to land.\p"
+    .string "Take this. BLAINE's GYM has been\n"
+    .string "locked since ECLIPSE came here.$"
+
+PokemonMansion_B1F_Text_ZkMaxieBye::
+    .string "Grow stronger, child.\n"
+    .string "TEAM MAGMA has its own score\l"
+    .string "to settle with NOX.$"

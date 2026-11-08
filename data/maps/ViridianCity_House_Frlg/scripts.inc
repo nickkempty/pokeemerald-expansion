@@ -36,6 +36,6 @@ ViridianCity_House_Text_Speary::
 	.string "SPEARY: Tetweet!$"
 
 ViridianCity_House_Text_SpearowNameSpeary::
-	.string "SPEAROW\n"
-	.string "Name: SPEARY$"
+    .string "ONISUZUME\n"
+    .string "Name: SPEARY$"
 

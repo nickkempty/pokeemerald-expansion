@@ -25,14 +25,14 @@ LavenderTown_House1_EventScript_Cubone::
 	end
 
 LavenderTown_House1_Text_Cubone::
-	.string "CUBONE: Kyarugoo!$"
+    .string "KARAKARA: Kyarugoo!$"
 
 LavenderTown_House1_Text_RocketsKilledCubonesMother::
-	.string "Those horrible ROCKETS!\n"
-	.string "They deserve no mercy!\p"
-	.string "That poor CUBONE's mother…\p"
-	.string "It was killed trying to escape from\n"
-	.string "TEAM ROCKET.$"
+    .string "Those horrible ECLIPSES!\n"
+    .string "They deserve no mercy!\p"
+    .string "That poor KARAKARA's mother…\p"
+    .string "It was killed trying to escape from\n"
+    .string "TEAM ECLIPSE.$"
 
 LavenderTown_House1_Text_GhostOfPokemonTowerIsGone::
 	.string "The ghost of POKéMON TOWER is\n"

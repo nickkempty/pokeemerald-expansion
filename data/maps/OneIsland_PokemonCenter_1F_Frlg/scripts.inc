@@ -851,12 +851,12 @@ OneIsland_PokemonCenter_1F_Text_CelioHearingRumorsAboutYou::
 	.string "about you.$"
 
 OneIsland_PokemonCenter_1F_Text_BillsFirstMonWasAbra::
-	.string "{PLAYER}, what's your favorite kind\n"
-	.string "of POKéMON?\p"
-	.string "BILL is a POKéMANIAC, so he loves\n"
-	.string "every kind.\p"
-	.string "Apparently, the first one he caught\n"
-	.string "was an ABRA.$"
+    .string "{PLAYER}, what's your favorite kind\n"
+    .string "of POKéMON?\p"
+    .string "BILL is a POKéMANIAC, so he loves\n"
+    .string "every kind.\p"
+    .string "Apparently, the first one he caught\n"
+    .string "was an CASEY.$"
 
 OneIsland_PokemonCenter_1F_Text_BillsHometownInGoldenrod::
 	.string "By the way, {PLAYER}, you're from\n"

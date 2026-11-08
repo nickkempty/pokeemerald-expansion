@@ -8,7 +8,21 @@ FiveIsland_RocketWarehouse_Frlg_MapScripts::
 
 FiveIsland_RocketWarehouse_OnTransition::
 	setworldmapflag FLAG_WORLD_MAP_FIVE_ISLAND_ROCKET_WAREHOUSE
+	setflag FLAG_HIDE_NOX_FINAL
+	setflag FLAG_HIDE_FINALE_FRIENDS
+	call_if_set FLAG_DEFEATED_NOX_FINAL, FiveIsland_RocketWarehouse_EventScript_ShowFriends
+	goto_if_set FLAG_DEFEATED_NOX_FINAL, FiveIsland_RocketWarehouse_EventScript_EndTransition
+	call_if_set FLAG_RECOVERED_SAPPHIRE, FiveIsland_RocketWarehouse_EventScript_ShowNox
+FiveIsland_RocketWarehouse_EventScript_EndTransition::
 	end
+
+FiveIsland_RocketWarehouse_EventScript_ShowNox::
+	clearflag FLAG_HIDE_NOX_FINAL
+	return
+
+FiveIsland_RocketWarehouse_EventScript_ShowFriends::
+	clearflag FLAG_HIDE_FINALE_FRIENDS
+	return
 
 FiveIsland_RocketWarehouse_OnLoad::
 	call_if_defeated TRAINER_TEAM_ROCKET_ADMIN, FiveIsland_RocketWarehouse_EventScript_SetArrowsForReEntry
@@ -58,6 +72,8 @@ FiveIsland_RocketWarehouse_EventScript_DefeatedGideon::
 	msgbox FiveIsland_RocketWarehouse_Text_GideonPostBattle
 	setflag FLAG_RECOVERED_SAPPHIRE
 	giveitem ITEM_SAPPHIRE
+	clearflag FLAG_HIDE_NOX_FINAL
+	addobject LOCALID_WAREHOUSE_NOX
 	release
 	end
 
@@ -172,6 +188,50 @@ FiveIsland_RocketWarehouse_Movement_AdminWalkToSwitch::
 	walk_in_place_faster_up
 	step_end
 
+FiveIsland_RocketWarehouse_EventScript_NoxFinal::
+	lock
+	faceplayer
+	msgbox FiveIsland_RocketWarehouse_Text_NoxFinalIntro
+	trainerbattle_no_intro TRAINER_BOSS_NOX_FINAL, FiveIsland_RocketWarehouse_Text_NoxFinalDefeat
+	msgbox FiveIsland_RocketWarehouse_Text_NoxFinalAfter
+	closemessage
+	fadescreen FADE_TO_BLACK
+	setflag FLAG_DEFEATED_NOX_FINAL
+	setflag FLAG_HIDE_NOX_FINAL
+	removeobject LOCALID_WAREHOUSE_NOX
+	clearflag FLAG_HIDE_FINALE_FRIENDS
+	addobject LOCALID_WAREHOUSE_LIA
+	addobject LOCALID_WAREHOUSE_ZUMO
+	fadescreen FADE_FROM_BLACK
+	msgbox FiveIsland_RocketWarehouse_Text_FriendsArrive
+	release
+	end
+
+FiveIsland_RocketWarehouse_EventScript_LiaFinale::
+	lock
+	faceplayer
+	goto_if_set FLAG_RECEIVED_MYSTIC_TICKET, FiveIsland_RocketWarehouse_EventScript_LiaAfterTicket
+	msgbox FiveIsland_RocketWarehouse_Text_LiaFinale
+	giveitem ITEM_MYSTIC_TICKET
+	goto_if_eq VAR_RESULT, FALSE, EventScript_BagIsFull
+	setflag FLAG_RECEIVED_MYSTIC_TICKET
+	setflag FLAG_ENABLE_SHIP_NAVEL_ROCK
+	msgbox FiveIsland_RocketWarehouse_Text_LiaTicketExplain
+	release
+	end
+
+FiveIsland_RocketWarehouse_EventScript_LiaAfterTicket::
+	msgbox FiveIsland_RocketWarehouse_Text_LiaTicketExplain
+	release
+	end
+
+FiveIsland_RocketWarehouse_EventScript_ZumoFinale::
+	lock
+	faceplayer
+	msgbox FiveIsland_RocketWarehouse_Text_ZumoFinale
+	release
+	end
+
 FiveIsland_RocketWarehouse_Text_ManyMonsLockedInPen::
 	.string "There are many POKéMON locked\n"
 	.string "away in the pen…$"
@@ -181,15 +241,15 @@ FiveIsland_RocketWarehouse_Text_PenUnlockedMonsFled::
 	.string "The POKéMON appear to have fled.$"
 
 FiveIsland_RocketWarehouse_Text_Grunt2Intro::
-	.string "Did you come here knowing it's\n"
-	.string "TEAM ROCKET's WAREHOUSE?$"
+    .string "Did you come here knowing it's\n"
+    .string "TEAM ECLIPSE's WAREHOUSE?$"
 
 FiveIsland_RocketWarehouse_Text_Grunt2Defeat::
 	.string "What do you think you're doing?!$"
 
 FiveIsland_RocketWarehouse_Text_Grunt2PostBattle::
-	.string "TEAM ROCKET broke up?\n"
-	.string "What planet are you from?$"
+    .string "TEAM ECLIPSE broke up?\n"
+    .string "What planet are you from?$"
 
 FiveIsland_RocketWarehouse_Text_Grunt1Intro::
 	.string "Oh, now your POKéMON look strong.\n"
@@ -206,10 +266,10 @@ FiveIsland_RocketWarehouse_Text_Grunt1PostBattle::
 	.string "Sell us your POKéMON!$"
 
 FiveIsland_RocketWarehouse_Text_Grunt3Intro::
-	.string "I got word about you from the\n"
-	.string "others.\p"
-	.string "But there's no way a kid like you'd\n"
-	.string "know our BOSS GIOVANNI!$"
+    .string "I got word about you from the\n"
+    .string "others.\p"
+    .string "But there's no way a kid like you'd\n"
+    .string "know our BOSS NOX!$"
 
 FiveIsland_RocketWarehouse_Text_Grunt3Defeat::
 	.string "Don't…you…dare…laugh…$"
@@ -219,10 +279,9 @@ FiveIsland_RocketWarehouse_Text_Grunt3PostBattle::
 	.string "you jumped-up pip-squeak!$"
 
 FiveIsland_RocketWarehouse_Text_Admin1Intro::
-	.string "I don't know or care if what I'm\n"
-	.string "doing is right or wrong…\p"
-	.string "I just put my faith in GIOVANNI\n"
-	.string "and do as I am told.$"
+    .string "This warehouse is TEAM ECLIPSE's\n"
+    .string "last base! The boss is waiting for\l"
+    .string "the final piece!$"
 
 FiveIsland_RocketWarehouse_Text_Admin1Defeat::
 	.string "I…\n"
@@ -244,33 +303,27 @@ FiveIsland_RocketWarehouse_Text_MadeItSoYouCanComeBackThrough::
 	.string "harsh challenge.$"
 
 FiveIsland_RocketWarehouse_Text_Admin2Intro::
-	.string "That's quite enough of you \n"
-	.string "playing the hero, kid.\p"
-	.string "Spreading lies about how TEAM\n"
-	.string "ROCKET has disbanded…\p"
-	.string "It's such an obvious attempt to\n"
-	.string "cause confusion in our ranks.\p"
-	.string "Fortunately, we're not so ignorant\n"
-	.string "to fall for the lies of a child!\p"
-	.string "And now, I'll show you how scary\n"
-	.string "an angry adult can be!$"
+    .string "M-CORE failed, but NOX has one more\n"
+    .string "plan. The SAPPHIRE's power\l"
+    .string "will make the WAVE CALLER reach\l"
+    .string "the bottom of the sea!$"
 
 FiveIsland_RocketWarehouse_Text_Admin2Defeat::
-	.string "Urgh…\n"
-	.string "You were too strong…\p"
-	.string "…\n"
-	.string "Th-that's GIOVANNI's BADGE!\p"
-	.string "So it's true?\n"
-	.string "TEAM ROCKET really has disbanded?$"
+    .string "Urgh…\n"
+    .string "You were too strong…\p"
+    .string "…\n"
+    .string "Th-that's NOX's BADGE!\p"
+    .string "So it's true?\n"
+    .string "TEAM ECLIPSE really has disbanded?$"
 
 FiveIsland_RocketWarehouse_Text_Admin2PostBattle::
-	.string "We will abandon this WAREHOUSE…\p"
-	.string "But don't think this is over.\n"
-	.string "I won't let this be the end.\p"
-	.string "I will find GIOVANNI.\n"
-	.string "And I will resurrect TEAM ROCKET!\l"
-	.string "I will…\p"
-	.string "Until then, farewell!$"
+    .string "We will abandon this WAREHOUSE…\p"
+    .string "But don't think this is over.\n"
+    .string "I won't let this be the end.\p"
+    .string "I will find NOX.\n"
+    .string "And I will resurrect TEAM ECLIPSE!\l"
+    .string "I will…\p"
+    .string "Until then, farewell!$"
 
 FiveIsland_RocketWarehouse_Text_ReportWithGraphsAndText::
 	.string "A report with graphs and text is on\n"
@@ -281,31 +334,88 @@ FiveIsland_RocketWarehouse_Text_ReportWithGraphsAndText::
 	.string "It's too difficult to understand…$"
 
 FiveIsland_RocketWarehouse_Text_GideonIntro::
-	.string "I almost managed to sell the\n"
-	.string "SAPPHIRE for huge money…\p"
-	.string "Then, you just had to come along\n"
-	.string "and blow the whole deal apart!\p"
-	.string "Fufu… Fufufufu…\n"
-	.string "There's no forgiveness for you!$"
+    .string "Heh heh. This SAPPHIRE is the last\n"
+    .string "part of the WAVE CALLER. You can't\l"
+    .string "have it!$"
 
 FiveIsland_RocketWarehouse_Text_GideonDefeat::
 	.string "Gah! Darn!\n"
 	.string "Darn! Darn!$"
 
 FiveIsland_RocketWarehouse_Text_GideonPostBattle::
-	.string "If I can't sell it, it's worthless!\n"
-	.string "Go ahead, take it!$"
+    .string "Fine, take the gem… But NOX is still\n"
+    .string "here. Go and see for yourself!$"
 
 FiveIsland_RocketWarehouse_Text_GetLostLeaveMeBe::
 	.string "What do you want now?\n"
 	.string "Go on, get lost, leave me be.$"
 
 FiveIsland_RocketWarehouse_Text_GiovannisKidHasRedHair::
-	.string "What, you again?\p"
-	.string "You… You're not GIOVANNI's kid,\n"
-	.string "are you?\p"
-	.string "No, that can't be right!\n"
-	.string "GIOVANNI's kid has red hair.\p"
-	.string "You don't have any reasons for\n"
-	.string "bugging me. Leave me alone!$"
+    .string "What, you again?\p"
+    .string "You… You're not NOX's kid,\n"
+    .string "are you?\p"
+    .string "No, that can't be right!\n"
+    .string "NOX's kid has red hair.\p"
+    .string "You don't have any reasons for\n"
+    .string "bugging me. Leave me alone!$"
 
+
+FiveIsland_RocketWarehouse_Text_NoxFinalIntro::
+    .string "NOX: So it ends where it began. On\n"
+    .string "the sea.\p"
+    .string "M-CORE is gone, and GROUDON slipped\n"
+    .string "from my grasp. The WAVE CALLER was\l"
+    .string "my last secret.\p"
+    .string "Without the SAPPHIRE, the WAVE\n"
+    .string "CALLER can't reach the guardian of\l"
+    .string "the sea. You've ruined years of my\n"
+    .string "work.\p"
+    .string "Then I'll take my last stand with\n"
+    .string "everything I have left. Come,\l"
+    .string "{PLAYER}!$"
+
+FiveIsland_RocketWarehouse_Text_NoxFinalDefeat::
+    .string "…Even the sea itself seems to be on\n"
+    .string "your side.$"
+
+FiveIsland_RocketWarehouse_Text_NoxFinalAfter::
+    .string "NOX: When my crew was lost, I\n"
+    .string "wanted the sea to answer to me.\p"
+    .string "But you and your POKéMON… you\n"
+    .string "trust each other the way my crew\l"
+    .string "once trusted me.\p"
+    .string "TEAM ECLIPSE is finished. I'll shut\n"
+    .string "the WAVE CALLER down myself.\l"
+    .string "Farewell, {PLAYER}.$"
+
+FiveIsland_RocketWarehouse_Text_FriendsArrive::
+    .string "{RIVAL} and LIA came running in!$"
+
+FiveIsland_RocketWarehouse_Text_LiaFinale::
+    .string "LIA: {PLAYER}! The currents are\n"
+    .string "calming down already. You did it!\p"
+    .string "But LUGIA is still restless after\n"
+    .string "the WAVE CALLER's signals. Someone\l"
+    .string "has to go and meet it.\p"
+    .string "Here, take this. It's a ticket for\n"
+    .string "the ship to NAVEL ROCK, where\l"
+    .string "LUGIA rests.$"
+
+FiveIsland_RocketWarehouse_Text_LiaTicketExplain::
+    .string "Show the MYSTIC TICKET at the\n"
+    .string "VERMILION CITY harbor. The\l"
+    .string "SEAGALLOP will take you to NAVEL\n"
+    .string "ROCK.\p"
+    .string "Whether you catch LUGIA or let it\n"
+    .string "rest, I know you'll do what's\l"
+    .string "right.$"
+
+FiveIsland_RocketWarehouse_Text_ZumoFinale::
+    .string "{RIVAL}: Man, I missed the big\n"
+    .string "fight! You beat NOX all by\l"
+    .string "yourself!\p"
+    .string "After this, I'm going to sail to\n"
+    .string "HOENN with LIA. There are so many\l"
+    .string "POKéMON I've never met!\p"
+    .string "Let's battle again someday, okay?\n"
+    .string "Smell ya later, {PLAYER}!$"

@@ -25,8 +25,8 @@ Route19_Text_ReeceDefeat::
 	.string "That's chilly!$"
 
 Route19_Text_ReecePostBattle::
-	.string "Watch out for TENTACOOL.\n"
-	.string "They sting so painfully.$"
+    .string "Watch out for MENOKURAGE.\n"
+    .string "They sting so painfully.$"
 
 Route19_Text_MatthewIntro::
 	.string "I love swimming!\n"
@@ -115,10 +115,10 @@ Route19_Text_ConnieDefeat::
 	.string "I'm exhausted…$"
 
 Route19_Text_ConniePostBattle::
-	.string "If I were to ride a POKéMON on\n"
-	.string "the sea, I'd like a LAPRAS.\p"
-	.string "LAPRAS is so big, I bet it\n"
-	.string "would keep me dry on water.$"
+    .string "If I were to ride a POKéMON on\n"
+    .string "the sea, I'd like a LAPLACE.\p"
+    .string "LAPLACE is so big, I bet it\n"
+    .string "would keep me dry on water.$"
 
 Route19_Text_RouteSign::
 	.string "SEA ROUTE 19\n"

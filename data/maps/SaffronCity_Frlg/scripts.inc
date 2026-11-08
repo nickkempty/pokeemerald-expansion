@@ -4,7 +4,7 @@ SaffronCity_Frlg_MapScripts::
 
 SaffronCity_OnTransition::
 	setworldmapflag FLAG_WORLD_MAP_SAFFRON_CITY
-	call_if_unset FLAG_RESCUED_MR_FUJI, SaffronCity_EventScript_MoveDoorGuardGrunt
+	call_if_unset FLAG_ZK_READ_MCORE_LOG, SaffronCity_EventScript_MoveDoorGuardGrunt
 	end
 
 SaffronCity_EventScript_MoveDoorGuardGrunt::
@@ -41,7 +41,7 @@ SaffronCity_EventScript_RocketGrunt7::
 
 SaffronCity_EventScript_DoorGuardGrunt::
 	lock
-	goto_if_set FLAG_RESCUED_MR_FUJI, SaffronCity_EventScript_DoorGuardAsleep
+	goto_if_set FLAG_ZK_READ_MCORE_LOG, SaffronCity_EventScript_DoorGuardAsleep
 	applymovement LOCALID_SAFFRON_DOOR_GUARD_GRUNT, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox SaffronCity_Text_ImASecurityGuard
@@ -128,15 +128,15 @@ SaffronCity_Text_WhatDoYouWantGetLost::
 	.string "Get lost!$"
 
 SaffronCity_Text_BossTakeTownForTeamRocket::
-	.string "BOSS said he'll take this town\n"
-	.string "in the name of TEAM ROCKET!$"
+    .string "BOSS said he'll take this town\n"
+    .string "in the name of TEAM ECLIPSE!$"
 
 SaffronCity_Text_DontGetDefiantOrIllHurtYou::
 	.string "Don't get defiant!\n"
 	.string "Or I'll have to hurt you!$"
 
 SaffronCity_Text_SaffronBelongsToTeamRocket::
-	.string "SAFFRON belongs to TEAM ROCKET!$"
+    .string "SAFFRON belongs to TEAM ECLIPSE!$"
 
 SaffronCity_Text_CriminalLifeMakesMeFeelAlive::
 	.string "My life as a criminal makes me feel\n"
@@ -152,31 +152,31 @@ SaffronCity_Text_WeCanExploitMonsAroundWorld::
 	.string "We'll get stinking rich, yeahah!$"
 
 SaffronCity_Text_YouBeatTeamRocket::
-	.string "You beat TEAM ROCKET all alone?\n"
-	.string "That's amazing!$"
+    .string "You beat TEAM ECLIPSE all alone?\n"
+    .string "That's amazing!$"
 
 SaffronCity_Text_SafeToGoOutAgain::
-	.string "Yeah! TEAM ROCKET is gone!\n"
-	.string "It's safe to go out again!$"
+    .string "Yeah! TEAM ECLIPSE is gone!\n"
+    .string "It's safe to go out again!$"
 
 SaffronCity_Text_PeopleComingBackToSaffron::
-	.string "People fled from here in droves\n"
-	.string "when those ROCKETS came.\p"
-	.string "They should be flocking back to\n"
-	.string "SAFFRON now.$"
+    .string "People fled from here in droves\n"
+    .string "when those ECLIPSES came.\p"
+    .string "They should be flocking back to\n"
+    .string "SAFFRON now.$"
 
 SaffronCity_Text_FlewHereOnPidgeot::
-	.string "I flew here on my PIDGEOT when\n"
-	.string "I read about SILPH.\p"
-	.string "It's already over?\n"
-	.string "I missed the media action…$"
+    .string "I flew here on my PIGEOT when\n"
+    .string "I read about SILPH.\p"
+    .string "It's already over?\n"
+    .string "I missed the media action…$"
 
 SaffronCity_Text_Pidgeot::
-	.string "PIDGEOT: Bi bibii!$"
+    .string "PIGEOT: Bi bibii!$"
 
 SaffronCity_Text_SawRocketBossEscaping::
-	.string "I saw the ROCKET BOSS escaping\n"
-	.string "SILPH's building.$"
+    .string "I saw the ECLIPSE BOSS escaping\n"
+    .string "SILPH's building.$"
 
 SaffronCity_Text_ImASecurityGuard::
 	.string "I'm a security guard.\p"

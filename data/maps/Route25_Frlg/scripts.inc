@@ -75,8 +75,8 @@ Route25_Text_HaleyDefeat::
 	.string "I'm not so jealous!$"
 
 Route25_Text_HaleyPostBattle::
-	.string "You came from MT. MOON?\n"
-	.string "May I have a CLEFAIRY?$"
+    .string "You came from MT. MOON?\n"
+    .string "May I have a PIPPI?$"
 
 Route25_Text_FranklinIntro::
 	.string "I just got down from MT. MOON,\n"

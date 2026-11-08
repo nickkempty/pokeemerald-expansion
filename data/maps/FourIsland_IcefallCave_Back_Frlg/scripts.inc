@@ -237,23 +237,23 @@ FourIsland_IcefallCave_Back_Text_NotTellingYouThat::
 	.string "I'm not telling you that!$"
 
 FourIsland_IcefallCave_Back_Text_LoreleiWellDeepFreezeYou::
-	.string "LORELEI: If you won't confess,\n"
-	.string "we'll deep-freeze you.\p"
-	.string "My LAPRAS is furious for what\n"
-	.string "you've done to its friends.\p"
-	.string "Go, LAPRAS!\n"
-	.string "ICE BEAM…$"
+    .string "LORELEI: If you won't confess,\n"
+    .string "we'll deep-freeze you.\p"
+    .string "My LAPLACE is furious for what\n"
+    .string "you've done to its friends.\p"
+    .string "Go, LAPLACE!\n"
+    .string "ICE BEAM…$"
 
 FourIsland_IcefallCave_Back_Text_OkayRocketWareHouseFiveIsland::
-	.string "Wawaah! Okay!\n"
-	.string "I'll talk!\p"
-	.string "The POKéMON are in the ROCKET\n"
-	.string "WAREHOUSE on FIVE ISLAND.\p"
-	.string "There! I said it!\n"
-	.string "We'll be going now!\p"
-	.string "…But I doubt you'll ever make it\n"
-	.string "into the ROCKET WAREHOUSE!\p"
-	.string "Heheheheh!$"
+    .string "Wawaah! Okay!\n"
+    .string "I'll talk!\p"
+    .string "The POKéMON are in the ECLIPSE\n"
+    .string "WAREHOUSE on FIVE ISLAND.\p"
+    .string "There! I said it!\n"
+    .string "We'll be going now!\p"
+    .string "…But I doubt you'll ever make it\n"
+    .string "into the ECLIPSE WAREHOUSE!\p"
+    .string "Heheheheh!$"
 
 FourIsland_IcefallCave_Back_Text_ThankYouThisIsAwful::
 	.string "{PLAYER}, thank you.\n"

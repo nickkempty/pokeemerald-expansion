@@ -268,8 +268,8 @@ PewterCity_Museum_1F_Text_BeautifulPieceOfAmber::
 	.string "AMBER in a clear gold color.$"
 
 PewterCity_Museum_1F_Text_AerodactylFossil::
-	.string "AERODACTYL Fossil\n"
-	.string "A primitive and rare POKéMON.$"
+    .string "PTERA Fossil\n"
+    .string "A primitive and rare POKéMON.$"
 
 PewterCity_Museum_1F_Text_KabutopsFossil::
 	.string "KABUTOPS Fossil\n"

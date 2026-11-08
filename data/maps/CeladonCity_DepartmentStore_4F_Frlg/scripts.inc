@@ -16,8 +16,6 @@ CeladonCity_DepartmentStore_4F_EventScript_FloorSign::
 CeladonCity_DepartmentStore_4F_EventScript_Clerk::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
 	pokemart CeladonCity_DepartmentStore_4F_Items
 	msgbox gText_PleaseComeAgain
 	release
@@ -31,6 +29,8 @@ CeladonCity_DepartmentStore_4F_Items::
 	.2byte ITEM_THUNDER_STONE
 	.2byte ITEM_WATER_STONE
 	.2byte ITEM_LEAF_STONE
+	.2byte ITEM_EXP_SHARE
+	.2byte ITEM_GENDER_SWAP
 	.2byte ITEM_NONE
 	release
 	end

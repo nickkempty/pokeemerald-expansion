@@ -113,8 +113,8 @@ Route20_Text_NoraDefeat::
 	.string "My pearls were in them!$"
 
 Route20_Text_NoraPostBattle::
-	.string "Will my pearls grow bigger inside\n"
-	.string "CLOYSTER?$"
+    .string "Will my pearls grow bigger inside\n"
+    .string "PARSHEN?$"
 
 Route20_Text_MissyIntro::
 	.string "I swam here from CINNABAR ISLAND.\n"

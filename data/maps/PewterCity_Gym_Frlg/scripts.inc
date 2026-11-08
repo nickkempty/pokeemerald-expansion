@@ -26,6 +26,8 @@ PewterCity_Gym_EventScript_GiveTM39::
 	goto_if_eq VAR_RESULT, FALSE, PewterCity_Gym_EventScript_NoRoomForTM39
 	giveitem_msg PewterCity_Gym_Text_ReceivedTM39FromBrock, ITEM_TM39
 	setflag FLAG_GOT_TM39_FROM_BROCK
+	setvar VAR_0x8004, 0
+	call EventScript_ZumoGymBonusTM
 	msgbox PewterCity_Gym_Text_ExplainTM39
 	release
 	end

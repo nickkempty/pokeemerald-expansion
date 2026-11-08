@@ -42,9 +42,9 @@ SilphCo_7F_EventScript_RivalScene::
 	call_if_eq VAR_TEMP_1, 1, SilphCo_7F_EventScript_RivalApproachBottom
 	msgbox SilphCo_7F_Text_RivalIntro
 	setvar VAR_LAST_TALKED, LOCALID_SILPH_CO_RIVAL
-	call_if_eq VAR_STARTER_MON, 2, SilphCo_7F_EventScript_RivalSquirtle
-	call_if_eq VAR_STARTER_MON, 1, SilphCo_7F_EventScript_RivalBulbasaur
-	call_if_eq VAR_STARTER_MON, 0, SilphCo_7F_EventScript_RivalCharmander
+	call_if_eq VAR_RIVAL_VARIANT, 2, SilphCo_7F_EventScript_RivalSquirtle
+	call_if_eq VAR_RIVAL_VARIANT, 1, SilphCo_7F_EventScript_RivalBulbasaur
+	call_if_eq VAR_RIVAL_VARIANT, 0, SilphCo_7F_EventScript_RivalCharmander
 	msgbox SilphCo_7F_Text_RivalPostBattle
 	closemessage
 	playbgm MUS_RG_RIVAL_EXIT, 0
@@ -232,49 +232,83 @@ SilphCo_7F_EventScript_Grunt3::
 	msgbox SilphCo_7F_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
 	end
 
+SilphCo_7F_EventScript_ZkRival::
+	lockall
+	textcolor NPC_TEXT_COLOR_MALE
+	playbgm MUS_RG_ENCOUNTER_RIVAL, 0
+	applymovement LOCALID_SILPH_CO_RIVAL, Common_Movement_FacePlayer
+	waitmovement 0
+	msgbox SilphCo_7F_Text_RivalWhatKeptYou
+	msgbox SilphCo_7F_Text_RivalIntro
+	setvar VAR_LAST_TALKED, LOCALID_SILPH_CO_RIVAL
+	call_if_eq VAR_RIVAL_VARIANT, 2, SilphCo_7F_EventScript_RivalSquirtle
+	call_if_eq VAR_RIVAL_VARIANT, 1, SilphCo_7F_EventScript_RivalBulbasaur
+	call_if_eq VAR_RIVAL_VARIANT, 0, SilphCo_7F_EventScript_RivalCharmander
+	msgbox SilphCo_7F_Text_RivalPostBattle
+	closemessage
+	playbgm MUS_RG_RIVAL_EXIT, 0
+	fadescreen FADE_TO_BLACK
+	removeobject LOCALID_SILPH_CO_RIVAL
+	fadescreen FADE_FROM_BLACK
+	fadedefaultbgm
+	setvar VAR_MAP_SCENE_SILPH_CO_7F, 1
+	msgbox SilphCo_7F_Text_ZkWarpToBoardroom
+	closemessage
+	playse SE_WARP_IN
+	warpteleport MAP_SILPH_CO_11F, 2, 6
+	waitstate
+	releaseall
+	end
+
 SilphCo_7F_Text_HaveMonForSavingUs::
-	.string "Oh! Hi! You're not a ROCKET!\n"
-	.string "You came to save us?\l"
-	.string "Why, thank you!\p"
-	.string "I want you to have this POKéMON\n"
-	.string "for saving us.$"
+    .string "Oh! Hi! You're not a ECLIPSE!\n"
+    .string "You came to save us?\l"
+    .string "Why, thank you!\p"
+    .string "I want you to have this POKéMON\n"
+    .string "for saving us.$"
 
 SilphCo_7F_Text_ObtainedLaprasFromEmployee::
-	.string "{PLAYER} obtained a LAPRAS from\n"
-	.string "the SILPH employee!$"
+    .string "{PLAYER} obtained a LAPLACE from\n"
+    .string "the SILPH employee!$"
 
 SilphCo_7F_Text_ExplainLapras::
-	.string "It's a LAPRAS.\n"
-	.string "It's a very intelligent POKéMON.\p"
-	.string "We kept it in our lab, but it will\n"
-	.string "be much better off with you.\p"
-	.string "I think you will be a good TRAINER\n"
-	.string "for LAPRAS!\p"
-	.string "It's a good swimmer.\n"
-	.string "It'll give you a lift across water!$"
+    .string "It's a LAPLACE.\n"
+    .string "It's a very intelligent POKéMON.\p"
+    .string "We kept it in our lab, but it will\n"
+    .string "be much better off with you.\p"
+    .string "I think you will be a good TRAINER\n"
+    .string "for LAPLACE!\p"
+    .string "It's a good swimmer.\n"
+    .string "It'll give you a lift across water!$"
 
 SilphCo_7F_Text_RocketBossWentToBoardroom::
-	.string "TEAM ROCKET's BOSS went to the\n"
-	.string "boardroom!\p"
-	.string "Is our PRESIDENT okay?\n"
-	.string "I'm worried.$"
+    .string "TEAM ECLIPSE's BOSS went to the\n"
+    .string "boardroom!\p"
+    .string "Is our PRESIDENT okay?\n"
+    .string "I'm worried.$"
+
+SilphCo_7F_Text_OhNo::
+    .string "あ‥　もう　もてないぞ$"
+
+SilphCo_7F_Text_SavedAtLast::
+    .string "たすかったよ　ありがと！$"
 
 SilphCo_7F_Text_RocketsAfterMasterBall::
-	.string "TEAM ROCKET was after the MASTER\n"
-	.string "BALL, which catches any POKéMON.$"
+    .string "TEAM ECLIPSE was after the MASTER\n"
+    .string "BALL, which catches any POKéMON.$"
 
 SilphCo_7F_Text_CanceledMasterBallProject::
-	.string "We canceled the MASTER BALL\n"
-	.string "project because of TEAM ROCKET.$"
+    .string "We canceled the MASTER BALL\n"
+    .string "project because of TEAM ECLIPSE.$"
 
 SilphCo_7F_Text_BadIfTeamRocketTookOver::
-	.string "It would be bad if TEAM ROCKET\n"
-	.string "took over SILPH or our POKéMON.$"
+    .string "It would be bad if TEAM ECLIPSE\n"
+    .string "took over SILPH or our POKéMON.$"
 
 SilphCo_7F_Text_WowYouChasedOffTeamRocket::
-	.string "Wow!\p"
-	.string "You chased off TEAM ROCKET all by\n"
-	.string "yourself?$"
+    .string "Wow!\p"
+    .string "You chased off TEAM ECLIPSE all by\n"
+    .string "yourself?$"
 
 SilphCo_7F_Text_ReallyDangerousHere::
 	.string "You!\n"
@@ -308,8 +342,8 @@ SilphCo_7F_Text_JoshuaPostBattle::
 	.string "skilled TRAINER!$"
 
 SilphCo_7F_Text_Grunt1Intro::
-	.string "I am one of the four ROCKET\n"
-	.string "BROTHERS!$"
+    .string "I am one of the four ECLIPSE\n"
+    .string "BROTHERS!$"
 
 SilphCo_7F_Text_Grunt1Defeat::
 	.string "Aack!\n"
@@ -332,37 +366,45 @@ SilphCo_7F_Text_Grunt2PostBattle::
 	.string "ticked off!$"
 
 SilphCo_7F_Text_RivalWhatKeptYou::
-	.string "{RIVAL}: What kept you, {PLAYER}?$"
+    .string "{RIVAL}: …{PLAYER}. You came.$"
 
 SilphCo_7F_Text_RivalIntro::
-	.string "{RIVAL}: Hahaha! I thought you'd\n"
-	.string "turn up if I waited here!\p"
-	.string "I guess TEAM ROCKET slowed you\n"
-	.string "down! Not that I care!\p"
-	.string "I saw you in SAFFRON, so I decided\n"
-	.string "to see if you got better!$"
+    .string "{RIVAL}: Look at these SILPH files.\n"
+    .string "M-CORE isn't a machine to protect\l"
+    .string "POKéMON like NOX told me.\p"
+    .string "It's a cage. It drains MEWTWO's\n"
+    .string "mind and the meteorite's power to\l"
+    .string "control GROUDON with the RED ORB!\p"
+    .string "And I guarded his lab for him…\n"
+    .string "What kind of TRAINER am I?\p"
+    .string "…Battle me, {PLAYER}. I need to\n"
+    .string "know my POKéMON still trust me!$"
 
 SilphCo_7F_Text_RivalDefeat::
-	.string "Oh, man!\n"
-	.string "So, you are ready for BOSS\l"
-	.string "ROCKET!$"
+    .string "…Yeah. They still fought for me.\n"
+    .string "Thanks, {PLAYER}.$"
+
+SilphCo_7F_Text_RivalVictory::
+    .string "{RIVAL}“おまえなあ‥\p"
+    .string "こんな　うでまえじゃ\n"
+    .string "まだまだ‥\l"
+    .string "いちにんまえ　とは　いえないぜ$"
 
 SilphCo_7F_Text_RivalPostBattle::
-	.string "Well, {PLAYER}!\n"
-	.string "I'm moving on up and ahead!\p"
-	.string "By checking my POKéDEX, I'm\n"
-	.string "starting to see what's strong and\l"
-	.string "how they evolve!\p"
-	.string "Am I a genius or what?\p"
-	.string "I'm going to the POKéMON LEAGUE to\n"
-	.string "boot out the ELITE FOUR.\p"
-	.string "I'll become the world's most\n"
-	.string "powerful TRAINER!\p"
-	.string "{PLAYER}, well, good luck to you!\n"
-	.string "Don't sweat it!\l"
-	.string "Smell ya!$"
+    .string "{RIVAL}: NOX is in the 11F boardroom\n"
+    .string "with the PRESIDENT.\p"
+    .string "The ELEVATOR won't take you there,\n"
+    .string "but I found ECLIPSE's secret warp\l"
+    .string "panel. I'll send you straight up.\p"
+    .string "I'll free the workers down here.\n"
+    .string "Go stop him, {PLAYER}!\p"
+    .string "…And sorry. For everything.$"
 
 SilphCo_7F_Text_FloorSign::
 	.string "SILPH CO. HEAD OFFICE\n"
 	.string "7F$"
 
+
+SilphCo_7F_Text_ZkWarpToBoardroom::
+    .string "{RIVAL} keyed in the warp panel\n"
+    .string "code…$"

@@ -38,6 +38,7 @@ SilphCo_Elevator_EventScript_To1F::
 	end
 
 SilphCo_Elevator_EventScript_To2F::
+	goto_if_lt VAR_MAP_SCENE_SILPH_CO_11F, 1, SilphCo_Elevator_EventScript_FloorLocked
 	setvar VAR_0x8006, 5
 	setdynamicwarp MAP_SILPH_CO_2F, 255, 22, 3
 	goto_if_eq VAR_ELEVATOR_FLOOR, 5, SilphCo_Elevator_EventScript_ExitFloorSelect
@@ -47,6 +48,7 @@ SilphCo_Elevator_EventScript_To2F::
 	end
 
 SilphCo_Elevator_EventScript_To3F::
+	goto_if_lt VAR_MAP_SCENE_SILPH_CO_11F, 1, SilphCo_Elevator_EventScript_FloorLocked
 	setvar VAR_0x8006, 6
 	setdynamicwarp MAP_SILPH_CO_3F, 255, 22, 3
 	goto_if_eq VAR_ELEVATOR_FLOOR, 6, SilphCo_Elevator_EventScript_ExitFloorSelect
@@ -56,6 +58,7 @@ SilphCo_Elevator_EventScript_To3F::
 	end
 
 SilphCo_Elevator_EventScript_To4F::
+	goto_if_lt VAR_MAP_SCENE_SILPH_CO_11F, 1, SilphCo_Elevator_EventScript_FloorLocked
 	setvar VAR_0x8006, 7
 	setdynamicwarp MAP_SILPH_CO_4F, 255, 22, 3
 	goto_if_eq VAR_ELEVATOR_FLOOR, 7, SilphCo_Elevator_EventScript_ExitFloorSelect
@@ -74,6 +77,7 @@ SilphCo_Elevator_EventScript_To5F::
 	end
 
 SilphCo_Elevator_EventScript_To6F::
+	goto_if_lt VAR_MAP_SCENE_SILPH_CO_11F, 1, SilphCo_Elevator_EventScript_FloorLocked
 	setvar VAR_0x8006, 9
 	setdynamicwarp MAP_SILPH_CO_6F, 255, 20, 3
 	goto_if_eq VAR_ELEVATOR_FLOOR, 9, SilphCo_Elevator_EventScript_ExitFloorSelect
@@ -92,6 +96,7 @@ SilphCo_Elevator_EventScript_To7F::
 	end
 
 SilphCo_Elevator_EventScript_To8F::
+	goto_if_lt VAR_MAP_SCENE_SILPH_CO_11F, 1, SilphCo_Elevator_EventScript_FloorLocked
 	setvar VAR_0x8006, 11
 	setdynamicwarp MAP_SILPH_CO_8F, 255, 22, 3
 	goto_if_eq VAR_ELEVATOR_FLOOR, 11, SilphCo_Elevator_EventScript_ExitFloorSelect
@@ -101,6 +106,7 @@ SilphCo_Elevator_EventScript_To8F::
 	end
 
 SilphCo_Elevator_EventScript_To9F::
+	goto_if_lt VAR_MAP_SCENE_SILPH_CO_11F, 1, SilphCo_Elevator_EventScript_FloorLocked
 	setvar VAR_0x8006, 12
 	setdynamicwarp MAP_SILPH_CO_9F, 255, 24, 3
 	goto_if_eq VAR_ELEVATOR_FLOOR, 12, SilphCo_Elevator_EventScript_ExitFloorSelect
@@ -110,6 +116,7 @@ SilphCo_Elevator_EventScript_To9F::
 	end
 
 SilphCo_Elevator_EventScript_To10F::
+	goto_if_lt VAR_MAP_SCENE_SILPH_CO_11F, 1, SilphCo_Elevator_EventScript_FloorLocked
 	setvar VAR_0x8006, 13
 	setdynamicwarp MAP_SILPH_CO_10F, 255, 13, 3
 	goto_if_eq VAR_ELEVATOR_FLOOR, 13, SilphCo_Elevator_EventScript_ExitFloorSelect
@@ -119,6 +126,7 @@ SilphCo_Elevator_EventScript_To10F::
 	end
 
 SilphCo_Elevator_EventScript_To11F::
+	goto_if_lt VAR_MAP_SCENE_SILPH_CO_7F, 1, SilphCo_Elevator_EventScript_Floor11Locked
 	setvar VAR_0x8006, 14
 	setdynamicwarp MAP_SILPH_CO_11F, 255, 13, 3
 	goto_if_eq VAR_ELEVATOR_FLOOR, 14, SilphCo_Elevator_EventScript_ExitFloorSelect
@@ -140,3 +148,25 @@ SilphCo_Elevator_EventScript_MoveElevator::
 	waitstate
 	setflag FLAG_TEMP_2
 	return
+
+SilphCo_Elevator_EventScript_FloorLocked::
+	special CloseElevatorCurrentFloorWindow
+	msgbox SilphCo_Elevator_Text_FloorLocked
+	releaseall
+	end
+
+SilphCo_Elevator_EventScript_Floor11Locked::
+	special CloseElevatorCurrentFloorWindow
+	msgbox SilphCo_Elevator_Text_Floor11Locked
+	releaseall
+	end
+
+SilphCo_Elevator_Text_FloorLocked::
+	.string "…The button won't light up.\n"
+	.string "TEAM ECLIPSE locked this floor.\p"
+	.string "Only 5F and 7F seem to be open.$"
+
+SilphCo_Elevator_Text_Floor11Locked::
+	.string "11F - ACCESS DENIED\n"
+	.string "ECLIPSE OFFICER CODE REQUIRED.\p"
+	.string "Someone on 7F might know a way up…$"

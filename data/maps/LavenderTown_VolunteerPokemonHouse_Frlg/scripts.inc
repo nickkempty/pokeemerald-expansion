@@ -4,12 +4,12 @@ LavenderTown_VolunteerPokemonHouse_Frlg_MapScripts::
 LavenderTown_VolunteerPokemonHouse_EventScript_MrFuji::
 	lock
 	faceplayer
-	goto_if_set FLAG_GOT_POKE_FLUTE, LavenderTown_VolunteerPokemonHouse_EventScript_AlreadyHavePokeFlute
+	goto_if_set FLAG_ZK_FUJI_REWARD, LavenderTown_VolunteerPokemonHouse_EventScript_AlreadyHavePokeFlute
 	msgbox LavenderTown_VolunteerPokemonHouse_Text_IdLikeYouToHaveThis
-	checkitemspace ITEM_POKE_FLUTE
+	checkitemspace ITEM_LEFTOVERS
 	goto_if_eq VAR_RESULT, FALSE, LavenderTown_VolunteerPokemonHouse_EventScript_NoRoomForPokeFlute
-	setflag FLAG_GOT_POKE_FLUTE
-	giveitem_msg LavenderTown_VolunteerPokemonHouse_Text_ReceivedPokeFluteFromMrFuji, ITEM_POKE_FLUTE, 1, MUS_RG_OBTAIN_KEY_ITEM
+	setflag FLAG_ZK_FUJI_REWARD
+	giveitem_msg LavenderTown_VolunteerPokemonHouse_Text_ReceivedPokeFluteFromMrFuji, ITEM_LEFTOVERS, 1, MUS_OBTAIN_ITEM
 	msgbox LavenderTown_VolunteerPokemonHouse_Text_ExplainPokeFlute
 	release
 	end
@@ -90,8 +90,8 @@ LavenderTown_VolunteerPokemonHouse_Text_WhereDidMrFujiGo::
 	.string "Where'd he go?$"
 
 LavenderTown_VolunteerPokemonHouse_Text_MrFujiWasPrayingForCubonesMother::
-	.string "MR. FUJI had been praying alone\n"
-	.string "for CUBONE's mother.$"
+    .string "MR. FUJI had been praying alone\n"
+    .string "for KARAKARA's mother.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_MrFujiLooksAfterOrphanedMons::
 	.string "This is really MR. FUJI's house.\p"
@@ -107,7 +107,7 @@ LavenderTown_VolunteerPokemonHouse_Text_Nidorino::
 	.string "NIDORINO: Gaoo!$"
 
 LavenderTown_VolunteerPokemonHouse_Text_Psyduck::
-	.string "PSYDUCK: Gwappa!$"
+    .string "KODUCK: Gwappa!$"
 
 LavenderTown_VolunteerPokemonHouse_Text_IdLikeYouToHaveThis::
 	.string "MR. FUJI: {PLAYER}…\p"
@@ -119,21 +119,21 @@ LavenderTown_VolunteerPokemonHouse_Text_IdLikeYouToHaveThis::
 	.string "but I'd like you to have it.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_ReceivedPokeFluteFromMrFuji::
-	.string "{PLAYER} received a POKé FLUTE\n"
-	.string "from MR. FUJI.$"
+    .string "{PLAYER} received LEFTOVERS\n"
+    .string "from MR. FUJI.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_ExplainPokeFlute::
-	.string "Upon hearing the POKé FLUTE,\n"
-	.string "sleeping POKéMON will spring awake.\p"
-	.string "Try using it on POKéMON that are\n"
-	.string "sleeping obstacles.$"
+    .string "A POKéMON holding LEFTOVERS\n"
+    .string "slowly heals during battle.\p"
+    .string "Please, raise your POKéMON with\n"
+    .string "kindness.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_MustMakeRoomForThis::
 	.string "You must make room for this!$"
 
 LavenderTown_VolunteerPokemonHouse_Text_HasPokeFluteHelpedYou::
-	.string "MR. FUJI: Has my POKé FLUTE\n"
-	.string "helped you?$"
+    .string "MR. FUJI: Thank you again for\n"
+    .string "calming the tower's spirits.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_GrandPrizeDrawingClipped::
 	.string "POKéMON FAN MAGAZINE\n"

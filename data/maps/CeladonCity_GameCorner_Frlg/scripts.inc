@@ -470,9 +470,9 @@ CeladonCity_GameCorner_Text_CanExchangeCoinsNextDoor::
 	.string "fabulous prizes next door.$"
 
 CeladonCity_GameCorner_Text_WelcomeBuySomeCoins::
-	.string "Welcome to ROCKET GAME CORNER!\p"
-	.string "Do you need some game COINS?\n"
-	.string "Would you like to buy some?$"
+    .string "Welcome to ECLIPSE GAME CORNER!\p"
+    .string "Do you need some game COINS?\n"
+    .string "Would you like to buy some?$"
 
 CeladonCity_GameCorner_Text_ComePlaySometime::
 	.string "No?\n"
@@ -494,9 +494,9 @@ CeladonCity_GameCorner_Text_HereAreYourCoins::
 	.string "Here are your COINS!$"
 
 CeladonCity_GameCorner_Text_RumoredTeamRocketRunsThisPlace::
-	.string "Keep this quiet.\p"
-	.string "It's rumored that this place is run\n"
-	.string "by TEAM ROCKET.$"
+    .string "Keep this quiet.\p"
+    .string "It's rumored that this place is run\n"
+    .string "by TEAM ECLIPSE.$"
 
 CeladonCity_GameCorner_Text_ThinkMachinesHaveDifferentOdds::
 	.string "I think these machines have\n"
@@ -580,9 +580,9 @@ CeladonCity_GameCorner_Text_GruntDefeat::
 	.string "Dang!$"
 
 CeladonCity_GameCorner_Text_GruntPostBattle::
-	.string "The TEAM ROCKET HIDEOUT might\n"
-	.string "be discovered!\p"
-	.string "I better tell BOSS!$"
+    .string "The TEAM ECLIPSE HIDEOUT might\n"
+    .string "be discovered!\p"
+    .string "I better tell BOSS!$"
 
 CeladonCity_GameCorner_Text_SwitchBehindPosterPushIt::
 	.string "Hey!\p"

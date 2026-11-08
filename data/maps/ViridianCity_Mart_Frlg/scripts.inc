@@ -53,8 +53,7 @@ ViridianCity_Mart_EventScript_Clerk::
 	lock
 	faceplayer
 	goto_if_eq VAR_MAP_SCENE_VIRIDIAN_CITY_MART, 1, ViridianCity_Mart_EventScript_SayHiToOak
-	message gText_HowMayIServeYou
-	waitmessage
+	goto_if_questlog EventScript_ReleaseEnd
 	pokemart ViridianCity_Mart_Items
 	msgbox gText_PleaseComeAgain
 	release
@@ -66,6 +65,8 @@ ViridianCity_Mart_Items::
 	.2byte ITEM_POTION
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_EXP_SHARE
+	.2byte ITEM_GENDER_SWAP
 	.2byte ITEM_NONE
 	release
 	end

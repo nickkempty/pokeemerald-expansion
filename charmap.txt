@@ -86,6 +86,7 @@ SUPER_RE    = A0
 '_'         = AE @ For autogenerating strings based on label names. Not using {UNDERSCORE} on purpose due to how bad it looks.
 '·'         = AF
 '…'         = B0
+'‥'         = B0 @ Zumo: needed by a FRLG Japanese leftover string
 '“'         = B1
 '”'         = B2
 '‘'         = B3

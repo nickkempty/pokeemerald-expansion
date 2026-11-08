@@ -168,13 +168,13 @@ FourIsland_Text_LoreleiHasReturned::
 	.string "stressful, I wonder?$"
 
 FourIsland_Text_LoreleiMetLaprasAsChild::
-	.string "LORELEI has gone back.\p"
-	.string "The LAPRAS she has, I imagine it\n"
-	.string "to be the one she met as a child.\p"
-	.string "I believe it was in ICEFALL CAVE\n"
-	.string "that she caught it.\p"
-	.string "Perhaps that POKéMON has been with\n"
-	.string "her ever since.$"
+    .string "LORELEI has gone back.\p"
+    .string "The LAPLACE she has, I imagine it\n"
+    .string "to be the one she met as a child.\p"
+    .string "I believe it was in ICEFALL CAVE\n"
+    .string "that she caught it.\p"
+    .string "Perhaps that POKéMON has been with\n"
+    .string "her ever since.$"
 
 FourIsland_Text_RivalAlreadyGotEggBeSmellingYa::
 	.string "{RIVAL}: Hey!\n"

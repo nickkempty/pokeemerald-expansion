@@ -81,8 +81,8 @@ PokemonTower_6F_Text_BeGoneIntruders::
 	.string "Intruders…$"
 
 PokemonTower_6F_Text_GhostWasCubonesMother::
-	.string "The ghost was the restless spirit\n"
-	.string "of CUBONE's mother!$"
+    .string "The ghost was the restless spirit\n"
+    .string "of KARAKARA's mother!$"
 
 PokemonTower_6F_Text_MothersSpiritWasCalmed::
 	.string "The mother's spirit was calmed.\p"

@@ -58,13 +58,13 @@ SilphCo_5F_EventScript_Dalton::
 	end
 
 SilphCo_5F_Text_RocketsInUproarAboutIntruder::
-	.string "TEAM ROCKET is in an uproar over\n"
-	.string "some intruder.\p"
-	.string "That's you, right?$"
+    .string "TEAM ECLIPSE is in an uproar over\n"
+    .string "some intruder.\p"
+    .string "That's you, right?$"
 
 SilphCo_5F_Text_YoureOurHeroThankYou::
-	.string "TEAM ROCKET took off!\n"
-	.string "You're our hero! Thank you!$"
+    .string "TEAM ECLIPSE took off!\n"
+    .string "You're our hero! Thank you!$"
 
 SilphCo_5F_Text_Grunt1Intro::
 	.string "I heard a kid was wandering\n"
@@ -74,8 +74,8 @@ SilphCo_5F_Text_Grunt1Defeat::
 	.string "Boom!$"
 
 SilphCo_5F_Text_Grunt1PostBattle::
-	.string "It's not smart to pick a fight with\n"
-	.string "TEAM ROCKET!$"
+    .string "It's not smart to pick a fight with\n"
+    .string "TEAM ECLIPSE!$"
 
 SilphCo_5F_Text_BeauIntro::
 	.string "We study POKé BALL technology on\n"
@@ -102,15 +102,15 @@ SilphCo_5F_Text_DaltonPostBattle::
 	.string "It's a long way to my BOSS!$"
 
 SilphCo_5F_Text_Grunt2Intro::
-	.string "Show TEAM ROCKET a little respect!$"
+    .string "Show TEAM ECLIPSE a little respect!$"
 
 SilphCo_5F_Text_Grunt2Defeat::
 	.string "Cough…\n"
 	.string "Cough…$"
 
 SilphCo_5F_Text_Grunt2PostBattle::
-	.string "Which reminds me.\p"
-	.string "KOFFING evolves into WEEZING!$"
+    .string "Which reminds me.\p"
+    .string "DOGARS evolves into MATADOGAS!$"
 
 SilphCo_5F_Text_PorygonFirstVRMon::
 	.string "It's a POKéMON REPORT!\p"

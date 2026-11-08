@@ -27,7 +27,7 @@ Route6_NorthEntrance_EventScript_GuardTrigger::
 	textcolor NPC_TEXT_COLOR_MALE
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	goto_if_set FLAG_GOT_TEA, Route6_NorthEntrance_EventScript_GiveTea
+	goto_if_set FLAG_ZK_READ_MCORE_LOG, Route6_NorthEntrance_EventScript_GuardDrinkTea
 	msgbox Route6_NorthEntrance_Text_ThirstyOnGuardDuty
 	closemessage
 	applymovement LOCALID_PLAYER, Route6_NorthEntrance_Movement_BlockPlayerEntry
@@ -84,27 +84,22 @@ Route6_NorthEntrance_Movement_BlockPlayerEntry::
 	step_end
 
 Route6_NorthEntrance_Text_ThirstyOnGuardDuty::
-	.string "I'm on guard duty.\n"
-	.string "Gee, I'm thirsty, though!\p"
-	.string "Oh, wait there, the road's closed.$"
+    .string "Sorry, SAFFRON CITY is sealed.\n"
+    .string "TEAM ECLIPSE took over SILPH CO.\p"
+    .string "Nobody gets in until we know\n"
+    .string "what they're planning in there.$"
 
 Route6_NorthEntrance_Text_ThatTeaLooksTasty::
-	.string "Oh, that TEA…\n"
-	.string "It looks awfully tasty…$"
+    .string "Hm? That's an M-CORE report!\n"
+    .string "From under the GAME CORNER?$"
 
 Route6_NorthEntrance_Text_ThanksIllShareTeaWithGuards::
-	.string "Huh? I can have this drink?\n"
-	.string "Gee, thanks!\l"
-	.string "… …\l"
-	.string "Glug, glug…\l"
-	.string "… …\l"
-	.string "Gulp…\l"
-	.string "If you want to go to SAFFRON\l"
-	.string "CITY…\l"
-	.string "… …\l"
-	.string "You can go on through.\p"
-	.string "I'll share this TEA with the other\n"
-	.string "guards!$"
+    .string "So ECLIPSE plans to finish M-CORE\n"
+    .string "inside SILPH CO.…\p"
+    .string "We can't storm the tower ourselves.\n"
+    .string "Kid, you go on through.\p"
+    .string "I'll tell the other gates to let\n"
+    .string "you pass. Good luck!$"
 
 Route6_NorthEntrance_Text_HiHowsItGoing::
 	.string "Hi, how's it going?$"

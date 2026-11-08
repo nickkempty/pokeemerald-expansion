@@ -7,9 +7,9 @@ PokemonLeague_ChampionsRoom_Frlg_MapScripts::
 PokemonLeague_ChampionsRoom_OnResume::
 	setvar VAR_0x8004, 4
 	call PokemonLeague_EventScript_DoLightingEffect
-	call_if_eq VAR_STARTER_MON, 2, PokemonLeague_ChampionsRoom_EventScript_CheckStopTriggerSquirtle
-	call_if_eq VAR_STARTER_MON, 1, PokemonLeague_ChampionsRoom_EventScript_CheckStopTriggerBulbasaur
-	call_if_eq VAR_STARTER_MON, 0, PokemonLeague_ChampionsRoom_EventScript_CheckStopTriggerCharmander
+	call_if_eq VAR_RIVAL_VARIANT, 2, PokemonLeague_ChampionsRoom_EventScript_CheckStopTriggerSquirtle
+	call_if_eq VAR_RIVAL_VARIANT, 1, PokemonLeague_ChampionsRoom_EventScript_CheckStopTriggerBulbasaur
+	call_if_eq VAR_RIVAL_VARIANT, 0, PokemonLeague_ChampionsRoom_EventScript_CheckStopTriggerCharmander
 	end
 
 PokemonLeague_ChampionsRoom_EventScript_CheckStopTriggerSquirtle::
@@ -71,7 +71,7 @@ PokemonLeague_ChampionsRoom_EventScript_EnterRoom::
 	applymovement LOCALID_CHAMPIONS_ROOM_PROF_OAK, PokemonLeague_ChampionsRoom_Movement_OakEnter
 	waitmovement 0
 	delay 25
-	specialvar VAR_RESULT, GetStarterPokemon
+	specialvar VAR_RESULT, GetPlayerStarterSpecies
 	bufferspeciesname STR_VAR_1, VAR_RESULT
 	msgbox PokemonLeague_ChampionsRoom_Text_OakCongratulations
 	applymovement LOCALID_CHAMPIONS_ROOM_PROF_OAK, Common_Movement_WalkInPlaceFasterRight
@@ -100,15 +100,15 @@ PokemonLeague_ChampionsRoom_EventScript_QuestLogEnd::
 	end
 
 PokemonLeague_ChampionsRoom_EventScript_Battle::
-	call_if_eq VAR_STARTER_MON, 2, PokemonLeague_ChampionsRoom_EventScript_BattleSquirtle
-	call_if_eq VAR_STARTER_MON, 1, PokemonLeague_ChampionsRoom_EventScript_BattleBulbasaur
-	call_if_eq VAR_STARTER_MON, 0, PokemonLeague_ChampionsRoom_EventScript_BattleCharmander
+	call_if_eq VAR_RIVAL_VARIANT, 2, PokemonLeague_ChampionsRoom_EventScript_BattleSquirtle
+	call_if_eq VAR_RIVAL_VARIANT, 1, PokemonLeague_ChampionsRoom_EventScript_BattleBulbasaur
+	call_if_eq VAR_RIVAL_VARIANT, 0, PokemonLeague_ChampionsRoom_EventScript_BattleCharmander
 	return
 
 PokemonLeague_ChampionsRoom_EventScript_Rematch::
-	call_if_eq VAR_STARTER_MON, 2, PokemonLeague_ChampionsRoom_EventScript_RematchSquirtle
-	call_if_eq VAR_STARTER_MON, 1, PokemonLeague_ChampionsRoom_EventScript_RematchBulbasaur
-	call_if_eq VAR_STARTER_MON, 0, PokemonLeague_ChampionsRoom_EventScript_RematchCharmander
+	call_if_eq VAR_RIVAL_VARIANT, 2, PokemonLeague_ChampionsRoom_EventScript_RematchSquirtle
+	call_if_eq VAR_RIVAL_VARIANT, 1, PokemonLeague_ChampionsRoom_EventScript_RematchBulbasaur
+	call_if_eq VAR_RIVAL_VARIANT, 0, PokemonLeague_ChampionsRoom_EventScript_RematchCharmander
 	return
 
 PokemonLeague_ChampionsRoom_EventScript_Intro::
@@ -225,22 +225,14 @@ PokemonLeague_ChampionsRoom_Movement_RivalWatchOakEnter::
 	step_end
 
 PokemonLeague_ChampionsRoom_Text_Intro::
-	.string "{RIVAL}: Hey, {PLAYER}!\p"
-	.string "I was looking forward to seeing\n"
-	.string "you, {PLAYER}.\p"
-	.string "My rival should be strong to keep\n"
-	.string "me sharp.\p"
-	.string "While working on my POKéDEX, I\n"
-	.string "looked all over for POKéMON.\p"
-	.string "Not only that, I assembled teams\n"
-	.string "that would beat any POKéMON type.\p"
-	.string "And now…\p"
-	.string "I'm the POKéMON LEAGUE CHAMPION!\p"
-	.string "{PLAYER}!\n"
-	.string "Do you know what that means?\p"
-	.string "I'll tell you.\p"
-	.string "I am the most powerful TRAINER in\n"
-	.string "the world!$"
+    .string "{RIVAL}: Hey! Took you long\n"
+    .string "enough, {PLAYER}!\p"
+    .string "I made it here first, so I'm the\n"
+    .string "CHAMPION right now! Ha ha!\p"
+    .string "We started on the same day with\n"
+    .string "POKéMON from PROF. OAK. Let's find\l"
+    .string "out how far we've come. No holding\n"
+    .string "back!$"
 
 PokemonLeague_ChampionsRoom_Text_RematchIntro::
 	.string "{RIVAL}: Hey, {PLAYER}!\p"
@@ -261,13 +253,8 @@ PokemonLeague_ChampionsRoom_Text_RematchIntro::
 	.string "the world!$"
 
 PokemonLeague_ChampionsRoom_Text_Defeat::
-	.string "NO!\n"
-	.string "That can't be!\l"
-	.string "You beat me at my best!\p"
-	.string "After all that work to become\n"
-	.string "the LEAGUE CHAMP?\p"
-	.string "My reign is over already?\n"
-	.string "It's not fair!$"
+    .string "Whoa… I lost. But you know what?\n"
+    .string "That was the best battle ever!$"
 
 PokemonLeague_ChampionsRoom_Text_Victory::
 	.string "はーはッ！\n"
@@ -281,13 +268,11 @@ PokemonLeague_ChampionsRoom_Text_Victory::
 	.string "はーッ！　はーはッはッ！$"
 
 PokemonLeague_ChampionsRoom_Text_PostBattle::
-	.string "Why?\n"
-	.string "Why did I lose?\p"
-	.string "I never made any mistakes raising\n"
-	.string "my POKéMON…\p"
-	.string "Darn it! You're the new POKéMON\n"
-	.string "LEAGUE CHAMPION!\p"
-	.string "Although I don't like to admit it…$"
+    .string "{RIVAL}: You're the CHAMPION now,\n"
+    .string "{PLAYER}. Congrats, for real!\p"
+    .string "Hey, when you go after NOX in the\n"
+    .string "SEVII ISLANDS, I'm coming too.\l"
+    .string "Deal?$"
 
 PokemonLeague_ChampionsRoom_Text_OakPlayer::
 	.string "OAK: {PLAYER}!$"

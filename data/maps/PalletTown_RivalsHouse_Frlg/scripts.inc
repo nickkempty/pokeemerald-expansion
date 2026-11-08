@@ -287,6 +287,6 @@ PalletTown_RivalsHouse_Text_WhyWouldMonHateYouSoMuch::
 	.string "POKéMON would hate you so much?$"
 
 PalletTown_RivalsHouse_Text_LovelyAndSweetClefairy::
-	.string "“The lovely and sweet\n"
-	.string "CLEFAIRY”$"
+    .string "“The lovely and sweet\n"
+    .string "PIPPI”$"
 

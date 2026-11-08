@@ -56,18 +56,18 @@ FiveIsland_Meadow_Text_DoorNeedsTwoPasswords::
 	.string "パスワードが　2つ　いるようだ$"
 
 FiveIsland_Meadow_Text_EnteredPasswordAnotherNeeded::
-	.string "{PLAYER} entered a password.\p"
-	.string "“GOLDEEN need log.”\p"
-	.string "… …  … …  … …\p"
-	.string "Another password is needed to\n"
-	.string "open the door…$"
+    .string "{PLAYER} entered a password.\p"
+    .string "“TOSAKINTO need log.”\p"
+    .string "… …  … …  … …\p"
+    .string "Another password is needed to\n"
+    .string "open the door…$"
 
 FiveIsland_Meadow_Text_EnteredPasswordDoorOpened::
-	.string "{PLAYER} entered two passwords.\p"
-	.string "“GOLDEEN need log.”\n"
-	.string "“Yes, nah, CHANSEY.”\p"
-	.string "… …  … …  … …\p"
-	.string "The WAREHOUSE's door opened!$"
+    .string "{PLAYER} entered two passwords.\p"
+    .string "“TOSAKINTO need log.”\n"
+    .string "“Yes, nah, LUCKY.”\p"
+    .string "… …  … …  … …\p"
+    .string "The WAREHOUSE's door opened!$"
 
 FiveIsland_Meadow_Text_WarehouseDoorAlreadyOpen::
 	.string "The WAREHOUSE's door is already\n"

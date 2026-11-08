@@ -4,8 +4,6 @@ SevenIsland_Mart_Frlg_MapScripts::
 SevenIsland_Mart_EventScript_Clerk::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
 	pokemart SevenIsland_Mart_Items
 	msgbox gText_PleaseComeAgain
 	release
@@ -22,6 +20,8 @@ SevenIsland_Mart_Items::
 	.2byte ITEM_FULL_HEAL
 	.2byte ITEM_ESCAPE_ROPE
 	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_EXP_SHARE
+	.2byte ITEM_GENDER_SWAP
 	.2byte ITEM_NONE
 	release
 	end

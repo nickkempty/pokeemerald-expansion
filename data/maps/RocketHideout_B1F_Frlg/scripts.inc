@@ -71,12 +71,12 @@ RocketHideout_B1F_Text_Grunt1Defeat::
 	.string "Beaten!$"
 
 RocketHideout_B1F_Text_Grunt1PostBattle::
-	.string "Blast it… You're dissing TEAM\n"
-	.string "ROCKET, aren't you?$"
+    .string "Blast it… You're dissing TEAM\n"
+    .string "ECLIPSE, aren't you?$"
 
 RocketHideout_B1F_Text_Grunt2Intro::
-	.string "You broke into TEAM ROCKET's\n"
-	.string "operation? What nerve!$"
+    .string "You broke into TEAM ECLIPSE's\n"
+    .string "operation? What nerve!$"
 
 RocketHideout_B1F_Text_Grunt2Defeat::
 	.string "Boom!$"

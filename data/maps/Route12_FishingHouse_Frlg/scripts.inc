@@ -114,34 +114,34 @@ Route12_FishingHouse_Text_ReceivedSuperRod::
 	.string "the FISHING GURU's brother.$"
 
 Route12_FishingHouse_Text_IfYouCatchBigMagikarpShowMe::
-	.string "Fishing is a way of life!\n"
-	.string "It is like the finest poetry.\p"
-	.string "From the seas to rivers, go out\n"
-	.string "and land the big one, my friend.\p"
-	.string "Now, I have a request.\p"
-	.string "If you catch a big MAGIKARP \n"
-	.string "with that ROD, I want to see it.\p"
-	.string "As much as I love to fish, I also\n"
-	.string "love seeing gigantic MAGIKARP.$"
+    .string "Fishing is a way of life!\n"
+    .string "It is like the finest poetry.\p"
+    .string "From the seas to rivers, go out\n"
+    .string "and land the big one, my friend.\p"
+    .string "Now, I have a request.\p"
+    .string "If you catch a big KOIKING \n"
+    .string "with that ROD, I want to see it.\p"
+    .string "As much as I love to fish, I also\n"
+    .string "love seeing gigantic KOIKING.$"
 
 Route12_FishingHouse_Text_OhThatsDisappointing::
 	.string "Oh…\n"
 	.string "That's so disappointing…$"
 
 Route12_FishingHouse_Text_TryFishingBringMeMagikarp::
-	.string "Hello there, {PLAYER}!\n"
-	.string "Have you been fishing?\p"
-	.string "Try fishing with the SUPER ROD in\n"
-	.string "any body of water.\p"
-	.string "You'll find different POKéMON in\n"
-	.string "different places.\p"
-	.string "Oh, and don't forget to bring me\n"
-	.string "gigantic MAGIKARP.$"
+    .string "Hello there, {PLAYER}!\n"
+    .string "Have you been fishing?\p"
+    .string "Try fishing with the SUPER ROD in\n"
+    .string "any body of water.\p"
+    .string "You'll find different POKéMON in\n"
+    .string "different places.\p"
+    .string "Oh, and don't forget to bring me\n"
+    .string "gigantic KOIKING.$"
 
 Route12_FishingHouse_Text_OhMagikarpAllowMeToSee::
-	.string "Oh? {PLAYER}?\n"
-	.string "Why, if it isn't a MAGIKARP!\p"
-	.string "Allow me to see it, quick!$"
+    .string "Oh? {PLAYER}?\n"
+    .string "Why, if it isn't a KOIKING!\p"
+    .string "Allow me to see it, quick!$"
 
 Route12_FishingHouse_Text_WhoaXSizeTakeThis::
 	.string "… … …Whoa!\n"
@@ -168,8 +168,8 @@ Route12_FishingHouse_Text_HmmXSizeDoesntMeasureUp::
 	.string "{STR_VAR_3} one you brought before.$"
 
 Route12_FishingHouse_Text_DoesntLookLikeMagikarp::
-	.string "Uh… That doesn't look much like\n"
-	.string "a MAGIKARP.$"
+    .string "Uh… That doesn't look much like\n"
+    .string "a KOIKING.$"
 
 Route12_FishingHouse_Text_NoRoomForGift::
 	.string "Oh, no!\p"
@@ -177,9 +177,9 @@ Route12_FishingHouse_Text_NoRoomForGift::
 	.string "no room for it.$"
 
 Route12_FishingHouse_Text_MostGiganticMagikarpXSize::
-	.string "The most gigantic MAGIKARP\n"
-	.string "I have ever witnessed…\p"
-	.string "{STR_VAR_3}!$"
+    .string "The most gigantic KOIKING\n"
+    .string "I have ever witnessed…\p"
+    .string "{STR_VAR_3} inches!$"
 
 Route12_FishingHouse_Text_BlankChartOfSomeSort::
 	.string "It's a blank chart of some sort.\p"

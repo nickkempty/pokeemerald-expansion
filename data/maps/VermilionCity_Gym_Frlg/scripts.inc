@@ -229,6 +229,8 @@ VermilionCity_Gym_EventScript_GiveTM34::
 	goto_if_eq VAR_RESULT, FALSE, VermilionCity_Gym_EventScript_NoRoomForTM34
 	giveitem_msg VermilionCity_Gym_Text_ReceivedTM34FromLtSurge, ITEM_TM34
 	setflag FLAG_GOT_TM34_FROM_SURGE
+	setvar VAR_0x8004, 2
+	call EventScript_ZumoGymBonusTM
 	msgbox VermilionCity_Gym_Text_ExplainTM34
 	release
 	end

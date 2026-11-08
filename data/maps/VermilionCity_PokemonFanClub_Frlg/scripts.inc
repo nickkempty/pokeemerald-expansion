@@ -128,21 +128,21 @@ VermilionCity_PokemonFanClub_Text_PikachuTwiceAsCute::
 	.string "that one!$"
 
 VermilionCity_PokemonFanClub_Text_AdoreMySeel::
-	.string "I just adore my SEEL!\n"
-	.string "It's so lovable!\p"
-	.string "It squeals, “Kyuuuh,” when I\n"
-	.string "hug it!$"
+    .string "I just adore my PAWOU!\n"
+    .string "It's so lovable!\p"
+    .string "It squeals, “Kyuuuh,” when I\n"
+    .string "hug it!$"
 
 VermilionCity_PokemonFanClub_Text_SeelFarMoreAttractive::
-	.string "Oh, dear!\p"
-	.string "My SEEL is far more attractive.\n"
-	.string "By double, I would say.$"
+    .string "Oh, dear!\p"
+    .string "My PAWOU is far more attractive.\n"
+    .string "By double, I would say.$"
 
 VermilionCity_PokemonFanClub_Text_Pikachu::
 	.string "PIKACHU: Chu! Pikachu!$"
 
 VermilionCity_PokemonFanClub_Text_Seel::
-	.string "SEEL: Kyuoo!$"
+    .string "PAWOU: Kyuoo!$"
 
 VermilionCity_PokemonFanClub_Text_DidYouComeToHearAboutMyMons::
 	.string "I chair the POKéMON Fan Club!\p"
@@ -155,34 +155,34 @@ VermilionCity_PokemonFanClub_Text_DidYouComeToHearAboutMyMons::
 	.string "my POKéMON?$"
 
 VermilionCity_PokemonFanClub_Text_ChairmansStory::
-	.string "Good!\n"
-	.string "Then listen up!\p"
-	.string "My favorite RAPIDASH…\p"
-	.string "It's…cute…lovely…smart… \n"
-	.string "plus…amazing…you think so?…\l"
-	.string "oh yes…it's…stunning…\l"
-	.string "kindly…love it!\p"
-	.string "Hug it…when…sleeping…warm\n"
-	.string "and cuddly…spectacular…\l"
-	.string "ravishing…\l"
-	.string "…Oops! Look at the time!\l"
-	.string "I kept you too long!\p"
-	.string "Thanks for hearing me out!\n"
-	.string "I want you to have this!$"
+    .string "Good!\n"
+    .string "Then listen up!\p"
+    .string "My favorite GALLOP…\p"
+    .string "It's…cute…lovely…smart… \n"
+    .string "plus…amazing…you think so?…\l"
+    .string "oh yes…it's…stunning…\l"
+    .string "kindly…love it!\p"
+    .string "Hug it…when…sleeping…warm\n"
+    .string "and cuddly…spectacular…\l"
+    .string "ravishing…\l"
+    .string "…Oops! Look at the time!\l"
+    .string "I kept you too long!\p"
+    .string "Thanks for hearing me out!\n"
+    .string "I want you to have this!$"
 
 VermilionCity_PokemonFanClub_Text_ReceivedBikeVoucherFromChairman::
 	.string "{PLAYER} received a BIKE VOUCHER\n"
 	.string "from the CHAIRMAN.$"
 
 VermilionCity_PokemonFanClub_Text_ExplainBikeVoucher::
-	.string "Take that BIKE VOUCHER to the\n"
-	.string "BIKE SHOP in CERULEAN CITY.\p"
-	.string "Exchange that for a BICYCLE\n"
-	.string "free of charge!\p"
-	.string "Don't worry, my favorite FEAROW\n"
-	.string "will FLY me anywhere I need to go.\p"
-	.string "So, I have no need for a BICYCLE.\p"
-	.string "I hope you like cycling!$"
+    .string "Take that BIKE VOUCHER to the\n"
+    .string "BIKE SHOP in CERULEAN CITY.\p"
+    .string "Exchange that for a BICYCLE\n"
+    .string "free of charge!\p"
+    .string "Don't worry, my favorite ONIDRILL\n"
+    .string "will FLY me anywhere I need to go.\p"
+    .string "So, I have no need for a BICYCLE.\p"
+    .string "I hope you like cycling!$"
 
 VermilionCity_PokemonFanClub_Text_ComeBackToHearStory::
 	.string "Oh. Come back when you want to\n"

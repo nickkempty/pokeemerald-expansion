@@ -24,9 +24,9 @@ SSAnne_1F_Room3_Text_CruiseIsElegantAndCozy::
 	.string "cozy!$"
 
 SSAnne_1F_Room3_Text_AlwaysTravelWithWigglytuff::
-	.string "I always travel with WIGGLYTUFF.\n"
-	.string "I never leave home without it.$"
+    .string "I always travel with PUKURIN.\n"
+    .string "I never leave home without it.$"
 
 SSAnne_1F_Room3_Text_Wigglytuff::
-	.string "WIGGLYTUFF: Puup pupuu!$"
+    .string "PUKURIN: Puup pupuu!$"
 

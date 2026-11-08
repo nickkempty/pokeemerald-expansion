@@ -12,8 +12,6 @@ VermilionCity_Mart_EventScript_BaldingMan::
 VermilionCity_Mart_EventScript_Clerk::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
 	pokemart VermilionCity_Mart_Items
 	msgbox gText_PleaseComeAgain
 	release
@@ -28,19 +26,21 @@ VermilionCity_Mart_Items::
 	.2byte ITEM_AWAKENING
 	.2byte ITEM_ICE_HEAL
 	.2byte ITEM_REPEL
+	.2byte ITEM_EXP_SHARE
+	.2byte ITEM_GENDER_SWAP
 	.2byte ITEM_NONE
 	release
 	end
 
 VermilionCity_Mart_Text_TeamRocketAreWickedPeople::
-	.string "There are wicked people who will\n"
-	.string "use POKéMON for criminal acts.\p"
-	.string "TEAM ROCKET traffics in rare\n"
-	.string "POKéMON, for example.\p"
-	.string "They also abandon POKéMON that\n"
-	.string "they consider unpopular or useless.\p"
-	.string "That's the sort of horrid people\n"
-	.string "they are, TEAM ROCKET.$"
+    .string "There are wicked people who will\n"
+    .string "use POKéMON for criminal acts.\p"
+    .string "TEAM ECLIPSE traffics in rare\n"
+    .string "POKéMON, for example.\p"
+    .string "They also abandon POKéMON that\n"
+    .string "they consider unpopular or useless.\p"
+    .string "That's the sort of horrid people\n"
+    .string "they are, TEAM ECLIPSE.$"
 
 VermilionCity_Mart_Text_MonsGoodOrBadDependingOnTrainer::
 	.string "I think POKéMON can be good or\n"

@@ -64,10 +64,10 @@ Route14_Text_DonaldDefeat::
 	.string "Why'd I lose?$"
 
 Route14_Text_DonaldPostBattle::
-	.string "Well, the winged mirages are the\n"
-	.string "legendary bird POKéMON.\p"
-	.string "There are three of them: ARTICUNO,\n"
-	.string "ZAPDOS, and MOLTRES.$"
+    .string "Well, the winged mirages are the\n"
+    .string "legendary bird POKéMON.\p"
+    .string "There are three of them: FREEZER,\n"
+    .string "THUNDER, and FIRE.$"
 
 Route14_Text_BennyIntro::
 	.string "I'm not into it, but okay.\n"

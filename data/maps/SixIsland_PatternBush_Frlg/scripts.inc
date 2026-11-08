@@ -113,8 +113,8 @@ SixIsland_PatternBush_Text_GarretDefeat::
 	.string "Isn't my POKéMON awesome?$"
 
 SixIsland_PatternBush_Text_GarretPostBattle::
-	.string "There's a girl near the BUSH who\n"
-	.string "measures HERACROSS for TRAINERS.$"
+    .string "There's a girl near the BUSH who\n"
+    .string "measures HERACROS for TRAINERS.$"
 
 SixIsland_PatternBush_Text_JonahIntro::
 	.string "You know, it just doesn't feel right\n"

@@ -99,8 +99,6 @@ TwoIsland_EventScript_ClerkShopInitial::
 	end
 
 TwoIsland_EventScript_ClerkShopSkipIntro::
-	message gText_HowMayIServeYou
-	waitmessage
 	goto_if_eq VAR_MAP_SCENE_TWO_ISLAND, 4, TwoIsland_EventScript_ShopExpanded3
 	goto_if_eq VAR_MAP_SCENE_TWO_ISLAND, 3, TwoIsland_EventScript_ShopExpanded2
 	goto_if_eq VAR_MAP_SCENE_TWO_ISLAND, 2, TwoIsland_EventScript_ShopExpanded1
@@ -117,6 +115,8 @@ TwoIsland_EventScript_ShopInitial::
 TwoIsland_Items_ShopInitial::
 	.2byte ITEM_GREAT_BALL
 	.2byte ITEM_FRESH_WATER
+	.2byte ITEM_EXP_SHARE
+	.2byte ITEM_GENDER_SWAP
 	.2byte ITEM_NONE
 	release
 	end
@@ -133,6 +133,8 @@ TwoIsland_Items_ShopExpanded1::
 	.2byte ITEM_GREAT_BALL
 	.2byte ITEM_SODA_POP
 	.2byte ITEM_FRESH_WATER
+	.2byte ITEM_EXP_SHARE
+	.2byte ITEM_GENDER_SWAP
 	.2byte ITEM_NONE
 	release
 	end
@@ -151,6 +153,8 @@ TwoIsland_Items_ShopExpanded2::
 	.2byte ITEM_SODA_POP
 	.2byte ITEM_FRESH_WATER
 	.2byte ITEM_MOOMOO_MILK
+	.2byte ITEM_EXP_SHARE
+	.2byte ITEM_GENDER_SWAP
 	.2byte ITEM_NONE
 	release
 	end
@@ -171,6 +175,8 @@ TwoIsland_Items_ShopExpanded3::
 	.2byte ITEM_FRESH_WATER
 	.2byte ITEM_MOOMOO_MILK
 	.2byte ITEM_LAVA_COOKIE
+	.2byte ITEM_EXP_SHARE
+	.2byte ITEM_GENDER_SWAP
 	.2byte ITEM_NONE
 	release
 	end

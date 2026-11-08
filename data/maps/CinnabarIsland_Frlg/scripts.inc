@@ -1,11 +1,21 @@
 CinnabarIsland_Frlg_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, CinnabarIsland_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, CinnabarIsland_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, CinnabarIsland_OnFrame
 	.byte 0
 
+
+@ Zumo Edition: after Giovanni wakes GROUDON a sand causeway (UNION ROAD) rises south of the island
+CinnabarIsland_OnLoad::
+	goto_if_unset FLAG_HX_UNION_ROAD_OPEN, CinnabarIsland_OnLoad_End
+	special HxRaiseCinnabarCauseway
+CinnabarIsland_OnLoad_End::
+	end
+
 CinnabarIsland_OnTransition::
 	setworldmapflag FLAG_WORLD_MAP_CINNABAR_ISLAND
 	call CinnabarIsland_EventScript_CheckUnlockGym
+	call_if_set FLAG_SYS_GAME_CLEAR, CinnabarIsland_EventScript_ZkUnlockSevii
 	call_if_eq VAR_MAP_SCENE_CINNABAR_ISLAND, 1, CinnabarIsland_EventScript_ReadyObjectsSailToOneIsland
 	call_if_eq VAR_MAP_SCENE_CINNABAR_ISLAND, 3, CinnabarIsland_EventScript_ReadyObjectsReturnFromSeviiIslands
 	call_if_eq VAR_MAP_SCENE_CINNABAR_ISLAND_2, 1, CinnabarIsland_EventScript_ReadyObjectsSailToOneIslandFromPokeCenter
@@ -350,6 +360,15 @@ CinnabarIsland_EventScript_GymSign::
 	msgbox CinnabarIsland_Text_GymSign
 	releaseall
 	end
+
+@ Zumo Edition: the SEVII ISLANDS story is postgame (after the UNION LEAGUE)
+CinnabarIsland_EventScript_ZkUnlockSevii::
+	goto_if_ne VAR_MAP_SCENE_CINNABAR_ISLAND, 0, CinnabarIsland_EventScript_ZkUnlockSeviiEnd
+	goto_if_unset FLAG_BADGE07_GET, CinnabarIsland_EventScript_ZkUnlockSeviiEnd
+	setvar VAR_MAP_SCENE_CINNABAR_ISLAND, 1
+	clearflag FLAG_HIDE_CINNABAR_BILL
+CinnabarIsland_EventScript_ZkUnlockSeviiEnd::
+	return
 
 CinnabarIsland_Text_DoorIsLocked::
 	.string "The door is locked…$"

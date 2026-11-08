@@ -69,14 +69,14 @@ Route17_Text_BillyPostBattle::
 	.string "Are you looking for adventure?$"
 
 Route17_Text_NikolasIntro::
-	.string "Let VOLTORB electrify you!$"
+    .string "Let BIRIRIDAMA electrify you!$"
 
 Route17_Text_NikolasDefeat::
 	.string "Grounded out!$"
 
 Route17_Text_NikolasPostBattle::
-	.string "I got my VOLTORB at the abandoned\n"
-	.string "POWER PLANT.$"
+    .string "I got my BIRIRIDAMA at the\n"
+    .string "abandoned POWER PLANT.$"
 
 Route17_Text_ZeekIntro::
 	.string "I leveled up my POKéMON, but it\n"

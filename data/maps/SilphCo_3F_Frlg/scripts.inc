@@ -53,16 +53,16 @@ SilphCo_3F_Text_GruntPostBattle::
 	.string "a CARD KEY!$"
 
 SilphCo_3F_Text_JoseIntro::
-	.string "I support TEAM ROCKET more than\n"
-	.string "I support SILPH CO.!$"
+    .string "I support TEAM ECLIPSE more than\n"
+    .string "I support SILPH CO.!$"
 
 SilphCo_3F_Text_JoseDefeat::
 	.string "You really got me!$"
 
 SilphCo_3F_Text_JosePostBattle::
-	.string "Humph…\p"
-	.string "TEAM ROCKET said that if I helped\n"
-	.string "them, they'd let me study POKéMON.$"
+    .string "Humph…\p"
+    .string "TEAM ECLIPSE said that if I helped\n"
+    .string "them, they'd let me study POKéMON.$"
 
 SilphCo_3F_Text_FloorSign::
 	.string "SILPH CO. HEAD OFFICE\n"

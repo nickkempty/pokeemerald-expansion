@@ -98,9 +98,9 @@ Text_MimicTaughtFemale::
 	.string "It's a scream!$"
 
 SaffronCity_CopycatsHouse_2F_Text_Doduo::
-	.string "DODUO: Giiih!\p"
-	.string "PRETTY MIRROR LOOK AT ME,\n"
-	.string "SEE HOW PRETTY I CAN BE?$"
+    .string "DODO: Giiih!\p"
+    .string "PRETTY MIRROR LOOK AT ME,\n"
+    .string "SEE HOW PRETTY I CAN BE?$"
 
 SaffronCity_CopycatsHouse_2F_Text_RareMonOnlyDoll::
 	.string "This is a rare POKéMON!\n"
@@ -111,9 +111,11 @@ SaffronCity_CopycatsHouse_2F_Text_MarioWearingABucket::
 	.string "on his head!$"
 
 SaffronCity_CopycatsHouse_2F_Text_MySecrets::
-	.string "…\p"
-	.string "My Secrets!\p"
-	.string "Skill: Mimicry!\n"
-	.string "Hobby: Collecting dolls!\l"
-	.string "Favorite POKéMON: CLEFAIRY!$"
+    .string "…\p"
+    .string "My Secrets!\p"
+    .string "Skill: Mimicry!\n"
+    .string "Hobby: Collecting dolls!\l"
+    .string "Favorite POKéMON: PIPPI!$"
 
+SaffronCity_CopycatsHouse_2F_Text_HuhCantSee::
+    .string "？　みえないぞ‥$"

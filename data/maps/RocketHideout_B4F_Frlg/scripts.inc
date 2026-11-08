@@ -15,24 +15,42 @@ RocketHideout_B4F_EventScript_CountGruntDefeated::
 	addvar NUM_DOOR_GRUNTS_DEFEATED, 1
 	return
 
+@ Zumo: ZUMO guards NOX's M-CORE lab (he still believes NOX)
 RocketHideout_B4F_EventScript_Giovanni::
 	lock
 	faceplayer
-	famechecker FAMECHECKER_GIOVANNI, 0
-	message RocketHideout_B4F_Text_GiovanniIntro
-	waitmessage
-	playbgm MUS_RG_ENCOUNTER_ROCKET, 0
-	waitbuttonpress
-	trainerbattle_no_intro TRAINER_BOSS_GIOVANNI, RocketHideout_B4F_Text_GiovanniDefeat
-	msgbox RocketHideout_B4F_Text_GiovanniPostBattle
-	fadescreen FADE_TO_BLACK
+	playbgm MUS_RG_ENCOUNTER_RIVAL, 0
+	msgbox RocketHideout_B4F_Text_ZumoIntro
+	goto_if_eq VAR_RIVAL_VARIANT, 2, RocketHideout_B4F_EventScript_ZumoSquirtle
+	goto_if_eq VAR_RIVAL_VARIANT, 1, RocketHideout_B4F_EventScript_ZumoBulbasaur
+	trainerbattle_no_intro TRAINER_ZK_HIDEOUT_RIVAL_CHARMANDER, RocketHideout_B4F_Text_ZumoDefeat
+	goto RocketHideout_B4F_EventScript_ZumoAfter
+
+RocketHideout_B4F_EventScript_ZumoSquirtle::
+	trainerbattle_no_intro TRAINER_ZK_HIDEOUT_RIVAL_SQUIRTLE, RocketHideout_B4F_Text_ZumoDefeat
+	goto RocketHideout_B4F_EventScript_ZumoAfter
+
+RocketHideout_B4F_EventScript_ZumoBulbasaur::
+	trainerbattle_no_intro TRAINER_ZK_HIDEOUT_RIVAL_BULBASAUR, RocketHideout_B4F_Text_ZumoDefeat
+	goto RocketHideout_B4F_EventScript_ZumoAfter
+
+RocketHideout_B4F_EventScript_ZumoAfter::
+	msgbox RocketHideout_B4F_Text_ZumoAfter
 	closemessage
+	fadescreen FADE_TO_BLACK
 	removeobject LOCALID_HIDEOUT_GIOVANNI
+	setflag FLAG_ZK_HIDEOUT_ZUMO_GONE
 	addobject LOCALID_SILPH_SCOPE
 	clearflag FLAG_HIDE_SILPH_SCOPE
 	setflag FLAG_HIDE_CELADON_ROCKETS
-	famechecker FAMECHECKER_GIOVANNI, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
 	fadescreen FADE_FROM_BLACK
+	fadedefaultbgm
+	playfanfare MUS_RG_OBTAIN_KEY_ITEM
+	message RocketHideout_B4F_Text_FoundReport
+	waitmessage
+	waitfanfare
+	msgbox RocketHideout_B4F_Text_Report
+	setflag FLAG_ZK_READ_MCORE_LOG
 	release
 	end
 
@@ -121,58 +139,96 @@ RocketHideout_B4F_EventScript_RemoveBarrier::
 	return
 
 RocketHideout_B4F_Text_GiovanniIntro::
-	.string "So! I must say, I am impressed you\n"
-	.string "got here.\p"
-	.string "TEAM ROCKET captures POKéMON from\n"
-	.string "around the world.\p"
-	.string "They're important tools for keeping\n"
-	.string "our criminal enterprise going.\p"
-	.string "I am the leader, GIOVANNI!\p"
-	.string "For your insolence, you will feel a\n"
-	.string "world of pain!$"
+    .string "So, you're the kid who keeps\n"
+    .string "getting in my way.\p"
+    .string "I am NOX, leader of TEAM ECLIPSE.\n"
+    .string "Look around. Every cage here holds\l"
+    .string "a POKéMON the storm brought to\n"
+    .string "KANTO.\p"
+    .string "The sea took everything from me\n"
+    .string "once. Soon, with my WAVE CALLER,\l"
+    .string "the sea will obey me instead!$"
 
 RocketHideout_B4F_Text_GiovanniDefeat::
-	.string "WHAT!\n"
-	.string "This can't be!$"
+    .string "Hmph… The current turned against\n"
+    .string "me.$"
 
 RocketHideout_B4F_Text_GiovanniPostBattle::
-	.string "I see that you raise POKéMON with\n"
-	.string "utmost care.\p"
-	.string "A child like you would never\n"
-	.string "understand what I hope to achieve.\p"
-	.string "I shall step aside this time!\p"
-	.string "I hope we meet again…$"
+    .string "Keep this hideout and its cages.\n"
+    .string "I'm done here.\p"
+    .string "The WAVE CALLER only needs one\n"
+    .string "more piece of technology, and\l"
+    .string "SILPH CO. has it. We'll meet again,\n"
+    .string "kid.$"
 
 RocketHideout_B4F_Text_Grunt2Intro::
-	.string "I know you!\n"
-	.string "You ruined our plans at MT. MOON!$"
+    .string "The boss is busy! Get lost, kid!$"
 
 RocketHideout_B4F_Text_Grunt2Defeat::
 	.string "Burned again!$"
 
 RocketHideout_B4F_Text_Grunt2PostBattle::
-	.string "Do you have something against TEAM\n"
-	.string "ROCKET?$"
+    .string "Those POKéMON from JOHTO and HOENN\n"
+    .string "fetch a high price… Ugh, I lost.$"
 
 RocketHideout_B4F_Text_Grunt3Intro::
-	.string "How can you not see the beauty of\n"
-	.string "our evil?$"
+    .string "The LIFT KEY? You'll never get it!$"
 
 RocketHideout_B4F_Text_Grunt3Defeat::
 	.string "Ayaya!$"
 
 RocketHideout_B4F_Text_Grunt3PostBattle::
-	.string "BOSS!\n"
-	.string "I'm sorry I failed you!$"
+    .string "Fine, take the key. You still can't\n"
+    .string "stop NOX!$"
 
 RocketHideout_B4F_Text_Grunt1Intro::
-	.string "The elevator doesn't work?\n"
-	.string "Who has the LIFT KEY?$"
+    .string "You can't free these caged\n"
+    .string "POKéMON! They belong to TEAM\l"
+    .string "ECLIPSE now!$"
 
 RocketHideout_B4F_Text_Grunt1Defeat::
 	.string "No!$"
 
 RocketHideout_B4F_Text_Grunt1PostBattle::
-	.string "Oh, no!\n"
-	.string "I dropped the LIFT KEY!$"
+    .string "The boss lost his ship and crew in a\n"
+    .string "storm long ago. He says the sea\l"
+    .string "owes him.$"
 
+
+RocketHideout_B4F_Text_ZumoIntro::
+    .string "{RIVAL}: {PLAYER}?!\n"
+    .string "What are you doing down here?\p"
+    .string "NOX told me everything. A huge\n"
+    .string "storm is coming from the sea.\p"
+    .string "Only his M-CORE can protect all\n"
+    .string "the POKéMON that washed up in\l"
+    .string "KANTO. So I'm helping him!\p"
+    .string "Smell ya later… after I beat you!$"
+
+RocketHideout_B4F_Text_ZumoDefeat::
+    .string "Tch… Why do you always win?$"
+
+RocketHideout_B4F_Text_ZumoAfter::
+    .string "{RIVAL}: …Fine.\p"
+    .string "You think NOX is lying? Then read\n"
+    .string "this. I found it on his desk.\p"
+    .string "I'm going to ask him myself!$"
+
+RocketHideout_B4F_Text_FoundReport::
+    .string "{PLAYER} picked up NOX's\n"
+    .string "lab report!$"
+
+RocketHideout_B4F_Text_Report::
+    .string "M-CORE PROJECT - REPORT 7\p"
+    .string "The M-CORE is complete. Its psychic\n"
+    .string "waves come from SUBJECT M2.\p"
+    .string "SUBJECT M2 broke out of its cage\n"
+    .string "and fled toward ROCK TUNNEL.\p"
+    .string "TEAM MAGMA will bring the RED ORB\n"
+    .string "by sea to VERMILION on the\l"
+    .string "S.S. ANNE.\p"
+    .string "PHASE 2: amplify the M-CORE at\n"
+    .string "SILPH CO. in SAFFRON.\p"
+    .string "PHASE 3: wake the giant sleeping\n"
+    .string "under the sea south of CINNABAR.\p"
+    .string "- NOX$"

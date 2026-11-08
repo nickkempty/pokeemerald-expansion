@@ -77,8 +77,8 @@ SilphCo_9F_Text_EdPostBattle::
 	.string "Think about type advantages.$"
 
 SilphCo_9F_Text_Grunt2Intro::
-	.string "I am one of the four ROCKET\n"
-	.string "BROTHERS!$"
+    .string "I am one of the four ECLIPSE\n"
+    .string "BROTHERS!$"
 
 SilphCo_9F_Text_Grunt2Defeat::
 	.string "Warg!\n"

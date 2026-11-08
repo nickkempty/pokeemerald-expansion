@@ -330,8 +330,7 @@ PalletTown_ProfessorOaksLab_EventScript_RivalApproachForBattleSquirtleRight::
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_RivalBattleSquirtle::
-	trainerbattle_earlyrival TRAINER_RIVAL_OAKS_LAB_SQUIRTLE, RIVAL_BATTLE_TUTORIAL, PalletTown_ProfessorOaksLab_Text_RivalDefeat, Text_RivalVictory
-	goto PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle
+	goto PalletTown_ProfessorOaksLab_EventScript_RivalBattleByVariant
 	end
 
 PalletTown_ProfessorOaksLab_Movement_RivalApproachForBattleSquirtleLeft::
@@ -383,8 +382,7 @@ PalletTown_ProfessorOaksLab_EventScript_RivalApproachForBattleCharmanderRight::
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_RivalBattleCharmander::
-	trainerbattle_earlyrival TRAINER_RIVAL_OAKS_LAB_CHARMANDER, RIVAL_BATTLE_TUTORIAL, PalletTown_ProfessorOaksLab_Text_RivalDefeat, Text_RivalVictory
-	goto PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle
+	goto PalletTown_ProfessorOaksLab_EventScript_RivalBattleByVariant
 	end
 
 PalletTown_ProfessorOaksLab_Movement_ApproachForBattleCharmanderLeft::
@@ -439,8 +437,7 @@ PalletTown_ProfessorOaksLab_EventScript_RivalApproachForBattleBulbasaurRight::
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_RivalBattleBulbasaur::
-	trainerbattle_earlyrival TRAINER_RIVAL_OAKS_LAB_BULBASAUR, RIVAL_BATTLE_TUTORIAL, PalletTown_ProfessorOaksLab_Text_RivalDefeat, Text_RivalVictory
-	goto PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle
+	goto PalletTown_ProfessorOaksLab_EventScript_RivalBattleByVariant
 	end
 
 PalletTown_ProfessorOaksLab_Movement_RivalApproachForBattleBulbasaurLeft::
@@ -463,6 +460,23 @@ PalletTown_ProfessorOaksLab_Movement_RivalApproachForBattleBulbasaurRight::
 	walk_down
 	walk_down
 	step_end
+
+PalletTown_ProfessorOaksLab_EventScript_RivalBattleByVariant::
+	goto_if_eq VAR_RIVAL_VARIANT, 1, PalletTown_ProfessorOaksLab_EventScript_RivalBattleVariantBulbasaur
+	goto_if_eq VAR_RIVAL_VARIANT, 2, PalletTown_ProfessorOaksLab_EventScript_RivalBattleVariantSquirtle
+	trainerbattle_earlyrival TRAINER_RIVAL_OAKS_LAB_CHARMANDER, RIVAL_BATTLE_HEAL_AFTER, PalletTown_ProfessorOaksLab_Text_RivalDefeat, Text_RivalVictory
+	goto PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle
+	end
+
+PalletTown_ProfessorOaksLab_EventScript_RivalBattleVariantBulbasaur::
+	trainerbattle_earlyrival TRAINER_RIVAL_OAKS_LAB_BULBASAUR, RIVAL_BATTLE_HEAL_AFTER, PalletTown_ProfessorOaksLab_Text_RivalDefeat, Text_RivalVictory
+	goto PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle
+	end
+
+PalletTown_ProfessorOaksLab_EventScript_RivalBattleVariantSquirtle::
+	trainerbattle_earlyrival TRAINER_RIVAL_OAKS_LAB_SQUIRTLE, RIVAL_BATTLE_HEAL_AFTER, PalletTown_ProfessorOaksLab_Text_RivalDefeat, Text_RivalVictory
+	goto PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle
+	end
 
 PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle::
 	special HealPlayerParty
@@ -1080,29 +1094,46 @@ PalletTown_ProfessorOaksLab_EventScript_BulbasaurBall::
 PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice::
 	applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceRight
 	waitmovement 0
-	showmonpic PLAYER_STARTER_SPECIES, 10, 3
 	textcolor NPC_TEXT_COLOR_MALE
-	goto_if_eq PLAYER_STARTER_NUM, 0, PalletTown_ProfessorOaksLab_EventScript_ConfirmBulbasaur
-	goto_if_eq PLAYER_STARTER_NUM, 1, PalletTown_ProfessorOaksLab_EventScript_ConfirmSquirtle
-	goto_if_eq PLAYER_STARTER_NUM, 2, PalletTown_ProfessorOaksLab_EventScript_ConfirmCharmander
+	message PalletTown_ProfessorOaksLab_Text_WhichMonInBall
+	waitmessage
+	goto_if_eq PLAYER_STARTER_NUM, 0, PalletTown_ProfessorOaksLab_EventScript_StarterMenuGrass
+	goto_if_eq PLAYER_STARTER_NUM, 1, PalletTown_ProfessorOaksLab_EventScript_StarterMenuWater
+	goto PalletTown_ProfessorOaksLab_EventScript_StarterMenuFire
 	end
 
-PalletTown_ProfessorOaksLab_EventScript_ConfirmBulbasaur::
-	msgbox PalletTown_ProfessorOaksLab_Text_OakChoosingBulbasaur, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, PalletTown_ProfessorOaksLab_EventScript_ChoseStarter
-	goto_if_eq VAR_RESULT, NO, PalletTown_ProfessorOaksLab_EventScript_DeclinedStarter
+PalletTown_ProfessorOaksLab_EventScript_StarterMenuGrass::
+	multichoice 18, 0, MULTICHOICE_STARTER_GRASS, FALSE
+	goto PalletTown_ProfessorOaksLab_EventScript_HandleStarterMenu
 	end
 
-PalletTown_ProfessorOaksLab_EventScript_ConfirmSquirtle::
-	msgbox PalletTown_ProfessorOaksLab_Text_OakChoosingSquirtle, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, PalletTown_ProfessorOaksLab_EventScript_ChoseStarter
-	goto_if_eq VAR_RESULT, NO, PalletTown_ProfessorOaksLab_EventScript_DeclinedStarter
+PalletTown_ProfessorOaksLab_EventScript_StarterMenuWater::
+	multichoice 18, 0, MULTICHOICE_STARTER_WATER, FALSE
+	goto PalletTown_ProfessorOaksLab_EventScript_HandleStarterMenu
 	end
 
-PalletTown_ProfessorOaksLab_EventScript_ConfirmCharmander::
-	msgbox PalletTown_ProfessorOaksLab_Text_OakChoosingCharmander, MSGBOX_YESNO
+PalletTown_ProfessorOaksLab_EventScript_StarterMenuFire::
+	multichoice 18, 0, MULTICHOICE_STARTER_FIRE, FALSE
+	goto PalletTown_ProfessorOaksLab_EventScript_HandleStarterMenu
+	end
+
+PalletTown_ProfessorOaksLab_EventScript_HandleStarterMenu::
+	goto_if_gt VAR_RESULT, 2, PalletTown_ProfessorOaksLab_EventScript_CancelStarterMenu
+	copyvar VAR_PLAYER_STARTER_GEN, VAR_RESULT
+	copyvar VAR_0x8004, PLAYER_STARTER_NUM
+	copyvar VAR_0x8005, VAR_RESULT
+	specialvar PLAYER_STARTER_SPECIES, GetStarterSpeciesByTypeAndGen
+	showmonpic PLAYER_STARTER_SPECIES, 10, 3
+	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
+	msgbox PalletTown_ProfessorOaksLab_Text_OakConfirmStarter, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, PalletTown_ProfessorOaksLab_EventScript_ChoseStarter
-	goto_if_eq VAR_RESULT, NO, PalletTown_ProfessorOaksLab_EventScript_DeclinedStarter
+	goto PalletTown_ProfessorOaksLab_EventScript_DeclinedStarter
+	end
+
+PalletTown_ProfessorOaksLab_EventScript_CancelStarterMenu::
+	closemessage
+	call EventScript_RestorePrevTextColor
+	release
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_DeclinedStarter::
@@ -1117,7 +1148,9 @@ PalletTown_ProfessorOaksLab_EventScript_ChoseStarter::
 	call EventScript_RestorePrevTextColor
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_PALLET_LADY_NOT_BLOCKING_SIGN
+	special EnableNationalPokedex
 	givemon PLAYER_STARTER_SPECIES, 5
+	special MarkStarterFromOak
 	copyvar VAR_STARTER_MON, PLAYER_STARTER_NUM
 	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
 	message PalletTown_ProfessorOaksLab_Text_ReceivedMonFromOak
@@ -1165,6 +1198,7 @@ PalletTown_ProfessorOaksLab_EventScript_RivalTakesStarter::
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalIllTakeThisOneThen
 	removeobject RIVAL_STARTER_ID
 	textcolor NPC_TEXT_COLOR_NEUTRAL
+	specialvar RIVAL_STARTER_SPECIES, PickRandomRivalStarter
 	bufferspeciesname STR_VAR_1, RIVAL_STARTER_SPECIES
 	message PalletTown_ProfessorOaksLab_Text_RivalReceivedMonFromOak
 	waitmessage
@@ -1307,8 +1341,8 @@ PalletTown_ProfessorOaksLab_Text_RivalFedUpWithWaiting::
 	.string "I'm fed up with waiting!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalNoFairWhatAboutMe::
-	.string "{RIVAL}: Hey! Gramps! No fair!\n"
-	.string "What about me?$"
+    .string "{RIVAL}: Whoa, hold on, Gramps!\n"
+    .string "Don't forget about me!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalGoChoosePlayer::
 	.string "{RIVAL}: Heh, I don't need to be\n"
@@ -1316,15 +1350,18 @@ PalletTown_ProfessorOaksLab_Text_RivalGoChoosePlayer::
 	.string "Go ahead and choose, {PLAYER}!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalIllTakeThisOneThen::
-	.string "{RIVAL}: I'll take this one, then!$"
+    .string "{RIVAL}: Then I'll just grab this\n"
+    .string "one without peeking! Any POKéMON\l"
+    .string "can be my buddy!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalReceivedMonFromOak::
 	.string "{RIVAL} received the {STR_VAR_1}\n"
 	.string "from PROF. OAK!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalMyMonLooksTougher::
-	.string "{RIVAL}: My POKéMON looks a lot\n"
-	.string "tougher than yours.$"
+    .string "{RIVAL}: Ha! Mine's awesome too!\n"
+    .string "Let's both raise ours super strong,\l"
+    .string "okay?$"
 
 PalletTown_ProfessorOaksLab_Text_RivalLetsCheckOutMons::
 	.string "{RIVAL}: Wait, {PLAYER}!\n"
@@ -1332,9 +1369,7 @@ PalletTown_ProfessorOaksLab_Text_RivalLetsCheckOutMons::
 	.string "Come on, I'll take you on!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalDefeat::
-	.string "WHAT?\n"
-	.string "Unbelievable!\l"
-	.string "I picked the wrong POKéMON!$"
+    .string "Whoa! You're really good, {PLAYER}!$"
 
 @ Also used for early Route 22 battle
 Text_RivalVictory::
@@ -1342,10 +1377,9 @@ Text_RivalVictory::
 	.string "Am I great or what?$"
 
 PalletTown_ProfessorOaksLab_Text_RivalGoToughenMyMon::
-	.string "{RIVAL}: Okay! I'll make my\n"
-	.string "POKéMON battle to toughen it up!\p"
-	.string "{PLAYER}! Gramps!\n"
-	.string "Smell you later!$"
+    .string "{RIVAL}: Okay, buddy! Let's go\n"
+    .string "train on the beach! Smell ya later,\l"
+    .string "{PLAYER}!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalGramps::
 	.string "{RIVAL}: Gramps!$"
@@ -1369,54 +1403,53 @@ PalletTown_ProfessorOaksLab_Text_RivalTellSisNotToGiveYouMap::
 	.string "my place after this!$"
 
 PalletTown_ProfessorOaksLab_Text_OakThreeMonsChooseOne::
-	.string "OAK: {RIVAL}?\n"
-	.string "Let me think…\p"
-	.string "Oh, that's right, I told you to\n"
-	.string "come! Just wait!\p"
-	.string "Here, {PLAYER}.\p"
-	.string "There are three POKéMON here.\p"
-	.string "Haha!\p"
-	.string "The POKéMON are held inside\n"
-	.string "these POKé BALLS.\p"
-	.string "When I was young, I was a serious\n"
-	.string "POKéMON TRAINER.\p"
-	.string "But now, in my old age, I have\n"
-	.string "only these three left.\p"
-	.string "You can have one.\n"
-	.string "Go on, choose!$"
+    .string "OAK: {RIVAL}? Ah, yes! I asked you\n"
+    .string "both to come. Listen closely, you\l"
+    .string "two.\p"
+    .string "Last month, a great storm swept\n"
+    .string "across the sea. Since then, POKéMON\l"
+    .string "from JOHTO and HOENN keep washing\n"
+    .string "up on KANTO's shores.\p"
+    .string "PROF. ELM and PROF. BIRCH sent me\n"
+    .string "their starter POKéMON for a\l"
+    .string "research exchange.\p"
+    .string "Each of those three BALLS holds\n"
+    .string "three POKéMON of the same type,\l"
+    .string "one from each region.\p"
+    .string "{PLAYER}, you may choose first. Go\n"
+    .string "on!$"
 
 PalletTown_ProfessorOaksLab_Text_OakBePatientRival::
-	.string "OAK: Be patient, {RIVAL}.\n"
-	.string "You can have one, too!$"
+    .string "OAK: Be patient, {RIVAL}. There are\n"
+    .string "more than enough POKéMON for both\l"
+    .string "of you!$"
 
 PalletTown_ProfessorOaksLab_Text_OakWhichOneWillYouChoose::
-	.string "OAK: Now, {PLAYER}.\p"
-	.string "Inside those three POKé BALLS are\n"
-	.string "POKéMON.\p"
-	.string "Which one will you choose for\n"
-	.string "yourself?$"
+    .string "OAK: Now, {PLAYER}. Walk up to the\n"
+    .string "table and pick a BALL. Then choose\l"
+    .string "the POKéMON you like best!$"
 
 PalletTown_ProfessorOaksLab_Text_OakHeyDontGoAwayYet::
 	.string "OAK: Hey!\n"
 	.string "Don't go away yet!$"
 
 PalletTown_ProfessorOaksLab_Text_OakChoosingCharmander::
-	.string "Ah! CHARMANDER is your choice.\n"
-	.string "You should raise it patiently.\p"
-	.string "So, {PLAYER}, you're claiming the\n"
-	.string "FIRE POKéMON CHARMANDER?$"
+    .string "Ah! HITOKAGE is your choice.\n"
+    .string "You should raise it patiently.\p"
+    .string "So, {PLAYER}, you're claiming the\n"
+    .string "FIRE POKéMON HITOKAGE?$"
 
 PalletTown_ProfessorOaksLab_Text_OakChoosingSquirtle::
-	.string "Hm! SQUIRTLE is your choice.\n"
-	.string "It's one worth raising.\p"
-	.string "So, {PLAYER}, you've decided on the\n"
-	.string "WATER POKéMON SQUIRTLE?$"
+    .string "Hm! ZENIGAME is your choice.\n"
+    .string "It's one worth raising.\p"
+    .string "So, {PLAYER}, you've decided on the\n"
+    .string "WATER POKéMON ZENIGAME?$"
 
 PalletTown_ProfessorOaksLab_Text_OakChoosingBulbasaur::
-	.string "I see! BULBASAUR is your choice.\n"
-	.string "It's very easy to raise.\p"
-	.string "So, {PLAYER}, you want to go with\n"
-	.string "the GRASS POKéMON BULBASAUR?$"
+    .string "I see! FUSIGIDANE is your choice.\n"
+    .string "It's very easy to raise.\p"
+    .string "So, {PLAYER}, you want to go with\n"
+    .string "the GRASS POKéMON FUSIGIDANE?$"
 
 PalletTown_ProfessorOaksLab_Text_OakThisMonIsEnergetic::
 	.string "This POKéMON is really quite\n"
@@ -1496,16 +1529,21 @@ PalletTown_ProfessorOaksLab_Text_OakExplainCatching::
 	.string "You have to be lucky!$"
 
 PalletTown_ProfessorOaksLab_Text_OakCompleteMonGuideWasMyDream::
-	.string "To make a complete guide on all\n"
-	.string "the POKéMON in the world…\p"
-	.string "That was my dream!\p"
-	.string "But, I'm too old.\n"
-	.string "I can't get the job done.\p"
-	.string "So, I want you two to fulfill my\n"
-	.string "dream for me.\p"
-	.string "Get moving, you two.\p"
-	.string "This is a great undertaking in\n"
-	.string "POKéMON history!$"
+    .string "OAK: My dream was to make a\n"
+    .string "complete guide on all the POKéMON\l"
+    .string "in the world.\p"
+    .string "But now, POKéMON from beyond the\n"
+    .string "sea are drifting into KANTO. Some\l"
+    .string "people are already trying to catch\n"
+    .string "and sell them.\p"
+    .string "So here's a special request. Catch\n"
+    .string "at least three POKéMON that came\l"
+    .string "from JOHTO or HOENN.\p"
+    .string "Then show them to my AIDE at the\n"
+    .string "PEWTER CITY POKéMON CENTER. He'll\l"
+    .string "have a reward for you.\p"
+    .string "This is a great undertaking in\n"
+    .string "POKéMON history!$"
 
 PalletTown_ProfessorOaksLab_Text_OakMonsAroundWorldWait::
 	.string "POKéMON around the world wait for\n"
@@ -1655,3 +1693,12 @@ PalletTown_ProfessorOaksLab_Text_RivalIllCompleteThePokedex::
 	.string "ONE ISLAND first…\p"
 	.string "Anyways, I'm outta here!$"
 
+
+PalletTown_ProfessorOaksLab_Text_WhichMonInBall::
+    .string "There are three POKéMON resting\n"
+    .string "in this BALL. Which one do you want?$"
+
+PalletTown_ProfessorOaksLab_Text_OakConfirmStarter::
+    .string "Oh, {STR_VAR_1}! A fine choice!\p"
+    .string "So, {PLAYER}, you want to go with\n"
+    .string "{STR_VAR_1}?$"

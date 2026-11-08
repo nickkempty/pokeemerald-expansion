@@ -30,7 +30,7 @@ SaffronCity_House_Text_DontLookAtMyLetter::
 	.string "Don't look at my letter!$"
 
 SaffronCity_House_Text_Pidgey::
-	.string "PIDGEY: Kurukkoo!$"
+    .string "POPPO: Kurukkoo!$"
 
 SaffronCity_House_Text_GettingCopycatPokeDoll::
 	.string "The COPYCAT is cute!\n"

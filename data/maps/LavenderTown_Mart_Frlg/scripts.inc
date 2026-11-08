@@ -16,8 +16,6 @@ LavenderTown_Mart_EventScript_Youngster::
 LavenderTown_Mart_EventScript_Clerk::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
 	pokemart LavenderTown_Mart_Items
 	msgbox gText_PleaseComeAgain
 	release
@@ -34,6 +32,8 @@ LavenderTown_Mart_Items::
 	.2byte ITEM_ICE_HEAL
 	.2byte ITEM_ESCAPE_ROPE
 	.2byte ITEM_SUPER_REPEL
+	.2byte ITEM_EXP_SHARE
+	.2byte ITEM_GENDER_SWAP
 	.2byte ITEM_NONE
 	release
 	end

@@ -159,17 +159,17 @@ MtEmber_Exterior_Text_PunchedThroughAtLast::
 	.string "Let's go treasure hunting!$"
 
 MtEmber_Exterior_Text_WhatsPasswordAgain::
-	.string "Any treasure we find, we haul back\n"
-	.string "to the WAREHOUSE, understood?\p"
-	.string "…Oh, and what're the passwords?\n"
-	.string "At the ROCKET WAREHOUSE, I mean.$"
+    .string "Any treasure we find, we haul back\n"
+    .string "to the WAREHOUSE, understood?\p"
+    .string "…Oh, and what're the passwords?\n"
+    .string "At the ECLIPSE WAREHOUSE, I mean.$"
 
 MtEmber_Exterior_Text_FirstPasswordGoldeen::
-	.string "What, you forgot the password?\n"
-	.string "There're actually two.\p"
-	.string "The first one's “GOLDEEN need\n"
-	.string "log.”\p"
-	.string "And the second one is…$"
+    .string "What, you forgot the password?\n"
+    .string "There're actually two.\p"
+    .string "The first one's “TOSAKINTO need\n"
+    .string "log.”\p"
+    .string "And the second one is…$"
 
 MtEmber_Exterior_Text_SnoopsBeenListeningIn::
 	.string "Hey!\n"

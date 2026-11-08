@@ -843,15 +843,15 @@ PewterCity_Movement_WalkInPlaceLeft::
 	step_end
 
 Text_DreamEaterTeach::
-	.string "Yawn!\n"
-	.string "I must have dozed off in the sun.\p"
-	.string "I had this weird dream about\n"
-	.string "a DROWZEE eating my dream.\p"
-	.string "And…\n"
-	.string "I learned how to eat dreams…\p"
-	.string "Oogh, this is too spooky!\p"
-	.string "Let me teach it to a POKéMON so\n"
-	.string "I can forget about it!$"
+    .string "Yawn!\n"
+    .string "I must have dozed off in the sun.\p"
+    .string "I had this weird dream about\n"
+    .string "a SLEEPE eating my dream.\p"
+    .string "And…\n"
+    .string "I learned how to eat dreams…\p"
+    .string "Oogh, this is too spooky!\p"
+    .string "Let me teach it to a POKéMON so\n"
+    .string "I can forget about it!$"
 
 Text_DreamEaterDeclined::
 	.string "…Snore…$"
@@ -865,10 +865,10 @@ Text_DreamEaterTaught::
 	.string "I…can't eat…anymore…$"
 
 PewterCity_Text_ClefairyCameFromMoon::
-	.string "CLEFAIRY came from the moon.\n"
-	.string "That's what the rumor is.\p"
-	.string "They appeared after MOON STONES\n"
-	.string "fell on MT. MOON.$"
+    .string "PIPPI came from the moon.\n"
+    .string "That's what the rumor is.\p"
+    .string "They appeared after MOON STONES\n"
+    .string "fell on MT. MOON.$"
 
 PewterCity_Text_BrockOnlySeriousTrainerHere::
 	.string "There aren't many serious POKéMON\n"

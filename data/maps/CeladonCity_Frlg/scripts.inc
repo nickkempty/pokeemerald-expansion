@@ -103,9 +103,9 @@ CeladonCity_EventScript_GameCornerSign::
 	end
 
 CeladonCity_Text_GotMyKoffingInCinnabar::
-	.string "I got my KOFFING in CINNABAR.\p"
-	.string "It's usually nice, but it breathes\n"
-	.string "poison when it's angry.$"
+    .string "I got my DOGARS in CINNABAR.\p"
+    .string "It's usually nice, but it breathes\n"
+    .string "poison when it's angry.$"
 
 CeladonCity_Text_GymIsGreatFullOfWomen::
 	.string "Heheh! This GYM is great!\n"
@@ -124,19 +124,19 @@ CeladonCity_Text_BlewItAllAtSlots::
 	.string "COINS for prizes!$"
 
 CeladonCity_Text_MyTrustedPalPoliwrath::
-	.string "This is my trusted pal, POLIWRATH.\p"
-	.string "It evolved from a POLIWHIRL when\n"
-	.string "I used a WATER STONE.$"
+    .string "This is my trusted pal, NYOROBON.\p"
+    .string "It evolved from a NYOROZO when\n"
+    .string "I used a WATER STONE.$"
 
 CeladonCity_Text_Poliwrath::
-	.string "POLIWRATH: Ribi ribit!$"
+    .string "NYOROBON: Ribi ribit!$"
 
 CeladonCity_Text_GetLostOrIllPunchYou::
 	.string "What are you staring at?\n"
 	.string "Get lost, or I'll punch you.$"
 
 CeladonCity_Text_KeepOutOfTeamRocketsWay::
-	.string "Keep out of TEAM ROCKET's way!$"
+    .string "Keep out of TEAM ECLIPSE's way!$"
 
 CeladonCity_Text_ExplainXAccuracyDireHit::
 	.string "TRAINER TIPS\p"
@@ -176,8 +176,8 @@ CeladonCity_Text_PrizeExchangeSign::
 	.string "PRIZE EXCHANGE$"
 
 CeladonCity_Text_GameCornerSign::
-	.string "ROCKET GAME CORNER\n"
-	.string "The playground for grown-ups!$"
+    .string "ECLIPSE GAME CORNER\n"
+    .string "The playground for grown-ups!$"
 
 CeladonCity_Text_ScaldedTongueOnTea::
 	.string "Aaaagh, ow…\n"

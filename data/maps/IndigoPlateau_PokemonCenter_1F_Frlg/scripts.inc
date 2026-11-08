@@ -41,8 +41,6 @@ IndigoPlateau_PokemonCenter_1F_EventScript_GymGuy::
 IndigoPlateau_PokemonCenter_1F_EventScript_Clerk::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
 	pokemart IndigoPlateau_PokemonCenter_1F_Items
 	msgbox gText_PleaseComeAgain
 	release
@@ -57,6 +55,8 @@ IndigoPlateau_PokemonCenter_1F_Items::
 	.2byte ITEM_REVIVE
 	.2byte ITEM_FULL_HEAL
 	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_EXP_SHARE
+	.2byte ITEM_GENDER_SWAP
 	.2byte ITEM_NONE
 	release
 	end

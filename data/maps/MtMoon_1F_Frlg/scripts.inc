@@ -113,8 +113,8 @@ MtMoon_1F_Text_KentDefeat::
 	.string "You got me!$"
 
 MtMoon_1F_Text_KentPostBattle::
-	.string "I saw them!\n"
-	.string "I'm sure they're from TEAM ROCKET!$"
+    .string "I saw them!\n"
+    .string "I'm sure they're from TEAM ECLIPSE!$"
 
 MtMoon_1F_Text_RobbyIntro::
 	.string "You need to go through this cave\n"

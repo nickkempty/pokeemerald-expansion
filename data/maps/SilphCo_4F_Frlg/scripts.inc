@@ -44,12 +44,12 @@ SilphCo_4F_Text_CantYouSeeImHiding::
 	.string "Can't you see I'm hiding?$"
 
 SilphCo_4F_Text_TeamRocketIsGone::
-	.string "Huh?\n"
-	.string "TEAM ROCKET is gone?$"
+    .string "Huh?\n"
+    .string "TEAM ECLIPSE is gone?$"
 
 SilphCo_4F_Text_Grunt1Intro::
-	.string "TEAM ROCKET has taken control\n"
-	.string "of SILPH CO.!$"
+    .string "TEAM ECLIPSE has taken control\n"
+    .string "of SILPH CO.!$"
 
 SilphCo_4F_Text_Grunt1Defeat::
 	.string "Arrgh!$"

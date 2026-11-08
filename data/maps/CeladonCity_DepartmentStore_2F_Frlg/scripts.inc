@@ -16,8 +16,6 @@ CeladonCity_DepartmentStore_2F_EventScript_FloorSign::
 CeladonCity_DepartmentStore_2F_EventScript_ClerkItems::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
 	pokemart CeladonCity_DepartmentStore_2F_Items
 	msgbox gText_PleaseComeAgain
 	release
@@ -34,6 +32,8 @@ CeladonCity_DepartmentStore_2F_Items::
 	.2byte ITEM_BURN_HEAL
 	.2byte ITEM_ICE_HEAL
 	.2byte ITEM_SUPER_REPEL
+	.2byte ITEM_EXP_SHARE
+	.2byte ITEM_GENDER_SWAP
 	.2byte ITEM_NONE
 	release
 	end
@@ -41,8 +41,6 @@ CeladonCity_DepartmentStore_2F_Items::
 CeladonCity_DepartmentStore_2F_EventScript_ClerkTMs::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
 	pokemart CeladonCity_DepartmentStore_2F_TMs
 	msgbox gText_PleaseComeAgain
 	release
@@ -56,6 +54,8 @@ CeladonCity_DepartmentStore_2F_TMs::
 	.2byte ITEM_TM31
 	.2byte ITEM_TM43
 	.2byte ITEM_TM45
+	.2byte ITEM_EXP_SHARE
+	.2byte ITEM_GENDER_SWAP
 	.2byte ITEM_NONE
 	release
 	end

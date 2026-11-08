@@ -220,16 +220,9 @@ ViridianCity_EventScript_TutorialTriggerRight::
 	end
 
 ViridianCity_EventScript_DoTutorialBattle::
-	msgbox ViridianCity_Text_ShowYouHowToCatchMons
-	closemessage
-	special StartOldManTutorialBattle
-	waitstate
-	lock
-	faceplayer
-	msgbox ViridianCity_Text_ThatWasEducationalTakeThis
+	msgbox ViridianCity_Text_ZumoSkipTutorial
 	setvar VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 2
 	giveitem ITEM_TEACHY_TV
-	msgbox ViridianCity_Text_WatchThatToLearnBasics
 	return
 
 ViridianCity_Text_CanCarryMonsAnywhere::
@@ -253,10 +246,10 @@ ViridianCity_Text_OhOkayThen::
 	.string "Oh, okay then!$"
 
 ViridianCity_Text_ExplainCaterpieWeedle::
-	.string "CATERPIE has no poison,\n"
-	.string "but WEEDLE does.\p"
-	.string "Watch that your POKéMON aren't\n"
-	.string "stabbed by WEEDLE's POISON STING.$"
+    .string "CATERPIE has no poison,\n"
+    .string "but BEEDLE does.\p"
+    .string "Watch that your POKéMON aren't\n"
+    .string "stabbed by BEEDLE's POISON STING.$"
 
 ViridianCity_Text_GrandpaHasntHadCoffeeYet::
 	.string "Oh, Grandpa!\n"
@@ -357,3 +350,9 @@ ViridianCity_Text_GymSign::
 ViridianCity_Text_GymDoorsAreLocked::
 	.string "VIRIDIAN GYM's doors are locked…$"
 
+
+ViridianCity_Text_ZumoSkipTutorial::
+    .string "Ah, you already know how to catch\n"
+    .string "POKéMON, don't you? Then take this.\l"
+    .string "It's a TEACHY TV, in case you ever\n"
+    .string "need a refresher.$"

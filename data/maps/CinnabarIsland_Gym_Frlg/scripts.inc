@@ -58,8 +58,6 @@ CinnabarIsland_Gym_EventScript_DefeatedBlaine::
 	setflag FLAG_DEFEATED_BLAINE
 	setflag FLAG_BADGE07_GET
 	setrespawn HEAL_LOCATION_CINNABAR_ISLAND
-	setvar VAR_MAP_SCENE_CINNABAR_ISLAND, 1
-	clearflag FLAG_HIDE_CINNABAR_BILL
 	set_gym_trainers_frlg 7
 	goto CinnabarIsland_Gym_EventScript_GiveTM38
 	end
@@ -70,6 +68,8 @@ CinnabarIsland_Gym_EventScript_GiveTM38::
 	goto_if_eq VAR_RESULT, FALSE, CinnabarIsland_Gym_EventScript_NoRoomForTM38
 	giveitem_msg CinnabarIsland_Gym_Text_ReceivedTM38FromBlaine, ITEM_TM38
 	setflag FLAG_GOT_TM38_FROM_BLAINE
+	setvar VAR_0x8004, 6
+	call EventScript_ZumoGymBonusTM
 	msgbox CinnabarIsland_Gym_Text_FireBlastIsUltimateFireMove
 	release
 	end
@@ -740,10 +740,10 @@ CinnabarIsland_Gym_Text_ReceivedTM38FromBlaine::
 	.string "from BLAINE.$"
 
 CinnabarIsland_Gym_Text_BlainePostBattle::
-	.string "TM38 contains FIRE BLAST.\n"
-	.string "Teach it to FIRE-type POKéMON.\p"
-	.string "VULPIX or CHARMELEON would be\n"
-	.string "ideal for that move.$"
+    .string "TM38 contains FIRE BLAST.\n"
+    .string "Teach it to FIRE-type POKéMON.\p"
+    .string "ROKON or LIZARDO would be\n"
+    .string "ideal for that move.$"
 
 CinnabarIsland_Gym_Text_MakeSpaceForThis::
 	.string "Make space for this, child!$"
@@ -820,8 +820,8 @@ CinnabarIsland_Gym_Text_DustyDefeat::
 	.string "Too hot!$"
 
 CinnabarIsland_Gym_Text_DustyPostBattle::
-	.string "PONYTA, NINETALES…\n"
-	.string "Those are popular FIRE POKéMON.$"
+    .string "PONYTA, KYUKON…\n"
+    .string "Those are popular FIRE POKéMON.$"
 
 CinnabarIsland_Gym_Text_ZacIntro::
 	.string "Fire is weak against H2O.$"
@@ -871,14 +871,14 @@ CinnabarIsland_Gym_Text_PokemonQuizRules::
 	.string "Here we go!$"
 
 CinnabarIsland_Gym_Text_QuizQuestion1::
-	.string "CATERPIE evolves into METAPOD?$"
+    .string "CATERPIE evolves into TRANSEL?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion2::
 	.string "There are nine certified POKéMON\n"
 	.string "LEAGUE BADGES?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion3::
-	.string "POLIWAG evolves three times?$"
+    .string "NYOROMO evolves three times?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion4::
 	.string "Are electric moves effective\n"

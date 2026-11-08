@@ -40,12 +40,12 @@ SilphCo_2F_Text_ConnorIntro::
 	.string "I'm a SILPH employee.$"
 
 SilphCo_2F_Text_ConnorDefeat::
-	.string "How did you know\n"
-	.string "I was a ROCKET?$"
+    .string "How did you know\n"
+    .string "I was a ECLIPSE?$"
 
 SilphCo_2F_Text_ConnorPostBattle::
-	.string "I work for both SILPH and TEAM\n"
-	.string "ROCKET.$"
+    .string "I work for both SILPH and TEAM\n"
+    .string "ECLIPSE.$"
 
 SilphCo_2F_Text_JerryIntro::
 	.string "It's off-limits here!\n"
@@ -78,16 +78,16 @@ SilphCo_2F_Text_Grunt2Defeat::
 	.string "I goofed!$"
 
 SilphCo_2F_Text_Grunt2PostBattle::
-	.string "SILPH CO. will be associated with\n"
-	.string "TEAM ROCKET!$"
+    .string "SILPH CO. will be associated with\n"
+    .string "TEAM ECLIPSE!$"
 
 Text_ThunderWaveTeach::
-	.string "Eeek!\n"
-	.string "No! Stop! Help!\p"
-	.string "Oh, you're not with TEAM ROCKET.\n"
-	.string "I'm sorry, I thought…\p"
-	.string "Will you forgive me if I teach\n"
-	.string "you the THUNDER WAVE technique?$"
+    .string "Eeek!\n"
+    .string "No! Stop! Help!\p"
+    .string "Oh, you're not with TEAM ECLIPSE.\n"
+    .string "I'm sorry, I thought…\p"
+    .string "Will you forgive me if I teach\n"
+    .string "you the THUNDER WAVE technique?$"
 
 Text_ThunderWaveDeclined::
 	.string "Oh…\n"

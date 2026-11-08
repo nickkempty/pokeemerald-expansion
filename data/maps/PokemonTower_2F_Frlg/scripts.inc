@@ -28,9 +28,9 @@ PokemonTower_2F_EventScript_Rival::
 	waitmovement 0
 	msgbox PokemonTower_2F_Text_RivalIntro
 	setvar VAR_LAST_TALKED, LOCALID_POKEMON_TOWER_RIVAL
-	call_if_eq VAR_STARTER_MON, 2, PokemonTower_2F_EventScript_RivalSquirtle
-	call_if_eq VAR_STARTER_MON, 1, PokemonTower_2F_EventScript_RivalBulbasaur
-	call_if_eq VAR_STARTER_MON, 0, PokemonTower_2F_EventScript_RivalCharmander
+	call_if_eq VAR_RIVAL_VARIANT, 2, PokemonTower_2F_EventScript_RivalSquirtle
+	call_if_eq VAR_RIVAL_VARIANT, 1, PokemonTower_2F_EventScript_RivalBulbasaur
+	call_if_eq VAR_RIVAL_VARIANT, 0, PokemonTower_2F_EventScript_RivalCharmander
 	msgbox PokemonTower_2F_Text_RivalPostBattle
 	closemessage
 	playbgm MUS_RG_RIVAL_EXIT, 0
@@ -101,28 +101,29 @@ PokemonTower_2F_Movement_RivalExitDown::
 	step_end
 
 PokemonTower_2F_Text_RivalIntro::
-	.string "{RIVAL}: Hey, {PLAYER}!\n"
-	.string "What brings you here?\l"
-	.string "Is your POKéMON dead?\p"
-	.string "Hey! It's alive!\p"
-	.string "I can at least make them faint!\n"
-	.string "Let's go!$"
+    .string "{RIVAL}: Hey, {PLAYER}! This tower\n"
+    .string "is full of lost ghost POKéMON from\l"
+    .string "other regions.\p"
+    .string "Kinda spooky, right? Let's battle to\n"
+    .string "shake off the chills!$"
 
 PokemonTower_2F_Text_RivalDefeat::
-	.string "What?\n"
-	.string "You stinker!\p"
-	.string "I took it easy on you, too!$"
+    .string "Brr! You beat me fair and square!$"
+
+@ Unused. Translated below
+@ Aw, man! They really kicked the bucket! Weak! Do them a favor and raise them more properly.
+PokemonTower_2F_Text_RivalVictory::
+    .string "{RIVAL}“あーあ‥！\n"
+    .string "ほんとに　くたばっちまったぞ！\l"
+    .string "よわいなー！\l"
+    .string "もっと　ちゃんと　そだてて　やれよ$"
 
 PokemonTower_2F_Text_RivalPostBattle::
-	.string "How's your POKéDEX coming?\n"
-	.string "I just caught a CUBONE!\p"
-	.string "I can't find the bigger MAROWAK.\n"
-	.string "Where could they be?\p"
-	.string "I bet there aren't any left!\p"
-	.string "Well, I better get going.\n"
-	.string "I've got a lot to accomplish,\l"
-	.string "unlike you.\p"
-	.string "Smell ya later!$"
+    .string "{RIVAL}: I heard TEAM ECLIPSE\n"
+    .string "grabbed MR. FUJI at the top.\l"
+    .string "You're gonna save him, right?\p"
+    .string "I'll go check on the lost POKéMON\n"
+    .string "downstairs. Smell ya later!$"
 
 PokemonTower_2F_Text_SilphScopeCouldUnmaskGhosts::
 	.string "Even we could not identify the\n"

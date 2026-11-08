@@ -51,14 +51,14 @@ PokemonTower_1F_Text_ComeToPayRespectsGirl::
 	.string "girl.$"
 
 PokemonTower_1F_Text_CameToPrayForDepartedClefairy::
-	.string "I came to pray for my dearly\n"
-	.string "departed CLEFAIRY.\p"
-	.string "Sniff!\n"
-	.string "I'm awash in tears…$"
+    .string "I came to pray for my dearly\n"
+    .string "departed PIPPI.\p"
+    .string "Sniff!\n"
+    .string "I'm awash in tears…$"
 
 PokemonTower_1F_Text_GrowlitheWhyDidYouDie::
-	.string "My GROWLITHE…\n"
-	.string "Why did you die?$"
+    .string "My GARDIE…\n"
+    .string "Why did you die?$"
 
 PokemonTower_1F_Text_SenseSpiritsUpToMischief::
 	.string "I am a CHANNELER.\p"

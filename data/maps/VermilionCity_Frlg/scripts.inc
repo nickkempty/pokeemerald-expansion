@@ -191,6 +191,8 @@ VermilionCity_EventScript_CheckTicket::
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	goto_if_eq VAR_MAP_SCENE_VERMILION_CITY, 3, VermilionCity_EventScript_CheckSeagallopPresentTrigger
+	goto_if_lt VAR_MAP_SCENE_SILPH_CO_11F, 1, VermilionCity_EventScript_ZkPortClosed
+	goto_if_unset FLAG_BADGE06_GET, VermilionCity_EventScript_ZkPortClosed
 	msgbox VermilionCity_Text_DoYouHaveATicket
 	goto_if_unset FLAG_GOT_SS_TICKET, VermilionCity_EventScript_DontHaveSSTicket
 	msgbox VermilionCity_Text_FlashedSSTicket
@@ -263,10 +265,20 @@ VermilionCity_EventScript_HarborSign::
 	msgbox VermilionCity_Text_VermilionHarbor, MSGBOX_SIGN
 	end
 
+VermilionCity_EventScript_ZkPortClosed::
+	msgbox VermilionCity_Text_ZkPortClosed
+	closemessage
+	goto VermilionCity_EventScript_WalkUpPier
+	end
+
+VermilionCity_EventScript_ZkGymGuard::
+	msgbox VermilionCity_Text_ZkGymGuard, MSGBOX_NPC
+	end
+
 VermilionCity_Text_GrimerMultipliesInSludge::
-	.string "We're careful about pollution here.\p"
-	.string "We've heard GRIMER multiplies in\n"
-	.string "toxic sludge.$"
+    .string "We're careful about pollution here.\p"
+    .string "We've heard BETBETER multiplies in\n"
+    .string "toxic sludge.$"
 
 VermilionCity_Text_DidYouSeeSSAnneInHarbor::
 	.string "Did you see the S.S. ANNE moored\n"
@@ -284,10 +296,11 @@ VermilionCity_Text_BuildingOnThisLand::
 	.string "to lay the foundation.$"
 
 VermilionCity_Text_Machop::
-	.string "MACHOP: Guoh! Gogogoh!$"
+    .string "WANRIKY: Guoh! Gogogoh!$"
 
 VermilionCity_Text_MachopStompingLandFlat::
-	.string "A MACHOP is stomping the land flat.$"
+    .string "A WANRIKY is stomping the\n"
+    .string "land flat.$"
 
 VermilionCity_Text_SSAnneVisitsOnceAYear::
 	.string "The S.S. ANNE is a famous luxury\n"
@@ -394,3 +407,18 @@ VermilionCity_Text_Route2AideHasPackageForYou::
 	.string "If you're in the ROUTE 2 area,\n"
 	.string "please look for him.$"
 
+
+VermilionCity_Text_ZkPortClosed::
+    .string "Sorry, the harbor is on lockdown.\n"
+    .string "No one boards the S.S. ANNE.\p"
+    .string "TEAM ECLIPSE is in SAFFRON, and\n"
+    .string "there's a dangerous cargo aboard.\p"
+    .string "We'll only let a trainer with\n"
+    .string "SAFFRON's MARSH BADGE through.$"
+
+VermilionCity_Text_ZkGymGuard::
+    .string "LT. SURGE is out at the harbor.\n"
+    .string "He's guarding the S.S. ANNE!\p"
+    .string "Something about a red jewel in the\n"
+    .string "ship's safe… The GYM is closed\l"
+    .string "until he gets back.$"

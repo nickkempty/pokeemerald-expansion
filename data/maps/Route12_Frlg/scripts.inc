@@ -61,13 +61,13 @@ Route12_Text_MonSprawledOutInSlumber::
 	.string "a deep and comfortable slumber.$"
 
 Text_SnorlaxWokeUp::
-	.string "SNORLAX woke up!\p"
-	.string "It attacked in a grumpy rage!$"
+    .string "KABIGON woke up!\p"
+    .string "It attacked in a grumpy rage!$"
 
 Text_SnorlaxReturnedToMountains::
-	.string "SNORLAX calmed down.\n"
-	.string "It gave a huge yawn…\l"
-	.string "And returned to the mountains.$"
+    .string "KABIGON calmed down.\n"
+    .string "It gave a huge yawn…\l"
+    .string "And returned to the mountains.$"
 
 Text_WantToUsePokeFlute::
 	.string "Want to use the POKé FLUTE?$"
@@ -156,9 +156,9 @@ Route12_Text_AndrewDefeat::
 	.string "Lost it!$"
 
 Route12_Text_AndrewPostBattle::
-	.string "What, MAGIKARP?\p"
-	.string "I catch them all the time, sure.\n"
-	.string "But, boy are they wimpy.$"
+    .string "What, KOIKING?\p"
+    .string "I catch them all the time, sure.\n"
+    .string "But, boy are they wimpy.$"
 
 Route12_Text_RouteSign::
 	.string "ROUTE 12 \n"

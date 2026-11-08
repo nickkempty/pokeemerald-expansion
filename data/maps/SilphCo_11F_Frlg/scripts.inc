@@ -176,25 +176,29 @@ SilphCo_11F_Text_ThanksForRescuingUs::
 	.string "are indebted to you.$"
 
 SilphCo_11F_Text_GiovanniIntro::
-	.string "Ah, {PLAYER}!\n"
-	.string "So we meet again!\p"
-	.string "The PRESIDENT and I are discussing\n"
-	.string "a vital business proposition.\p"
-	.string "Keep your nose out of grown-up\n"
-	.string "matters…\p"
-	.string "Or, experience a world of pain!$"
+    .string "NOX: So ZUMO finally sent you.\n"
+    .string "That boy was a useful pawn.\p"
+    .string "Look, {PLAYER}. SILPH's tech has\n"
+    .string "finished M-CORE PHASE 2.\p"
+    .string "All it needs is the RED ORB, and\n"
+    .string "GROUDON will obey ECLIPSE!\p"
+    .string "I won't let a child ruin a plan\n"
+    .string "I've waited years for!$"
 
 SilphCo_11F_Text_GiovanniDefeat::
-	.string "Arrgh!!\n"
-	.string "I lost again!?$"
+    .string "Again? How can a child be this\n"
+    .string "strong?$"
 
 SilphCo_11F_Text_GiovanniPostBattle::
-	.string "Blast it all!\n"
-	.string "You ruined our plans for SILPH!\p"
-	.string "But, TEAM ROCKET will never fall!\p"
-	.string "{PLAYER}! Never forget that all\n"
-	.string "POKéMON exist for TEAM ROCKET!\p"
-	.string "I must go, but I shall return!$"
+    .string "Hmph. Keep SILPH CO., then.\n"
+    .string "M-CORE is already loaded.\p"
+    .string "MAXIE's people are bringing the\n"
+    .string "RED ORB to VERMILION on the\l"
+    .string "S.S. ANNE as we speak.\p"
+    .string "Once it's in our hands, the sea\n"
+    .string "by CINNABAR will boil!\p"
+    .string "TEAM ECLIPSE, we're leaving SILPH\n"
+    .string "CO.!$"
 
 SilphCo_11F_Text_Grunt2Intro::
 	.string "Stop right there!\n"

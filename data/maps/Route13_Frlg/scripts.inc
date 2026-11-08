@@ -18,8 +18,8 @@ Route13_Text_SebastianIntro::
 	.string "with you!$"
 
 Route13_Text_SebastianDefeat::
-	.string "My PIDGEY and PIDGEOTTO combo\n"
-	.string "lost?$"
+    .string "My POPPO and PIGEON combo\n"
+    .string "lost?$"
 
 Route13_Text_SebastianPostBattle::
 	.string "My POKéMON look happy even though\n"
@@ -124,8 +124,8 @@ Route13_Text_RobertDefeat::
 	.string "Out of power!$"
 
 Route13_Text_RobertPostBattle::
-	.string "I wish I could fly like PIDGEY and\n"
-	.string "PIDGEOTTO…$"
+    .string "I wish I could fly like POPPO and\n"
+    .string "PIGEON…$"
 
 Route13_Text_LookToLeftOfThatPost::
 	.string "TRAINER TIPS\p"

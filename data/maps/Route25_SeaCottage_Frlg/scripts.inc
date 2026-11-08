@@ -103,6 +103,9 @@ Route25_SeaCottage_EventScript_BillGiveSSTicket::
 	setflag FLAG_HIDE_NUGGET_BRIDGE_ROCKET
 	setflag FLAG_GOT_SS_TICKET
 	setflag FLAG_SYS_PC_LANETTE
+	msgbox Route25_SeaCottage_Text_BillAlsoTakeCut
+	giveitem_msg Route25_SeaCottage_Text_ReceivedHM01FromBill, ITEM_HM01, 1, MUS_RG_OBTAIN_KEY_ITEM
+	msgbox Route25_SeaCottage_Text_ExplainCutZumo
 	goto Route25_SeaCottage_EventScript_BillGoToSSAnne
 	end
 
@@ -348,24 +351,36 @@ Route25_SeaCottage_Text_NoPleaseBeautiful::
 	.string "All right!$"
 
 Route25_SeaCottage_Text_ThanksBudTakeThis::
-	.string "BILL: Yeehah!\n"
-	.string "Thanks, bud! I owe you one!\p"
-	.string "So, did you come to see my\n"
-	.string "POKéMON collection?\p"
-	.string "You didn't?\n"
-	.string "That's a bummer.\p"
-	.string "I've got to thank you…\n"
-	.string "Oh, here, maybe this'll do.$"
+    .string "BILL: Yeehah! Thanks, pal! You\n"
+    .string "really saved me!\p"
+    .string "Say, have you noticed all the\n"
+    .string "POKéMON from other regions lately?\l"
+    .string "My machine here has been tracking\n"
+    .string "the sea currents.\p"
+    .string "Something deep under the KANTO sea\n"
+    .string "is stirring them up. The old tales\l"
+    .string "call it LUGIA, guardian of the\n"
+    .string "seas.\p"
+    .string "If someone is disturbing LUGIA, the\n"
+    .string "storms will only get worse.\p"
+    .string "Anyway, here, take this as my\n"
+    .string "thanks!$"
 
 Route25_SeaCottage_Text_ThanksLadyTakeThis::
-	.string "BILL: Yeehah!\n"
-	.string "Thanks, lady! I owe you one!\p"
-	.string "So, did you come to see my\n"
-	.string "POKéMON collection?\p"
-	.string "You didn't?\n"
-	.string "That's a bummer.\p"
-	.string "I've got to thank you…\n"
-	.string "Oh, here, maybe this'll do.$"
+    .string "BILL: Yeehah! Thanks, lady! You\n"
+    .string "really saved me!\p"
+    .string "Say, have you noticed all the\n"
+    .string "POKéMON from other regions lately?\l"
+    .string "My machine here has been tracking\n"
+    .string "the sea currents.\p"
+    .string "Something deep under the KANTO sea\n"
+    .string "is stirring them up. The old tales\l"
+    .string "call it LUGIA, guardian of the\n"
+    .string "seas.\p"
+    .string "If someone is disturbing LUGIA, the\n"
+    .string "storms will only get worse.\p"
+    .string "Anyway, here, take this as my\n"
+    .string "thanks!$"
 
 Route25_SeaCottage_Text_ReceivedSSTicketFromBill::
 	.string "{PLAYER} received an S.S. TICKET\n"
@@ -375,14 +390,20 @@ Route25_SeaCottage_Text_YouveGotTooMuchStuff::
 	.string "You've got too much stuff!$"
 
 Route25_SeaCottage_Text_SSAnnePartyYouGoInstead::
-	.string "That cruise ship S.S. ANNE is in\n"
-	.string "VERMILION CITY.\p"
-	.string "I hear there are lots of TRAINERS\n"
-	.string "on board, too.\p"
-	.string "They invited me to their party, but\n"
-	.string "I can't stand fancy do's.\p"
-	.string "Why don't you go instead of me?\n"
-	.string "Go on and have a good time.$"
+    .string "BILL: My sea-current monitor went\n"
+    .string "haywire last week.\p"
+    .string "Something huge is moving under the\n"
+    .string "sea near CINNABAR ISLAND. Fishermen\l"
+    .string "saw a red light glowing down there.\p"
+    .string "And people in red hoods have been\n"
+    .string "digging around ROUTE 9 and ROCK\l"
+    .string "TUNNEL. They call themselves TEAM\n"
+    .string "MAGMA, from HOENN.\p"
+    .string "They're working with TEAM ECLIPSE.\n"
+    .string "Keep your eyes open, okay?\p"
+    .string "That cruise ship S.S. ANNE docks in\n"
+    .string "VERMILION CITY later on. Use the\l"
+    .string "ticket when you get there!$"
 
 Route25_SeaCottage_Text_CheckOutRareMonsOnPC::
 	.string "BILL: Feel like checking out some\n"
@@ -403,3 +424,19 @@ Route25_SeaCottage_Text_BillsFavoriteMonList::
 Route25_SeaCottage_Text_SeeWhichMon::
 	.string "Which POKéMON do you want to see?$"
 
+
+Route25_SeaCottage_Text_BillAlsoTakeCut::
+    .string "Oh, and take this too.\p"
+    .string "Those MAGMA folks left a path of\n"
+    .string "cut trees behind them. You'll need\l"
+    .string "this to follow them east!$"
+
+Route25_SeaCottage_Text_ReceivedHM01FromBill::
+    .string "{PLAYER} received HM01\n"
+    .string "from BILL.$"
+
+Route25_SeaCottage_Text_ExplainCutZumo::
+    .string "With HM01 in your BAG, any POKéMON\n"
+    .string "that can learn CUT can clear small\l"
+    .string "trees. Head through ROUTE 9 to\n"
+    .string "ROCK TUNNEL!$"

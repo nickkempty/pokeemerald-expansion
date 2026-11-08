@@ -30,9 +30,9 @@ Route22_EventScript_EarlyRival::
 	call_if_eq VAR_TEMP_1, 2, Route22_EventScript_EarlyRivalApproachBottom
 	delay 6
 	msgbox Route22_Text_EarlyRivalIntro
-	call_if_eq VAR_STARTER_MON, 2, Route22_EventScript_EarlyRivalSquirtle
-	call_if_eq VAR_STARTER_MON, 1, Route22_EventScript_EarlyRivalBulbasaur
-	call_if_eq VAR_STARTER_MON, 0, Route22_EventScript_EarlyRivalCharmander
+	call_if_eq VAR_RIVAL_VARIANT, 2, Route22_EventScript_EarlyRivalSquirtle
+	call_if_eq VAR_RIVAL_VARIANT, 1, Route22_EventScript_EarlyRivalBulbasaur
+	call_if_eq VAR_RIVAL_VARIANT, 0, Route22_EventScript_EarlyRivalCharmander
 	msgbox Route22_Text_EarlyRivalPostBattle
 	closemessage
 	delay 10
@@ -181,9 +181,9 @@ Route22_EventScript_LateRival::
 	call_if_eq VAR_TEMP_1, 2, Route22_EventScript_LateRivalApproachBottom
 	msgbox Route22_Text_LateRivalIntro
 	setvar VAR_LAST_TALKED, LOCALID_ROUTE22_RIVAL
-	call_if_eq VAR_STARTER_MON, 2, Route22_EventScript_LateRivalSquirtle
-	call_if_eq VAR_STARTER_MON, 1, Route22_EventScript_LateRivalBulbasaur
-	call_if_eq VAR_STARTER_MON, 0, Route22_EventScript_LateRivalCharmander
+	call_if_eq VAR_RIVAL_VARIANT, 2, Route22_EventScript_LateRivalSquirtle
+	call_if_eq VAR_RIVAL_VARIANT, 1, Route22_EventScript_LateRivalBulbasaur
+	call_if_eq VAR_RIVAL_VARIANT, 0, Route22_EventScript_LateRivalCharmander
 	msgbox Route22_Text_LateRivalPostBattle
 	closemessage
 	delay 10
@@ -234,27 +234,21 @@ Route22_EventScript_LeagueGateSign::
 	end
 
 Route22_Text_EarlyRivalIntro::
-	.string "{RIVAL}: Hey! {PLAYER}!\p"
-	.string "You're off to the POKéMON LEAGUE?\n"
-	.string "Forget about it!\p"
-	.string "You probably don't have any\n"
-	.string "BADGES, do you?\p"
-	.string "The guard won't let you through\n"
-	.string "without them.\p"
-	.string "By the way, did your POKéMON get\n"
-	.string "any stronger?$"
+    .string "{RIVAL}: Hey, {PLAYER}! Heading to\n"
+    .string "the POKéMON LEAGUE? Me too!\p"
+    .string "Before that, let's battle! I want\n"
+    .string "to see how much your buddy has\l"
+    .string "grown!$"
 
 Route22_Text_EarlyRivalDefeat::
-	.string "Awww!\n"
-	.string "You just lucked out!$"
+    .string "Aww, man! You win this round!$"
 
 Route22_Text_EarlyRivalPostBattle::
-	.string "I heard the POKéMON LEAGUE is\n"
-	.string "crawling with tough TRAINERS.\p"
-	.string "I have to figure out how to get\n"
-	.string "past them.\p"
-	.string "You should quit dawdling and get a\n"
-	.string "move on!$"
+    .string "{RIVAL}: I saw a POKéMON from\n"
+    .string "HOENN near the beach yesterday!\l"
+    .string "Isn't that wild?\p"
+    .string "I'm gonna catch every POKéMON that\n"
+    .string "washed up here! See ya!$"
 
 @ Translated in RB as "{RIVAL}: What? Why do I have 2 POKéMON? You should catch some more too!"
 Route22_Text_RivalShouldCatchSomeMons::
@@ -265,26 +259,18 @@ Route22_Text_RivalShouldCatchSomeMons::
 	.string "つかまえれば　いい　じゃん！$"
 
 Route22_Text_LateRivalIntro::
-	.string "{RIVAL}: What? {PLAYER}!\n"
-	.string "What a surprise to see you here!\p"
-	.string "So you're going to the POKéMON\n"
-	.string "LEAGUE?\p"
-	.string "You collected all the BADGES, too?\n"
-	.string "That's cool!\p"
-	.string "Then I'll whip you, {PLAYER}, as a\n"
-	.string "warm-up for the POKéMON LEAGUE!\p"
-	.string "Come on!$"
+    .string "{RIVAL}: {PLAYER}! You're going to\n"
+    .string "the POKéMON LEAGUE too?\p"
+    .string "I've trained with every POKéMON I\n"
+    .string "met on this journey. Let's see\l"
+    .string "who's stronger now!$"
 
 Route22_Text_LateRivalDefeat::
-	.string "What!?\p"
-	.string "I was just careless, you!$"
+    .string "Aww! You're amazing, {PLAYER}!$"
 
 Route22_Text_LateRivalPostBattle::
-	.string "That loosened me up.\n"
-	.string "I'm ready for the POKéMON LEAGUE!\p"
-	.string "{PLAYER}, you need more practice.\p"
-	.string "But hey, you know that!\n"
-	.string "I'm out of here. Smell ya!$"
+    .string "{RIVAL}: I'm heading to VICTORY\n"
+    .string "ROAD first. See you at the top!$"
 
 @ Translated in RB as "{RIVAL}: Hahaha! {PLAYER}! That's your best? You're nowhere near as good as me, pal! Go train some more! You loser!"
 Route22_Text_LateRivalVictory::

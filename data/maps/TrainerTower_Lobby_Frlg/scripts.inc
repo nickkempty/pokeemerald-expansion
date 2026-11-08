@@ -117,8 +117,6 @@ TrainerTower_Lobby_EventScript_ReceptionistEnd::
 TrainerTower_Lobby_EventScript_MartClerk::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
 	pokemart TrainerTower_Lobby_Mart_Items
 	msgbox gText_PleaseComeAgain
 	release
@@ -135,6 +133,8 @@ TrainerTower_Lobby_Mart_Items::
 	.2byte ITEM_FULL_HEAL
 	.2byte ITEM_ESCAPE_ROPE
 	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_EXP_SHARE
+	.2byte ITEM_GENDER_SWAP
 	.2byte ITEM_NONE
 	release
 	end

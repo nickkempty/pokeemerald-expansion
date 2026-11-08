@@ -16,8 +16,6 @@ CeladonCity_DepartmentStore_5F_EventScript_FloorSign::
 CeladonCity_DepartmentStore_5F_EventScript_ClerkXItems::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
 	pokemart CeladonCity_DepartmentStore_5F_XItems
 	msgbox gText_PleaseComeAgain
 	release
@@ -32,6 +30,8 @@ CeladonCity_DepartmentStore_5F_XItems::
 	.2byte ITEM_X_ACCURACY
 	.2byte ITEM_GUARD_SPEC
 	.2byte ITEM_DIRE_HIT
+	.2byte ITEM_EXP_SHARE
+	.2byte ITEM_GENDER_SWAP
 	.2byte ITEM_NONE
 	release
 	end
@@ -39,8 +39,6 @@ CeladonCity_DepartmentStore_5F_XItems::
 CeladonCity_DepartmentStore_5F_EventScript_ClerkVitamins::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
 	pokemart CeladonCity_DepartmentStore_5F_Vitamins
 	msgbox gText_PleaseComeAgain
 	release
@@ -54,6 +52,8 @@ CeladonCity_DepartmentStore_5F_Vitamins::
 	.2byte ITEM_CALCIUM
 	.2byte ITEM_ZINC
 	.2byte ITEM_CARBOS
+	.2byte ITEM_EXP_SHARE
+	.2byte ITEM_GENDER_SWAP
 	.2byte ITEM_NONE
 	release
 	end

@@ -42,9 +42,9 @@ CeruleanCity_EventScript_Rival::
 	waitmovement 0
 	msgbox CeruleanCity_Text_RivalIntro
 	setvar VAR_LAST_TALKED, LOCALID_CERULEAN_RIVAL
-	call_if_eq VAR_STARTER_MON, 2, CeruleanCity_EventScript_RivalSquirtle
-	call_if_eq VAR_STARTER_MON, 1, CeruleanCity_EventScript_RivalBulbasaur
-	call_if_eq VAR_STARTER_MON, 0, CeruleanCity_EventScript_RivalCharmander
+	call_if_eq VAR_RIVAL_VARIANT, 2, CeruleanCity_EventScript_RivalSquirtle
+	call_if_eq VAR_RIVAL_VARIANT, 1, CeruleanCity_EventScript_RivalBulbasaur
+	call_if_eq VAR_RIVAL_VARIANT, 0, CeruleanCity_EventScript_RivalCharmander
 	famechecker FAMECHECKER_BILL, 0
 	msgbox CeruleanCity_Text_RivalPostBattle
 	closemessage
@@ -358,33 +358,24 @@ CeruleanCity_EventScript_GymSign::
 	end
 
 CeruleanCity_Text_RivalIntro::
-	.string "{RIVAL}: Yo! {PLAYER}!\p"
-	.string "You're still struggling along back\n"
-	.string "here?\p"
-	.string "I'm doing great! I caught a bunch\n"
-	.string "of strong and smart POKéMON!\p"
-	.string "Here, let me see what you caught,\n"
-	.string "{PLAYER}!$"
+    .string "{RIVAL}: Yo! {PLAYER}! Guess what?\n"
+    .string "I found BILL's house up north!\p"
+    .string "He says the sea currents are going\n"
+    .string "crazy. Let's battle first, then I'll\l"
+    .string "tell you more!$"
 
 CeruleanCity_Text_RivalDefeat::
-	.string "Hey!\n"
-	.string "Take it easy!\l"
-	.string "You won already!$"
+    .string "Whoa! You've gotten really strong!$"
 
 CeruleanCity_Text_RivalPostBattle::
-	.string "{RIVAL}: Hey, guess what?\p"
-	.string "I went to BILL's and got him to\n"
-	.string "show me his rare POKéMON.\p"
-	.string "That added a lot of pages to my\n"
-	.string "POKéDEX!\p"
-	.string "After all, BILL's world famous as a\n"
-	.string "POKéMANIAC.\p"
-	.string "He invented the POKéMON Storage\n"
-	.string "System on PC, too.\p"
-	.string "Since you're using his system,\n"
-	.string "you should go thank him.\p"
-	.string "Well, I better get rolling!\n"
-	.string "Smell ya later!$"
+    .string "{RIVAL}: BILL is building a machine\n"
+    .string "that can track the currents.\p"
+    .string "Some guys in black and purple\n"
+    .string "outfits were sneaking around his\l"
+    .string "place, though. They called\n"
+    .string "themselves TEAM ECLIPSE.\p"
+    .string "You should go see BILL. I'm off to\n"
+    .string "train by the water!$"
 
 CeruleanCity_Text_OhRightLittlePresentAsFavor::
 	.string "Oh, yeah, right.\p"
@@ -418,8 +409,8 @@ CeruleanCity_Text_OkayIllReturnStolenTM::
 	.string "I'll return the TM I stole.$"
 
 CeruleanCity_Text_RecoveredTM28FromGrunt::
-	.string "{PLAYER} recovered TM28 from\n"
-	.string "the TEAM ROCKET GRUNT.$"
+    .string "{PLAYER} recovered TM28 from\n"
+    .string "the TEAM ECLIPSE GRUNT.$"
 
 CeruleanCity_Text_BetterGetMovingBye::
 	.string "I better get moving!\n"
@@ -443,40 +434,40 @@ CeruleanCity_Text_YouCanCutDownSmallTrees::
 	.string "though.$"
 
 CeruleanCity_Text_IfSlowbroWasntThereCouldCutTree::
-	.string "If that SLOWBRO wasn't there, you\n"
-	.string "could CUT down the small tree.\p"
-	.string "That way, you could get to the\n"
-	.string "other side.\p"
-	.string "I think there's a way around it,\n"
-	.string "though.$"
+    .string "If that YADORAN wasn't there, you\n"
+    .string "could CUT down the small tree.\p"
+    .string "That way, you could get to the\n"
+    .string "other side.\p"
+    .string "I think there's a way around it,\n"
+    .string "though.$"
 
 CeruleanCity_Text_PokemonEncyclopediaAmusing::
 	.string "You're making an encyclopedia on\n"
 	.string "POKéMON? That sounds amusing.$"
 
 CeruleanCity_Text_PeopleHereWereRobbed::
-	.string "The people here were robbed.\p"
-	.string "It's obvious that TEAM ROCKET is\n"
-	.string "behind this most heinous crime!\p"
-	.string "Even our POLICE FORCE has\n"
-	.string "trouble with the ROCKETS!$"
+    .string "The people here were robbed.\p"
+    .string "It's obvious that TEAM ECLIPSE is\n"
+    .string "behind this most heinous crime!\p"
+    .string "Even our POLICE FORCE has\n"
+    .string "trouble with the ECLIPSES!$"
 
 CeruleanCity_Text_SlowbroUseSonicboom::
-	.string "Okay! SLOWBRO!\n"
-	.string "Use SONICBOOM!$"
+    .string "Okay! YADORAN!\n"
+    .string "Use SONICBOOM!$"
 
 CeruleanCity_Text_SlowbroPayAttention::
-	.string "Come on, SLOWBRO, pay attention!$"
+    .string "Come on, YADORAN, pay attention!$"
 
 CeruleanCity_Text_SlowbroPunch::
-	.string "SLOWBRO, punch!$"
+    .string "YADORAN, punch!$"
 
 CeruleanCity_Text_NoYouBlewItAgain::
 	.string "No!\n"
 	.string "You blew it again!$"
 
 CeruleanCity_Text_SlowbroWithdraw::
-	.string "SLOWBRO, WITHDRAW!$"
+    .string "YADORAN, WITHDRAW!$"
 
 CeruleanCity_Text_HardToControlMonsObedience::
 	.string "No! That's wrong!\n"
@@ -485,16 +476,16 @@ CeruleanCity_Text_HardToControlMonsObedience::
 	.string "on your abilities as a TRAINER.$"
 
 CeruleanCity_Text_SlowbroTookSnooze::
-	.string "SLOWBRO took a snooze…$"
+    .string "YADORAN took a snooze…$"
 
 CeruleanCity_Text_SlowbroLoafingAround::
-	.string "SLOWBRO is loafing around…$"
+    .string "YADORAN is loafing around…$"
 
 CeruleanCity_Text_SlowbroTurnedAway::
-	.string "SLOWBRO turned away…$"
+    .string "YADORAN turned away…$"
 
 CeruleanCity_Text_SlowbroIgnoredOrders::
-	.string "SLOWBRO ignored orders…$"
+    .string "YADORAN ignored orders…$"
 
 CeruleanCity_Text_WantBrightRedBicycle::
 	.string "I want a bright red bicycle.\p"

@@ -129,8 +129,8 @@ FiveIsland_MemorialPillar_Text_YourMonsLookHealthy::
 	.string "Your POKéMON look healthy…$"
 
 FiveIsland_MemorialPillar_Text_ThisIsWhereIBuriedMyOnix::
-	.string "This is where I buried my ONIX…\n"
-	.string "It was named TECTONIX…$"
+    .string "This is where I buried my IWARK…\n"
+    .string "It was named TECTONIX…$"
 
 FiveIsland_MemorialPillar_Text_HereLiesTectonixLemonadeOffering::
 	.string "“Here lies TECTONIX” is engraved\n"

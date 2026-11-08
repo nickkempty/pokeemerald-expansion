@@ -65,9 +65,9 @@ LavenderTown_Text_TownKnownAsMonGraveSite::
 	.string "POKéMON TOWER.$"
 
 LavenderTown_Text_GhostsAppearedInTower::
-	.string "Ghosts appeared in POKéMON TOWER.\p"
-	.string "I think they're the spirits of\n"
-	.string "POKéMON that the ROCKETS killed.$"
+    .string "Ghosts appeared in POKéMON TOWER.\p"
+    .string "I think they're the spirits of\n"
+    .string "POKéMON that the ECLIPSES killed.$"
 
 LavenderTown_Text_TownSign::
 	.string "LAVENDER TOWN\n"

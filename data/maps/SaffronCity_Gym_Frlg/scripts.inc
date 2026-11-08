@@ -25,6 +25,8 @@ SaffronCity_Gym_EventScript_GiveTM04::
 	goto_if_eq VAR_RESULT, FALSE, SaffronCity_Gym_EventScript_NoRoomForTM04
 	giveitem_msg SaffronCity_Gym_Text_ReceivedTM04FromSabrina, ITEM_TM04
 	setflag FLAG_GOT_TM04_FROM_SABRINA
+	setvar VAR_0x8004, 5
+	call EventScript_ZumoGymBonusTM
 	msgbox SaffronCity_Gym_Text_SabrinaPostBattle
 	release
 	end

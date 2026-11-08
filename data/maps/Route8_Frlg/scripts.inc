@@ -35,8 +35,8 @@ Route8_Text_GlennDefeat::
 	.string "It's not logical!$"
 
 Route8_Text_GlennPostBattle::
-	.string "Go with GRIMER first…and…\n"
-	.string "…and…then…$"
+    .string "Go with BETBETER first…and…\n"
+    .string "…and…then…$"
 
 Route8_Text_PaigeIntro::
 	.string "I like NIDORAN, so I collect them!$"
@@ -63,15 +63,15 @@ Route8_Text_LesliePostBattle::
 	.string "gates at SAFFRON.$"
 
 Route8_Text_AndreaIntro::
-	.string "MEOWTH is so cute, meow, meow,\n"
-	.string "meow!$"
+    .string "NYARTH is so cute, meow, meow,\n"
+    .string "meow!$"
 
 Route8_Text_AndreaDefeat::
 	.string "Meeeeyow!$"
 
 Route8_Text_AndreaPostBattle::
-	.string "I think PIDGEY and RATTATA are\n"
-	.string "cute, too!$"
+    .string "I think POPPO and KORATTA are\n"
+    .string "cute, too!$"
 
 Route8_Text_MeganIntro::
 	.string "We must look silly standing here\n"
@@ -102,14 +102,14 @@ Route8_Text_JuliaIntro::
 	.string "POKéMON?$"
 
 Route8_Text_JuliaDefeat::
-	.string "Stop!\p"
-	.string "Don't be so mean to my CLEFAIRY!$"
+    .string "Stop!\p"
+    .string "Don't be so mean to my PIPPI!$"
 
 Route8_Text_JuliaPostBattle::
-	.string "I read that CLEFAIRY evolves when\n"
-	.string "it's exposed to a MOON STONE.\p"
-	.string "I read that in a POKéMON JOURNAL.\n"
-	.string "I wonder if it's true?$"
+    .string "I read that PIPPI evolves when\n"
+    .string "it's exposed to a MOON STONE.\p"
+    .string "I read that in a POKéMON JOURNAL.\n"
+    .string "I wonder if it's true?$"
 
 Route8_Text_UndergroundPathSign::
 	.string "UNDERGROUND PATH\n"

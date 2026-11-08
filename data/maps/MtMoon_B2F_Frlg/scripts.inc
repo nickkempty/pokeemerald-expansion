@@ -13,6 +13,7 @@ MtMoon_B2F_EventScript_ShowFossils::
 
 MtMoon_B2F_EventScript_MiguelTrigger::
 	lockall
+	call_if_unset FLAG_ZK_MTMOON_MAGMA_GONE, MtMoon_B2F_EventScript_TabithaScene
 	applymovement LOCALID_MIGUEL, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	call MtMoon_B2F_EventScript_BattleMiguel
@@ -114,7 +115,7 @@ MtMoon_B2F_Movement_MiguelToDomeFossil::
 	step_end
 
 MtMoon_B2F_EventScript_Grunt1::
-	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT, MtMoon_B2F_Text_Grunt1Intro, MtMoon_B2F_Text_Grunt1Defeat
+	trainerbattle_single TRAINER_ZK_MTMOON_MAGMA_1, MtMoon_B2F_Text_Grunt1Intro, MtMoon_B2F_Text_Grunt1Defeat
 	msgbox MtMoon_B2F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -124,7 +125,7 @@ MtMoon_B2F_EventScript_Grunt2::
 	end
 
 MtMoon_B2F_EventScript_Grunt3::
-	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_3, MtMoon_B2F_Text_Grunt3Intro, MtMoon_B2F_Text_Grunt3Defeat
+	trainerbattle_single TRAINER_ZK_MTMOON_MAGMA_2, MtMoon_B2F_Text_Grunt3Intro, MtMoon_B2F_Text_Grunt3Defeat
 	msgbox MtMoon_B2F_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -132,6 +133,28 @@ MtMoon_B2F_EventScript_Grunt4::
 	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_4, MtMoon_B2F_Text_Grunt4Intro, MtMoon_B2F_Text_Grunt4Defeat
 	msgbox MtMoon_B2F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
 	end
+
+@ Zumo: TEAM MAGMA admin TABITHA digs up the Mt. Moon meteorite for the M-CORE
+MtMoon_B2F_EventScript_Tabitha::
+	lockall
+	call MtMoon_B2F_EventScript_TabithaScene
+	releaseall
+	end
+
+MtMoon_B2F_EventScript_TabithaScene::
+	playse SE_PIN
+	applymovement LOCALID_ZK_MTMOON_TABITHA, Common_Movement_ExclamationMark
+	waitmovement 0
+	playbgm MUS_RG_ENCOUNTER_ROCKET, 0
+	msgbox MtMoon_B2F_Text_TabithaIntro
+	trainerbattle_no_intro TRAINER_ZK_MTMOON_TABITHA, MtMoon_B2F_Text_TabithaDefeat
+	msgbox MtMoon_B2F_Text_TabithaAfter
+	closemessage
+	fadescreen FADE_TO_BLACK
+	setflag FLAG_ZK_MTMOON_MAGMA_GONE
+	removeobject LOCALID_ZK_MTMOON_TABITHA
+	fadescreen FADE_FROM_BLACK
+	return
 
 MtMoon_B2F_Text_MiguelIntro::
 	.string "Hey, stop!\p"
@@ -157,53 +180,50 @@ MtMoon_B2F_Text_LabOnCinnabarRegeneratesFossils::
 	.string "fossils.$"
 
 MtMoon_B2F_Text_Grunt1Intro::
-	.string "We, TEAM ROCKET, shall find the\n"
-	.string "fossils!\p"
-	.string "Reviving POKéMON from them will\n"
-	.string "earn us huge riches!$"
+    .string "TEAM MAGMA is digging here, kid!\n"
+    .string "This meteorite belongs to us now!$"
 
 MtMoon_B2F_Text_Grunt1Defeat::
 	.string "Urgh!\n"
 	.string "Now I'm mad!$"
 
 MtMoon_B2F_Text_Grunt1PostBattle::
-	.string "You made me mad!\n"
-	.string "TEAM ROCKET will blacklist you!$"
+    .string "Once M-CORE is finished, even the\n"
+    .string "legends of the sea will obey us!$"
 
 MtMoon_B2F_Text_Grunt2Intro::
-	.string "We, TEAM ROCKET, are POKéMON\n"
-	.string "gangsters!\l"
-	.string "We strike fear with our strength!$"
+    .string "Hey! This cave belongs to TEAM\n"
+    .string "ECLIPSE now!$"
 
 MtMoon_B2F_Text_Grunt2Defeat::
 	.string "I blew it!$"
 
 MtMoon_B2F_Text_Grunt2PostBattle::
-	.string "Darn it all!\n"
-	.string "My associates won't stand for this!$"
+    .string "Those POKéMON that drift in from\n"
+    .string "other regions? They sell for a\l"
+    .string "fortune!$"
 
 MtMoon_B2F_Text_Grunt3Intro::
-	.string "We're pulling a big job here!\n"
-	.string "Get lost, kid!$"
+    .string "HOENN's TEAM MAGMA and KANTO's\n"
+    .string "TEAM ECLIPSE work together now!$"
 
 MtMoon_B2F_Text_Grunt3Defeat::
 	.string "So, you are good…$"
 
 MtMoon_B2F_Text_Grunt3PostBattle::
-	.string "If you find a fossil, give it to me\n"
-	.string "and scram!$"
+    .string "Our boss NOX knows the sea better\n"
+    .string "than anyone. You can't stop him!$"
 
 MtMoon_B2F_Text_Grunt4Intro::
-	.string "Little kids shouldn't be messing\n"
-	.string "around with grown-ups!\p"
-	.string "It could be bad news!$"
+    .string "Who goes there? Our MOON STONE\n"
+    .string "digging is top secret!$"
 
 MtMoon_B2F_Text_Grunt4Defeat::
 	.string "I'm steamed!$"
 
 MtMoon_B2F_Text_Grunt4PostBattle::
-	.string "POKéMON lived here long before\n"
-	.string "people came.$"
+    .string "Fine, take a fossil. TEAM ECLIPSE\n"
+    .string "only wants the MOON STONES anyway!$"
 
 MtMoon_B2F_Text_YouWantDomeFossil::
 	.string "Do you want the DOME FOSSIL?$"
@@ -217,3 +237,27 @@ MtMoon_B2F_Text_ObtainedHelixFossil::
 MtMoon_B2F_Text_ObtainedDomeFossil::
 	.string "Obtained the DOME FOSSIL!$"
 
+
+MtMoon_B2F_Text_TabithaIntro::
+    .string "Hehehe! The little hero found our\n"
+    .string "dig site.\p"
+    .string "I'm TABITHA, an ADMIN of TEAM\n"
+    .string "MAGMA from HOENN.\p"
+    .string "Our boss MAXIE and NOX of TEAM\n"
+    .string "ECLIPSE made a deal.\p"
+    .string "The MOON meteorite under this\n"
+    .string "mountain will power their M-CORE…\p"
+    .string "And the M-CORE will wake the great\n"
+    .string "one sleeping under the sea!\p"
+    .string "Go away, or I'll bury you here!$"
+
+MtMoon_B2F_Text_TabithaDefeat::
+    .string "Hah! Not bad for a KANTO kid!$"
+
+MtMoon_B2F_Text_TabithaAfter::
+    .string "TABITHA: It doesn't matter. We\n"
+    .string "already carved out the core of\l"
+    .string "the meteorite.\p"
+    .string "Keep the fossils, kid. Our next\n"
+    .string "dig is under ROCK TUNNEL.\p"
+    .string "Come and stop us… if you dare!$"

@@ -33,10 +33,6 @@ SSAnne_2F_Corridor_EventScript_RivalTrigger::
 	call_if_eq VAR_TEMP_1, 1, SSAnne_2F_Corridor_EventScript_RivalApproachMid
 	call_if_eq VAR_TEMP_1, 2, SSAnne_2F_Corridor_EventScript_RivalApproachRight
 	msgbox SSAnne_2F_Corridor_Text_RivalIntro
-	setvar VAR_LAST_TALKED, LOCALID_SS_ANNE_RIVAL
-	call_if_eq VAR_STARTER_MON, 2, SSAnne_2F_Corridor_EventScript_RivalSquirtle
-	call_if_eq VAR_STARTER_MON, 1, SSAnne_2F_Corridor_EventScript_RivalBulbasaur
-	call_if_eq VAR_STARTER_MON, 0, SSAnne_2F_Corridor_EventScript_RivalCharmander
 	msgbox SSAnne_2F_Corridor_Text_RivalPostBattle
 	closemessage
 	delay 10
@@ -175,20 +171,14 @@ SSAnne_2F_Corridor_Text_ThisShipIsLuxuryLiner::
 	.string "invited TRAINERS.$"
 
 SSAnne_2F_Corridor_Text_RivalIntro::
-	.string "{RIVAL}: Bonjour!\n"
-	.string "{PLAYER}!\p"
-	.string "Imagine seeing you here!\n"
-	.string "{PLAYER}, were you really invited?\p"
-	.string "So how's your POKéDEX coming?\p"
-	.string "I already caught 40 kinds, pal.\n"
-	.string "Different kinds are everywhere.\p"
-	.string "Crawl around in grassy areas, and\n"
-	.string "look hard for them.$"
+    .string "{RIVAL}: {PLAYER}! Bad news!\p"
+    .string "TEAM MAGMA guys dressed as sailors\n"
+    .string "broke into the CAPTAIN's safe!\p"
+    .string "They took the RED ORB, the thing\n"
+    .string "NOX needs for M-CORE!$"
 
 SSAnne_2F_Corridor_Text_RivalDefeat::
-	.string "Humph!\p"
-	.string "At least you're raising your\n"
-	.string "POKéMON!$"
+    .string "Wow! You're getting crazy strong!$"
 
 SSAnne_2F_Corridor_Text_RivalVictory::
 	.string "{PLAYER}..！\n"
@@ -197,11 +187,10 @@ SSAnne_2F_Corridor_Text_RivalVictory::
 	.string "きたえた　ほうが　いいぜ！$"
 
 SSAnne_2F_Corridor_Text_RivalPostBattle::
-	.string "{RIVAL}: I heard there was a CUT\n"
-	.string "master on board.\p"
-	.string "But he was just a seasick old man!\p"
-	.string "CUT itself is really useful.\n"
-	.string "Yup, it'll be handy.\p"
-	.string "You should go see him, too.\n"
-	.string "Smell ya!$"
+    .string "{RIVAL}: The CAPTAIN is too seasick\n"
+    .string "to chase them.\p"
+    .string "The thieves ran up to the deck,\n"
+    .string "past 3F! Go after them!\p"
+    .string "I'll check the cabins down here.\n"
+    .string "Smell ya later… partner!$"
 
