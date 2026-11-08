@@ -9808,7 +9808,7 @@ const struct ItemInfo gItemsInfo[] =
             "A held item that\n"
             "gets Exp. Points\n"
             "from battles."),
-        .price = (I_PRICE == GEN_1) ? 1 : 3000,
+        .price = 10000, // Zumo: sold at marts for 10,000
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
     #endif
