@@ -1,0 +1,1042 @@
+{
+ "flags": {
+  "FLAG_HX_ALPHA_TEAM_GIVEN": 784,
+  "FLAG_HX_AQUA_RAIDED_DEVON": 814,
+  "FLAG_HX_BADGE01_GET": 800,
+  "FLAG_HX_BADGE02_GET": 803,
+  "FLAG_HX_BADGE03_GET": 779,
+  "FLAG_HX_BADGE04_GET": 804,
+  "FLAG_HX_BADGE05_GET": 805,
+  "FLAG_HX_BADGE06_GET": 806,
+  "FLAG_HX_BADGE07_GET": 778,
+  "FLAG_HX_BADGE08_GET": 807,
+  "FLAG_HX_DEFEATED_DEWFORD_GYM": 826,
+  "FLAG_HX_DEFEATED_FORTREE_GYM": 858,
+  "FLAG_HX_DEFEATED_LAVARIDGE_GYM": 839,
+  "FLAG_HX_DEFEATED_MAUVILLE_GYM": 777,
+  "FLAG_HX_DEFEATED_MOSSDEEP_GYM": 877,
+  "FLAG_HX_DEFEATED_PETALBURG_GYM": 845,
+  "FLAG_HX_DEFEATED_RUSTBORO_GYM": 802,
+  "FLAG_HX_DEFEATED_SOOTOPOLIS_GYM": 889,
+  "FLAG_HX_DELIVERED_DEVON_GOODS": 824,
+  "FLAG_HX_DELIVERED_STEVEN_LETTER": 823,
+  "FLAG_HX_DEVON_GOODS_STOLEN": 799,
+  "FLAG_HX_DEWFORD_AQUA_DONE": 828,
+  "FLAG_HX_DOCK_REJECTED_DEVON_GOODS": 768,
+  "FLAG_HX_GROUDON_GONE": 890,
+  "FLAG_HX_GROUDON_RING_HIDE": 898,
+  "FLAG_HX_HIDE_DEWFORD_TOWN_AQUA_GRUNT": 827,
+  "FLAG_HX_HIDE_LAVARIDGE_TOWN_MAXIE": 837,
+  "FLAG_HX_HIDE_LAVARIDGE_TOWN_NOX": 838,
+  "FLAG_HX_HIDE_MT_PYRE_SUMMIT_ARCHIE": 886,
+  "FLAG_HX_HIDE_MT_PYRE_SUMMIT_MAXIE": 885,
+  "FLAG_HX_HIDE_RUSTBORO_CITY_AQUA_GRUNT": 812,
+  "FLAG_HX_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE": 813,
+  "FLAG_HX_HIDE_SOOTOPOLIS_CITY_ARCHIE": 883,
+  "FLAG_HX_HIDE_SOOTOPOLIS_CITY_MAXIE": 882,
+  "FLAG_HX_HIDE_SOOTO_MAXIE": 887,
+  "FLAG_HX_HIDE_WI_AQUA": 856,
+  "FLAG_HX_HX_GROUDON_GONE": 892,
+  "FLAG_HX_HX_HIDE_SOOTO_MAXIE": 894,
+  "FLAG_HX_HX_NOX_FINAL_DONE": 891,
+  "FLAG_HX_HX_SOOTO_SCENE_DONE": 893,
+  "FLAG_HX_ITEM_FIERY_PATH_FIRE_STONE": 835,
+  "FLAG_HX_ITEM_JAGGED_PASS_BURN_HEAL": 841,
+  "FLAG_HX_ITEM_LILYCOVE_CITY_MAX_REPEL": 870,
+  "FLAG_HX_ITEM_MAUVILLE_CITY_X_SPEED": 776,
+  "FLAG_HX_ITEM_MOSSDEEP_CITY_NET_BALL": 875,
+  "FLAG_HX_ITEM_PETALBURG_CITY_ETHER": 843,
+  "FLAG_HX_ITEM_PETALBURG_CITY_MAX_REVIVE": 842,
+  "FLAG_HX_ITEM_ROUTE_104_POKE_BALL": 818,
+  "FLAG_HX_ITEM_ROUTE_104_POTION": 820,
+  "FLAG_HX_ITEM_ROUTE_104_PP_UP": 817,
+  "FLAG_HX_ITEM_ROUTE_104_X_ACCURACY": 819,
+  "FLAG_HX_ITEM_ROUTE_105_IRON": 790,
+  "FLAG_HX_ITEM_ROUTE_106_PROTEIN": 788,
+  "FLAG_HX_ITEM_ROUTE_108_STAR_PIECE": 787,
+  "FLAG_HX_ITEM_ROUTE_109_POTION": 786,
+  "FLAG_HX_ITEM_ROUTE_109_PP_UP": 785,
+  "FLAG_HX_ITEM_ROUTE_110_DIRE_HIT": 772,
+  "FLAG_HX_ITEM_ROUTE_110_ELIXIR": 774,
+  "FLAG_HX_ITEM_ROUTE_110_RARE_CANDY": 773,
+  "FLAG_HX_ITEM_ROUTE_111_ELIXIR": 832,
+  "FLAG_HX_ITEM_ROUTE_111_HP_UP": 831,
+  "FLAG_HX_ITEM_ROUTE_111_STARDUST": 830,
+  "FLAG_HX_ITEM_ROUTE_112_NUGGET": 834,
+  "FLAG_HX_ITEM_ROUTE_116_ETHER": 794,
+  "FLAG_HX_ITEM_ROUTE_116_HP_UP": 796,
+  "FLAG_HX_ITEM_ROUTE_116_POTION": 798,
+  "FLAG_HX_ITEM_ROUTE_116_REPEL": 795,
+  "FLAG_HX_ITEM_ROUTE_116_X_SPECIAL": 797,
+  "FLAG_HX_ITEM_ROUTE_117_GREAT_BALL": 792,
+  "FLAG_HX_ITEM_ROUTE_117_REVIVE": 793,
+  "FLAG_HX_ITEM_ROUTE_118_HYPER_POTION": 789,
+  "FLAG_HX_ITEM_ROUTE_119_ELIXIR_1": 849,
+  "FLAG_HX_ITEM_ROUTE_119_ELIXIR_2": 855,
+  "FLAG_HX_ITEM_ROUTE_119_HYPER_POTION_1": 852,
+  "FLAG_HX_ITEM_ROUTE_119_HYPER_POTION_2": 853,
+  "FLAG_HX_ITEM_ROUTE_119_LEAF_STONE": 850,
+  "FLAG_HX_ITEM_ROUTE_119_NUGGET": 854,
+  "FLAG_HX_ITEM_ROUTE_119_RARE_CANDY": 851,
+  "FLAG_HX_ITEM_ROUTE_119_SUPER_REPEL": 847,
+  "FLAG_HX_ITEM_ROUTE_119_ZINC": 848,
+  "FLAG_HX_ITEM_ROUTE_120_FULL_HEAL": 862,
+  "FLAG_HX_ITEM_ROUTE_120_HYPER_POTION": 864,
+  "FLAG_HX_ITEM_ROUTE_120_NEST_BALL": 863,
+  "FLAG_HX_ITEM_ROUTE_120_NUGGET": 861,
+  "FLAG_HX_ITEM_ROUTE_120_REVIVE": 865,
+  "FLAG_HX_ITEM_ROUTE_121_CARBOS": 866,
+  "FLAG_HX_ITEM_ROUTE_121_REVIVE": 867,
+  "FLAG_HX_ITEM_ROUTE_121_ZINC": 868,
+  "FLAG_HX_ITEM_ROUTE_124_BLUE_SHARD": 872,
+  "FLAG_HX_ITEM_ROUTE_124_RED_SHARD": 871,
+  "FLAG_HX_ITEM_ROUTE_124_YELLOW_SHARD": 873,
+  "FLAG_HX_ITEM_ROUTE_126_GREEN_SHARD": 879,
+  "FLAG_HX_ITEM_RUSTBORO_CITY_X_DEFEND": 801,
+  "FLAG_HX_ITEM_RUSTURF_TUNNEL_MAX_ETHER": 811,
+  "FLAG_HX_ITEM_RUSTURF_TUNNEL_POKE_BALL": 810,
+  "FLAG_HX_KECLEON_FLED_FORTREE": 857,
+  "FLAG_HX_MAUVILLE_GYM_BARRIERS_STATE": 782,
+  "FLAG_HX_MET_ARCHIE_SOOTOPOLIS": 881,
+  "FLAG_HX_MET_MAXIE_SOOTOPOLIS": 880,
+  "FLAG_HX_MIRAGE_TOWER_VISIBLE": 833,
+  "FLAG_HX_MR_BRINEY_SAILING_INTRO": 822,
+  "FLAG_HX_NOX_FINAL_DONE": 888,
+  "FLAG_HX_RECEIVED_CASTFORM": 859,
+  "FLAG_HX_RECEIVED_CHESTO_BERRY_ROUTE_104": 816,
+  "FLAG_HX_RECEIVED_GOOD_ROD": 846,
+  "FLAG_HX_RECEIVED_HM_DIVE": 874,
+  "FLAG_HX_RECEIVED_KINGS_ROCK": 876,
+  "FLAG_HX_RECEIVED_LAVARIDGE_EGG": 836,
+  "FLAG_HX_RECEIVED_OLD_ROD": 825,
+  "FLAG_HX_RECEIVED_POKENAV": 809,
+  "FLAG_HX_RECEIVED_POWDER_JAR": 770,
+  "FLAG_HX_RECEIVED_SECRET_POWER": 769,
+  "FLAG_HX_RECEIVED_TM_AERIAL_ACE": 860,
+  "FLAG_HX_RECEIVED_TM_BULK_UP": 829,
+  "FLAG_HX_RECEIVED_TM_BULLET_SEED": 821,
+  "FLAG_HX_RECEIVED_TM_CALM_MIND": 878,
+  "FLAG_HX_RECEIVED_TM_FACADE": 844,
+  "FLAG_HX_RECEIVED_TM_OVERHEAT": 840,
+  "FLAG_HX_RECEIVED_TM_ROCK_TOMB": 815,
+  "FLAG_HX_RECEIVED_TM_SHOCK_WAVE": 783,
+  "FLAG_HX_RECEIVED_TM_WATER_PULSE": 897,
+  "FLAG_HX_RUSTURF_TUNNEL_OPENED": 808,
+  "FLAG_HX_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE": 884,
+  "FLAG_HX_SOOTO_MAXIE_GONE": 896,
+  "FLAG_HX_SOOTO_SCENE_DONE": 895,
+  "FLAG_HX_SYS_GAME_CLEAR": 771,
+  "FLAG_HX_TEAM_AQUA_ESCAPED_IN_SUBMARINE": 869,
+  "FLAG_HX_TV_EXPLAINED": 775,
+  "FLAG_HX_UNION_ROAD_OPEN": 791,
+  "FLAG_HX_VISITED_MAUVILLE_CITY": 781,
+  "FLAG_HX_VISITED_SLATEPORT_CITY": 780
+ },
+ "hidden": {
+  "FLAG_HX_HIDDEN_ITEM_ROUTE_109_ETHER": 124,
+  "FLAG_HX_HIDDEN_ITEM_ROUTE_109_GREAT_BALL": 46,
+  "FLAG_HX_HIDDEN_ITEM_ROUTE_109_HEART_SCALE_1": 45,
+  "FLAG_HX_HIDDEN_ITEM_ROUTE_109_REVIVE": 44,
+  "FLAG_HX_HIDDEN_ITEM_ROUTE_110_FULL_HEAL": 43,
+  "FLAG_HX_HIDDEN_ITEM_ROUTE_110_GREAT_BALL": 16,
+  "FLAG_HX_HIDDEN_ITEM_ROUTE_110_POKE_BALL": 40,
+  "FLAG_HX_HIDDEN_ITEM_ROUTE_110_REVIVE": 7
+ },
+ "mapsecs": {},
+ "trainers": {
+  "TRAINER_ABIGAIL_1": {
+   "offset": 32,
+   "slot": "TRAINER_AQUA_GRUNT_F"
+  },
+  "TRAINER_AISHA": {
+   "offset": 33,
+   "slot": "TRAINER_BATTLE_GIRL"
+  },
+  "TRAINER_ALEXIA": {
+   "offset": 40,
+   "slot": "TRAINER_BUG_CATCHER_3"
+  },
+  "TRAINER_ALICE": {
+   "offset": 32,
+   "slot": "TRAINER_ELITE_FOUR_PHOEBE"
+  },
+  "TRAINER_ALYSSA": {
+   "offset": 32,
+   "slot": "TRAINER_RS_BEAUTY"
+  },
+  "TRAINER_ANDREA": {
+   "offset": 36,
+   "slot": 830
+  },
+  "TRAINER_ANGELICA": {
+   "offset": 40,
+   "slot": 786
+  },
+  "TRAINER_ANGELO": {
+   "offset": 32,
+   "slot": "TRAINER_KINDLER"
+  },
+  "TRAINER_ANNA_AND_MEG_1": {
+   "offset": 33,
+   "slot": "TRAINER_RS_BIRD_KEEPER"
+  },
+  "TRAINER_ANNIKA": {
+   "offset": 36,
+   "slot": 839
+  },
+  "TRAINER_ANTHONY": {
+   "offset": 32,
+   "slot": "TRAINER_AQUA_GRUNT_M"
+  },
+  "TRAINER_ASHLEY": {
+   "offset": 41,
+   "slot": 776
+  },
+  "TRAINER_AUSTINA": {
+   "offset": 32,
+   "slot": "TRAINER_POKEFAN_M"
+  },
+  "TRAINER_AUTUMN": {
+   "offset": 37,
+   "slot": "TRAINER_GENTLEMAN_WALTER"
+  },
+  "TRAINER_AXLE": {
+   "offset": 38,
+   "slot": "TRAINER_CHANNELER_4"
+  },
+  "TRAINER_BARNY": {
+   "offset": 38,
+   "slot": 751
+  },
+  "TRAINER_BARRY": {
+   "offset": 40,
+   "slot": 821
+  },
+  "TRAINER_BEAU": {
+   "offset": 35,
+   "slot": "TRAINER_SUPER_NERD_2"
+  },
+  "TRAINER_BECKY": {
+   "offset": 35,
+   "slot": "TRAINER_COOLTRAINER_GILBERT"
+  },
+  "TRAINER_BEN": {
+   "offset": 32,
+   "slot": "TRAINER_RS_BLACK_BELT"
+  },
+  "TRAINER_BENJAMIN_1": {
+   "offset": 32,
+   "slot": "TRAINER_RS_AROMA_LADY"
+  },
+  "TRAINER_BERKE": {
+   "offset": 40,
+   "slot": "TRAINER_BUG_CATCHER_6"
+  },
+  "TRAINER_BETHANY": {
+   "offset": 36,
+   "slot": 835
+  },
+  "TRAINER_BIANCA": {
+   "offset": 35,
+   "slot": "TRAINER_COOLTRAINER_BERKE"
+  },
+  "TRAINER_BILLY": {
+   "offset": 32,
+   "slot": "TRAINER_RUNNING_TRIATHLETE_F"
+  },
+  "TRAINER_BLAKE": {
+   "offset": 33,
+   "slot": 808
+  },
+  "TRAINER_BRANDEN": {
+   "offset": 35,
+   "slot": "TRAINER_BEAUTY_LAUREN"
+  },
+  "TRAINER_BRANDI": {
+   "offset": 33,
+   "slot": "TRAINER_NINJA_BOY"
+  },
+  "TRAINER_BRAWLY_1": {
+   "offset": 43,
+   "slot": "TRAINER_LEADER_BRAWLY"
+  },
+  "TRAINER_BRENDA": {
+   "offset": 40,
+   "slot": 824
+  },
+  "TRAINER_BRENDEN": {
+   "offset": 43,
+   "slot": "TRAINER_ELITE_FOUR_DRAKE"
+  },
+  "TRAINER_BRENT": {
+   "offset": 39,
+   "slot": 756
+  },
+  "TRAINER_BRIANNA": {
+   "offset": 36,
+   "slot": 832
+  },
+  "TRAINER_BRICE": {
+   "offset": 36,
+   "slot": "TRAINER_ROCKER_RANDALL"
+  },
+  "TRAINER_BRIDGET": {
+   "offset": 36,
+   "slot": 833
+  },
+  "TRAINER_BROOKE_1": {
+   "offset": 35,
+   "slot": "TRAINER_BURGLAR_1"
+  },
+  "TRAINER_BRYAN": {
+   "offset": 35,
+   "slot": "TRAINER_GAMER_1"
+  },
+  "TRAINER_BRYANT": {
+   "offset": 36,
+   "slot": "TRAINER_BIRD_KEEPER_KEITH"
+  },
+  "TRAINER_CALE": {
+   "offset": 40,
+   "slot": 794
+  },
+  "TRAINER_CALLIE": {
+   "offset": 40,
+   "slot": 789
+  },
+  "TRAINER_CAROL": {
+   "offset": 36,
+   "slot": "TRAINER_COOLTRAINER_BROOKE"
+  },
+  "TRAINER_CARTER": {
+   "offset": 32,
+   "slot": "TRAINER_RS_PSYCHIC_M"
+  },
+  "TRAINER_CATHERINE_1": {
+   "offset": 39,
+   "slot": 757
+  },
+  "TRAINER_CELIA": {
+   "offset": 35,
+   "slot": "TRAINER_COOLTRAINER_SHANNON"
+  },
+  "TRAINER_CELINA": {
+   "offset": 35,
+   "slot": "TRAINER_BURGLAR_4"
+  },
+  "TRAINER_CHAD": {
+   "offset": 40,
+   "slot": 803
+  },
+  "TRAINER_CHANDLER": {
+   "offset": 32,
+   "slot": "TRAINER_EXPERT_M"
+  },
+  "TRAINER_CHESTER": {
+   "offset": 32,
+   "slot": "TRAINER_CYCLING_TRIATHLETE_M"
+  },
+  "TRAINER_CHIP": {
+   "offset": 40,
+   "slot": 784
+  },
+  "TRAINER_CHRIS": {
+   "offset": 39,
+   "slot": 765
+  },
+  "TRAINER_CINDY_1": {
+   "offset": 35,
+   "slot": "TRAINER_AQUA_ADMIN_SHELLY"
+  },
+  "TRAINER_CLARISSA": {
+   "offset": 40,
+   "slot": 785
+  },
+  "TRAINER_CLARK": {
+   "offset": 34,
+   "slot": "TRAINER_MAGMA_LEADER"
+  },
+  "TRAINER_CLIFFORD": {
+   "offset": 33,
+   "slot": 814
+  },
+  "TRAINER_COLE": {
+   "offset": 38,
+   "slot": "TRAINER_CHANNELER_2"
+  },
+  "TRAINER_COLIN": {
+   "offset": 40,
+   "slot": "TRAINER_TEAM_ROCKET_GRUNT"
+  },
+  "TRAINER_CONNIE": {
+   "offset": 36,
+   "slot": 831
+  },
+  "TRAINER_CORY_1": {
+   "offset": 32,
+   "slot": "TRAINER_EXPERT_F"
+  },
+  "TRAINER_CRISSY": {
+   "offset": 36,
+   "slot": 836
+  },
+  "TRAINER_CRISTIAN": {
+   "offset": 43,
+   "slot": "TRAINER_LASS_2"
+  },
+  "TRAINER_CRISTIN_1": {
+   "offset": 40,
+   "slot": 798
+  },
+  "TRAINER_DAISUKE": {
+   "offset": 35,
+   "slot": "TRAINER_BIKER_1"
+  },
+  "TRAINER_DALE": {
+   "offset": 32,
+   "slot": "TRAINER_RS_TUBER_M"
+  },
+  "TRAINER_DALTON_1": {
+   "offset": 32,
+   "slot": "TRAINER_CYCLING_TRIATHLETE_F"
+  },
+  "TRAINER_DANIELLE": {
+   "offset": 38,
+   "slot": "TRAINER_CHANNELER_5"
+  },
+  "TRAINER_DAPHNE": {
+   "offset": 36,
+   "slot": 838
+  },
+  "TRAINER_DARIAN": {
+   "offset": 35,
+   "slot": "TRAINER_MAGMA_ADMIN_TABITHA"
+  },
+  "TRAINER_DARIUS": {
+   "offset": 41,
+   "slot": 779
+  },
+  "TRAINER_DAVID": {
+   "offset": 32,
+   "slot": "TRAINER_ELITE_FOUR_SIDNEY"
+  },
+  "TRAINER_DAWSON": {
+   "offset": 34,
+   "slot": "TRAINER_MAMGA_GRUNT_F"
+  },
+  "TRAINER_DAYTON": {
+   "offset": 39,
+   "slot": 767
+  },
+  "TRAINER_DEAN": {
+   "offset": 40,
+   "slot": 822
+  },
+  "TRAINER_DEANDRE": {
+   "offset": 32,
+   "slot": "TRAINER_RS_FISHERMAN"
+  },
+  "TRAINER_DECLAN": {
+   "offset": 40,
+   "slot": 805
+  },
+  "TRAINER_DEREK": {
+   "offset": 33,
+   "slot": "TRAINER_DRAGON_TAMER"
+  },
+  "TRAINER_DEVAN": {
+   "offset": 34,
+   "slot": "TRAINER_RS_LASS"
+  },
+  "TRAINER_DIANA_1": {
+   "offset": 37,
+   "slot": "TRAINER_GENTLEMAN_NORTON"
+  },
+  "TRAINER_DONALD": {
+   "offset": 39,
+   "slot": 754
+  },
+  "TRAINER_DOUG": {
+   "offset": 39,
+   "slot": 758
+  },
+  "TRAINER_DREW": {
+   "offset": 35,
+   "slot": "TRAINER_PICNICKER_HANNAH"
+  },
+  "TRAINER_DUSTY_1": {
+   "offset": 35,
+   "slot": "TRAINER_SUPER_NERD_1"
+  },
+  "TRAINER_DYLAN_1": {
+   "offset": 33,
+   "slot": "TRAINER_COLLECTOR"
+  },
+  "TRAINER_EDMOND": {
+   "offset": 32,
+   "slot": "TRAINER_BUG_MANIAC"
+  },
+  "TRAINER_EDWARD": {
+   "offset": 32,
+   "slot": "TRAINER_RS_RUIN_MANIAC"
+  },
+  "TRAINER_EDWARDO": {
+   "offset": 41,
+   "slot": 777
+  },
+  "TRAINER_EDWIN_1": {
+   "offset": 32,
+   "slot": "TRAINER_RS_TUBER_F"
+  },
+  "TRAINER_ELI": {
+   "offset": 38,
+   "slot": 748
+  },
+  "TRAINER_ELIJAH": {
+   "offset": 32,
+   "slot": "TRAINER_RS_GENTLEMAN"
+  },
+  "TRAINER_ELLIOT_1": {
+   "offset": 32,
+   "slot": "TRAINER_RS_CHAMPION"
+  },
+  "TRAINER_ERIC": {
+   "offset": 37,
+   "slot": "TRAINER_COOLTRAINER_AUSTINA"
+  },
+  "TRAINER_ETHAN_1": {
+   "offset": 37,
+   "slot": "TRAINER_COOLTRAINER_JULIE"
+  },
+  "TRAINER_FABIAN": {
+   "offset": 39,
+   "slot": 768
+  },
+  "TRAINER_FLANNERY_1": {
+   "offset": 38,
+   "slot": "TRAINER_LEADER_FLANNERY"
+  },
+  "TRAINER_FLINT": {
+   "offset": 41,
+   "slot": 775
+  },
+  "TRAINER_GEORGE": {
+   "offset": 40,
+   "slot": "TRAINER_BUG_CATCHER_4"
+  },
+  "TRAINER_GERALD": {
+   "offset": 38,
+   "slot": "TRAINER_CHANNELER_3"
+  },
+  "TRAINER_GINA_AND_MIA_1": {
+   "offset": 35,
+   "slot": "TRAINER_AQUA_ADMIN_MATT"
+  },
+  "TRAINER_GRACE": {
+   "offset": 40,
+   "slot": 802
+  },
+  "TRAINER_GREG": {
+   "offset": 39,
+   "slot": 752
+  },
+  "TRAINER_GRUNT_MUSEUM_1": {
+   "offset": 35,
+   "slot": "TRAINER_CAMPER_2"
+  },
+  "TRAINER_GRUNT_WEATHER_INST_1": {
+   "offset": 40,
+   "slot": "TRAINER_RS_YOUNG_COUPLE"
+  },
+  "TRAINER_GRUNT_WEATHER_INST_2": {
+   "offset": 40,
+   "slot": 771
+  },
+  "TRAINER_GRUNT_WEATHER_INST_3": {
+   "offset": 40,
+   "slot": 772
+  },
+  "TRAINER_GRUNT_WEATHER_INST_4": {
+   "offset": 40,
+   "slot": 769
+  },
+  "TRAINER_GRUNT_WEATHER_INST_5": {
+   "offset": 40,
+   "slot": 773
+  },
+  "TRAINER_GWEN": {
+   "offset": 32,
+   "slot": "TRAINER_SR_AND_JR"
+  },
+  "TRAINER_HAILEY": {
+   "offset": 32,
+   "slot": "TRAINER_POKEFAN_F"
+  },
+  "TRAINER_HALEY_1": {
+   "offset": 35,
+   "slot": "TRAINER_OLD_COUPLE"
+  },
+  "TRAINER_HANNAH": {
+   "offset": 33,
+   "slot": 812
+  },
+  "TRAINER_HAYDEN": {
+   "offset": 35,
+   "slot": "TRAINER_CUE_BALL_CHASE"
+  },
+  "TRAINER_HEIDI": {
+   "offset": 35,
+   "slot": "TRAINER_COOLTRAINER_PAUL"
+  },
+  "TRAINER_HIDEO": {
+   "offset": 39,
+   "slot": 764
+  },
+  "TRAINER_HUEY": {
+   "offset": 32,
+   "slot": "TRAINER_RS_CAMPER"
+  },
+  "TRAINER_HUGH": {
+   "offset": 39,
+   "slot": 762
+  },
+  "TRAINER_HUMBERTO": {
+   "offset": 41,
+   "slot": 778
+  },
+  "TRAINER_IRENE": {
+   "offset": 35,
+   "slot": "TRAINER_COOLTRAINER_OWEN"
+  },
+  "TRAINER_ISAAC_1": {
+   "offset": 33,
+   "slot": "TRAINER_SWIMMING_TRIATHLETE_F"
+  },
+  "TRAINER_ISABELLA": {
+   "offset": 40,
+   "slot": 806
+  },
+  "TRAINER_ISABEL_1": {
+   "offset": 32,
+   "slot": "TRAINER_HEX_MANIAC"
+  },
+  "TRAINER_ISOBEL": {
+   "offset": 40,
+   "slot": 827
+  },
+  "TRAINER_IVAN": {
+   "offset": 35,
+   "slot": "TRAINER_RS_SIS_AND_BRO"
+  },
+  "TRAINER_JACE": {
+   "offset": 38,
+   "slot": "TRAINER_BUG_CATCHER_7"
+  },
+  "TRAINER_JACKSON_1": {
+   "offset": 39,
+   "slot": 755
+  },
+  "TRAINER_JACLYN": {
+   "offset": 32,
+   "slot": "TRAINER_INTERVIEWER"
+  },
+  "TRAINER_JACOB": {
+   "offset": 32,
+   "slot": "TRAINER_RS_COOLTRAINER_M"
+  },
+  "TRAINER_JANICE": {
+   "offset": 34,
+   "slot": "TRAINER_RS_SWIMMER_F"
+  },
+  "TRAINER_JARED": {
+   "offset": 41,
+   "slot": 774
+  },
+  "TRAINER_JASMINE": {
+   "offset": 32,
+   "slot": "TRAINER_AQUA_LEADER"
+  },
+  "TRAINER_JEFF": {
+   "offset": 38,
+   "slot": "TRAINER_BIKER_2"
+  },
+  "TRAINER_JEFFREY_1": {
+   "offset": 40,
+   "slot": 782
+  },
+  "TRAINER_JENNA": {
+   "offset": 40,
+   "slot": 781
+  },
+  "TRAINER_JENNIFER": {
+   "offset": 40,
+   "slot": 783
+  },
+  "TRAINER_JENNY_1": {
+   "offset": 40,
+   "slot": 801
+  },
+  "TRAINER_JERRY_1": {
+   "offset": 34,
+   "slot": "TRAINER_RS_TWINS"
+  },
+  "TRAINER_JESSICA_1": {
+   "offset": 40,
+   "slot": 818
+  },
+  "TRAINER_JOCELYN": {
+   "offset": 43,
+   "slot": "TRAINER_MAGMA_ADMIN_COURTNEY"
+  },
+  "TRAINER_JODY": {
+   "offset": 40,
+   "slot": "TRAINER_BUG_CATCHER_5"
+  },
+  "TRAINER_JOEY": {
+   "offset": 34,
+   "slot": "TRAINER_PARASOL_LADY"
+  },
+  "TRAINER_JOHNSON": {
+   "offset": 34,
+   "slot": "TRAINER_RS_SAILOR"
+  },
+  "TRAINER_JOSE": {
+   "offset": 34,
+   "slot": "TRAINER_RS_PKMN_RANGER_F"
+  },
+  "TRAINER_JOSEPH": {
+   "offset": 32,
+   "slot": "TRAINER_RICH_BOY"
+  },
+  "TRAINER_JOSH": {
+   "offset": 45,
+   "slot": "TRAINER_BOARDER_M"
+  },
+  "TRAINER_JUAN_1": {
+   "offset": 36,
+   "slot": 829
+  },
+  "TRAINER_JULIO": {
+   "offset": 37,
+   "slot": "TRAINER_CHANNELER_1"
+  },
+  "TRAINER_KALEB": {
+   "offset": 32,
+   "slot": "TRAINER_RS_LADY"
+  },
+  "TRAINER_KAREN_1": {
+   "offset": 34,
+   "slot": "TRAINER_RS_PICNICKER"
+  },
+  "TRAINER_KATE_AND_JOY": {
+   "offset": 40,
+   "slot": 791
+  },
+  "TRAINER_KATHLEEN": {
+   "offset": 33,
+   "slot": 820
+  },
+  "TRAINER_KEEGAN": {
+   "offset": 38,
+   "slot": "TRAINER_BUG_CATCHER_8"
+  },
+  "TRAINER_KEIGO": {
+   "offset": 40,
+   "slot": 787
+  },
+  "TRAINER_KENT": {
+   "offset": 39,
+   "slot": 759
+  },
+  "TRAINER_KIRK": {
+   "offset": 32,
+   "slot": "TRAINER_GUITARIST"
+  },
+  "TRAINER_LARRY": {
+   "offset": 36,
+   "slot": "TRAINER_TAMER_JOHN"
+  },
+  "TRAINER_LAURA": {
+   "offset": 43,
+   "slot": "TRAINER_LEADER_WALLACE"
+  },
+  "TRAINER_LEONARDO": {
+   "offset": 40,
+   "slot": 828
+  },
+  "TRAINER_LEONEL": {
+   "offset": 40,
+   "slot": 790
+  },
+  "TRAINER_LILA_AND_ROY_1": {
+   "offset": 40,
+   "slot": 804
+  },
+  "TRAINER_LILITH": {
+   "offset": 43,
+   "slot": "TRAINER_ELITE_FOUR_GLACIA"
+  },
+  "TRAINER_LOLA_1": {
+   "offset": 32,
+   "slot": "TRAINER_SCHOOL_KID_F"
+  },
+  "TRAINER_LORENZO": {
+   "offset": 40,
+   "slot": 780
+  },
+  "TRAINER_LYDIA_1": {
+   "offset": 33,
+   "slot": "TRAINER_RS_PKMN_BREEDER_M"
+  },
+  "TRAINER_MACEY": {
+   "offset": 33,
+   "slot": 815
+  },
+  "TRAINER_MARC": {
+   "offset": 45,
+   "slot": "TRAINER_RS_BUG_CATCHER"
+  },
+  "TRAINER_MARCEL": {
+   "offset": 40,
+   "slot": 797
+  },
+  "TRAINER_MARIA_1": {
+   "offset": 33,
+   "slot": "TRAINER_RS_PKMN_BREEDER_F"
+  },
+  "TRAINER_MARY": {
+   "offset": 40,
+   "slot": "TRAINER_CHANNELER_6"
+  },
+  "TRAINER_MAURA": {
+   "offset": 33,
+   "slot": 809
+  },
+  "TRAINER_MELINA": {
+   "offset": 33,
+   "slot": "TRAINER_RS_PKMN_RANGER_M"
+  },
+  "TRAINER_MEL_AND_PAUL": {
+   "offset": 32,
+   "slot": "TRAINER_RS_PSYCHIC_F"
+  },
+  "TRAINER_MIKE_2": {
+   "offset": 34,
+   "slot": "TRAINER_RS_HIKER"
+  },
+  "TRAINER_MYLES": {
+   "offset": 40,
+   "slot": 795
+  },
+  "TRAINER_NATE": {
+   "offset": 33,
+   "slot": 813
+  },
+  "TRAINER_NED": {
+   "offset": 32,
+   "slot": "TRAINER_SWIMMING_TRIATHLETE_M"
+  },
+  "TRAINER_NICHOLAS": {
+   "offset": 33,
+   "slot": 816
+  },
+  "TRAINER_NIKKI": {
+   "offset": 40,
+   "slot": 823
+  },
+  "TRAINER_NORMAN_1": {
+   "offset": 40,
+   "slot": "TRAINER_LEADER_NORMAN"
+  },
+  "TRAINER_OLIVIA": {
+   "offset": 36,
+   "slot": 837
+  },
+  "TRAINER_PABLO_1": {
+   "offset": 40,
+   "slot": 826
+  },
+  "TRAINER_PARKER": {
+   "offset": 40,
+   "slot": "TRAINER_CHANNELER_8"
+  },
+  "TRAINER_PAT": {
+   "offset": 40,
+   "slot": 796
+  },
+  "TRAINER_PERRY": {
+   "offset": 38,
+   "slot": 749
+  },
+  "TRAINER_PHIL": {
+   "offset": 39,
+   "slot": 763
+  },
+  "TRAINER_PRESTON": {
+   "offset": 33,
+   "slot": 807
+  },
+  "TRAINER_RACHEL": {
+   "offset": 39,
+   "slot": 766
+  },
+  "TRAINER_RANDALL": {
+   "offset": 40,
+   "slot": "TRAINER_CHANNELER_7"
+  },
+  "TRAINER_RICKY_1": {
+   "offset": 32,
+   "slot": "TRAINER_SCHOOL_KID_M"
+  },
+  "TRAINER_RILEY": {
+   "offset": 40,
+   "slot": 788
+  },
+  "TRAINER_ROBERT_1": {
+   "offset": 40,
+   "slot": "TRAINER_TEAM_ROCKET_GRUNT_3"
+  },
+  "TRAINER_ROLAND": {
+   "offset": 40,
+   "slot": 800
+  },
+  "TRAINER_ROSE_1": {
+   "offset": 38,
+   "slot": 750
+  },
+  "TRAINER_ROXANNE_1": {
+   "offset": 45,
+   "slot": "TRAINER_LEADER_ROXANNE"
+  },
+  "TRAINER_SAMANTHA": {
+   "offset": 33,
+   "slot": 810
+  },
+  "TRAINER_SARAH": {
+   "offset": 34,
+   "slot": "TRAINER_MAGMA_GRUNT_M"
+  },
+  "TRAINER_SHAWN": {
+   "offset": 32,
+   "slot": "TRAINER_RS_POKEMANIAC"
+  },
+  "TRAINER_SHAYLA": {
+   "offset": 36,
+   "slot": "TRAINER_TEAM_ROCKET_GRUNT_22"
+  },
+  "TRAINER_SHELLY_WEATHER_INSTITUTE": {
+   "offset": 40,
+   "slot": 770
+  },
+  "TRAINER_SIENNA": {
+   "offset": 40,
+   "slot": 825
+  },
+  "TRAINER_SPENCER": {
+   "offset": 40,
+   "slot": 799
+  },
+  "TRAINER_SYLVIA": {
+   "offset": 33,
+   "slot": 819
+  },
+  "TRAINER_TAKAO": {
+   "offset": 43,
+   "slot": "TRAINER_BUG_CATCHER_2"
+  },
+  "TRAINER_TAKASHI": {
+   "offset": 39,
+   "slot": 761
+  },
+  "TRAINER_TAMMY": {
+   "offset": 40,
+   "slot": 817
+  },
+  "TRAINER_TATE_AND_LIZA_1": {
+   "offset": 33,
+   "slot": "TRAINER_LEADER_TATE_LIZA"
+  },
+  "TRAINER_TAYLOR": {
+   "offset": 39,
+   "slot": 753
+  },
+  "TRAINER_TIFFANY": {
+   "offset": 36,
+   "slot": 834
+  },
+  "TRAINER_TIMMY": {
+   "offset": 32,
+   "slot": "TRAINER_RS_COOLTRAINER_F"
+  },
+  "TRAINER_TOMMY": {
+   "offset": 45,
+   "slot": "TRAINER_BOARDER_F"
+  },
+  "TRAINER_TRAVIS": {
+   "offset": 35,
+   "slot": "TRAINER_SUPER_NERD_3"
+  },
+  "TRAINER_TRENT_1": {
+   "offset": 36,
+   "slot": "TRAINER_BIRD_KEEPER_REED"
+  },
+  "TRAINER_TYRON": {
+   "offset": 35,
+   "slot": "TRAINER_BURGLAR_3"
+  },
+  "TRAINER_VANESSA": {
+   "offset": 40,
+   "slot": 792
+  },
+  "TRAINER_VIRGIL": {
+   "offset": 33,
+   "slot": 811
+  },
+  "TRAINER_VIVIAN": {
+   "offset": 32,
+   "slot": "TRAINER_RS_SWIMMER_M"
+  },
+  "TRAINER_WADE": {
+   "offset": 32,
+   "slot": "TRAINER_RS_YOUNGSTER"
+  },
+  "TRAINER_WALTER_1": {
+   "offset": 40,
+   "slot": 793
+  },
+  "TRAINER_WATTSON_1": {
+   "offset": 32,
+   "slot": "TRAINER_LEADER_WATTSON"
+  },
+  "TRAINER_WILTON_1": {
+   "offset": 35,
+   "slot": "TRAINER_BURGLAR_2"
+  },
+  "TRAINER_WINONA_1": {
+   "offset": 41,
+   "slot": "TRAINER_LEADER_WINONA"
+  },
+  "TRAINER_WINSTON_1": {
+   "offset": 32,
+   "slot": "TRAINER_RUNNING_TRIATHLETE_M"
+  },
+  "TRAINER_YASU": {
+   "offset": 39,
+   "slot": 760
+  }
+ },
+ "vars": {
+  "VAR_HX_COO_STATE": 16506,
+  "VAR_HX_DEWFORD_TOWN_STATE": 16436,
+  "VAR_HX_LAVARIDGE_TOWN_STATE": 16449,
+  "VAR_HX_MAUVILLE_GYM_STATE": 16430,
+  "VAR_HX_MIRAGE_TOWER_STATE": 16447,
+  "VAR_HX_MT_PYRE_STATE": 16503,
+  "VAR_HX_PETALBURG_GYM_STATE": 16493,
+  "VAR_HX_RUSTBORO_CITY_STATE": 16431,
+  "VAR_HX_SLATEPORT_CITY_STATE": 16428,
+  "VAR_HX_SOOTOPOLIS_CITY_STATE": 16498,
+  "VAR_HX_SOOTO_STATE": 16519,
+  "VAR_HX_TEMP_0": 16429
+ }
+}

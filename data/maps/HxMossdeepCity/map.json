@@ -1,0 +1,311 @@
+{
+  "id": "MAP_HX_MOSSDEEP_CITY",
+  "name": "HxMossdeepCity",
+  "layout": "LAYOUT_HX_MOSSDEEP_CITY",
+  "music": "MUS_CINNABAR",
+  "region_map_section": "MAPSEC_HX_MOSSDEEP_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "floor_number": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_HX_ROUTE124",
+      "offset": -40,
+      "direction": "left"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HX_SAILOR",
+      "x": 38,
+      "y": 12,
+      "elevation": 5,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "HxMossdeepCity_EventScript_Sailor",
+      "flag": "0",
+      "type": "object"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HX_EXPERT_M",
+      "x": 50,
+      "y": 34,
+      "elevation": 5,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "HxMossdeepCity_EventScript_ExpertM",
+      "flag": "0",
+      "type": "object"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HX_POKEFAN_F",
+      "x": 32,
+      "y": 12,
+      "elevation": 5,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "HxMossdeepCity_EventScript_PokefanF",
+      "flag": "0",
+      "type": "object"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HX_NINJA_BOY",
+      "x": 26,
+      "y": 21,
+      "elevation": 5,
+      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "HxMossdeepCity_EventScript_NinjaBoy",
+      "flag": "0",
+      "type": "object"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HX_GIRL_1",
+      "x": 45,
+      "y": 18,
+      "elevation": 7,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "HxMossdeepCity_EventScript_Girl",
+      "flag": "0",
+      "type": "object"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HX_ITEM_BALL",
+      "x": 62,
+      "y": 35,
+      "elevation": 5,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "HxMossdeepCity_EventScript_ItemNetBall",
+      "flag": "FLAG_HX_ITEM_MOSSDEEP_CITY_NET_BALL",
+      "type": "object"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HX_MAN_1",
+      "x": 55,
+      "y": 5,
+      "elevation": 7,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "HxMossdeepCity_EventScript_Man",
+      "flag": "0",
+      "type": "object"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HX_WOMAN_1",
+      "x": 56,
+      "y": 21,
+      "elevation": 7,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "HxMossdeepCity_EventScript_Woman",
+      "flag": "0",
+      "type": "object"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HX_BOY_2",
+      "x": 23,
+      "y": 13,
+      "elevation": 5,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "HxMossdeepCity_EventScript_KingsRockBoy",
+      "flag": "0",
+      "type": "object"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HX_BLACK_BELT",
+      "x": 31,
+      "y": 29,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 3,
+      "movement_range_y": 3,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "HxMossdeepCity_EventScript_BlackBelt",
+      "flag": "0",
+      "type": "object"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 38,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_HX_MOSSDEEP_CITY_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 28,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_HX_MOSSDEEP_CITY_POKEMON_CENTER_1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 37,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_HX_MOSSDEEP_CITY_MART",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 25,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "HxMossdeepCity_EventScript_CitySign"
+    },
+    {
+      "type": "sign",
+      "x": 34,
+      "y": 9,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "HxMossdeepCity_EventScript_GymSign"
+    },
+    {
+      "type": "sign",
+      "x": 29,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "EventScript_PokecenterSign"
+    },
+    {
+      "type": "sign",
+      "x": 38,
+      "y": 18,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "EventScript_PokemartSign"
+    },
+    {
+      "type": "sign",
+      "x": 66,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "HxMossdeepCity_EventScript_SpaceCenterSign"
+    },
+    {
+      "type": "sign",
+      "x": 30,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "EventScript_PokecenterSign"
+    },
+    {
+      "type": "sign",
+      "x": 39,
+      "y": 18,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "EventScript_PokemartSign"
+    },
+    {
+      "type": "sign",
+      "x": 57,
+      "y": 21,
+      "elevation": 7,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "HxMossdeepCity_EventScript_WhiteRock"
+    },
+    {
+      "type": "sign",
+      "x": 28,
+      "y": 9,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "HxCommon_EventScript_Locked"
+    },
+    {
+      "type": "sign",
+      "x": 67,
+      "y": 25,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "HxCommon_EventScript_Locked"
+    },
+    {
+      "type": "sign",
+      "x": 49,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "HxCommon_EventScript_Locked"
+    },
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "HxCommon_EventScript_Locked"
+    },
+    {
+      "type": "sign",
+      "x": 18,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "HxCommon_EventScript_Locked"
+    },
+    {
+      "type": "sign",
+      "x": 64,
+      "y": 15,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "HxCommon_EventScript_Locked"
+    },
+    {
+      "type": "sign",
+      "x": 36,
+      "y": 24,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "HxCommon_EventScript_Locked"
+    }
+  ]
+}

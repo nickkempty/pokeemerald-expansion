@@ -1,0 +1,27 @@
+HxVerdanturfTown_PokemonCenter_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, HxVerdanturfTown_PokemonCenter_1F_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+	.byte 0
+
+HxVerdanturfTown_PokemonCenter_1F_OnTransition::
+	setrespawn HEAL_LOCATION_HX_VERDANTURF_TOWN
+	end
+
+HxVerdanturfTown_PokemonCenter_1F_EventScript_Nurse::
+	lock
+	faceplayer
+	call EventScript_PkmnCenterNurse
+	release
+	end
+
+HxVerdanturfTown_PokemonCenter_1F_EventScript_Boy::
+	msgbox HxVerdanturfTown_PokemonCenter_1F_Text_PokeCenterInEveryTown, MSGBOX_NPC
+	end
+
+HxVerdanturfTown_PokemonCenter_1F_EventScript_Gentleman::
+	msgbox HxVerdanturfTown_PokemonCenter_1F_Text_FeelFreeToUsePC, MSGBOX_NPC
+	end
+
+HxVerdanturfTown_PokemonCenter_1F_EventScript_Youngster::
+	msgbox HxVerdanturfTown_PokemonCenter_1F_Text_PokeCentersHealMons, MSGBOX_NPC
+	end

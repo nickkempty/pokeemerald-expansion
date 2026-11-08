@@ -1,0 +1,101 @@
+HxLavaridgeTown_Gym_1F_MapScripts::
+	.byte 0
+
+HxLavaridgeTown_Gym_1F_EventScript_Flannery::
+	trainerbattle_single TRAINER_HX_FLANNERY_1, HxLavaridgeTown_Gym_1F_Text_FlanneryIntro, HxLavaridgeTown_Gym_1F_Text_FlanneryDefeat, HxLavaridgeTown_Gym_1F_EventScript_FlanneryDefeated, NO_MUSIC
+	goto_if_unset FLAG_HX_RECEIVED_TM_OVERHEAT, HxLavaridgeTown_Gym_1F_EventScript_GiveOverheat
+	msgbox HxLavaridgeTown_Gym_1F_Text_FlanneryPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+HxLavaridgeTown_Gym_1F_EventScript_FlanneryDefeated::
+	message HxLavaridgeTown_Gym_1F_Text_ReceivedHeatBadge
+	waitmessage
+	playfanfare MUS_OBTAIN_BADGE
+	waitfanfare
+	setflag FLAG_HX_DEFEATED_LAVARIDGE_GYM
+	setflag FLAG_HX_BADGE04_GET
+	setvar VAR_HX_LAVARIDGE_TOWN_STATE, 1
+	msgbox HxLavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis, MSGBOX_DEFAULT
+	goto HxLavaridgeTown_Gym_1F_EventScript_GiveOverheat
+	end
+
+HxLavaridgeTown_Gym_1F_EventScript_GiveOverheat::
+	checkitemspace ITEM_TM50
+	goto_if_eq VAR_RESULT, FALSE, HxLavaridgeTown_Gym_1F_EventScript_NoRoomForTM
+	giveitem_msg HxLavaridgeTown_Gym_1F_Text_ReceivedTMOverheat, ITEM_TM50
+	setflag FLAG_HX_RECEIVED_TM_OVERHEAT
+	setvar VAR_0x8004, 10
+	call EventScript_ZumoGymBonusTM
+	msgbox HxLavaridgeTown_Gym_1F_Text_ExplainOverheat, MSGBOX_DEFAULT
+	release
+	end
+
+HxLavaridgeTown_Gym_1F_EventScript_NoRoomForTM::
+	msgbox HxLavaridgeTown_Gym_1F_Text_DontHaveRoomForThis, MSGBOX_DEFAULT
+	release
+	end
+
+HxLavaridgeTown_Gym_1F_Text_ReceivedTMOverheat::
+	.string "{PLAYER} received TM50\n"
+	.string "from FLANNERY.$"
+
+HxLavaridgeTown_Gym_1F_Text_DontHaveRoomForThis::
+	.string "You don't have room for this.\n"
+	.string "Make some space in your BAG first!$"
+
+HxLavaridgeTown_Gym_1F_EventScript_Cole::
+	trainerbattle_single TRAINER_HX_COLE, HxLavaridgeTown_Gym_1F_Text_ColeIntro, HxLavaridgeTown_Gym_1F_Text_ColeDefeat
+	msgbox HxLavaridgeTown_Gym_1F_Text_ColePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxLavaridgeTown_Gym_1F_EventScript_Gerald::
+	trainerbattle_single TRAINER_HX_GERALD, HxLavaridgeTown_Gym_1F_Text_GeraldIntro, HxLavaridgeTown_Gym_1F_Text_GeraldDefeat
+	msgbox HxLavaridgeTown_Gym_1F_Text_GeraldPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxLavaridgeTown_Gym_1F_EventScript_Axle::
+	trainerbattle_single TRAINER_HX_AXLE, HxLavaridgeTown_Gym_1F_Text_AxleIntro, HxLavaridgeTown_Gym_1F_Text_AxleDefeat
+	msgbox HxLavaridgeTown_Gym_1F_Text_AxlePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxLavaridgeTown_Gym_1F_EventScript_Danielle::
+	trainerbattle_single TRAINER_HX_DANIELLE, HxLavaridgeTown_Gym_1F_Text_DanielleIntro, HxLavaridgeTown_Gym_1F_Text_DanielleDefeat
+	msgbox HxLavaridgeTown_Gym_1F_Text_DaniellePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxLavaridgeTown_Gym_1F_EventScript_GymGuide::
+	lock
+	faceplayer
+	goto_if_set FLAG_HX_DEFEATED_LAVARIDGE_GYM, HxLavaridgeTown_Gym_1F_EventScript_GymGuidePostVictory
+	msgbox HxLavaridgeTown_Gym_1F_Text_GymGuideAdvice, MSGBOX_DEFAULT
+	release
+	end
+
+HxLavaridgeTown_Gym_1F_EventScript_GymGuidePostVictory::
+	msgbox HxLavaridgeTown_Gym_1F_Text_GymGuidePostVictory, MSGBOX_DEFAULT
+	release
+	end
+
+HxLavaridgeTown_Gym_1F_EventScript_LeftGymStatue::
+	lockall
+	goto_if_set FLAG_HX_BADGE04_GET, HxLavaridgeTown_Gym_1F_EventScript_GymStatueCertified
+	goto HxLavaridgeTown_Gym_1F_EventScript_GymStatue
+	end
+
+HxLavaridgeTown_Gym_1F_EventScript_GymStatueCertified::
+	msgbox HxLavaridgeTown_Gym_1F_Text_GymStatueCertified, MSGBOX_DEFAULT
+	releaseall
+	end
+
+HxLavaridgeTown_Gym_1F_EventScript_GymStatue::
+	msgbox HxLavaridgeTown_Gym_1F_Text_GymStatue, MSGBOX_DEFAULT
+	releaseall
+	end
+
+HxLavaridgeTown_Gym_1F_EventScript_RightGymStatue::
+	lockall
+	goto_if_set FLAG_HX_BADGE04_GET, HxLavaridgeTown_Gym_1F_EventScript_GymStatueCertified
+	goto HxLavaridgeTown_Gym_1F_EventScript_GymStatue
+	end
+

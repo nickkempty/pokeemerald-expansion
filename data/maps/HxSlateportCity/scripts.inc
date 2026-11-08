@@ -1,0 +1,200 @@
+HxSlateportCity_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, HxSlateportCity_OnTransition
+	.byte 0
+
+HxSlateportCity_OnTransition::
+	setflag FLAG_HX_VISITED_SLATEPORT_CITY
+	end
+
+HxSlateportCity_EventScript_FatMan::
+	goto_if_eq VAR_HX_SLATEPORT_CITY_STATE, 1, HxSlateportCity_EventScript_FatManSternInterview
+	msgbox HxSlateportCity_Text_BushedHikingFromMauville, MSGBOX_NPC
+	end
+
+HxSlateportCity_EventScript_FatManSternInterview::
+	msgbox HxSlateportCity_Text_AmIOnTV, MSGBOX_SIGN
+	end
+
+HxSlateportCity_EventScript_Man1::
+	lock
+	faceplayer
+	call_if_eq VAR_HX_SLATEPORT_CITY_STATE, 1, HxSlateportCity_EventScript_Man1SternInterview
+	msgbox HxSlateportCity_Text_EveryoneCallsHimCaptStern, MSGBOX_DEFAULT
+	release
+	end
+
+HxSlateportCity_EventScript_Man1SternInterview::
+	msgbox HxSlateportCity_Text_CaptainsACelebrity, MSGBOX_DEFAULT
+	release
+	end
+
+HxSlateportCity_EventScript_RichBoy::
+	lock
+	faceplayer
+	call_if_eq VAR_HX_SLATEPORT_CITY_STATE, 1, HxSlateportCity_EventScript_RichBoySternInterview
+	msgbox HxSlateportCity_Text_GoingToCompeteInBattleTent, MSGBOX_DEFAULT
+	release
+	end
+
+HxSlateportCity_EventScript_RichBoySternInterview::
+	msgbox HxSlateportCity_Text_SternSaysDiscoveredSomething, MSGBOX_DEFAULT
+	release
+	end
+
+HxSlateportCity_EventScript_Woman1::
+	lock
+	faceplayer
+	goto_if_set FLAG_HX_DOCK_REJECTED_DEVON_GOODS, HxSlateportCity_EventScript_Woman1AquaGone
+	msgbox HxSlateportCity_Text_WhatsLongLineOverThere, MSGBOX_DEFAULT
+	release
+	end
+
+HxSlateportCity_EventScript_Woman1AquaGone::
+	msgbox HxSlateportCity_Text_VisitedMuseumOften, MSGBOX_DEFAULT
+	release
+	end
+
+HxSlateportCity_EventScript_Cook::
+	lock
+	faceplayer
+	call_if_eq VAR_HX_SLATEPORT_CITY_STATE, 1, HxSlateportCity_EventScript_CookSternInterview
+	msgbox HxSlateportCity_Text_SeaweedFullOfLife, MSGBOX_DEFAULT
+	release
+	end
+
+HxSlateportCity_EventScript_CookSternInterview::
+	msgbox HxSlateportCity_Text_CaptainComeBackWithBigFish, MSGBOX_DEFAULT
+	release
+	end
+
+HxSlateportCity_EventScript_OldWoman::
+	lock
+	faceplayer
+	call_if_eq VAR_HX_SLATEPORT_CITY_STATE, 1, HxSlateportCity_EventScript_OldWomanSternInterview
+	msgbox HxSlateportCity_Text_HowTownIsBornAndGrows, MSGBOX_DEFAULT
+	release
+	end
+
+HxSlateportCity_EventScript_OldWomanSternInterview::
+	msgbox HxSlateportCity_Text_CaptSternBeingInterviewed, MSGBOX_DEFAULT
+	release
+	end
+
+HxSlateportCity_EventScript_Girl::
+	lock
+	faceplayer
+	call_if_eq VAR_HX_SLATEPORT_CITY_STATE, 1, HxSlateportCity_EventScript_GirlSternInterview
+	goto_if_set FLAG_HX_RECEIVED_SECRET_POWER, HxSlateportCity_EventScript_GirlSecretBase
+	msgbox HxSlateportCity_Text_SlateportWonderfulPlace, MSGBOX_DEFAULT
+	release
+	end
+
+HxSlateportCity_EventScript_GirlSternInterview::
+	msgbox HxSlateportCity_Text_InterviewerSoCool, MSGBOX_DEFAULT
+	release
+	end
+
+HxSlateportCity_EventScript_GirlSecretBase::
+	msgbox HxSlateportCity_Text_BuyBricksSoDecorWontGetDirty, MSGBOX_DEFAULT
+	release
+	end
+
+HxSlateportCity_EventScript_Sailor1::
+	msgbox HxSlateportCity_Text_SeaIsSoWet, MSGBOX_NPC
+	end
+
+HxSlateportCity_EventScript_Sailor2::
+	msgbox HxSlateportCity_Text_SinkOldBoats, MSGBOX_NPC
+	end
+
+HxSlateportCity_EventScript_PokefanF::
+	msgbox HxSlateportCity_Text_BuyTooMuch, MSGBOX_NPC
+	end
+
+HxSlateportCity_EventScript_Man2::
+	msgbox HxSlateportCity_Text_BattleTentBuiltRecently, MSGBOX_NPC
+	end
+
+HxSlateportCity_EventScript_Maniac::
+	lock
+	faceplayer
+	call_if_eq VAR_HX_SLATEPORT_CITY_STATE, 1, HxSlateportCity_EventScript_ManiacSternInterview
+	msgbox HxSlateportCity_Text_GetNameRaterToHelpYou, MSGBOX_DEFAULT
+	release
+	end
+
+HxSlateportCity_EventScript_ManiacSternInterview::
+	msgbox HxSlateportCity_Text_GetNameRaterToHelpYou, MSGBOX_DEFAULT
+	release
+	end
+
+HxSlateportCity_EventScript_Woman2::
+	msgbox HxSlateportCity_Text_CantChangeTradeMonName, MSGBOX_NPC
+	end
+
+HxSlateportCity_EventScript_Man3::
+	msgbox HxSlateportCity_Text_WonderIfLighthouseStartlesPokemon, MSGBOX_NPC
+	end
+
+HxSlateportCity_EventScript_EffortRibbonWoman::
+	msgbox HxSlateportCity_Text_OhYourPokemon, MSGBOX_NPC
+	end
+
+HxSlateportCity_EventScript_BerryPowderClerk::
+	msgbox HxSlateportCity_Text_ExplainBerryPowder, MSGBOX_NPC
+	end
+
+HxSlateportCity_EventScript_NameRatersHouseSign::
+	msgbox HxSlateportCity_Text_NameRatersHouseSign, MSGBOX_SIGN
+	end
+
+HxSlateportCity_EventScript_HarborSign::
+	lockall
+	goto_if_set FLAG_HX_SYS_GAME_CLEAR, HxSlateportCity_EventScript_HarborSignFerryComplete
+	msgbox HxSlateportCity_Text_HarborFerryUnderConstruction, MSGBOX_DEFAULT
+	releaseall
+	end
+
+HxSlateportCity_EventScript_HarborSignFerryComplete::
+	msgbox HxSlateportCity_Text_HarborSign, MSGBOX_DEFAULT
+	releaseall
+	end
+
+HxSlateportCity_EventScript_MarketSign::
+	msgbox HxSlateportCity_Text_MarketSign, MSGBOX_SIGN
+	end
+
+HxSlateportCity_EventScript_OceanicMuseumSign::
+	msgbox HxSlateportCity_Text_OceanicMuseumSign, MSGBOX_SIGN
+	end
+
+HxSlateportCity_EventScript_CitySign::
+	msgbox HxSlateportCity_Text_CitySign, MSGBOX_SIGN
+	end
+
+HxSlateportCity_EventScript_PokemonFanClubSign::
+	msgbox HxSlateportCity_Text_PokemonFanClubSign, MSGBOX_SIGN
+	end
+
+HxSlateportCity_EventScript_BattleTentSign::
+	msgbox HxSlateportCity_Text_BattleTentSign, MSGBOX_SIGN
+	end
+
+HxSlateportCity_EventScript_SternsShipyardSign::
+	lockall
+	goto_if_set FLAG_HX_SYS_GAME_CLEAR, HxSlateportCity_EventScript_SternsShipyardFerryComplete
+	goto_if_set FLAG_HX_BADGE07_GET, HxSlateportCity_EventScript_SternsShipyardNearsCompletion
+	msgbox HxSlateportCity_Text_SternsShipyardWantedSign, MSGBOX_DEFAULT
+	releaseall
+	end
+
+HxSlateportCity_EventScript_SternsShipyardFerryComplete::
+	msgbox HxSlateportCity_Text_SternsShipyardFerryComplete, MSGBOX_DEFAULT
+	releaseall
+	end
+
+HxSlateportCity_EventScript_SternsShipyardNearsCompletion::
+	msgbox HxSlateportCity_Text_SternsShipyardNearsCompletion, MSGBOX_DEFAULT
+	releaseall
+	end
+

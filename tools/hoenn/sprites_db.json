@@ -1,0 +1,1285 @@
+{
+ "next_id": 232,
+ "sprites": {
+  "OBJ_EVENT_GFX_FAT_MAN": {
+   "id": 152,
+   "suffix": "FatMan",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_FatMan,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_FatMan",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_FatMan, 2, 4, 0),\n    overworld_frame(gObjectEventPic_FatMan, 2, 4, 1),\n    overworld_frame(gObjectEventPic_FatMan, 2, 4, 2),\n    overworld_frame(gObjectEventPic_FatMan, 2, 4, 3),\n    overworld_frame(gObjectEventPic_FatMan, 2, 4, 4),\n    overworld_frame(gObjectEventPic_FatMan, 2, 4, 5),\n    overworld_frame(gObjectEventPic_FatMan, 2, 4, 6),\n    overworld_frame(gObjectEventPic_FatMan, 2, 4, 7),\n    overworld_frame(gObjectEventPic_FatMan, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_FatMan"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_FatMan": [
+     "graphics/object_events/pics/people/fat_man.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_MAN_1": {
+   "id": 153,
+   "suffix": "Man1",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Man1,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Man1",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Man1, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Man1, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Man1, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Man1, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Man1, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Man1, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Man1, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Man1, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Man1, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Man1"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Man1": [
+     "graphics/object_events/pics/people/man_1.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_RICH_BOY": {
+   "id": 154,
+   "suffix": "RichBoy",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_RichBoy,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_RichBoy",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_RichBoy, 2, 4, 0),\n    overworld_frame(gObjectEventPic_RichBoy, 2, 4, 1),\n    overworld_frame(gObjectEventPic_RichBoy, 2, 4, 2),\n    overworld_frame(gObjectEventPic_RichBoy, 2, 4, 3),\n    overworld_frame(gObjectEventPic_RichBoy, 2, 4, 4),\n    overworld_frame(gObjectEventPic_RichBoy, 2, 4, 5),\n    overworld_frame(gObjectEventPic_RichBoy, 2, 4, 6),\n    overworld_frame(gObjectEventPic_RichBoy, 2, 4, 7),\n    overworld_frame(gObjectEventPic_RichBoy, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_RichBoy"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_RichBoy": [
+     "graphics/object_events/pics/people/rich_boy.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_WOMAN_4": {
+   "id": 155,
+   "suffix": "Woman4",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Woman4,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Woman4",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Woman4, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Woman4, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Woman4, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Woman4, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Woman4, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Woman4, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Woman4, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Woman4, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Woman4, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Woman4"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Woman4": [
+     "graphics/object_events/pics/people/woman_4.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_COOK": {
+   "id": 156,
+   "suffix": "Cook",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Cook,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Cook",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Cook, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Cook, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Cook, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Cook, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Cook, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Cook, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Cook, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Cook, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Cook, 2, 4, 2),",
+   "pics": [
+    "gObjectEventPic_Cook"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Cook": [
+     "graphics/object_events/pics/people/cook.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_OLD_WOMAN": {
+   "id": 157,
+   "suffix": "OldWoman",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_OldWoman,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_OldWoman",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_OldWoman, 2, 4, 0),\n    overworld_frame(gObjectEventPic_OldWoman, 2, 4, 1),\n    overworld_frame(gObjectEventPic_OldWoman, 2, 4, 2),\n    overworld_frame(gObjectEventPic_OldWoman, 2, 4, 3),\n    overworld_frame(gObjectEventPic_OldWoman, 2, 4, 4),\n    overworld_frame(gObjectEventPic_OldWoman, 2, 4, 5),\n    overworld_frame(gObjectEventPic_OldWoman, 2, 4, 6),\n    overworld_frame(gObjectEventPic_OldWoman, 2, 4, 7),\n    overworld_frame(gObjectEventPic_OldWoman, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_OldWoman"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_OldWoman": [
+     "graphics/object_events/pics/people/old_woman.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_GIRL_1": {
+   "id": 158,
+   "suffix": "Girl1",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_2,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Girl1,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Girl1",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Girl1, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Girl1, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Girl1, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Girl1, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Girl1, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Girl1, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Girl1, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Girl1, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Girl1, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Girl1"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Girl1": [
+     "graphics/object_events/pics/people/girl_1.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_SAILOR": {
+   "id": 159,
+   "suffix": "Sailor",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Sailor,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Sailor",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Sailor, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Sailor, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Sailor, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Sailor, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Sailor, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Sailor, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Sailor, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Sailor, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Sailor, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Sailor"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Sailor": [
+     "graphics/object_events/pics/people/sailor.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_POKEFAN_F": {
+   "id": 160,
+   "suffix": "PokefanF",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_2,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_PokefanF,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_PokefanF",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_PokefanF, 2, 4, 0),\n    overworld_frame(gObjectEventPic_PokefanF, 2, 4, 1),\n    overworld_frame(gObjectEventPic_PokefanF, 2, 4, 2),\n    overworld_frame(gObjectEventPic_PokefanF, 2, 4, 3),\n    overworld_frame(gObjectEventPic_PokefanF, 2, 4, 4),\n    overworld_frame(gObjectEventPic_PokefanF, 2, 4, 5),\n    overworld_frame(gObjectEventPic_PokefanF, 2, 4, 6),\n    overworld_frame(gObjectEventPic_PokefanF, 2, 4, 7),\n    overworld_frame(gObjectEventPic_PokefanF, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_PokefanF"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_PokefanF": [
+     "graphics/object_events/pics/people/pokefan_f.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_MAN_3": {
+   "id": 161,
+   "suffix": "Man3",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_2,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Man3,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Man3",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Man3, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Man3, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Man3, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Man3, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Man3, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Man3, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Man3, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Man3, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Man3, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Man3"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Man3": [
+     "graphics/object_events/pics/people/man_3.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_MANIAC": {
+   "id": 162,
+   "suffix": "Maniac",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_4,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Maniac,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Maniac",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Maniac, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Maniac, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Maniac, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Maniac, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Maniac, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Maniac, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Maniac, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Maniac, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Maniac, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Maniac"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Maniac": [
+     "graphics/object_events/pics/people/maniac.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_WOMAN_5": {
+   "id": 163,
+   "suffix": "Woman5",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_2,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Woman5,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Woman5",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Woman5, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Woman5, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Woman5, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Woman5, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Woman5, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Woman5, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Woman5, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Woman5, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Woman5, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Woman5"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Woman5": [
+     "graphics/object_events/pics/people/woman_5.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_MAN_5": {
+   "id": 164,
+   "suffix": "Man5",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_2,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Man5,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Man5",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Man5, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Man5, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Man5, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Man5, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Man5, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Man5, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Man5, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Man5, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Man5, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Man5"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Man5": [
+     "graphics/object_events/pics/people/man_5.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_POKEFAN_M": {
+   "id": 165,
+   "suffix": "PokefanM",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_2,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_PokefanM,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_PokefanM",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_PokefanM, 2, 4, 0),\n    overworld_frame(gObjectEventPic_PokefanM, 2, 4, 1),\n    overworld_frame(gObjectEventPic_PokefanM, 2, 4, 2),\n    overworld_frame(gObjectEventPic_PokefanM, 2, 4, 3),\n    overworld_frame(gObjectEventPic_PokefanM, 2, 4, 4),\n    overworld_frame(gObjectEventPic_PokefanM, 2, 4, 5),\n    overworld_frame(gObjectEventPic_PokefanM, 2, 4, 6),\n    overworld_frame(gObjectEventPic_PokefanM, 2, 4, 7),\n    overworld_frame(gObjectEventPic_PokefanM, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_PokefanM"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_PokefanM": [
+     "graphics/object_events/pics/people/pokefan_m.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_CAMPER": {
+   "id": 166,
+   "suffix": "Camper",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Camper,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Camper",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Camper, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Camper, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Camper, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Camper, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Camper, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Camper, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Camper, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Camper, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Camper, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Camper"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Camper": [
+     "graphics/object_events/pics/people/camper.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_CYCLING_TRIATHLETE_M": {
+   "id": 167,
+   "suffix": "CyclingTriathleteM",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 512,\n    .width = 32,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_BIKE_TIRE,\n    .oam = &gObjectEventBaseOam_32x32,\n    .subspriteTables = sOamTables_32x32,\n    .anims = sAnimTable_AcroBike,\n    .images = sPicTable_CyclingTriathleteM,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_CyclingTriathleteM",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_CyclingTriathleteM, 4, 4, 0),\n    overworld_frame(gObjectEventPic_CyclingTriathleteM, 4, 4, 1),\n    overworld_frame(gObjectEventPic_CyclingTriathleteM, 4, 4, 2),\n    overworld_frame(gObjectEventPic_CyclingTriathleteM, 4, 4, 3),\n    overworld_frame(gObjectEventPic_CyclingTriathleteM, 4, 4, 4),\n    overworld_frame(gObjectEventPic_CyclingTriathleteM, 4, 4, 5),\n    overworld_frame(gObjectEventPic_CyclingTriathleteM, 4, 4, 6),\n    overworld_frame(gObjectEventPic_CyclingTriathleteM, 4, 4, 7),\n    overworld_frame(gObjectEventPic_CyclingTriathleteM, 4, 4, 8),",
+   "pics": [
+    "gObjectEventPic_CyclingTriathleteM"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_CyclingTriathleteM": [
+     "graphics/object_events/pics/people/cycling_triathlete_m.png",
+     "-mwidth 4 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_CYCLING_TRIATHLETE_F": {
+   "id": 168,
+   "suffix": "CyclingTriathleteF",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 512,\n    .width = 32,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_BIKE_TIRE,\n    .oam = &gObjectEventBaseOam_32x32,\n    .subspriteTables = sOamTables_32x32,\n    .anims = sAnimTable_AcroBike,\n    .images = sPicTable_CyclingTriathleteF,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_CyclingTriathleteF",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_CyclingTriathleteF, 4, 4, 0),\n    overworld_frame(gObjectEventPic_CyclingTriathleteF, 4, 4, 1),\n    overworld_frame(gObjectEventPic_CyclingTriathleteF, 4, 4, 2),\n    overworld_frame(gObjectEventPic_CyclingTriathleteF, 4, 4, 3),\n    overworld_frame(gObjectEventPic_CyclingTriathleteF, 4, 4, 4),\n    overworld_frame(gObjectEventPic_CyclingTriathleteF, 4, 4, 5),\n    overworld_frame(gObjectEventPic_CyclingTriathleteF, 4, 4, 6),\n    overworld_frame(gObjectEventPic_CyclingTriathleteF, 4, 4, 7),\n    overworld_frame(gObjectEventPic_CyclingTriathleteF, 4, 4, 8),",
+   "pics": [
+    "gObjectEventPic_CyclingTriathleteF"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_CyclingTriathleteF": [
+     "graphics/object_events/pics/people/cycling_triathlete_f.png",
+     "-mwidth 4 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_EXPERT_F": {
+   "id": 169,
+   "suffix": "ExpertF",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_4,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_ExpertF,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_ExpertF",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_ExpertF, 2, 4, 0),\n    overworld_frame(gObjectEventPic_ExpertF, 2, 4, 1),\n    overworld_frame(gObjectEventPic_ExpertF, 2, 4, 2),\n    overworld_frame(gObjectEventPic_ExpertF, 2, 4, 3),\n    overworld_frame(gObjectEventPic_ExpertF, 2, 4, 4),\n    overworld_frame(gObjectEventPic_ExpertF, 2, 4, 5),\n    overworld_frame(gObjectEventPic_ExpertF, 2, 4, 6),\n    overworld_frame(gObjectEventPic_ExpertF, 2, 4, 7),\n    overworld_frame(gObjectEventPic_ExpertF, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_ExpertF"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_ExpertF": [
+     "graphics/object_events/pics/people/expert_f.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_EXPERT_M": {
+   "id": 170,
+   "suffix": "ExpertM",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_4,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_ExpertM,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_ExpertM",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_ExpertM, 2, 4, 0),\n    overworld_frame(gObjectEventPic_ExpertM, 2, 4, 1),\n    overworld_frame(gObjectEventPic_ExpertM, 2, 4, 2),\n    overworld_frame(gObjectEventPic_ExpertM, 2, 4, 3),\n    overworld_frame(gObjectEventPic_ExpertM, 2, 4, 4),\n    overworld_frame(gObjectEventPic_ExpertM, 2, 4, 5),\n    overworld_frame(gObjectEventPic_ExpertM, 2, 4, 6),\n    overworld_frame(gObjectEventPic_ExpertM, 2, 4, 7),\n    overworld_frame(gObjectEventPic_ExpertM, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_ExpertM"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_ExpertM": [
+     "graphics/object_events/pics/people/expert_m.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_BOY_3": {
+   "id": 171,
+   "suffix": "Boy3",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_4,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Boy3,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Boy3",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Boy3, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Boy3, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Boy3, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Boy3, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Boy3, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Boy3, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Boy3, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Boy3, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Boy3, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Boy3"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Boy3": [
+     "graphics/object_events/pics/people/boy_3.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_PSYCHIC_M": {
+   "id": 172,
+   "suffix": "PsychicM",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_4,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_PsychicM,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_PsychicM",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_PsychicM, 2, 4, 0),\n    overworld_frame(gObjectEventPic_PsychicM, 2, 4, 1),\n    overworld_frame(gObjectEventPic_PsychicM, 2, 4, 2),\n    overworld_frame(gObjectEventPic_PsychicM, 2, 4, 3),\n    overworld_frame(gObjectEventPic_PsychicM, 2, 4, 4),\n    overworld_frame(gObjectEventPic_PsychicM, 2, 4, 5),\n    overworld_frame(gObjectEventPic_PsychicM, 2, 4, 6),\n    overworld_frame(gObjectEventPic_PsychicM, 2, 4, 7),\n    overworld_frame(gObjectEventPic_PsychicM, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_PsychicM"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_PsychicM": [
+     "graphics/object_events/pics/people/psychic_m.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_LASS": {
+   "id": 173,
+   "suffix": "Lass",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_4,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Lass,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Lass",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Lass, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Lass, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Lass, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Lass, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Lass, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Lass, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Lass, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Lass, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Lass, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Lass"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Lass": [
+     "graphics/object_events/pics/people/lass.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_FISHERMAN": {
+   "id": 174,
+   "suffix": "Fisherman",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_2,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Fisherman,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Fisherman",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Fisherman, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Fisherman, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Fisherman, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Fisherman, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Fisherman, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Fisherman, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Fisherman, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Fisherman, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Fisherman, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Fisherman"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Fisherman": [
+     "graphics/object_events/pics/people/fisherman.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_ITEM_BALL": {
+   "id": 175,
+   "suffix": "ItemBall",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 128,\n    .width = 16,\n    .height = 16,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_S,\n    .inanimate = TRUE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_NONE,\n    .oam = &gObjectEventBaseOam_16x16,\n    .subspriteTables = sOamTables_16x16,\n    .anims = sAnimTable_Inanimate,\n    .images = sPicTable_ItemBall,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_ItemBall",
+   "pic_table_body": "\n    obj_frame_tiles(gObjectEventPic_ItemBall),",
+   "pics": [
+    "gObjectEventPic_ItemBall"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_ItemBall": [
+     "graphics/object_events/pics/misc/item_ball.png",
+     ""
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_YOUNGSTER": {
+   "id": 176,
+   "suffix": "Youngster",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Youngster,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Youngster",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Youngster, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Youngster, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Youngster, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Youngster, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Youngster, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Youngster, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Youngster, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Youngster, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Youngster, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Youngster"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Youngster": [
+     "graphics/object_events/pics/people/youngster.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_SCHOOL_KID_M": {
+   "id": 177,
+   "suffix": "SchoolKidM",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_SchoolKidM,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_SchoolKidM",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_SchoolKidM, 2, 4, 0),\n    overworld_frame(gObjectEventPic_SchoolKidM, 2, 4, 1),\n    overworld_frame(gObjectEventPic_SchoolKidM, 2, 4, 2),\n    overworld_frame(gObjectEventPic_SchoolKidM, 2, 4, 3),\n    overworld_frame(gObjectEventPic_SchoolKidM, 2, 4, 4),\n    overworld_frame(gObjectEventPic_SchoolKidM, 2, 4, 5),\n    overworld_frame(gObjectEventPic_SchoolKidM, 2, 4, 6),\n    overworld_frame(gObjectEventPic_SchoolKidM, 2, 4, 7),\n    overworld_frame(gObjectEventPic_SchoolKidM, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_SchoolKidM"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_SchoolKidM": [
+     "graphics/object_events/pics/people/school_kid_m.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_WATTSON": {
+   "id": 178,
+   "suffix": "Wattson",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_2,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Wattson,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Wattson",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Wattson, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Wattson, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Wattson, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Wattson, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Wattson, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Wattson, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Wattson, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Wattson, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Wattson, 2, 4, 2),",
+   "pics": [
+    "gObjectEventPic_Wattson"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Wattson": [
+     "graphics/object_events/pics/people/gym_leaders/wattson.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_GIRL_3": {
+   "id": 179,
+   "suffix": "Girl3",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_2,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Girl3,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Girl3",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Girl3, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Girl3, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Girl3, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Girl3, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Girl3, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Girl3, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Girl3, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Girl3, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Girl3, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Girl3"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Girl3": [
+     "graphics/object_events/pics/people/girl_3.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_MAN_2": {
+   "id": 180,
+   "suffix": "Man2",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Man2,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Man2",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Man2, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Man2, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Man2, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Man2, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Man2, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Man2, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Man2, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Man2, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Man2, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Man2"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Man2": [
+     "graphics/object_events/pics/people/man_2.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_LITTLE_GIRL": {
+   "id": 181,
+   "suffix": "LittleGirl",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 128,\n    .width = 16,\n    .height = 16,\n    .paletteSlot = PALSLOT_NPC_2,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x16,\n    .subspriteTables = sOamTables_16x16,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_LittleGirl,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_LittleGirl",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_LittleGirl, 2, 2, 0),\n    overworld_frame(gObjectEventPic_LittleGirl, 2, 2, 1),\n    overworld_frame(gObjectEventPic_LittleGirl, 2, 2, 2),\n    overworld_frame(gObjectEventPic_LittleGirl, 2, 2, 3),\n    overworld_frame(gObjectEventPic_LittleGirl, 2, 2, 4),\n    overworld_frame(gObjectEventPic_LittleGirl, 2, 2, 5),\n    overworld_frame(gObjectEventPic_LittleGirl, 2, 2, 6),\n    overworld_frame(gObjectEventPic_LittleGirl, 2, 2, 7),\n    overworld_frame(gObjectEventPic_LittleGirl, 2, 2, 8),",
+   "pics": [
+    "gObjectEventPic_LittleGirl"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_LittleGirl": [
+     "graphics/object_events/pics/people/little_girl.png",
+     "-mwidth 2 -mheight 2"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_MAN_4": {
+   "id": 182,
+   "suffix": "Man4",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_4,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Man4,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Man4",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Man4, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Man4, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Man4, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Man4, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Man4, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Man4, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Man4, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Man4, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Man4, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Man4"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Man4": [
+     "graphics/object_events/pics/people/man_4.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_OLD_MAN": {
+   "id": 183,
+   "suffix": "OldMan",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_4,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_OldMan,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_OldMan",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_OldMan, 2, 4, 0),\n    overworld_frame(gObjectEventPic_OldMan, 2, 4, 1),\n    overworld_frame(gObjectEventPic_OldMan, 2, 4, 2),\n    overworld_frame(gObjectEventPic_OldMan, 2, 4, 0),\n    overworld_frame(gObjectEventPic_OldMan, 2, 4, 0),\n    overworld_frame(gObjectEventPic_OldMan, 2, 4, 1),\n    overworld_frame(gObjectEventPic_OldMan, 2, 4, 1),\n    overworld_frame(gObjectEventPic_OldMan, 2, 4, 2),\n    overworld_frame(gObjectEventPic_OldMan, 2, 4, 2),",
+   "pics": [
+    "gObjectEventPic_OldMan"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_OldMan": [
+     "graphics/object_events/pics/people/old_man.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_SWIMMER_F": {
+   "id": 184,
+   "suffix": "SwimmerF",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_2,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_SwimmerF,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_SwimmerF",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_SwimmerF, 2, 4, 0),\n    overworld_frame(gObjectEventPic_SwimmerF, 2, 4, 1),\n    overworld_frame(gObjectEventPic_SwimmerF, 2, 4, 2),\n    overworld_frame(gObjectEventPic_SwimmerF, 2, 4, 3),\n    overworld_frame(gObjectEventPic_SwimmerF, 2, 4, 4),\n    overworld_frame(gObjectEventPic_SwimmerF, 2, 4, 5),\n    overworld_frame(gObjectEventPic_SwimmerF, 2, 4, 6),\n    overworld_frame(gObjectEventPic_SwimmerF, 2, 4, 7),\n    overworld_frame(gObjectEventPic_SwimmerF, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_SwimmerF"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_SwimmerF": [
+     "graphics/object_events/pics/people/swimmer_f.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_SWIMMER_M": {
+   "id": 185,
+   "suffix": "SwimmerM",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_SwimmerM,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_SwimmerM",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_SwimmerM, 2, 4, 0),\n    overworld_frame(gObjectEventPic_SwimmerM, 2, 4, 1),\n    overworld_frame(gObjectEventPic_SwimmerM, 2, 4, 2),\n    overworld_frame(gObjectEventPic_SwimmerM, 2, 4, 3),\n    overworld_frame(gObjectEventPic_SwimmerM, 2, 4, 4),\n    overworld_frame(gObjectEventPic_SwimmerM, 2, 4, 5),\n    overworld_frame(gObjectEventPic_SwimmerM, 2, 4, 6),\n    overworld_frame(gObjectEventPic_SwimmerM, 2, 4, 7),\n    overworld_frame(gObjectEventPic_SwimmerM, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_SwimmerM"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_SwimmerM": [
+     "graphics/object_events/pics/people/swimmer_m.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_TUBER_F": {
+   "id": 186,
+   "suffix": "TuberF",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 128,\n    .width = 16,\n    .height = 16,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x16,\n    .subspriteTables = sOamTables_16x16,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_TuberF,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_TuberF",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_TuberF, 2, 2, 0),\n    overworld_frame(gObjectEventPic_TuberF, 2, 2, 1),\n    overworld_frame(gObjectEventPic_TuberF, 2, 2, 2),\n    overworld_frame(gObjectEventPic_TuberF, 2, 2, 3),\n    overworld_frame(gObjectEventPic_TuberF, 2, 2, 4),\n    overworld_frame(gObjectEventPic_TuberF, 2, 2, 5),\n    overworld_frame(gObjectEventPic_TuberF, 2, 2, 6),\n    overworld_frame(gObjectEventPic_TuberF, 2, 2, 7),\n    overworld_frame(gObjectEventPic_TuberF, 2, 2, 8),",
+   "pics": [
+    "gObjectEventPic_TuberF"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_TuberF": [
+     "graphics/object_events/pics/people/tuber_f.png",
+     "-mwidth 2 -mheight 2"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_TUBER_M": {
+   "id": 187,
+   "suffix": "TuberM",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 128,\n    .width = 16,\n    .height = 16,\n    .paletteSlot = PALSLOT_NPC_2,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x16,\n    .subspriteTables = sOamTables_16x16,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_TuberM,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_TuberM",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_TuberM, 2, 2, 0),\n    overworld_frame(gObjectEventPic_TuberM, 2, 2, 1),\n    overworld_frame(gObjectEventPic_TuberM, 2, 2, 2),\n    overworld_frame(gObjectEventPic_TuberM, 2, 2, 3),\n    overworld_frame(gObjectEventPic_TuberM, 2, 2, 4),\n    overworld_frame(gObjectEventPic_TuberM, 2, 2, 5),\n    overworld_frame(gObjectEventPic_TuberM, 2, 2, 6),\n    overworld_frame(gObjectEventPic_TuberM, 2, 2, 7),\n    overworld_frame(gObjectEventPic_TuberM, 2, 2, 8),",
+   "pics": [
+    "gObjectEventPic_TuberM"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_TuberM": [
+     "graphics/object_events/pics/people/tuber_m.png",
+     "-mwidth 2 -mheight 2"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_ZIGZAGOON_2": {
+   "id": 188,
+   "suffix": "Zigzagoon",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 128,\n    .width = 16,\n    .height = 16,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x16,\n    .subspriteTables = sOamTables_16x16,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Zigzagoon,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Zigzagoon",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Zigzagoon, 2, 2, 0),\n    overworld_frame(gObjectEventPic_Zigzagoon, 2, 2, 1),\n    overworld_frame(gObjectEventPic_Zigzagoon, 2, 2, 2),\n    overworld_frame(gObjectEventPic_Zigzagoon, 2, 2, 0),\n    overworld_frame(gObjectEventPic_Zigzagoon, 2, 2, 0),\n    overworld_frame(gObjectEventPic_Zigzagoon, 2, 2, 1),\n    overworld_frame(gObjectEventPic_Zigzagoon, 2, 2, 1),\n    overworld_frame(gObjectEventPic_Zigzagoon, 2, 2, 2),\n    overworld_frame(gObjectEventPic_Zigzagoon, 2, 2, 2),",
+   "pics": [
+    "gObjectEventPic_Zigzagoon"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Zigzagoon": [
+     "graphics/object_events/pics/pokemon/zigzagoon.png",
+     "-mwidth 2 -mheight 2"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_BOY_1": {
+   "id": 189,
+   "suffix": "Boy1",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Boy1,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Boy1",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Boy1, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Boy1, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Boy1, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Boy1, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Boy1, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Boy1, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Boy1, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Boy1, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Boy1, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Boy1"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Boy1": [
+     "graphics/object_events/pics/people/boy_1.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_BOY_2": {
+   "id": 190,
+   "suffix": "Boy2",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Boy2,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Boy2",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Boy2, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Boy2, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Boy2, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Boy2, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Boy2, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Boy2, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Boy2, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Boy2, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Boy2, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Boy2"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Boy2": [
+     "graphics/object_events/pics/people/boy_2.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_BUG_CATCHER": {
+   "id": 191,
+   "suffix": "BugCatcher",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_BugCatcher,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_BugCatcher",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_BugCatcher, 2, 4, 0),\n    overworld_frame(gObjectEventPic_BugCatcher, 2, 4, 1),\n    overworld_frame(gObjectEventPic_BugCatcher, 2, 4, 2),\n    overworld_frame(gObjectEventPic_BugCatcher, 2, 4, 3),\n    overworld_frame(gObjectEventPic_BugCatcher, 2, 4, 4),\n    overworld_frame(gObjectEventPic_BugCatcher, 2, 4, 5),\n    overworld_frame(gObjectEventPic_BugCatcher, 2, 4, 6),\n    overworld_frame(gObjectEventPic_BugCatcher, 2, 4, 7),\n    overworld_frame(gObjectEventPic_BugCatcher, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_BugCatcher"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_BugCatcher": [
+     "graphics/object_events/pics/people/bug_catcher.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_DEVON_EMPLOYEE": {
+   "id": 192,
+   "suffix": "DevonEmployee",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_2,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_DevonEmployee,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_DevonEmployee",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_DevonEmployee, 2, 4, 0),\n    overworld_frame(gObjectEventPic_DevonEmployee, 2, 4, 1),\n    overworld_frame(gObjectEventPic_DevonEmployee, 2, 4, 2),\n    overworld_frame(gObjectEventPic_DevonEmployee, 2, 4, 3),\n    overworld_frame(gObjectEventPic_DevonEmployee, 2, 4, 4),\n    overworld_frame(gObjectEventPic_DevonEmployee, 2, 4, 5),\n    overworld_frame(gObjectEventPic_DevonEmployee, 2, 4, 6),\n    overworld_frame(gObjectEventPic_DevonEmployee, 2, 4, 7),\n    overworld_frame(gObjectEventPic_DevonEmployee, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_DevonEmployee"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_DevonEmployee": [
+     "graphics/object_events/pics/people/devon_employee.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_GIRL_2": {
+   "id": 193,
+   "suffix": "Girl2",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Girl2,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Girl2",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Girl2, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Girl2, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Girl2, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Girl2, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Girl2, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Girl2, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Girl2, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Girl2, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Girl2, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Girl2"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Girl2": [
+     "graphics/object_events/pics/people/girl_2.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_HIKER": {
+   "id": 194,
+   "suffix": "Hiker",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Hiker,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Hiker",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Hiker, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Hiker, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Hiker, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Hiker, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Hiker, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Hiker, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Hiker, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Hiker, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Hiker, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Hiker"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Hiker": [
+     "graphics/object_events/pics/people/hiker.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_LITTLE_BOY": {
+   "id": 195,
+   "suffix": "LittleBoy",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 128,\n    .width = 16,\n    .height = 16,\n    .paletteSlot = PALSLOT_NPC_4,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x16,\n    .subspriteTables = sOamTables_16x16,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_LittleBoy,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_LittleBoy",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_LittleBoy, 2, 2, 0),\n    overworld_frame(gObjectEventPic_LittleBoy, 2, 2, 1),\n    overworld_frame(gObjectEventPic_LittleBoy, 2, 2, 2),\n    overworld_frame(gObjectEventPic_LittleBoy, 2, 2, 3),\n    overworld_frame(gObjectEventPic_LittleBoy, 2, 2, 4),\n    overworld_frame(gObjectEventPic_LittleBoy, 2, 2, 5),\n    overworld_frame(gObjectEventPic_LittleBoy, 2, 2, 6),\n    overworld_frame(gObjectEventPic_LittleBoy, 2, 2, 7),\n    overworld_frame(gObjectEventPic_LittleBoy, 2, 2, 8),",
+   "pics": [
+    "gObjectEventPic_LittleBoy"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_LittleBoy": [
+     "graphics/object_events/pics/people/little_boy.png",
+     "-mwidth 2 -mheight 2"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_MART_EMPLOYEE": {
+   "id": 196,
+   "suffix": "MartEmployee",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_MartEmployee,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_MartEmployee",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_MartEmployee, 2, 4, 0),\n    overworld_frame(gObjectEventPic_MartEmployee, 2, 4, 1),\n    overworld_frame(gObjectEventPic_MartEmployee, 2, 4, 2),\n    overworld_frame(gObjectEventPic_MartEmployee, 2, 4, 3),\n    overworld_frame(gObjectEventPic_MartEmployee, 2, 4, 4),\n    overworld_frame(gObjectEventPic_MartEmployee, 2, 4, 5),\n    overworld_frame(gObjectEventPic_MartEmployee, 2, 4, 6),\n    overworld_frame(gObjectEventPic_MartEmployee, 2, 4, 7),\n    overworld_frame(gObjectEventPic_MartEmployee, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_MartEmployee"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_MartEmployee": [
+     "graphics/object_events/pics/people/mart_employee.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_NINJA_BOY": {
+   "id": 197,
+   "suffix": "NinjaBoy",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 128,\n    .width = 16,\n    .height = 16,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x16,\n    .subspriteTables = sOamTables_16x16,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_NinjaBoy,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_NinjaBoy",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_NinjaBoy, 2, 2, 0),\n    overworld_frame(gObjectEventPic_NinjaBoy, 2, 2, 1),\n    overworld_frame(gObjectEventPic_NinjaBoy, 2, 2, 2),\n    overworld_frame(gObjectEventPic_NinjaBoy, 2, 2, 3),\n    overworld_frame(gObjectEventPic_NinjaBoy, 2, 2, 4),\n    overworld_frame(gObjectEventPic_NinjaBoy, 2, 2, 5),\n    overworld_frame(gObjectEventPic_NinjaBoy, 2, 2, 6),\n    overworld_frame(gObjectEventPic_NinjaBoy, 2, 2, 7),\n    overworld_frame(gObjectEventPic_NinjaBoy, 2, 2, 8),",
+   "pics": [
+    "gObjectEventPic_NinjaBoy"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_NinjaBoy": [
+     "graphics/object_events/pics/people/ninja_boy.png",
+     "-mwidth 2 -mheight 2"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_ROXANNE": {
+   "id": 198,
+   "suffix": "Roxanne",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Roxanne,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Roxanne",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Roxanne, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Roxanne, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Roxanne, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Roxanne, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Roxanne, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Roxanne, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Roxanne, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Roxanne, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Roxanne, 2, 4, 2),",
+   "pics": [
+    "gObjectEventPic_Roxanne"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Roxanne": [
+     "graphics/object_events/pics/people/gym_leaders/roxanne.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F": {
+   "id": 199,
+   "suffix": "RunningTriathleteF",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_2,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_RunningTriathleteF,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_RunningTriathleteF",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_RunningTriathleteF, 2, 4, 0),\n    overworld_frame(gObjectEventPic_RunningTriathleteF, 2, 4, 1),\n    overworld_frame(gObjectEventPic_RunningTriathleteF, 2, 4, 2),\n    overworld_frame(gObjectEventPic_RunningTriathleteF, 2, 4, 3),\n    overworld_frame(gObjectEventPic_RunningTriathleteF, 2, 4, 4),\n    overworld_frame(gObjectEventPic_RunningTriathleteF, 2, 4, 5),\n    overworld_frame(gObjectEventPic_RunningTriathleteF, 2, 4, 6),\n    overworld_frame(gObjectEventPic_RunningTriathleteF, 2, 4, 7),\n    overworld_frame(gObjectEventPic_RunningTriathleteF, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_RunningTriathleteF"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_RunningTriathleteF": [
+     "graphics/object_events/pics/people/running_triathlete_f.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_M": {
+   "id": 200,
+   "suffix": "RunningTriathleteM",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_4,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_RunningTriathleteM,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_RunningTriathleteM",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_RunningTriathleteM, 2, 4, 0),\n    overworld_frame(gObjectEventPic_RunningTriathleteM, 2, 4, 1),\n    overworld_frame(gObjectEventPic_RunningTriathleteM, 2, 4, 2),\n    overworld_frame(gObjectEventPic_RunningTriathleteM, 2, 4, 3),\n    overworld_frame(gObjectEventPic_RunningTriathleteM, 2, 4, 4),\n    overworld_frame(gObjectEventPic_RunningTriathleteM, 2, 4, 5),\n    overworld_frame(gObjectEventPic_RunningTriathleteM, 2, 4, 6),\n    overworld_frame(gObjectEventPic_RunningTriathleteM, 2, 4, 7),\n    overworld_frame(gObjectEventPic_RunningTriathleteM, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_RunningTriathleteM"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_RunningTriathleteM": [
+     "graphics/object_events/pics/people/running_triathlete_m.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_TWIN": {
+   "id": 201,
+   "suffix": "Twin",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_2,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Twin,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Twin",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Twin, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Twin, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Twin, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Twin, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Twin, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Twin, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Twin, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Twin, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Twin, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Twin"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Twin": [
+     "graphics/object_events/pics/people/twin.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_WOMAN_1": {
+   "id": 202,
+   "suffix": "Woman1",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Woman1,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Woman1",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Woman1, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Woman1, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Woman1, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Woman1, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Woman1, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Woman1, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Woman1, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Woman1, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Woman1, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Woman1"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Woman1": [
+     "graphics/object_events/pics/people/woman_1.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_WOMAN_2": {
+   "id": 203,
+   "suffix": "Woman2",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Woman2,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Woman2",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Woman2, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Woman2, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Woman2, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Woman2, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Woman2, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Woman2, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Woman2, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Woman2, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Woman2, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Woman2"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Woman2": [
+     "graphics/object_events/pics/people/woman_2.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_AQUA_MEMBER_M": {
+   "id": 204,
+   "suffix": "AquaMemberM",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_4,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_AquaMemberM,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_AquaMemberM",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_AquaMemberM, 2, 4, 0),\n    overworld_frame(gObjectEventPic_AquaMemberM, 2, 4, 1),\n    overworld_frame(gObjectEventPic_AquaMemberM, 2, 4, 2),\n    overworld_frame(gObjectEventPic_AquaMemberM, 2, 4, 3),\n    overworld_frame(gObjectEventPic_AquaMemberM, 2, 4, 4),\n    overworld_frame(gObjectEventPic_AquaMemberM, 2, 4, 5),\n    overworld_frame(gObjectEventPic_AquaMemberM, 2, 4, 6),\n    overworld_frame(gObjectEventPic_AquaMemberM, 2, 4, 7),\n    overworld_frame(gObjectEventPic_AquaMemberM, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_AquaMemberM"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_AquaMemberM": [
+     "graphics/object_events/pics/people/team_aqua/aqua_member_m.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_BLACK_BELT": {
+   "id": 205,
+   "suffix": "BlackBelt",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_BlackBelt,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_BlackBelt",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_BlackBelt, 2, 4, 0),\n    overworld_frame(gObjectEventPic_BlackBelt, 2, 4, 1),\n    overworld_frame(gObjectEventPic_BlackBelt, 2, 4, 2),\n    overworld_frame(gObjectEventPic_BlackBelt, 2, 4, 3),\n    overworld_frame(gObjectEventPic_BlackBelt, 2, 4, 4),\n    overworld_frame(gObjectEventPic_BlackBelt, 2, 4, 5),\n    overworld_frame(gObjectEventPic_BlackBelt, 2, 4, 6),\n    overworld_frame(gObjectEventPic_BlackBelt, 2, 4, 7),\n    overworld_frame(gObjectEventPic_BlackBelt, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_BlackBelt"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_BlackBelt": [
+     "graphics/object_events/pics/people/black_belt.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_BRAWLY": {
+   "id": 206,
+   "suffix": "Brawly",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Brawly,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Brawly",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Brawly, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Brawly, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Brawly, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Brawly, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Brawly, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Brawly, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Brawly, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Brawly, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Brawly, 2, 4, 2),",
+   "pics": [
+    "gObjectEventPic_Brawly"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Brawly": [
+     "graphics/object_events/pics/people/gym_leaders/brawly.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_MAXIE": {
+   "id": 207,
+   "suffix": "Maxie",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_SPECIAL,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Maxie,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Maxie",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Maxie, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Maxie, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Maxie, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Maxie, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Maxie, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Maxie, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Maxie, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Maxie, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Maxie, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Maxie"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Maxie": [
+     "graphics/object_events/pics/people/team_magma/maxie.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_FLANNERY": {
+   "id": 208,
+   "suffix": "Flannery",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Flannery,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Flannery",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Flannery, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Flannery, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Flannery, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Flannery, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Flannery, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Flannery, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Flannery, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Flannery, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Flannery, 2, 4, 2),",
+   "pics": [
+    "gObjectEventPic_Flannery"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Flannery": [
+     "graphics/object_events/pics/people/gym_leaders/flannery.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN": {
+   "id": 209,
+   "suffix": "HotSpringsOldWoman",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_4,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_HotSpringsOldWoman,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_HotSpringsOldWoman",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_HotSpringsOldWoman, 2, 4, 0),\n    overworld_frame(gObjectEventPic_HotSpringsOldWoman, 2, 4, 1),\n    overworld_frame(gObjectEventPic_HotSpringsOldWoman, 2, 4, 2),\n    overworld_frame(gObjectEventPic_HotSpringsOldWoman, 2, 4, 3),\n    overworld_frame(gObjectEventPic_HotSpringsOldWoman, 2, 4, 4),\n    overworld_frame(gObjectEventPic_HotSpringsOldWoman, 2, 4, 5),\n    overworld_frame(gObjectEventPic_HotSpringsOldWoman, 2, 4, 6),\n    overworld_frame(gObjectEventPic_HotSpringsOldWoman, 2, 4, 7),\n    overworld_frame(gObjectEventPic_HotSpringsOldWoman, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_HotSpringsOldWoman"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_HotSpringsOldWoman": [
+     "graphics/object_events/pics/people/hot_springs_old_woman.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_PICNICKER": {
+   "id": 210,
+   "suffix": "Picnicker",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Picnicker,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Picnicker",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Picnicker, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Picnicker, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Picnicker, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Picnicker, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Picnicker, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Picnicker, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Picnicker, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Picnicker, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Picnicker, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Picnicker"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Picnicker": [
+     "graphics/object_events/pics/people/picnicker.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_BREAKABLE_ROCK": {
+   "id": 211,
+   "suffix": "BreakableRock",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 128,\n    .width = 16,\n    .height = 16,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_S,\n    .inanimate = TRUE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_NONE,\n    .oam = &gObjectEventBaseOam_16x16,\n    .subspriteTables = sOamTables_16x16,\n    .anims = sAnimTable_BreakableRock,\n    .images = sPicTable_BreakableRock,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_BreakableRock",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_BreakableRock, 2, 2, 0),\n    overworld_frame(gObjectEventPic_BreakableRock, 2, 2, 1),\n    overworld_frame(gObjectEventPic_BreakableRock, 2, 2, 2),\n    overworld_frame(gObjectEventPic_BreakableRock, 2, 2, 3),",
+   "pics": [
+    "gObjectEventPic_BreakableRock"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_BreakableRock": [
+     "graphics/object_events/pics/misc/breakable_rock.png",
+     "-mwidth 2 -mheight 2"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_PUSHABLE_BOULDER": {
+   "id": 212,
+   "suffix": "PushableBoulder",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 128,\n    .width = 16,\n    .height = 16,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_S,\n    .inanimate = TRUE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_NONE,\n    .oam = &gObjectEventBaseOam_16x16,\n    .subspriteTables = sOamTables_16x16,\n    .anims = sAnimTable_Inanimate,\n    .images = sPicTable_PushableBoulder,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_PushableBoulder",
+   "pic_table_body": "\n    obj_frame_tiles(gObjectEventPic_PushableBoulder),",
+   "pics": [
+    "gObjectEventPic_PushableBoulder"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_PushableBoulder": [
+     "graphics/object_events/pics/misc/pushable_boulder.png",
+     ""
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_NORMAN": {
+   "id": 213,
+   "suffix": "Norman",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_4,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Norman,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Norman",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Norman, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Norman, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Norman, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Norman, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Norman, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Norman, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Norman, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Norman, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Norman, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Norman"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Norman": [
+     "graphics/object_events/pics/people/gym_leaders/norman.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_GENTLEMAN": {
+   "id": 214,
+   "suffix": "Gentleman",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Gentleman,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Gentleman",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Gentleman, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Gentleman, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Gentleman, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Gentleman, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Gentleman, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Gentleman, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Gentleman, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Gentleman, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Gentleman, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Gentleman"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Gentleman": [
+     "graphics/object_events/pics/people/gentleman.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_AQUA_MEMBER_F": {
+   "id": 215,
+   "suffix": "AquaMemberF",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_4,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_AquaMemberF,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_AquaMemberF",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_AquaMemberF, 2, 4, 0),\n    overworld_frame(gObjectEventPic_AquaMemberF, 2, 4, 1),\n    overworld_frame(gObjectEventPic_AquaMemberF, 2, 4, 2),\n    overworld_frame(gObjectEventPic_AquaMemberF, 2, 4, 3),\n    overworld_frame(gObjectEventPic_AquaMemberF, 2, 4, 4),\n    overworld_frame(gObjectEventPic_AquaMemberF, 2, 4, 5),\n    overworld_frame(gObjectEventPic_AquaMemberF, 2, 4, 6),\n    overworld_frame(gObjectEventPic_AquaMemberF, 2, 4, 7),\n    overworld_frame(gObjectEventPic_AquaMemberF, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_AquaMemberF"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_AquaMemberF": [
+     "graphics/object_events/pics/people/team_aqua/aqua_member_f.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_SCIENTIST_1": {
+   "id": 216,
+   "suffix": "Scientist1",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Scientist1,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Scientist1",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Scientist1, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Scientist1, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Scientist1, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Scientist1, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Scientist1, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Scientist1, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Scientist1, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Scientist1, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Scientist1, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Scientist1"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Scientist1": [
+     "graphics/object_events/pics/people/scientist_1.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_WINONA": {
+   "id": 217,
+   "suffix": "Winona",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_4,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Winona,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Winona",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Winona, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Winona, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Winona, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Winona, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Winona, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Winona, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Winona, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Winona, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Winona, 2, 4, 2),",
+   "pics": [
+    "gObjectEventPic_Winona"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Winona": [
+     "graphics/object_events/pics/people/gym_leaders/winona.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_GAMEBOY_KID": {
+   "id": 218,
+   "suffix": "GameboyKid",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_GameboyKid,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_GameboyKid",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_GameboyKid, 2, 4, 0),\n    overworld_frame(gObjectEventPic_GameboyKid, 2, 4, 1),\n    overworld_frame(gObjectEventPic_GameboyKid, 2, 4, 2),\n    overworld_frame(gObjectEventPic_GameboyKid, 2, 4, 0),\n    overworld_frame(gObjectEventPic_GameboyKid, 2, 4, 0),\n    overworld_frame(gObjectEventPic_GameboyKid, 2, 4, 1),\n    overworld_frame(gObjectEventPic_GameboyKid, 2, 4, 1),\n    overworld_frame(gObjectEventPic_GameboyKid, 2, 4, 2),\n    overworld_frame(gObjectEventPic_GameboyKid, 2, 4, 2),",
+   "pics": [
+    "gObjectEventPic_GameboyKid"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_GameboyKid": [
+     "graphics/object_events/pics/people/gameboy_kid.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_MAGMA_MEMBER_M": {
+   "id": 219,
+   "suffix": "MagmaMemberM",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_SPECIAL,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_MagmaMemberM,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_MagmaMemberM",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_MagmaMemberM, 2, 4, 0),\n    overworld_frame(gObjectEventPic_MagmaMemberM, 2, 4, 1),\n    overworld_frame(gObjectEventPic_MagmaMemberM, 2, 4, 2),\n    overworld_frame(gObjectEventPic_MagmaMemberM, 2, 4, 3),\n    overworld_frame(gObjectEventPic_MagmaMemberM, 2, 4, 4),\n    overworld_frame(gObjectEventPic_MagmaMemberM, 2, 4, 5),\n    overworld_frame(gObjectEventPic_MagmaMemberM, 2, 4, 6),\n    overworld_frame(gObjectEventPic_MagmaMemberM, 2, 4, 7),\n    overworld_frame(gObjectEventPic_MagmaMemberM, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_MagmaMemberM"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_MagmaMemberM": [
+     "graphics/object_events/pics/people/team_magma/magma_member_m.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_MAGMA_MEMBER_F": {
+   "id": 220,
+   "suffix": "MagmaMemberF",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_SPECIAL,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_MagmaMemberF,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_MagmaMemberF",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_MagmaMemberF, 2, 4, 0),\n    overworld_frame(gObjectEventPic_MagmaMemberF, 2, 4, 1),\n    overworld_frame(gObjectEventPic_MagmaMemberF, 2, 4, 2),\n    overworld_frame(gObjectEventPic_MagmaMemberF, 2, 4, 3),\n    overworld_frame(gObjectEventPic_MagmaMemberF, 2, 4, 4),\n    overworld_frame(gObjectEventPic_MagmaMemberF, 2, 4, 5),\n    overworld_frame(gObjectEventPic_MagmaMemberF, 2, 4, 6),\n    overworld_frame(gObjectEventPic_MagmaMemberF, 2, 4, 7),\n    overworld_frame(gObjectEventPic_MagmaMemberF, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_MagmaMemberF"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_MagmaMemberF": [
+     "graphics/object_events/pics/people/team_magma/magma_member_f.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_BEAUTY": {
+   "id": 221,
+   "suffix": "Beauty",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Beauty,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Beauty",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Beauty, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Beauty, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Beauty, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Beauty, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Beauty, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Beauty, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Beauty, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Beauty, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Beauty, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Beauty"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Beauty": [
+     "graphics/object_events/pics/people/beauty.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_HEX_MANIAC": {
+   "id": 222,
+   "suffix": "HexManiac",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_4,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_HexManiac,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_HexManiac",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_HexManiac, 2, 4, 0),\n    overworld_frame(gObjectEventPic_HexManiac, 2, 4, 1),\n    overworld_frame(gObjectEventPic_HexManiac, 2, 4, 2),\n    overworld_frame(gObjectEventPic_HexManiac, 2, 4, 3),\n    overworld_frame(gObjectEventPic_HexManiac, 2, 4, 4),\n    overworld_frame(gObjectEventPic_HexManiac, 2, 4, 5),\n    overworld_frame(gObjectEventPic_HexManiac, 2, 4, 6),\n    overworld_frame(gObjectEventPic_HexManiac, 2, 4, 7),\n    overworld_frame(gObjectEventPic_HexManiac, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_HexManiac"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_HexManiac": [
+     "graphics/object_events/pics/people/hex_maniac.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_LIZA": {
+   "id": 223,
+   "suffix": "Liza",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Liza,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Liza",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Liza, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Liza, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Liza, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Liza, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Liza, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Liza, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Liza, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Liza, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Liza, 2, 4, 2),",
+   "pics": [
+    "gObjectEventPic_Liza"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Liza": [
+     "graphics/object_events/pics/people/gym_leaders/liza.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_TATE": {
+   "id": 224,
+   "suffix": "Tate",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_1,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Tate,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Tate",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Tate, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Tate, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Tate, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Tate, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Tate, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Tate, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Tate, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Tate, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Tate, 2, 4, 2),",
+   "pics": [
+    "gObjectEventPic_Tate"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Tate": [
+     "graphics/object_events/pics/people/gym_leaders/tate.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_TUBER_M_SWIMMING": {
+   "id": 225,
+   "suffix": "TuberMSwimming",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 128,\n    .width = 16,\n    .height = 16,\n    .paletteSlot = PALSLOT_NPC_2,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x16,\n    .subspriteTables = sOamTables_16x16,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_TuberMSwimming,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_TuberMSwimming",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_TuberMSwimming, 2, 2, 0),\n    overworld_frame(gObjectEventPic_TuberMSwimming, 2, 2, 1),\n    overworld_frame(gObjectEventPic_TuberMSwimming, 2, 2, 2),\n    overworld_frame(gObjectEventPic_TuberMSwimming, 2, 2, 3),\n    overworld_frame(gObjectEventPic_TuberMSwimming, 2, 2, 4),\n    overworld_frame(gObjectEventPic_TuberMSwimming, 2, 2, 5),\n    overworld_frame(gObjectEventPic_TuberMSwimming, 2, 2, 6),\n    overworld_frame(gObjectEventPic_TuberMSwimming, 2, 2, 7),\n    overworld_frame(gObjectEventPic_TuberMSwimming, 2, 2, 8),",
+   "pics": [
+    "gObjectEventPic_TuberMSwimming"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_TuberMSwimming": [
+     "graphics/object_events/pics/people/tuber_m_swimming.png",
+     "-mwidth 2 -mheight 2"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_WOMAN_3": {
+   "id": 226,
+   "suffix": "Woman3",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_2,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Woman3,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Woman3",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Woman3, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Woman3, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Woman3, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Woman3, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Woman3, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Woman3, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Woman3, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Woman3, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Woman3, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Woman3"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Woman3": [
+     "graphics/object_events/pics/people/woman_3.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_TRICK_HOUSE_STATUE": {
+   "id": 227,
+   "suffix": "Statue",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_4,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = TRUE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Inanimate,\n    .images = sPicTable_Statue,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Statue",
+   "pic_table_body": "\n    obj_frame_tiles(gObjectEventPic_Statue),",
+   "pics": [
+    "gObjectEventPic_Statue"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Statue": [
+     "graphics/object_events/pics/misc/statue.png",
+     ""
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_JUAN": {
+   "id": 228,
+   "suffix": "Juan",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 256,\n    .width = 16,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_4,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_16x32,\n    .subspriteTables = sOamTables_16x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_Juan,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_Juan",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Juan, 2, 4, 0),\n    overworld_frame(gObjectEventPic_Juan, 2, 4, 1),\n    overworld_frame(gObjectEventPic_Juan, 2, 4, 2),\n    overworld_frame(gObjectEventPic_Juan, 2, 4, 3),\n    overworld_frame(gObjectEventPic_Juan, 2, 4, 4),\n    overworld_frame(gObjectEventPic_Juan, 2, 4, 5),\n    overworld_frame(gObjectEventPic_Juan, 2, 4, 6),\n    overworld_frame(gObjectEventPic_Juan, 2, 4, 7),\n    overworld_frame(gObjectEventPic_Juan, 2, 4, 8),",
+   "pics": [
+    "gObjectEventPic_Juan"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Juan": [
+     "graphics/object_events/pics/people/gym_leaders/juan.png",
+     "-mwidth 2 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_GROUDON_SIDE": {
+   "id": 229,
+   "suffix": "GroudonSide",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 512,\n    .width = 32,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_32x32,\n    .subspriteTables = sOamTables_32x32,\n    .anims = sAnimTable_Inanimate,\n    .images = sPicTable_GroudonSide,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_GroudonSide",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Groudon, 4, 4, 2),\n    overworld_frame(gObjectEventPic_Groudon, 4, 4, 2),\n    overworld_frame(gObjectEventPic_Groudon, 4, 4, 2),\n    overworld_frame(gObjectEventPic_Groudon, 4, 4, 3),\n    overworld_frame(gObjectEventPic_Groudon, 4, 4, 3),\n    overworld_frame(gObjectEventPic_Groudon, 4, 4, 3),\n    overworld_frame(gObjectEventPic_Groudon, 4, 4, 3),\n    overworld_frame(gObjectEventPic_Groudon, 4, 4, 3),\n    overworld_frame(gObjectEventPic_Groudon, 4, 4, 3),",
+   "pics": [
+    "gObjectEventPic_Groudon"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Groudon": [
+     "graphics/object_events/pics/pokemon/groudon.png",
+     "-mwidth 4 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_KYOGRE_SIDE": {
+   "id": 230,
+   "suffix": "KyogreSide",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 512,\n    .width = 32,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_4,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_32x32,\n    .subspriteTables = sOamTables_32x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_KyogreSide,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_KyogreSide",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 2),\n    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 2),\n    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 2),\n    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 3),\n    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 3),\n    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 3),\n    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 3),\n    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 3),\n    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 3),",
+   "pics": [
+    "gObjectEventPic_Kyogre"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Kyogre": [
+     "graphics/object_events/pics/pokemon/kyogre.png",
+     "-mwidth 4 -mheight 4"
+    ]
+   }
+  },
+  "OBJ_EVENT_GFX_GROUDON_FRONT": {
+   "id": 231,
+   "suffix": "GroudonFront",
+   "info_body": "\n    .tileTag = TAG_NONE,\n    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,\n    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,\n    .size = 512,\n    .width = 32,\n    .height = 32,\n    .paletteSlot = PALSLOT_NPC_3,\n    .shadowSize = SHADOW_SIZE_M,\n    .inanimate = FALSE,\n    .disableReflectionPaletteLoad = FALSE,\n    .tracks = TRACKS_FOOT,\n    .oam = &gObjectEventBaseOam_32x32,\n    .subspriteTables = sOamTables_32x32,\n    .anims = sAnimTable_Standard,\n    .images = sPicTable_GroudonFront,\n    .affineAnims = gDummySpriteAffineAnimTable,",
+   "pic_table": "sPicTable_GroudonFront",
+   "pic_table_body": "\n    overworld_frame(gObjectEventPic_Groudon, 4, 4, 0),\n    overworld_frame(gObjectEventPic_Groudon, 4, 4, 0),\n    overworld_frame(gObjectEventPic_Groudon, 4, 4, 0),\n    overworld_frame(gObjectEventPic_Groudon, 4, 4, 1),\n    overworld_frame(gObjectEventPic_Groudon, 4, 4, 1),\n    overworld_frame(gObjectEventPic_Groudon, 4, 4, 1),\n    overworld_frame(gObjectEventPic_Groudon, 4, 4, 1),\n    overworld_frame(gObjectEventPic_Groudon, 4, 4, 1),\n    overworld_frame(gObjectEventPic_Groudon, 4, 4, 1),",
+   "pics": [
+    "gObjectEventPic_Groudon"
+   ],
+   "pic_defs": {
+    "gObjectEventPic_Groudon": [
+     "graphics/object_events/pics/pokemon/groudon.png",
+     "-mwidth 4 -mheight 4"
+    ]
+   }
+  }
+ }
+}

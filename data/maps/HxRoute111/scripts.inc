@@ -1,0 +1,161 @@
+HxRoute111_MapScripts::
+	.byte 0
+
+HxRoute111_EventScript_Heidi::
+	trainerbattle_single TRAINER_HX_HEIDI, HxRoute111_Text_HeidiIntro, HxRoute111_Text_HeidiDefeat
+	msgbox HxRoute111_Text_HeidiPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute111_EventScript_Man1::
+	msgbox HxRoute111_Text_ToughToKeepWinningUpTheRanks, MSGBOX_NPC
+	end
+
+HxRoute111_EventScript_Drew::
+	trainerbattle_single TRAINER_HX_DREW, HxRoute111_Text_DrewIntro, HxRoute111_Text_DrewDefeat
+	msgbox HxRoute111_Text_DrewPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute111_EventScript_Dusty::
+	trainerbattle_single TRAINER_HX_DUSTY_1, HxRoute111_Text_DustyIntro, HxRoute111_Text_DustyDefeat
+	msgbox HxRoute111_Text_DustyPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute111_EventScript_Beau::
+	trainerbattle_single TRAINER_HX_BEAU, HxRoute111_Text_BeauIntro, HxRoute111_Text_BeauDefeat
+	msgbox HxRoute111_Text_BeauPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute111_EventScript_Becky::
+	trainerbattle_single TRAINER_HX_BECKY, HxRoute111_Text_BeckyIntro, HxRoute111_Text_BeckyDefeat
+	msgbox HxRoute111_Text_BeckyPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute111_EventScript_ItemStardust::
+	finditem ITEM_STARDUST
+	end
+
+HxRoute111_EventScript_ItemHPUp::
+	finditem ITEM_HP_UP
+	end
+
+HxRoute111_EventScript_Irene::
+	trainerbattle_single TRAINER_HX_IRENE, HxRoute111_Text_IreneIntro, HxRoute111_Text_IreneDefeat
+	msgbox HxRoute111_Text_IrenePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute111_EventScript_Travis::
+	trainerbattle_single TRAINER_HX_TRAVIS, HxRoute111_Text_TravisIntro, HxRoute111_Text_TravisDefeat
+	msgbox HxRoute111_Text_TravisPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute111_EventScript_Daisuke::
+	trainerbattle_single TRAINER_HX_DAISUKE, HxRoute111_Text_DaisukeIntro, HxRoute111_Text_DaisukeDefeat
+	msgbox HxRoute111_Text_DaisukePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute111_EventScript_Brooke::
+	trainerbattle_single TRAINER_HX_BROOKE_1, HxRoute111_Text_BrookeIntro, HxRoute111_Text_BrookeDefeat
+	msgbox HxRoute111_Text_BrookePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute111_EventScript_Wilton::
+	trainerbattle_single TRAINER_HX_WILTON_1, HxRoute111_Text_WiltonIntro, HxRoute111_Text_WiltonDefeat
+	msgbox HxRoute111_Text_WiltonPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute111_EventScript_Man2::
+	msgbox HxRoute111_Text_WinstrateFamilyDestroyedMe, MSGBOX_NPC
+	end
+
+HxRoute111_EventScript_Tyron::
+	trainerbattle_single TRAINER_HX_TYRON, HxRoute111_Text_TyronIntro, HxRoute111_Text_TyronDefeat
+	msgbox HxRoute111_Text_TyronPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute111_EventScript_Celina::
+	trainerbattle_single TRAINER_HX_CELINA, HxRoute111_Text_CelinaIntro, HxRoute111_Text_CelinaDefeat
+	msgbox HxRoute111_Text_CelinaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute111_EventScript_Bianca::
+	trainerbattle_single TRAINER_HX_BIANCA, HxRoute111_Text_BiancaIntro, HxRoute111_Text_BiancaDefeat
+	msgbox HxRoute111_Text_BiancaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute111_EventScript_Hayden::
+	trainerbattle_single TRAINER_HX_HAYDEN, HxRoute111_Text_HaydenIntro, HxRoute111_Text_HaydenDefeat
+	msgbox HxRoute111_Text_HaydenPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute111_EventScript_Bryan::
+	trainerbattle_single TRAINER_HX_BRYAN, HxRoute111_Text_BryanIntro, HxRoute111_Text_BryanDefeat
+	msgbox HxRoute111_Text_BryanPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute111_EventScript_Celia::
+	trainerbattle_single TRAINER_HX_CELIA, HxRoute111_Text_CeliaIntro, HxRoute111_Text_CeliaDefeat
+	msgbox HxRoute111_Text_CeliaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute111_EventScript_Branden::
+	trainerbattle_single TRAINER_HX_BRANDEN, HxRoute111_Text_BrandenIntro, HxRoute111_Text_BrandenDefeat
+	msgbox HxRoute111_Text_BrandenPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute111_EventScript_ItemElixir::
+	finditem ITEM_ELIXIR
+	end
+
+HxRoute111_EventScript_Hiker::
+	lock
+	faceplayer
+	goto_if_eq VAR_HX_MIRAGE_TOWER_STATE, 3, HxRoute111_EventScript_HikerMirageTowerGone
+	goto_if_eq VAR_HX_MIRAGE_TOWER_STATE, 2, HxRoute111_EventScript_HikerMirageTowerDisintegrated
+	goto_if_set FLAG_HX_MIRAGE_TOWER_VISIBLE, HxRoute111_EventScript_HikerMirageTowerVisible
+	msgbox HxRoute111_Text_ShouldBeMirageTowerAroundHere, MSGBOX_DEFAULT
+	release
+	end
+
+HxRoute111_EventScript_HikerMirageTowerGone::
+	msgbox HxRoute111_Text_MirageTowerHasntBeenSeenSince, MSGBOX_DEFAULT
+	release
+	end
+
+HxRoute111_EventScript_HikerMirageTowerDisintegrated::
+	msgbox HxRoute111_Text_ThatWasShockingSandRainedDown, MSGBOX_DEFAULT
+	release
+	end
+
+HxRoute111_EventScript_HikerMirageTowerVisible::
+	msgbox HxRoute111_Text_MirageTowerClearlyVisible, MSGBOX_DEFAULT
+	release
+	end
+
+HxRoute111_EventScript_WinstrateHouseSign::
+	msgbox HxRoute111_Text_WinstrateHouseSign, MSGBOX_SIGN
+	end
+
+HxRoute111_EventScript_RouteSignMauville::
+	msgbox HxRoute111_Text_RouteSignMauville, MSGBOX_SIGN
+	end
+
+HxRoute111_EventScript_RouteSign112::
+	msgbox HxRoute111_Text_RouteSign112, MSGBOX_SIGN
+	end
+
+HxRoute111_EventScript_RouteSign113::
+	msgbox HxRoute111_Text_RouteSign113, MSGBOX_SIGN
+	end
+
+HxRoute111_EventScript_OldLadysRestStopSign::
+	msgbox HxRoute111_Text_OldLadysRestStopSign, MSGBOX_SIGN
+	end
+
+HxRoute111_EventScript_TrainerTipsSpAtkSpDef::
+	msgbox HxRoute111_Text_TrainerTipsSpAtkSpDef, MSGBOX_SIGN
+	end
+
+HxRoute111_EventScript_TrainerHillSign::
+	msgbox HxRoute111_Text_TrainerHillSign, MSGBOX_SIGN
+	end
+

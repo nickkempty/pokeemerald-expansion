@@ -1,0 +1,21 @@
+HxRoute119_WeatherInstitute_1F_MapScripts::
+	.byte 0
+
+HxRoute119_WeatherInstitute_1F_EventScript_Grunt1::
+	trainerbattle_single TRAINER_HX_GRUNT_WEATHER_INST_1, HxRoute119_WeatherInstitute_1F_Text_Grunt1Intro, HxRoute119_WeatherInstitute_1F_Text_Grunt1Defeat
+	msgbox HxRoute119_WeatherInstitute_1F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute119_WeatherInstitute_1F_EventScript_Grunt4::
+	trainerbattle_single TRAINER_HX_GRUNT_WEATHER_INST_4, HxRoute119_WeatherInstitute_1F_Text_Grunt4Intro, HxRoute119_WeatherInstitute_1F_Text_Grunt4Defeat
+	msgbox HxRoute119_WeatherInstitute_1F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute119_WeatherInstitute_1F_EventScript_LittleBoy::
+	msgbox HxRoute119_WeatherInstitute_1F_Text_EveryoneWentUpstairs, MSGBOX_NPC
+	end
+
+HxRoute119_WeatherInstitute_1F_EventScript_Bed::
+	msgbox HxRoute119_WeatherInstitute_1F_Text_TakeRestInBed, MSGBOX_NPC
+	end
+

@@ -1,0 +1,640 @@
+{
+ "sParty_LeaderErika": [
+  29,
+  24,
+  29
+ ],
+ "sParty_LassKay": [
+  23,
+  23
+ ],
+ "sParty_LassLisa": [
+  23,
+  23
+ ],
+ "sParty_PicnickerTina": [
+  24,
+  24
+ ],
+ "sParty_BeautyBridget": [
+  21,
+  21,
+  21,
+  21
+ ],
+ "sParty_BeautyTamia": [
+  24,
+  24
+ ],
+ "sParty_BeautyLori": [
+  24
+ ],
+ "sParty_CooltrainerMary": [
+  22,
+  22,
+  22,
+  22,
+  22
+ ],
+ "sParty_ScientistTravis": [
+  29,
+  29
+ ],
+ "sParty_TeamRocketGrunt39": [
+  33
+ ],
+ "sParty_BossGiovanni2": [
+  37,
+  35,
+  37,
+  41
+ ],
+ "sParty_TeamRocketGrunt40": [
+  25,
+  25,
+  25,
+  25,
+  25
+ ],
+ "sParty_TeamRocketGrunt41": [
+  32,
+  32,
+  32
+ ],
+ "sParty_ScientistConnor": [
+  26,
+  26,
+  26,
+  26
+ ],
+ "sParty_ScientistJerry": [
+  28,
+  28,
+  28
+ ],
+ "sParty_TeamRocketGrunt23": [
+  29,
+  29
+ ],
+ "sParty_TeamRocketGrunt24": [
+  25,
+  25,
+  25,
+  25,
+  25
+ ],
+ "sParty_ScientistJose": [
+  29,
+  29
+ ],
+ "sParty_TeamRocketGrunt25": [
+  28,
+  28,
+  28
+ ],
+ "sParty_ScientistRodney": [
+  33
+ ],
+ "sParty_TeamRocketGrunt26": [
+  29,
+  29
+ ],
+ "sParty_TeamRocketGrunt27": [
+  28,
+  28,
+  28
+ ],
+ "sParty_ScientistBeau": [
+  26,
+  26,
+  26,
+  26
+ ],
+ "sParty_TeamRocketGrunt28": [
+  33
+ ],
+ "sParty_TeamRocketGrunt29": [
+  33
+ ],
+ "sParty_JugglerDalton": [
+  29,
+  29
+ ],
+ "sParty_ScientistTaylor": [
+  25,
+  25,
+  25,
+  25,
+  25
+ ],
+ "sParty_TeamRocketGrunt30": [
+  29,
+  29
+ ],
+ "sParty_TeamRocketGrunt31": [
+  28,
+  28,
+  28
+ ],
+ "sParty_RivalSilphSquirtle": [
+  37,
+  38,
+  35,
+  35,
+  40
+ ],
+ "sParty_RivalSilphBulbasaur": [
+  37,
+  38,
+  35,
+  35,
+  40
+ ],
+ "sParty_RivalSilphCharmander": [
+  37,
+  38,
+  35,
+  35,
+  40
+ ],
+ "sParty_ScientistJoshua": [
+  29,
+  29
+ ],
+ "sParty_TeamRocketGrunt33": [
+  29,
+  29
+ ],
+ "sParty_TeamRocketGrunt34": [
+  29,
+  29
+ ],
+ "sParty_TeamRocketGrunt35": [
+  26,
+  26,
+  26,
+  26
+ ],
+ "sParty_ScientistParker": [
+  29,
+  29
+ ],
+ "sParty_TeamRocketGrunt32": [
+  26,
+  26,
+  26,
+  26
+ ],
+ "sParty_TeamRocketGrunt36": [
+  28,
+  28,
+  28
+ ],
+ "sParty_ScientistEd": [
+  28,
+  28,
+  28
+ ],
+ "sParty_TeamRocketGrunt37": [
+  28,
+  28,
+  28
+ ],
+ "sParty_TeamRocketGrunt38": [
+  28,
+  28,
+  28
+ ],
+ "sParty_LeaderSabrina": [
+  38,
+  37,
+  38,
+  43
+ ],
+ "sParty_PsychicJohan": [
+  31,
+  31,
+  31,
+  31
+ ],
+ "sParty_PsychicTyron": [
+  34,
+  34
+ ],
+ "sParty_PsychicCameron": [
+  33,
+  33,
+  33
+ ],
+ "sParty_PsychicPreston": [
+  38
+ ],
+ "sParty_ChannelerAmanda": [
+  34,
+  34
+ ],
+ "sParty_ChannelerStacy": [
+  38
+ ],
+ "sParty_ChannelerTasha": [
+  33,
+  33,
+  33
+ ],
+ "sParty_LassAnn": [
+  18,
+  18
+ ],
+ "sParty_YoungsterTyler": [
+  21
+ ],
+ "sParty_GentlemanArthur": [
+  19,
+  19
+ ],
+ "sParty_GentlemanThomas": [
+  18,
+  18
+ ],
+ "sParty_FishermanDale": [
+  17,
+  17,
+  17
+ ],
+ "sParty_GentlemanBrooks": [
+  23
+ ],
+ "sParty_GentlemanLamar": [
+  17,
+  17
+ ],
+ "sParty_LassDawn": [
+  18,
+  18
+ ],
+ "sParty_FishermanBarny": [
+  17,
+  17,
+  17
+ ],
+ "sParty_SailorPhillip": [
+  20
+ ],
+ "sParty_SailorHuey": [
+  18,
+  18
+ ],
+ "sParty_SailorDylan": [
+  17,
+  17,
+  17
+ ],
+ "sParty_SailorLeonard": [
+  21
+ ],
+ "sParty_SailorDuncan": [
+  17,
+  17,
+  17
+ ],
+ "sParty_SailorEdmond": [
+  18,
+  18
+ ],
+ "sParty_SailorTrevor": [
+  17,
+  17
+ ],
+ "sParty_LeaderLtSurge": [
+  21,
+  18,
+  24
+ ],
+ "sParty_SailorDwayne": [
+  21,
+  21
+ ],
+ "sParty_EngineerBaily": [
+  21,
+  21
+ ],
+ "sParty_GentlemanTucker": [
+  23
+ ],
+ "sParty_CooltrainerNaomi": [
+  42,
+  42,
+  42,
+  42,
+  42
+ ],
+ "sParty_CooltrainerRolando": [
+  42,
+  42,
+  42,
+  42,
+  42
+ ],
+ "sParty_PokemaniacDawson": [
+  40,
+  40,
+  40
+ ],
+ "sParty_BlackBeltDaisuke": [
+  43,
+  43,
+  43
+ ],
+ "sParty_JugglerNelson": [
+  41,
+  41,
+  41,
+  41
+ ],
+ "sParty_JugglerGregory": [
+  48
+ ],
+ "sParty_TamerVincent": [
+  44,
+  44
+ ],
+ "sParty_CooltrainerGeorge": [
+  42,
+  42,
+  42,
+  42,
+  42
+ ],
+ "sParty_CooltrainerColby": [
+  41,
+  42,
+  42,
+  42,
+  43
+ ],
+ "sParty_CooltrainerCaroline": [
+  42,
+  42,
+  42,
+  42,
+  42
+ ],
+ "sParty_CooltrainerAlexa": [
+  42,
+  42,
+  42,
+  42,
+  42
+ ],
+ "sParty_CoolCoupleRayTyra": [
+  45,
+  45
+ ],
+ "sParty_EliteFourAgatha": [
+  54,
+  54,
+  53,
+  56,
+  58
+ ],
+ "sParty_EliteFourAgatha2": [
+  66,
+  66,
+  65,
+  68,
+  70
+ ],
+ "sParty_EliteFourBruno": [
+  51,
+  53,
+  53,
+  54,
+  56
+ ],
+ "sParty_EliteFourBruno2": [
+  65,
+  65,
+  65,
+  66,
+  68
+ ],
+ "sParty_ChampionFirstSquirtle": [
+  59,
+  57,
+  59,
+  59,
+  61,
+  63
+ ],
+ "sParty_ChampionFirstBulbasaur": [
+  59,
+  57,
+  59,
+  59,
+  61,
+  63
+ ],
+ "sParty_ChampionFirstCharmander": [
+  59,
+  57,
+  59,
+  59,
+  61,
+  63
+ ],
+ "sParty_ChampionRematchSquirtle": [
+  72,
+  73,
+  72,
+  73,
+  73,
+  75
+ ],
+ "sParty_ChampionRematchBulbasaur": [
+  72,
+  73,
+  72,
+  73,
+  73,
+  75
+ ],
+ "sParty_ChampionRematchCharmander": [
+  72,
+  73,
+  72,
+  73,
+  73,
+  75
+ ],
+ "sParty_EliteFourLance": [
+  56,
+  54,
+  54,
+  58,
+  60
+ ],
+ "sParty_EliteFourLance2": [
+  68,
+  66,
+  66,
+  70,
+  72
+ ],
+ "sParty_EliteFourLorelei": [
+  52,
+  51,
+  52,
+  54,
+  54
+ ],
+ "sParty_EliteFourLorelei2": [
+  64,
+  63,
+  63,
+  66,
+  66
+ ],
+ "sParty_BikerGoon": [
+  37,
+  37
+ ],
+ "sParty_BikerGoon2": [
+  38
+ ],
+ "sParty_BikerGoon3": [
+  38
+ ],
+ "sParty_CueBallPaxton": [
+  39,
+  39
+ ],
+ "sParty_TeamRocketGrunt45": [
+  38,
+  38,
+  38
+ ],
+ "sParty_RuinManiacLawson": [
+  47,
+  48,
+  49
+ ],
+ "sParty_LadySelphy": [
+  49,
+  49
+ ],
+ "sParty_PsychicLaura": [
+  48,
+  48,
+  49
+ ],
+ "sParty_TeamRocketGrunt49": [
+  48,
+  48,
+  48
+ ],
+ "sParty_TeamRocketGrunt50": [
+  49,
+  49
+ ],
+ "sParty_TeamRocketGrunt51": [
+  48,
+  48,
+  48
+ ],
+ "sParty_ScientistGideon": [
+  46,
+  46,
+  46,
+  46,
+  46
+ ],
+ "sParty_TeamRocketGrunt47": [
+  48,
+  48,
+  48
+ ],
+ "sParty_TeamRocketGrunt48": [
+  49,
+  49
+ ],
+ "sParty_TeamRocketAdmin2": [
+  53,
+  54,
+  55
+ ],
+ "sParty_TeamRocketGrunt42": [
+  49,
+  49
+ ],
+ "sParty_TeamRocketAdmin": [
+  52,
+  53,
+  54
+ ],
+ "sParty_BossNoxFinal": [
+  63,
+  64,
+  64,
+  65,
+  66,
+  68
+ ],
+ "sParty_TeamRocketGrunt46": [
+  48,
+  48,
+  48
+ ],
+ "sParty_PkmnBreederBethany": [
+  50
+ ],
+ "sParty_PkmnBreederAllison": [
+  48,
+  48,
+  48
+ ],
+ "sParty_BugCatcherGarret": [
+  49
+ ],
+ "sParty_BugCatcherJonah": [
+  45,
+  45,
+  46,
+  47
+ ],
+ "sParty_BugCatcherVance": [
+  48,
+  48
+ ],
+ "sParty_YoungsterNash": [
+  47,
+  47,
+  49
+ ],
+ "sParty_YoungsterCordell": [
+  48,
+  48
+ ],
+ "sParty_LassDalia": [
+  46,
+  47,
+  47,
+  48
+ ],
+ "sParty_LassJoana": [
+  49
+ ],
+ "sParty_CamperRiley": [
+  49,
+  50
+ ],
+ "sParty_PicnickerMarcy": [
+  48,
+  48,
+  49
+ ],
+ "sParty_RuinManiacLayton": [
+  48,
+  48,
+  48
+ ]
+}

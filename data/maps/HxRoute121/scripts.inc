@@ -1,0 +1,82 @@
+HxRoute121_MapScripts::
+	.byte 0
+
+HxRoute121_EventScript_Woman::
+	msgbox HxRoute121_Text_AheadLoomsMtPyre, MSGBOX_NPC
+	end
+
+HxRoute121_EventScript_Kate::
+	trainerbattle_double TRAINER_HX_KATE_AND_JOY, HxRoute121_Text_KateIntro, HxRoute121_Text_KateDefeat, HxRoute121_Text_KateNotEnoughMons
+	msgbox HxRoute121_Text_KatePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute121_EventScript_Joy::
+	trainerbattle_double TRAINER_HX_KATE_AND_JOY, HxRoute121_Text_JoyIntro, HxRoute121_Text_JoyDefeat, HxRoute121_Text_JoyNotEnoughMons
+	msgbox HxRoute121_Text_JoyPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute121_EventScript_Vanessa::
+	trainerbattle_single TRAINER_HX_VANESSA, HxRoute121_Text_VanessaIntro, HxRoute121_Text_VanessaDefeat
+	msgbox HxRoute121_Text_VanessaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute121_EventScript_Walter::
+	trainerbattle_single TRAINER_HX_WALTER_1, HxRoute121_Text_WalterIntro, HxRoute121_Text_WalterDefeat
+	msgbox HxRoute121_Text_WalterPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute121_EventScript_Tammy::
+	trainerbattle_single TRAINER_HX_TAMMY, HxRoute121_Text_TammyIntro, HxRoute121_Text_TammyDefeat
+	msgbox HxRoute121_Text_TammyPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute121_EventScript_Jessica::
+	trainerbattle_single TRAINER_HX_JESSICA_1, HxRoute121_Text_JessicaIntro, HxRoute121_Text_JessicaDefeat
+	msgbox HxRoute121_Text_JessicaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute121_EventScript_ItemCarbos::
+	finditem ITEM_CARBOS
+	end
+
+HxRoute121_EventScript_Cale::
+	trainerbattle_single TRAINER_HX_CALE, HxRoute121_Text_CaleIntro, HxRoute121_Text_CaleDefeat
+	msgbox HxRoute121_Text_CalePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute121_EventScript_Myles::
+	trainerbattle_single TRAINER_HX_MYLES, HxRoute121_Text_MylesIntro, HxRoute121_Text_MylesDefeat
+	msgbox HxRoute121_Text_MylesPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute121_EventScript_Pat::
+	trainerbattle_single TRAINER_HX_PAT, HxRoute121_Text_PatIntro, HxRoute121_Text_PatDefeat
+	msgbox HxRoute121_Text_PatPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute121_EventScript_Marcel::
+	trainerbattle_single TRAINER_HX_MARCEL, HxRoute121_Text_MarcelIntro, HxRoute121_Text_MarcelDefeat
+	msgbox HxRoute121_Text_MarcelPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute121_EventScript_Cristin::
+	trainerbattle_single TRAINER_HX_CRISTIN_1, HxRoute121_Text_CristinIntro, HxRoute121_Text_CristinDefeat
+	msgbox HxRoute121_Text_CristinPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute121_EventScript_ItemRevive::
+	finditem ITEM_REVIVE
+	end
+
+HxRoute121_EventScript_ItemZinc::
+	finditem ITEM_ZINC
+	end
+
+HxRoute121_EventScript_MtPyrePierSign::
+	msgbox HxRoute121_Text_MtPyrePierSign, MSGBOX_SIGN
+	end
+
+HxRoute121_EventScript_SafariZoneSign::
+	msgbox HxRoute121_Text_SafariZoneSign, MSGBOX_SIGN
+	end
+

@@ -1,0 +1,50 @@
+{
+  "id": "MAP_HX_ROUTE104_MR_BRINEYS_HOUSE",
+  "name": "HxRoute104_MrBrineysHouse",
+  "layout": "LAYOUT_HX_ROUTE104_MR_BRINEYS_HOUSE",
+  "music": "MUS_PEWTER",
+  "region_map_section": "MAPSEC_HX_ROUTE_104",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "floor_number": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HX_EXPERT_M",
+      "x": 5,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_LEFT_UP_RIGHT",
+      "movement_range_x": 3,
+      "movement_range_y": 3,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "HxRoute104_MrBrineysHouse_EventScript_Briney",
+      "flag": "0",
+      "type": "object"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_HX_ROUTE104",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_HX_ROUTE104",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

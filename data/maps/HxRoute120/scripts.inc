@@ -1,0 +1,96 @@
+HxRoute120_MapScripts::
+	.byte 0
+
+HxRoute120_EventScript_Colin::
+	trainerbattle_single TRAINER_HX_COLIN, HxRoute120_Text_ColinIntro, HxRoute120_Text_ColinDefeat
+	msgbox HxRoute120_Text_ColinPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute120_EventScript_Robert::
+	trainerbattle_single TRAINER_HX_ROBERT_1, HxRoute120_Text_RobertIntro, HxRoute120_Text_RobertDefeat
+	msgbox HxRoute120_Text_RobertPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute120_EventScript_Lorenzo::
+	trainerbattle_single TRAINER_HX_LORENZO, HxRoute120_Text_LorenzoIntro, HxRoute120_Text_LorenzoDefeat
+	msgbox HxRoute120_Text_LorenzoPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute120_EventScript_Jenna::
+	trainerbattle_single TRAINER_HX_JENNA, HxRoute120_Text_JennaIntro, HxRoute120_Text_JennaDefeat
+	msgbox HxRoute120_Text_JennaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute120_EventScript_Jeffrey::
+	trainerbattle_single TRAINER_HX_JEFFREY_1, HxRoute120_Text_JeffreyIntro, HxRoute120_Text_JeffreyDefeat
+	msgbox HxRoute120_Text_JeffreyPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute120_EventScript_ItemNugget::
+	finditem ITEM_NUGGET
+	end
+
+HxRoute120_EventScript_ItemFullHeal::
+	finditem ITEM_FULL_HEAL
+	end
+
+HxRoute120_EventScript_Jennifer::
+	trainerbattle_single TRAINER_HX_JENNIFER, HxRoute120_Text_JenniferIntro, HxRoute120_Text_JenniferDefeat
+	msgbox HxRoute120_Text_JenniferPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute120_EventScript_Chip::
+	trainerbattle_single TRAINER_HX_CHIP, HxRoute120_Text_ChipIntro, HxRoute120_Text_ChipDefeat
+	msgbox HxRoute120_Text_ChipPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute120_EventScript_Clarissa::
+	trainerbattle_single TRAINER_HX_CLARISSA, HxRoute120_Text_ClarissaIntro, HxRoute120_Text_ClarissaDefeat
+	msgbox HxRoute120_Text_ClarissaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute120_EventScript_Angelica::
+	trainerbattle_single TRAINER_HX_ANGELICA, HxRoute120_Text_AngelicaIntro, HxRoute120_Text_AngelicaDefeat
+	msgbox HxRoute120_Text_AngelicaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute120_EventScript_ItemNestBall::
+	finditem ITEM_NEST_BALL
+	end
+
+HxRoute120_EventScript_ItemHyperPotion::
+	finditem ITEM_HYPER_POTION
+	end
+
+HxRoute120_EventScript_Keigo::
+	trainerbattle_single TRAINER_HX_KEIGO, HxRoute120_Text_KeigoIntro, HxRoute120_Text_KeigoDefeat
+	msgbox HxRoute120_Text_KeigoPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute120_EventScript_Riley::
+	trainerbattle_single TRAINER_HX_RILEY, HxRoute120_Text_RileyIntro, HxRoute120_Text_RileyDefeat
+	msgbox HxRoute120_Text_RileyPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute120_EventScript_Callie::
+	trainerbattle_single TRAINER_HX_CALLIE, HxRoute120_Text_CallieIntro, HxRoute120_Text_CallieDefeat
+	msgbox HxRoute120_Text_CalliePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute120_EventScript_Leonel::
+	trainerbattle_single TRAINER_HX_LEONEL, HxRoute120_Text_LeonelIntro, HxRoute120_Text_LeonelDefeat
+	msgbox HxRoute120_Text_LeonelPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute120_EventScript_ItemRevive::
+	finditem ITEM_REVIVE
+	end
+
+HxRoute120_EventScript_RouteSignFortree::
+	msgbox HxRoute120_Text_RouteSignFortree, MSGBOX_SIGN
+	end
+
+HxRoute120_EventScript_RouteSign121::
+	msgbox HxRoute120_Text_RouteSign121, MSGBOX_SIGN
+	end
+

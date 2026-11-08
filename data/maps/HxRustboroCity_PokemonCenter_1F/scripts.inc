@@ -1,0 +1,27 @@
+HxRustboroCity_PokemonCenter_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, HxRustboroCity_PokemonCenter_1F_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+	.byte 0
+
+HxRustboroCity_PokemonCenter_1F_OnTransition::
+	setrespawn HEAL_LOCATION_HX_RUSTBORO_CITY
+	end
+
+HxRustboroCity_PokemonCenter_1F_EventScript_Nurse::
+	lock
+	faceplayer
+	call EventScript_PkmnCenterNurse
+	release
+	end
+
+HxRustboroCity_PokemonCenter_1F_EventScript_Boy::
+	msgbox HxRustboroCity_PokemonCenter_1F_Text_PokeCenterInEveryTown, MSGBOX_NPC
+	end
+
+HxRustboroCity_PokemonCenter_1F_EventScript_Gentleman::
+	msgbox HxRustboroCity_PokemonCenter_1F_Text_FeelFreeToUsePC, MSGBOX_NPC
+	end
+
+HxRustboroCity_PokemonCenter_1F_EventScript_Youngster::
+	msgbox HxRustboroCity_PokemonCenter_1F_Text_PokeCentersHealMons, MSGBOX_NPC
+	end

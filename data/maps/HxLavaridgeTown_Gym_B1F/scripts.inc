@@ -1,0 +1,23 @@
+HxLavaridgeTown_Gym_B1F_MapScripts::
+	.byte 0
+
+HxLavaridgeTown_Gym_B1F_EventScript_Jace::
+	trainerbattle_single TRAINER_HX_JACE, HxLavaridgeTown_Gym_B1F_Text_JaceIntro, HxLavaridgeTown_Gym_B1F_Text_JaceDefeat
+	msgbox HxLavaridgeTown_Gym_B1F_Text_JacePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxLavaridgeTown_Gym_B1F_EventScript_Keegan::
+	trainerbattle_single TRAINER_HX_KEEGAN, HxLavaridgeTown_Gym_B1F_Text_KeeganIntro, HxLavaridgeTown_Gym_B1F_Text_KeeganDefeat
+	msgbox HxLavaridgeTown_Gym_B1F_Text_KeeganPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxLavaridgeTown_Gym_B1F_EventScript_Jeff::
+	trainerbattle_single TRAINER_HX_JEFF, HxLavaridgeTown_Gym_B1F_Text_JeffIntro, HxLavaridgeTown_Gym_B1F_Text_JeffDefeat
+	msgbox HxLavaridgeTown_Gym_B1F_Text_JeffPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxLavaridgeTown_Gym_B1F_EventScript_Eli::
+	trainerbattle_single TRAINER_HX_ELI, HxLavaridgeTown_Gym_B1F_Text_EliIntro, HxLavaridgeTown_Gym_B1F_Text_EliDefeat
+	msgbox HxLavaridgeTown_Gym_B1F_Text_EliPostBattle, MSGBOX_AUTOCLOSE
+	end
+

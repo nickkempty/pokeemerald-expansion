@@ -1,0 +1,32 @@
+HxJaggedPass_MapScripts::
+	.byte 0
+
+HxJaggedPass_EventScript_Eric::
+	trainerbattle_single TRAINER_HX_ERIC, HxJaggedPass_Text_EricIntro, HxJaggedPass_Text_EricDefeat
+	msgbox HxJaggedPass_Text_EricPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxJaggedPass_EventScript_Ethan::
+	trainerbattle_single TRAINER_HX_ETHAN_1, HxJaggedPass_Text_EthanIntro, HxJaggedPass_Text_EthanDefeat
+	msgbox HxJaggedPass_Text_EthanPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxJaggedPass_EventScript_ItemBurnHeal::
+	finditem ITEM_BURN_HEAL
+	end
+
+HxJaggedPass_EventScript_Diana::
+	trainerbattle_single TRAINER_HX_DIANA_1, HxJaggedPass_Text_DianaIntro, HxJaggedPass_Text_DianaDefeat
+	msgbox HxJaggedPass_Text_DianaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxJaggedPass_EventScript_Autumn::
+	trainerbattle_single TRAINER_HX_AUTUMN, HxJaggedPass_Text_AutumnIntro, HxJaggedPass_Text_AutumnDefeat
+	msgbox HxJaggedPass_Text_AutumnPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxJaggedPass_EventScript_Julio::
+	trainerbattle_single TRAINER_HX_JULIO, HxJaggedPass_Text_JulioIntro, HxJaggedPass_Text_JulioDefeat
+	msgbox HxJaggedPass_Text_JulioPostBattle, MSGBOX_AUTOCLOSE
+	end
+

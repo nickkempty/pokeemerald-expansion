@@ -1,0 +1,112 @@
+[
+ {
+  "prim": "general",
+  "sec": "slateport",
+  "name": "hx_slateport"
+ },
+ {
+  "prim": "general",
+  "sec": "mauville",
+  "name": "hx_mauville"
+ },
+ {
+  "prim": "building",
+  "sec": "mauville_gym",
+  "name": "hx_mauville_gym"
+ },
+ {
+  "prim": "general",
+  "sec": "rustboro",
+  "name": "hx_rustboro"
+ },
+ {
+  "prim": "building",
+  "sec": "rustboro_gym",
+  "name": "hx_rustboro_gym"
+ },
+ {
+  "prim": "general",
+  "sec": "rusturf_tunnel",
+  "name": "hx_rusturf_tunnel"
+ },
+ {
+  "prim": "general",
+  "sec": "dewford",
+  "name": "hx_dewford"
+ },
+ {
+  "prim": "building",
+  "sec": "generic_building",
+  "name": "hx_generic_building"
+ },
+ {
+  "prim": "building",
+  "sec": "dewford_gym",
+  "name": "hx_dewford_gym"
+ },
+ {
+  "prim": "general",
+  "sec": "lavaridge",
+  "name": "hx_lavaridge"
+ },
+ {
+  "prim": "building",
+  "sec": "lavaridge_gym",
+  "name": "hx_lavaridge_gym"
+ },
+ {
+  "prim": "general",
+  "sec": "petalburg",
+  "name": "hx_petalburg"
+ },
+ {
+  "prim": "building",
+  "sec": "petalburg_gym",
+  "name": "hx_petalburg_gym"
+ },
+ {
+  "prim": "general",
+  "sec": "fortree",
+  "name": "hx_fortree"
+ },
+ {
+  "prim": "building",
+  "sec": "fortree_gym",
+  "name": "hx_fortree_gym"
+ },
+ {
+  "prim": "building",
+  "sec": "lab",
+  "name": "hx_lab"
+ },
+ {
+  "prim": "general",
+  "sec": "lilycove",
+  "name": "hx_lilycove"
+ },
+ {
+  "prim": "general",
+  "sec": "mossdeep",
+  "name": "hx_mossdeep"
+ },
+ {
+  "prim": "building",
+  "sec": "mossdeep_gym",
+  "name": "hx_mossdeep_gym"
+ },
+ {
+  "prim": "general",
+  "sec": "sootopolis",
+  "name": "hx_sootopolis"
+ },
+ {
+  "prim": "building",
+  "sec": "sootopolis_gym",
+  "name": "hx_sootopolis_gym"
+ },
+ {
+  "prim": "general",
+  "sec": "cave",
+  "name": "hx_cave"
+ }
+]

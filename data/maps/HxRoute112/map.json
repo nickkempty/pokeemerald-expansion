@@ -1,0 +1,213 @@
+{
+  "id": "MAP_HX_ROUTE112",
+  "name": "HxRoute112",
+  "layout": "LAYOUT_HX_ROUTE112",
+  "music": "MUS_ROUTE3",
+  "region_map_section": "MAPSEC_HX_ROUTE_112",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "floor_number": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_HX_LAVARIDGE_TOWN",
+      "offset": 40,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_HX_ROUTE111",
+      "offset": -20,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HX_HIKER",
+      "x": 24,
+      "y": 34,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "HxRoute112_EventScript_Brice",
+      "flag": "0",
+      "type": "object"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HX_CAMPER",
+      "x": 29,
+      "y": 49,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "HxRoute112_EventScript_Larry",
+      "flag": "0",
+      "type": "object"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HX_PICNICKER",
+      "x": 22,
+      "y": 46,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "HxRoute112_EventScript_Carol",
+      "flag": "0",
+      "type": "object"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HX_HIKER",
+      "x": 15,
+      "y": 40,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "HxRoute112_EventScript_Trent",
+      "flag": "0",
+      "type": "object"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HX_HIKER",
+      "x": 8,
+      "y": 50,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 3,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "HxRoute112_EventScript_Hiker",
+      "flag": "0",
+      "type": "object"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HX_ITEM_BALL",
+      "x": 14,
+      "y": 43,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "HxRoute112_EventScript_ItemNugget",
+      "flag": "FLAG_HX_ITEM_ROUTE_112_NUGGET",
+      "type": "object"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HX_MAN_5",
+      "x": 31,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "HxRoute112_EventScript_Bryant",
+      "flag": "0",
+      "type": "object"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HX_WOMAN_2",
+      "x": 31,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "HxRoute112_EventScript_Shayla",
+      "flag": "0",
+      "type": "object"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 28,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_HX_JAGGED_PASS",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 29,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_HX_JAGGED_PASS",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 6,
+      "y": 46,
+      "elevation": 3,
+      "dest_map": "MAP_HX_JAGGED_PASS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 7,
+      "y": 46,
+      "elevation": 3,
+      "dest_map": "MAP_HX_JAGGED_PASS",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 11,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_HX_FIERY_PATH",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 22,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_HX_FIERY_PATH",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 44,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "HxRoute112_EventScript_MtChimneySign"
+    },
+    {
+      "type": "sign",
+      "x": 22,
+      "y": 37,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "HxRoute112_EventScript_MtChimneyCableCarSign"
+    },
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 49,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "HxRoute112_EventScript_RouteSignLavaridge"
+    }
+  ]
+}

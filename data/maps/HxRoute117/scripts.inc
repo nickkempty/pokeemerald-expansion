@@ -1,0 +1,85 @@
+HxRoute117_MapScripts::
+	.byte 0
+
+HxRoute117_EventScript_Woman::
+	msgbox HxRoute117_Text_ArentTheseFlowersPretty, MSGBOX_NPC
+	end
+
+HxRoute117_EventScript_LittleBoy::
+	msgbox HxRoute117_Text_AirIsTastyHere, MSGBOX_NPC
+	end
+
+HxRoute117_EventScript_Dylan::
+	trainerbattle_single TRAINER_HX_DYLAN_1, HxRoute117_Text_DylanIntro, HxRoute117_Text_DylanDefeat
+	msgbox HxRoute117_Text_DylanPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute117_EventScript_Lydia::
+	trainerbattle_single TRAINER_HX_LYDIA_1, HxRoute117_Text_LydiaIntro, HxRoute117_Text_LydiaDefeat
+	msgbox HxRoute117_Text_LydiaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute117_EventScript_Isaac::
+	trainerbattle_single TRAINER_HX_ISAAC_1, HxRoute117_Text_IsaacIntro, HxRoute117_Text_IsaacDefeat
+	msgbox HxRoute117_Text_IsaacPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute117_EventScript_ItemGreatBall::
+	finditem ITEM_GREAT_BALL
+	end
+
+HxRoute117_EventScript_ItemRevive::
+	finditem ITEM_REVIVE
+	end
+
+HxRoute117_EventScript_Maria::
+	trainerbattle_single TRAINER_HX_MARIA_1, HxRoute117_Text_MariaIntro, HxRoute117_Text_MariaDefeat
+	msgbox HxRoute117_Text_MariaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute117_EventScript_Derek::
+	trainerbattle_single TRAINER_HX_DEREK, HxRoute117_Text_DerekIntro, HxRoute117_Text_DerekDefeat
+	msgbox HxRoute117_Text_DerekPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute117_EventScript_Meg::
+	trainerbattle_double TRAINER_HX_ANNA_AND_MEG_1, HxRoute117_Text_MegIntro, HxRoute117_Text_MegDefeat, HxRoute117_Text_MegNotEnoughMons
+	msgbox HxRoute117_Text_MegPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute117_EventScript_Anna::
+	trainerbattle_double TRAINER_HX_ANNA_AND_MEG_1, HxRoute117_Text_AnnaIntro, HxRoute117_Text_AnnaDefeat, HxRoute117_Text_AnnaNotEnoughMons
+	msgbox HxRoute117_Text_AnnaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute117_EventScript_Girl::
+	msgbox HxRoute117_Text_DayCarePokemonHadNewMove, MSGBOX_NPC
+	end
+
+HxRoute117_EventScript_Brandi::
+	trainerbattle_single TRAINER_HX_BRANDI, HxRoute117_Text_BrandiIntro, HxRoute117_Text_BrandiDefeat
+	msgbox HxRoute117_Text_BrandiPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute117_EventScript_Aisha::
+	trainerbattle_single TRAINER_HX_AISHA, HxRoute117_Text_AishaIntro, HxRoute117_Text_AishaDefeat
+	msgbox HxRoute117_Text_AishaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute117_EventScript_Melina::
+	trainerbattle_single TRAINER_HX_MELINA, HxRoute117_Text_MelinaIntro, HxRoute117_Text_MelinaDefeat
+	msgbox HxRoute117_Text_MelinaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute117_EventScript_RouteSignVerdanturf::
+	msgbox HxRoute117_Text_RouteSignVerdanturf, MSGBOX_SIGN
+	end
+
+HxRoute117_EventScript_RouteSignMauville::
+	msgbox HxRoute117_Text_RouteSignMauville, MSGBOX_SIGN
+	end
+
+HxRoute117_EventScript_DayCareSign::
+	msgbox HxRoute117_Text_DayCareSign, MSGBOX_SIGN
+	end
+

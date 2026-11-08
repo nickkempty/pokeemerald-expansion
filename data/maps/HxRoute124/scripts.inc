@@ -1,0 +1,64 @@
+HxRoute124_MapScripts::
+	.byte 0
+
+HxRoute124_EventScript_Spencer::
+	trainerbattle_single TRAINER_HX_SPENCER, HxRoute124_Text_SpencerIntro, HxRoute124_Text_SpencerDefeat
+	msgbox HxRoute124_Text_SpencerPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute124_EventScript_Roland::
+	trainerbattle_single TRAINER_HX_ROLAND, HxRoute124_Text_RolandIntro, HxRoute124_Text_RolandDefeat
+	msgbox HxRoute124_Text_RolandPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute124_EventScript_Jenny::
+	trainerbattle_single TRAINER_HX_JENNY_1, HxRoute124_Text_JennyIntro, HxRoute124_Text_JennyDefeat
+	msgbox HxRoute124_Text_JennyPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute124_EventScript_Grace::
+	trainerbattle_single TRAINER_HX_GRACE, HxRoute124_Text_GraceIntro, HxRoute124_Text_GraceDefeat
+	msgbox HxRoute124_Text_GracePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute124_EventScript_Chad::
+	trainerbattle_single TRAINER_HX_CHAD, HxRoute124_Text_ChadIntro, HxRoute124_Text_ChadDefeat
+	msgbox HxRoute124_Text_ChadPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute124_EventScript_ItemRedShard::
+	finditem ITEM_RED_SHARD
+	end
+
+HxRoute124_EventScript_ItemBlueShard::
+	finditem ITEM_BLUE_SHARD
+	end
+
+HxRoute124_EventScript_ItemYellowShard::
+	finditem ITEM_YELLOW_SHARD
+	end
+
+HxRoute124_EventScript_Lila::
+	trainerbattle_double TRAINER_HX_LILA_AND_ROY_1, HxRoute124_Text_LilaIntro, HxRoute124_Text_LilaDefeat, HxRoute124_Text_LilaNotEnoughMons
+	msgbox HxRoute124_Text_LilaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute124_EventScript_Roy::
+	trainerbattle_double TRAINER_HX_LILA_AND_ROY_1, HxRoute124_Text_RoyIntro, HxRoute124_Text_RoyDefeat, HxRoute124_Text_RoyNotEnoughMons
+	msgbox HxRoute124_Text_RoyPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute124_EventScript_Declan::
+	trainerbattle_single TRAINER_HX_DECLAN, HxRoute124_Text_DeclanIntro, HxRoute124_Text_DeclanDefeat
+	msgbox HxRoute124_Text_DeclanPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute124_EventScript_Isabella::
+	trainerbattle_single TRAINER_HX_ISABELLA, HxRoute124_Text_IsabellaIntro, HxRoute124_Text_IsabellaDefeat
+	msgbox HxRoute124_Text_IsabellaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HxRoute124_EventScript_HuntersHouseSign::
+	msgbox HxRoute124_Text_HuntersHouse, MSGBOX_SIGN
+	end
+

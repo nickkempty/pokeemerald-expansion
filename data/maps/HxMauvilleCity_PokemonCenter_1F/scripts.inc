@@ -1,0 +1,27 @@
+HxMauvilleCity_PokemonCenter_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, HxMauvilleCity_PokemonCenter_1F_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+	.byte 0
+
+HxMauvilleCity_PokemonCenter_1F_OnTransition::
+	setrespawn HEAL_LOCATION_HX_MAUVILLE_CITY
+	end
+
+HxMauvilleCity_PokemonCenter_1F_EventScript_Nurse::
+	lock
+	faceplayer
+	call EventScript_PkmnCenterNurse
+	release
+	end
+
+HxMauvilleCity_PokemonCenter_1F_EventScript_Boy::
+	msgbox HxMauvilleCity_PokemonCenter_1F_Text_PokeCenterInEveryTown, MSGBOX_NPC
+	end
+
+HxMauvilleCity_PokemonCenter_1F_EventScript_Gentleman::
+	msgbox HxMauvilleCity_PokemonCenter_1F_Text_FeelFreeToUsePC, MSGBOX_NPC
+	end
+
+HxMauvilleCity_PokemonCenter_1F_EventScript_Youngster::
+	msgbox HxMauvilleCity_PokemonCenter_1F_Text_PokeCentersHealMons, MSGBOX_NPC
+	end

@@ -1,0 +1,15 @@
+SSAnne_1F_Corridor_MapScripts::
+	.byte 0
+
+SSAnne_1F_Corridor_EventScript_WorkerM::
+	msgbox SSAnne_1F_Corridor_Text_LeStrongSilentType, MSGBOX_NPC
+	end
+
+SSAnne_1F_Corridor_EventScript_Sailor::
+	msgbox SSAnne_1F_Corridor_Text_PassengersAreRestless, MSGBOX_NPC
+	end
+
+SSAnne_1F_Corridor_EventScript_ZkGrunt::
+	trainerbattle_single TRAINER_ZK_SSANNE_MAGMA_1, SSAnne_1F_Corridor_Text_ZkGruntIntro, SSAnne_1F_Corridor_Text_ZkGruntDefeat
+	msgbox SSAnne_1F_Corridor_Text_ZkGruntAfter, MSGBOX_AUTOCLOSE
+	end

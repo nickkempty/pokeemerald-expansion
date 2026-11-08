@@ -1,0 +1,117 @@
+RockTunnel_B1F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, RockTunnel_B1F_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, RockTunnel_B1F_OnResume
+	.byte 0
+
+RockTunnel_B1F_OnTransition::
+	setflag FLAG_HIDE_EARLY_MEWTWO
+	goto_if_set FLAG_EARLY_MEWTWO_DONE, RockTunnel_B1F_EventScript_EndTransition
+	goto_if_unset FLAG_ZK_READ_MCORE_LOG, RockTunnel_B1F_EventScript_EndTransition
+	clearflag FLAG_HIDE_EARLY_MEWTWO
+RockTunnel_B1F_EventScript_EndTransition::
+	end
+
+RockTunnel_B1F_OnResume::
+	call_if_set FLAG_SYS_SPECIAL_WILD_BATTLE, RockTunnel_B1F_EventScript_TryRemoveMewtwo
+	end
+
+RockTunnel_B1F_EventScript_TryRemoveMewtwo::
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, EventScript_Return
+	removeobject VAR_LAST_TALKED
+	return
+
+RockTunnel_B1F_EventScript_Mewtwo::
+	goto_if_questlog EventScript_ReleaseEnd
+	special QuestLog_CutRecording
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MEWTWO, CRY_MODE_ENCOUNTER
+	message RockTunnel_B1F_Text_Mewtwo
+	waitmessage
+	waitmoncry
+	delay 20
+	playbgm MUS_ENCOUNTER_GYM_LEADER, 0
+	waitbuttonpress
+	setwildbattle SPECIES_MEWTWO, 25
+	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	special StartLegendaryBattle
+	waitstate
+	clearflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, RockTunnel_B1F_EventScript_CaughtMewtwo
+	msgbox RockTunnel_B1F_Text_MewtwoStillHere
+	release
+	end
+
+RockTunnel_B1F_EventScript_CaughtMewtwo::
+	setflag FLAG_EARLY_MEWTWO_DONE
+	setflag FLAG_FOUGHT_MEWTWO
+	release
+	end
+
+RockTunnel_B1F_EventScript_Sofia::
+	trainerbattle_single TRAINER_PICNICKER_SOFIA, RockTunnel_B1F_Text_SofiaIntro, RockTunnel_B1F_Text_SofiaDefeat
+	msgbox RockTunnel_B1F_Text_SofiaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+RockTunnel_B1F_EventScript_Martha::
+	trainerbattle_single TRAINER_PICNICKER_MARTHA, RockTunnel_B1F_Text_MarthaIntro, RockTunnel_B1F_Text_MarthaDefeat
+	msgbox RockTunnel_B1F_Text_MarthaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+RockTunnel_B1F_EventScript_Dudley::
+	trainerbattle_single TRAINER_HIKER_DUDLEY, RockTunnel_B1F_Text_DudleyIntro, RockTunnel_B1F_Text_DudleyDefeat
+	msgbox RockTunnel_B1F_Text_DudleyPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+RockTunnel_B1F_EventScript_Allen::
+	trainerbattle_single TRAINER_HIKER_ALLEN, RockTunnel_B1F_Text_AllenIntro, RockTunnel_B1F_Text_AllenDefeat
+	msgbox RockTunnel_B1F_Text_AllenPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+RockTunnel_B1F_EventScript_Eric::
+	trainerbattle_single TRAINER_HIKER_ERIC, RockTunnel_B1F_Text_EricIntro, RockTunnel_B1F_Text_EricDefeat
+	msgbox RockTunnel_B1F_Text_EricPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+RockTunnel_B1F_EventScript_Cooper::
+	trainerbattle_single TRAINER_POKEMANIAC_COOPER, RockTunnel_B1F_Text_CooperIntro, RockTunnel_B1F_Text_CooperDefeat
+	msgbox RockTunnel_B1F_Text_CooperPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+RockTunnel_B1F_EventScript_Steve::
+	trainerbattle_single TRAINER_POKEMANIAC_STEVE, RockTunnel_B1F_Text_SteveIntro, RockTunnel_B1F_Text_SteveDefeat
+	msgbox RockTunnel_B1F_Text_StevePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+RockTunnel_B1F_EventScript_Winston::
+	trainerbattle_single TRAINER_POKEMANIAC_WINSTON, RockTunnel_B1F_Text_WinstonIntro, RockTunnel_B1F_Text_WinstonDefeat
+	msgbox RockTunnel_B1F_Text_WinstonPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+@ Zumo: TEAM MAGMA drilling squad
+RockTunnel_B1F_EventScript_MagmaGrunt1::
+	trainerbattle_single TRAINER_ZK_ROCKTUNNEL_MAGMA_1, RockTunnel_B1F_Text_MagmaGrunt1Intro, RockTunnel_B1F_Text_MagmaGrunt1Defeat
+	msgbox RockTunnel_B1F_Text_MagmaGrunt1After, MSGBOX_AUTOCLOSE
+	end
+
+RockTunnel_B1F_EventScript_MagmaGrunt2::
+	trainerbattle_single TRAINER_ZK_ROCKTUNNEL_MAGMA_2, RockTunnel_B1F_Text_MagmaGrunt2Intro, RockTunnel_B1F_Text_MagmaGrunt2Defeat
+	msgbox RockTunnel_B1F_Text_MagmaGrunt2After, MSGBOX_AUTOCLOSE
+	end
+
+RockTunnel_B1F_EventScript_Tabitha::
+	trainerbattle_single TRAINER_ZK_ROCKTUNNEL_TABITHA, RockTunnel_B1F_Text_TabithaIntro, RockTunnel_B1F_Text_TabithaDefeat, RockTunnel_B1F_EventScript_TabithaDefeated
+	end
+
+RockTunnel_B1F_EventScript_TabithaDefeated::
+	msgbox RockTunnel_B1F_Text_TabithaAfter
+	closemessage
+	fadescreen FADE_TO_BLACK
+	setflag FLAG_ZK_ROCKTUNNEL_MAGMA_GONE
+	getplayerxy VAR_0x8004, VAR_0x8005
+	warpsilent MAP_ROCK_TUNNEL_B1F, VAR_0x8004, VAR_0x8005
+	waitstate
+	end

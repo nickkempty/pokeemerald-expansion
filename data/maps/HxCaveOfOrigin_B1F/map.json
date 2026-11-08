@@ -1,0 +1,102 @@
+{
+  "id": "MAP_HX_CAVE_OF_ORIGIN_B1F",
+  "name": "HxCaveOfOrigin_B1F",
+  "layout": "LAYOUT_HX_CAVE_OF_ORIGIN_B1F",
+  "music": "MUS_ENCOUNTER_GYM_LEADER",
+  "region_map_section": "MAPSEC_HX_CAVE_OF_ORIGIN",
+  "requires_flash": false,
+  "weather": "WEATHER_FOG_HORIZONTAL",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "floor_number": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "object_events": [
+    {
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "flag": "FLAG_HX_NOX_FINAL_DONE",
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_GIOVANNI",
+      "x": 9,
+      "y": 11,
+      "script": "HxCaveOfOrigin_B1F_EventScript_Nox",
+      "local_id": "LOCALID_HX_COO_NOX"
+    },
+    {
+      "elevation": 2,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "flag": "FLAG_HX_NOX_FINAL_DONE",
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_HX_GROUDON_FRONT",
+      "x": 9,
+      "y": 9,
+      "script": "HxCaveOfOrigin_B1F_EventScript_Groudon",
+      "local_id": "LOCALID_HX_COO_GROUDON_PIT"
+    },
+    {
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "flag": "FLAG_HX_GROUDON_RING_HIDE",
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_HX_GROUDON_FRONT",
+      "x": 9,
+      "y": 14,
+      "script": "HxCaveOfOrigin_B1F_EventScript_Groudon",
+      "local_id": "LOCALID_HX_COO_GROUDON"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 3,
+      "elevation": 3,
+      "dest_map": "MAP_HX_CAVE_OF_ORIGIN_1F",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "elevation": 0,
+      "var": "VAR_HX_COO_STATE",
+      "var_value": "0",
+      "x": 8,
+      "y": 13,
+      "script": "HxCaveOfOrigin_B1F_EventScript_NoxTrigger"
+    },
+    {
+      "type": "trigger",
+      "elevation": 0,
+      "var": "VAR_HX_COO_STATE",
+      "var_value": "0",
+      "x": 9,
+      "y": 13,
+      "script": "HxCaveOfOrigin_B1F_EventScript_NoxTrigger"
+    },
+    {
+      "type": "trigger",
+      "elevation": 0,
+      "var": "VAR_HX_COO_STATE",
+      "var_value": "0",
+      "x": 10,
+      "y": 13,
+      "script": "HxCaveOfOrigin_B1F_EventScript_NoxTrigger"
+    }
+  ],
+  "bg_events": []
+}

@@ -1,0 +1,29 @@
+name: Zumo FireRed (old base) build
+on:
+  push:
+    branches: [zumo-firered-v42]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends binutils-arm-none-eabi gcc-arm-none-eabi libnewlib-arm-none-eabi libpng-dev python3
+          git clone --depth 1 https://github.com/pret/agbcc /tmp/agbcc
+          cd /tmp/agbcc && ./build.sh && ./install.sh "$GITHUB_WORKSPACE"
+      - name: Build
+        run: make firered_rev1 -j$(nproc) 2>&1 | tee build.log; exit ${PIPESTATUS[0]}
+      - name: Publish ROM + log to fr-rom branch
+        if: always()
+        run: |
+          set +e
+          mkdir -p /tmp/o && cp build.log /tmp/o/ && cp pokefirered_rev1.gba /tmp/o/ 2>/dev/null
+          grep -E "Error|error:|undefined reference" build.log | head -100 > /tmp/o/errors.txt
+          cd /tmp/o && git init -q && git checkout -q -b fr-rom
+          git -c user.name=ci -c user.email=ci@localhost add . && git -c user.name=ci -c user.email=ci@localhost commit -qm "build ${{ github.run_number }}"
+          git push -qf "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" fr-rom

@@ -1,0 +1,27 @@
+HxUnionRoad2_PokemonCenter_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, HxUnionRoad2_PokemonCenter_1F_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+	.byte 0
+
+HxUnionRoad2_PokemonCenter_1F_OnTransition::
+	setrespawn HEAL_LOCATION_HX_UNION_ROAD
+	end
+
+HxUnionRoad2_PokemonCenter_1F_EventScript_Nurse::
+	lock
+	faceplayer
+	call EventScript_PkmnCenterNurse
+	release
+	end
+
+HxUnionRoad2_PokemonCenter_1F_EventScript_Boy::
+	msgbox HxUnionRoad2_PokemonCenter_1F_Text_PokeCenterInEveryTown, MSGBOX_NPC
+	end
+
+HxUnionRoad2_PokemonCenter_1F_EventScript_Gentleman::
+	msgbox HxUnionRoad2_PokemonCenter_1F_Text_FeelFreeToUsePC, MSGBOX_NPC
+	end
+
+HxUnionRoad2_PokemonCenter_1F_EventScript_Youngster::
+	msgbox HxUnionRoad2_PokemonCenter_1F_Text_PokeCentersHealMons, MSGBOX_NPC
+	end
