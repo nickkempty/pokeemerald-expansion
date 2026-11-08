@@ -1,4 +1,5 @@
 #include "global.h"
+#include "zumo.h"
 #include "malloc.h"
 #include "battle.h"
 #include "battle_anim.h"
@@ -5026,6 +5027,29 @@ void Task_AbilityCapsule(u8 taskId)
         gTasks[taskId].func = Task_ClosePartyMenu;
         break;
     }
+}
+
+// Zumo Edition: GENDER SWAP item
+void ItemUseCB_GenderSwap(u8 taskId, TaskFunc task)
+{
+    struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
+
+    PlaySE(SE_SELECT);
+    if (!Zumo_TryChangeGender(mon))
+    {
+        gPartyMenuUseExitCallback = FALSE;
+        DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);
+    }
+    else
+    {
+        gPartyMenuUseExitCallback = TRUE;
+        RemoveBagItem(gSpecialVar_ItemId, 1);
+        GetMonNickname(mon, gStringVar1);
+        StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("{STR_VAR_1}'s gender was swapped!{PAUSE_UNTIL_PRESS}"));
+        DisplayPartyMenuMessage(gStringVar4, TRUE);
+    }
+    ScheduleBgCopyTilemapToVram(2);
+    gTasks[taskId].func = task;
 }
 
 void ItemUseCB_AbilityCapsule(u8 taskId, TaskFunc task)

@@ -20,10 +20,10 @@ EventScript_MewSighting::
 EventScript_MewSightingBattle::
 	closemessage
 	special CreateMewSightingBattle
-	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
 	waitstate
-	clearflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	special RemoveMewSightingObject
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, EventScript_MewSightingCaught
@@ -583,18 +583,18 @@ EventScript_ZumoGachaSpin1::
 	special Zumo_GachaScene
 	waitstate
 	bufferspeciesname STR_VAR_1, VAR_TEMP_1
-	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_ZumoGachaDone
 	special Zumo_GachaWasPC
 	goto_if_eq VAR_RESULT, TRUE, EventScript_ZumoGachaNamePC
-	call EventScript_GetGiftMonPartySlot
-	call EventScript_ChangePokemonNickname
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
 	goto EventScript_ZumoGachaDone
 	end
 
 EventScript_ZumoGachaNamePC::
-	call EventScript_NameReceivedBoxMon
-	call EventScript_TransferredToPC
+	call Common_EventScript_NameReceivedBoxMon
+	call Common_EventScript_TransferredToPC
 	release
 	end
 
@@ -605,7 +605,7 @@ EventScript_ZumoGachaDone::
 	end
 
 EventScript_ZumoGachaSentPC::
-	call EventScript_TransferredToPC
+	call Common_EventScript_TransferredToPC
 	release
 	end
 
@@ -633,7 +633,7 @@ EventScript_ZumoGachaNoMoney::
 	end
 
 EventScript_ZumoGachaNoRoom::
-	goto EventScript_NoMoreRoomForPokemon
+	goto Common_EventScript_NoMoreRoomForPokemon
 	end
 
 EventScript_ZumoGachaNoRoom3::

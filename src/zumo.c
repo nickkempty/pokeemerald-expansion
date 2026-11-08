@@ -320,13 +320,12 @@ void BufferQuestText(void)
     }
 }
 
-void RemoveObjectEventNoFlag(u8 objectEventId);
 // Zumo hack: remove the spawned MEW object without touching any flag
 void RemoveMewSightingObject(void)
 {
     u8 objectEventId;
     if (!TryGetObjectEventIdByLocalIdAndMap(LOCALID_MEW_SIGHTING, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup, &objectEventId))
-        RemoveObjectEventNoFlag(objectEventId);
+        RemoveObjectEvent(&gObjectEvents[objectEventId]);
 }
 
 // ---- Zumo: TEAM ROCKET trio (MUSASHI / KOJIRO / NYARTH) ambush, every 2 badges ----
@@ -380,7 +379,7 @@ void RemoveRocketTrio(void)
     u8 objectEventId, i;
     for (i = 0; i < 3; i++)
         if (!TryGetObjectEventIdByLocalIdAndMap(LOCALID_ROCKET_TRIO_A + i, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup, &objectEventId))
-            RemoveObjectEventNoFlag(objectEventId);
+            RemoveObjectEvent(&gObjectEvents[objectEventId]);
 }
 
 // ---- Zumo Edition: ported Emerald Mauville gym puzzle ----
@@ -414,3 +413,31 @@ void HxRaiseCinnabarCauseway(void)
 }
 
 #undef HX_ENT
+
+// Zumo Edition: flip a POKeMON's gender (GENDER SWAP item). Nature and shininess are kept by
+// UpdateMonPersonality. Returns FALSE for single-gender / genderless species and eggs.
+bool8 Zumo_TryChangeGender(struct Pokemon *mon)
+{
+    u16 species = GetMonData(mon, MON_DATA_SPECIES);
+    u32 pid = GetMonData(mon, MON_DATA_PERSONALITY);
+    u8 oldGender, ratio;
+    u32 b;
+
+    if (species == SPECIES_NONE || GetMonData(mon, MON_DATA_IS_EGG))
+        return FALSE;
+    ratio = gSpeciesInfo[species].genderRatio;
+    if (ratio == MON_MALE || ratio == MON_FEMALE || ratio == MON_GENDERLESS)
+        return FALSE;
+    oldGender = GetGenderFromSpeciesAndPersonality(species, pid);
+    for (b = 0; b < 256; b++)
+    {
+        u32 newPid = (pid & 0xFFFFFF00) | b;
+        if (GetGenderFromSpeciesAndPersonality(species, newPid) != oldGender)
+        {
+            UpdateMonPersonality(&mon->box, newPid);
+            CalculateMonStats(mon);
+            return TRUE;
+        }
+    }
+    return FALSE;
+}

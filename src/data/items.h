@@ -7307,6 +7307,22 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_Glimmoranite,
     },
 
+    [ITEM_GENDER_SWAP] = // Zumo Edition
+    {
+        .name = ITEM_NAME("Gender Swap"),
+        .price = 50000,
+        .description = COMPOUND_STRING(
+            "Swaps a Pokémon's\n"
+            "gender. Nature and\n"
+            "shininess stay."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FIELD_USE,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_GenderSwap,
+        .iconPic = gItemIcon_AbilityCapsule,
+        .iconPalette = gItemIconPalette_AbilityCapsule,
+    },
+
 // Gems
 #if I_PRICE >= GEN_9
     #define GEM_PRICE 15000

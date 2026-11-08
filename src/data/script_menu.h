@@ -1133,6 +1133,20 @@ struct MultichoiceListStruct
     u8 count;
 };
 
+// Zumo Edition: 9 starters (three per PROF. OAK ball) and the gacha clerk
+static const struct MenuAction sMultichoiceList_StarterGrass[] = {
+    {COMPOUND_STRING("FUSHIGIDANE")}, {COMPOUND_STRING("CHICORITA")}, {COMPOUND_STRING("KIMORI")},
+};
+static const struct MenuAction sMultichoiceList_StarterFire[] = {
+    {COMPOUND_STRING("HITOKAGE")}, {COMPOUND_STRING("HINOARASHI")}, {COMPOUND_STRING("ACHAMO")},
+};
+static const struct MenuAction sMultichoiceList_StarterWater[] = {
+    {COMPOUND_STRING("ZENIGAME")}, {COMPOUND_STRING("WANINOKO")}, {COMPOUND_STRING("MIZUGOROU")},
+};
+static const struct MenuAction sMultichoiceList_ZumoGacha[] = {
+    {COMPOUND_STRING("SPIN x1")}, {COMPOUND_STRING("SPIN x3  STRONG!")}, {COMPOUND_STRING("CANCEL")},
+};
+
 static const struct MultichoiceListStruct sMultichoiceLists[] =
 {
     [MULTI_BRINEY_ON_DEWFORD]          = MULTICHOICE(MultichoiceList_BrineyOnDewford),
@@ -1294,6 +1308,10 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_HOF_VICTORIES_QUIT]                         = MULTICHOICE(sMultichoiceList_HOF_Victories_Quit),
     [MULTI_EGGS_VICTORIES_QUIT]                        = MULTICHOICE(sMultichoiceList_Eggs_Victories_Quit),
     [MULTI_HOF_EGGS_VICTORIES_QUIT]                    = MULTICHOICE(sMultichoiceList_HOF_Eggs_Victories_Quit),
+    [MULTI_STARTER_GRASS]                              = MULTICHOICE(sMultichoiceList_StarterGrass),
+    [MULTI_STARTER_FIRE]                               = MULTICHOICE(sMultichoiceList_StarterFire),
+    [MULTI_STARTER_WATER]                              = MULTICHOICE(sMultichoiceList_StarterWater),
+    [MULTI_ZUMO_GACHA]                                 = MULTICHOICE(sMultichoiceList_ZumoGacha),
 };
 
 const u8 *const gStdStrings[] =
