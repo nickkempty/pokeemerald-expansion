@@ -79,6 +79,7 @@ out=''.join(ent[x] if k=='t' else x for k,x in order)
 if not out.endswith('\n\n'): out+='\n'
 for tid in new:
     out+=f'=== {tid} ===\n'+make_header(tid,zumo[tid])+'\n\n'+mons_text(zumo[tid]['party'])+'\n\n'
+out=out.replace('Class: TRAINER_CLASS_PKMN_TRAINER_UNUSED','Class: Team Rocket Frlg').replace('Pic: TRAINER_PIC_MAGMA_ADMIN_M','Pic: Magma Admin')
 open(PARTY,'w').write(out)
 print('changed',len(changed),'new',len(new))
 print({k:len(v) for k,v in M.items()}); print(M['music'])

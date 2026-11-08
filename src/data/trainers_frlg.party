@@ -13814,9 +13814,9 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ZUMO_ROCKET_1 ===
 Name: MUSASHI
-Class: TRAINER_CLASS_PKMN_TRAINER_UNUSED
+Class: Team Rocket Frlg
 Pic: Rocket Grunt F Frlg
-Gender: Male
+Gender: Female
 Music: Dangerous
 Double Battle: Yes
 AI: Check Bad Move / Try To Faint
@@ -13835,9 +13835,9 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_ZUMO_ROCKET_2 ===
 Name: MUSASHI
-Class: TRAINER_CLASS_PKMN_TRAINER_UNUSED
+Class: Team Rocket Frlg
 Pic: Rocket Grunt F Frlg
-Gender: Male
+Gender: Female
 Music: Dangerous
 Double Battle: Yes
 AI: Check Bad Move / Try To Faint
@@ -13856,9 +13856,9 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_ZUMO_ROCKET_3 ===
 Name: MUSASHI
-Class: TRAINER_CLASS_PKMN_TRAINER_UNUSED
+Class: Team Rocket Frlg
 Pic: Rocket Grunt F Frlg
-Gender: Male
+Gender: Female
 Music: Dangerous
 Double Battle: Yes
 AI: Check Bad Move / Try To Faint
@@ -13881,9 +13881,9 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_ZUMO_ROCKET_4 ===
 Name: MUSASHI
-Class: TRAINER_CLASS_PKMN_TRAINER_UNUSED
+Class: Team Rocket Frlg
 Pic: Rocket Grunt F Frlg
-Gender: Male
+Gender: Female
 Music: Dangerous
 Double Battle: Yes
 AI: Check Bad Move / Try To Faint
@@ -13945,7 +13945,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_ZK_MTMOON_TABITHA ===
 Name: TABITHA
 Class: TRAINER_CLASS_MAGMA_ADMIN
-Pic: TRAINER_PIC_MAGMA_ADMIN_M
+Pic: Magma Admin
 Gender: Male
 Music: TRAINER_ENCOUNTER_MUSIC_MAGMA
 Double Battle: No
@@ -14004,7 +14004,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_ZK_ROCKTUNNEL_TABITHA ===
 Name: TABITHA
 Class: TRAINER_CLASS_MAGMA_ADMIN
-Pic: TRAINER_PIC_MAGMA_ADMIN_M
+Pic: Magma Admin
 Gender: Male
 Music: TRAINER_ENCOUNTER_MUSIC_MAGMA
 Double Battle: No
@@ -14174,7 +14174,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_ZK_SSANNE_TABITHA ===
 Name: TABITHA
 Class: TRAINER_CLASS_MAGMA_ADMIN
-Pic: TRAINER_PIC_MAGMA_ADMIN_M
+Pic: Magma Admin
 Gender: Male
 Music: TRAINER_ENCOUNTER_MUSIC_MAGMA
 Double Battle: No
