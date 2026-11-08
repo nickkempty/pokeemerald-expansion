@@ -750,10 +750,8 @@ void process_groups(string groups_filepath, vector<string> &map_filepaths, strin
         }
         string map_name = json_to_string(map_data, "name");
 
-        // Zumo: the Emerald build includes both Hoenn and Kanto maps
-        if (version == "firered" && region != "REGION_KANTO") {
-            invalid_maps.push_back(map_name);
-        }
+        // Zumo: both builds include both Hoenn and Kanto maps
+        (void)map_name; (void)region;
     }
 
     if (groups_data == Json())
@@ -790,8 +788,7 @@ string generate_layout_headers_text(Json layouts_data) {
             else if (version == "firered")
                 layout_version = "frlg";
         }
-        if (version == "firered" && layout_version != "frlg") // Zumo: Emerald build keeps FRLG layouts
-            continue;
+        // Zumo: both builds keep both Emerald and FRLG layouts
         string layoutName = json_to_string(layout, "name");
         string border_label = layoutName + "_Border";
         string blockdata_label = layoutName + "_Blockdata";
@@ -847,9 +844,7 @@ string generate_layouts_table_text(Json layouts_data) {
             else if (version == "firered")
                 layout_version = "frlg";
         }
-        if (version == "firered" && layout_version != "frlg") { // Zumo: Emerald build keeps FRLG layouts
-            text << "\t.4byte NULL\n";
-        } else {
+        { // Zumo: both builds keep both Emerald and FRLG layouts
             string layout_name = json_to_string(layout, "name", true);
             if (layout_name.empty()) layout_name = "NULL";
             text << "\t.4byte " << layout_name << "\n";

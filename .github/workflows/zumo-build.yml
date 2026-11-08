@@ -22,7 +22,7 @@ jobs:
           sudo apt-get install -y --no-install-recommends binutils-arm-none-eabi gcc-arm-none-eabi libnewlib-arm-none-eabi libpng-dev python3
 
       - name: Build ROM
-        run: make -j$(nproc) -O 2>&1 | tee build.log; exit ${PIPESTATUS[0]}
+        run: make firered -j$(nproc) -O 2>&1 | tee build.log; exit ${PIPESTATUS[0]}
 
       - name: Save build log to ci-logs branch (readable by Claude via git)
         if: always()
@@ -30,7 +30,7 @@ jobs:
           set +e
           grep -E "Error:|error:|undefined reference|Error [0-9]" build.log | head -10 | while IFS= read -r l; do echo "::error::$l"; done
           mkdir -p /tmp/ci && cp build.log /tmp/ci/build.log
-          { echo "run=${{ github.run_number }} sha=${{ github.sha }}"; ls -l pokeemerald.gba 2>&1; grep -E "Error:|error:|undefined reference|overflow|Error [0-9]" build.log | head -200; } > /tmp/ci/summary.txt
+          { echo "run=${{ github.run_number }} sha=${{ github.sha }}"; ls -l pokefirered.gba 2>&1; grep -E "Error:|error:|undefined reference|overflow|Error [0-9]" build.log | head -200; } > /tmp/ci/summary.txt
           cd /tmp/ci && git init -q && git checkout -q -b ci-logs
           git -c user.name=ci -c user.email=ci@localhost add . && git -c user.name=ci -c user.email=ci@localhost commit -qm "build ${{ github.run_number }}"
           git push -qf "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" ci-logs
@@ -39,7 +39,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: zumo-rom-${{ github.run_number }}
-          path: pokeemerald.gba
+          path: pokefirered.gba
 
       - name: Upload build log
         if: always()
@@ -50,10 +50,10 @@ jobs:
 
       - name: Publish release (easy phone download)
         run: |
-          cp pokeemerald.gba zumo-emerald-build${{ github.run_number }}.gba
-          gh release create "build-${{ github.run_number }}" "zumo-emerald-build${{ github.run_number }}.gba" \
+          cp pokefirered.gba zumo-build${{ github.run_number }}.gba
+          gh release create "build-${{ github.run_number }}" "zumo-build${{ github.run_number }}.gba" \
             --target "${{ github.sha }}" --prerelease \
-            --title "Zumo Emerald build ${{ github.run_number }}" \
+            --title "Zumo build ${{ github.run_number }}" \
             --notes "Auto build from commit ${{ github.sha }}"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
