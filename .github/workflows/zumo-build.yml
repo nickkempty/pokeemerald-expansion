@@ -27,6 +27,8 @@ jobs:
       - name: Save build log to ci-logs branch (readable by Claude via git)
         if: always()
         run: |
+          set +e
+          grep -E "error|Error|undefined reference" build.log | head -10 | while IFS= read -r l; do echo "::error::$l"; done
           mkdir -p /tmp/ci && cp build.log /tmp/ci/build.log
           { echo "run=${{ github.run_number }} sha=${{ github.sha }}"; ls -l pokeemerald.gba 2>&1; grep -E "error|Error|undefined reference|overflow" build.log | head -200; } > /tmp/ci/summary.txt
           cd /tmp/ci && git init -q && git checkout -q -b ci-logs
