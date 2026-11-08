@@ -26,6 +26,11 @@
 #include "constants/species.h"
 #include "constants/vars.h"
 #include "zumo.h"
+#include "battle.h"
+#include "daycare.h"
+#include "pokemon_storage_system.h"
+#include "party_menu.h"
+#include "constants/moves.h"
 
 u8 gZumoRocketStage;
 
@@ -441,3 +446,161 @@ bool8 Zumo_TryChangeGender(struct Pokemon *mon)
     }
     return FALSE;
 }
+
+// ---- Zumo Edition: NATURE changer in every POKeMON Center (5,000 per try) ----
+// gSpecialVar_0x8004 = party slot. Picks a random nature different from the current one.
+// VAR_RESULT: 0 = changed (STR_VAR_1 nickname, STR_VAR_2 nature), 1 = egg/invalid
+void Zumo_RandomizeNature(void)
+{
+    struct Pokemon *mon;
+    u32 oldNature, newNature;
+
+    if (gSpecialVar_0x8004 >= PARTY_SIZE)
+    {
+        gSpecialVar_Result = 1;
+        return;
+    }
+    mon = &gPlayerParty[gSpecialVar_0x8004];
+    if (GetMonData(mon, MON_DATA_SPECIES) == SPECIES_NONE || GetMonData(mon, MON_DATA_IS_EGG))
+    {
+        gSpecialVar_Result = 1;
+        return;
+    }
+    oldNature = GetMonData(mon, MON_DATA_HIDDEN_NATURE);
+    do
+    {
+        newNature = Random() % NUM_NATURES;
+    } while (newNature == oldNature);
+    SetMonData(mon, MON_DATA_HIDDEN_NATURE, &newNature);
+    CalculateMonStats(mon);
+    GetMonNickname(mon, gStringVar1);
+    StringCopy(gStringVar2, gNaturesInfo[newNature].name);
+    gSpecialVar_Result = 0;
+}
+
+// ---- Zumo Edition: POKeMON Center day care ----
+// One POKeMON can be left at any POKeMON Center and picked up at any other one.
+// Every time the party earns battle EXP, the day care POKeMON gets half of it.
+STATIC_ASSERT(sizeof(struct BoxPokemon) <= sizeof(((struct SaveBlock3 *)0)->zumoDaycareMon), ZumoDaycareMonFits);
+#define sDaycareMon (*(struct BoxPokemon *)gSaveBlock3Ptr->zumoDaycareMon)
+
+void Zumo_DaycareGainBattleExp(u32 exp)
+{
+    u32 total;
+
+    if (!GetBoxMonData(&sDaycareMon, MON_DATA_SPECIES))
+        return;
+    total = gSaveBlock3Ptr->zumoDaycareExp + exp / 2;
+    if (total > 2000000)
+        total = 2000000;
+    gSaveBlock3Ptr->zumoDaycareExp = total;
+}
+
+// VAR_RESULT = TRUE if a POKeMON is at the day care; buffers its nickname in STR_VAR_1
+void Zumo_DaycareHasMon(void)
+{
+    gSpecialVar_Result = GetBoxMonData(&sDaycareMon, MON_DATA_SPECIES) != SPECIES_NONE;
+    if (gSpecialVar_Result)
+        GetBoxMonNickname(&sDaycareMon, gStringVar1);
+}
+
+// gSpecialVar_0x8004 = party slot. VAR_RESULT: 0 ok, 1 egg/invalid, 2 it's your last usable POKeMON
+void Zumo_DaycareDeposit(void)
+{
+    struct Pokemon *mon;
+    u32 i, others = 0;
+
+    if (gSpecialVar_0x8004 >= PARTY_SIZE)
+    {
+        gSpecialVar_Result = 1;
+        return;
+    }
+    mon = &gPlayerParty[gSpecialVar_0x8004];
+    if (GetMonData(mon, MON_DATA_SPECIES) == SPECIES_NONE || GetMonData(mon, MON_DATA_IS_EGG))
+    {
+        gSpecialVar_Result = 1;
+        return;
+    }
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        if (i != gSpecialVar_0x8004 && GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) != SPECIES_NONE
+         && !GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG) && GetMonData(&gPlayerParty[i], MON_DATA_HP) != 0)
+            others++;
+    }
+    if (others == 0)
+    {
+        gSpecialVar_Result = 2;
+        return;
+    }
+    GetMonNickname(mon, gStringVar1);
+    sDaycareMon = mon->box;
+    gSaveBlock3Ptr->zumoDaycareExp = 0;
+    ZeroMonData(mon);
+    CompactPartySlots();
+    CalculatePlayerPartyCount();
+    UpdateFollowingPokemon();
+    gSpecialVar_Result = 0;
+}
+
+static u32 Zumo_DaycareNewExp(struct Pokemon *mon)
+{
+    u32 exp = GetMonData(mon, MON_DATA_EXP) + gSaveBlock3Ptr->zumoDaycareExp;
+    u32 maxExp = gExperienceTables[gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES)].growthRate][MAX_LEVEL];
+
+    return exp > maxExp ? maxExp : exp;
+}
+
+// buffers STR_VAR_1 nickname, STR_VAR_2 levels gained so far
+void Zumo_DaycareBufferInfo(void)
+{
+    struct Pokemon mon;
+    u32 oldLevel, newLevel, exp;
+
+    BoxMonToMon(&sDaycareMon, &mon);
+    GetMonNickname(&mon, gStringVar1);
+    oldLevel = GetMonData(&mon, MON_DATA_LEVEL);
+    exp = Zumo_DaycareNewExp(&mon);
+    SetMonData(&mon, MON_DATA_EXP, &exp);
+    newLevel = GetLevelFromMonExp(&mon);
+    ConvertIntToDecimalStringN(gStringVar2, newLevel - oldLevel, STR_CONV_MODE_LEFT_ALIGN, 3);
+    gSpecialVar_Result = newLevel - oldLevel;
+}
+
+// VAR_RESULT: 0 ok (back in the party), 1 party is full
+void Zumo_DaycareWithdraw(void)
+{
+    struct Pokemon mon;
+    u32 i, exp;
+    enum Move learnedMove;
+    bool8 firstMove;
+
+    if (gPlayerPartyCount >= PARTY_SIZE)
+    {
+        gSpecialVar_Result = 1;
+        return;
+    }
+    BoxMonToMon(&sDaycareMon, &mon);
+    exp = Zumo_DaycareNewExp(&mon);
+    SetMonData(&mon, MON_DATA_EXP, &exp);
+    for (i = 0; i < MAX_LEVEL; i++)
+    {
+        if (!TryIncrementMonLevel(&mon))
+            break;
+        firstMove = TRUE;
+        while ((learnedMove = MonTryLearningNewMove(&mon, firstMove)) != MOVE_NONE)
+        {
+            firstMove = FALSE;
+            if (learnedMove == MON_HAS_MAX_MOVES)
+                DeleteFirstMoveAndGiveMoveToMon(&mon, gMoveToLearn);
+        }
+    }
+    CalculateMonStats(&mon);
+    GetMonNickname(&mon, gStringVar1);
+    gPlayerParty[gPlayerPartyCount] = mon;
+    ZeroBoxMonData(&sDaycareMon);
+    gSaveBlock3Ptr->zumoDaycareExp = 0;
+    CalculatePlayerPartyCount();
+    UpdateFollowingPokemon();
+    gSpecialVar_Result = 0;
+}
+#undef sDaycareMon

@@ -8,5 +8,6 @@ extern u8 gZumoRocketStage;
 extern u8 gZumoQuestText[];
 struct Pokemon;
 bool8 Zumo_TryChangeGender(struct Pokemon *mon);
+void Zumo_DaycareGainBattleExp(u32 exp);
 
 #endif // GUARD_ZUMO_H

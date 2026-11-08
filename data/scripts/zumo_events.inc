@@ -672,3 +672,143 @@ Text_ZumoGachaNoRoom3::
 Text_ZumoGachaSomePC::
     .string "Some of the POKéMON were sent to\n"
     .string "the PC.$"
+
+@ ---- NATURE changer (every POKeMON Center): random new nature for 5,000 ----
+EventScript_ZumoNatureChanger::
+	lock
+	faceplayer
+	showmoneybox 0, 0
+	msgbox Text_ZumoNatureIntro, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_ZumoNatureBye
+	checkmoney 5000
+	goto_if_eq VAR_RESULT, FALSE, EventScript_ZumoNatureNoMoney
+	msgbox Text_ZumoNatureWhich
+	special ChoosePartyMon
+	waitstate
+	goto_if_ge VAR_0x8004, PARTY_SIZE, EventScript_ZumoNatureBye
+	special Zumo_RandomizeNature
+	goto_if_ne VAR_RESULT, 0, EventScript_ZumoNatureCant
+	removemoney 5000
+	updatemoneybox
+	playse SE_USE_ITEM
+	msgbox Text_ZumoNatureDone
+	hidemoneybox
+	release
+	end
+
+EventScript_ZumoNatureCant::
+	msgbox Text_ZumoNatureCant
+	goto EventScript_ZumoNatureBye
+
+EventScript_ZumoNatureNoMoney::
+	msgbox Text_ZumoNatureNoMoney
+EventScript_ZumoNatureBye::
+	msgbox Text_ZumoNatureBye
+	hidemoneybox
+	release
+	end
+
+Text_ZumoNatureIntro::
+	.string "I'm a POKéMON MINDSET COACH!\p"
+	.string "For ¥5,000 I'll give one of your\n"
+	.string "POKéMON a brand-new random NATURE.\l"
+	.string "Want to try?$"
+
+Text_ZumoNatureWhich::
+	.string "Which POKéMON should I coach?$"
+
+Text_ZumoNatureDone::
+	.string "Done! {STR_VAR_1}'s NATURE\n"
+	.string "is now {STR_VAR_2}!$"
+
+Text_ZumoNatureCant::
+	.string "Hmm, I can't coach that one.$"
+
+Text_ZumoNatureNoMoney::
+	.string "Sorry, it costs ¥5,000.$"
+
+Text_ZumoNatureBye::
+	.string "Come back any time!$"
+
+@ ---- Day care (every POKeMON Center): 1 POKeMON, gets half of the party's battle EXP ----
+EventScript_ZumoDaycare::
+	lock
+	faceplayer
+	special Zumo_DaycareHasMon
+	goto_if_eq VAR_RESULT, TRUE, EventScript_ZumoDaycareHasMon
+	msgbox Text_ZumoDaycareIntro, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_ZumoDaycareBye
+	msgbox Text_ZumoDaycareWhich
+	special ChoosePartyMon
+	waitstate
+	goto_if_ge VAR_0x8004, PARTY_SIZE, EventScript_ZumoDaycareBye
+	special Zumo_DaycareDeposit
+	goto_if_eq VAR_RESULT, 1, EventScript_ZumoDaycareCant
+	goto_if_eq VAR_RESULT, 2, EventScript_ZumoDaycareLast
+	msgbox Text_ZumoDaycareDeposited
+	release
+	end
+
+EventScript_ZumoDaycareHasMon::
+	special Zumo_DaycareBufferInfo
+	msgbox Text_ZumoDaycareStatus, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_ZumoDaycareBye
+	special Zumo_DaycareWithdraw
+	goto_if_eq VAR_RESULT, 1, EventScript_ZumoDaycareFull
+	playfanfare MUS_RG_OBTAIN_KEY_ITEM
+	msgbox Text_ZumoDaycareWithdrawn
+	waitfanfare
+	release
+	end
+
+EventScript_ZumoDaycareCant::
+	msgbox Text_ZumoDaycareCant
+	goto EventScript_ZumoDaycareBye
+
+EventScript_ZumoDaycareLast::
+	msgbox Text_ZumoDaycareLast
+	goto EventScript_ZumoDaycareBye
+
+EventScript_ZumoDaycareFull::
+	msgbox Text_ZumoDaycareFull
+EventScript_ZumoDaycareBye::
+	msgbox Text_ZumoDaycareBye
+	release
+	end
+
+Text_ZumoDaycareIntro::
+	.string "I run the POKéMON CENTER DAY CARE!\p"
+	.string "Leave one POKéMON with me. Whenever\n"
+	.string "your team earns EXP in battle, it\l"
+	.string "gets half of it too!\p"
+	.string "You can pick it up at any POKéMON\n"
+	.string "CENTER. Leave one with me?$"
+
+Text_ZumoDaycareWhich::
+	.string "Which POKéMON will you leave?$"
+
+Text_ZumoDaycareDeposited::
+	.string "I'll take good care of {STR_VAR_1}!\n"
+	.string "Go win some battles!$"
+
+Text_ZumoDaycareStatus::
+	.string "Your {STR_VAR_1} has grown by\n"
+	.string "{STR_VAR_2} level(s) while it was here.\p"
+	.string "Do you want to take it back?$"
+
+Text_ZumoDaycareWithdrawn::
+	.string "{STR_VAR_1} came back to your team!$"
+
+Text_ZumoDaycareCant::
+	.string "Sorry, I can't take that one.$"
+
+Text_ZumoDaycareLast::
+	.string "That's your last POKéMON that can\n"
+	.string "battle! Keep it with you.$"
+
+Text_ZumoDaycareFull::
+	.string "Your team is full. Make some room\n"
+	.string "first.$"
+
+Text_ZumoDaycareBye::
+	.string "Come see me any time!$"

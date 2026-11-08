@@ -659,3 +659,8 @@ gSpecials::
 	def_special Zumo_GachaWasPC
 	def_special Zumo_GachaRoll3
 	def_special Zumo_GachaScene
+	def_special Zumo_RandomizeNature
+	def_special Zumo_DaycareHasMon
+	def_special Zumo_DaycareDeposit
+	def_special Zumo_DaycareBufferInfo
+	def_special Zumo_DaycareWithdraw

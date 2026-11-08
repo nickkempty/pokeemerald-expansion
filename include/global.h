@@ -269,6 +269,9 @@ struct SaveBlock3
     u8 dexNavSearchLevels[NUM_SPECIES];
 #endif
     u8 dexNavChain;
+    // Zumo Edition: POKeMON Center day care (1 POKeMON, gets half of the party's battle EXP)
+    u32 zumoDaycareMon[20]; // a struct BoxPokemon (80 bytes)
+    u32 zumoDaycareExp;
 #if APRICORN_TREE_COUNT > 0
     u8 apricornTrees[NUM_APRICORN_TREE_BYTES];
 #endif

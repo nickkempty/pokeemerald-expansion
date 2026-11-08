@@ -1,4 +1,5 @@
 #include "global.h"
+#include "zumo.h"
 #include "battle.h"
 #include "battle_hold_effects.h"
 #include "battle_message.h"
@@ -2332,6 +2333,7 @@ static void Cmd_getexp(void)
                         gBattleStruct->teamGotExpMsgPrinted = TRUE;
                     }
 
+                    Zumo_DaycareGainBattleExp(gBattleStruct->battlerExpReward); // Zumo: day care gets half
                     MonGainEVs(&gParties[B_TRAINER_PLAYER][*expMonId], faintedSpecies);
                 }
                 gBattleScripting.getexpState++;
