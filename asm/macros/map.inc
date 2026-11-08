@@ -105,6 +105,10 @@
 
 	@ Defines a background hidden item event for map data
 	.macro bg_hidden_item_event x:req, y:req, elevation:req, item:req, flag:req, quantity=1, underfoot=FALSE
+	@ Zumo: Kanto hidden items whose FRLG flag isn't mapped yet (defined as 0) are left out for now
+	.if \flag == 0
+	.exitm
+	.endif
 	.if \flag < FLAG_HIDDEN_ITEMS_START
 	.error "Hidden Item flag \flag is too small. Must be >= FLAG_HIDDEN_ITEMS_START."
 	.endif

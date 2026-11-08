@@ -37,7 +37,7 @@ for f in sorted(glob.glob('data/maps/*/map.json')):
     for key in ('object_events', 'coord_events', 'bg_events'):
         for ev in j.get(key) or []:
             l = ev.get('script')
-            if l and l not in ('0', 'NULL') and l not in defined and l not in seen:
+            if l and re.match(r'^[A-Za-z_]\w*$', l) and l not in ('NULL',) and l not in defined and l not in seen:
                 seen.add(l); event_scripts.append(l)
 
 with open(OUT, 'w') as o:

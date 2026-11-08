@@ -1288,9 +1288,6 @@ BattleColosseum_4P_EventScript_PlayerSpot3::
 BirthIsland_Exterior_Frlg_EventScript_Triangle::
 	end
 
-0x0::
-	end
-
 BirthIsland_Harbor_EventScript_Sailor_Frlg::
 	end
 

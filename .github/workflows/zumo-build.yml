@@ -28,9 +28,9 @@ jobs:
         if: always()
         run: |
           set +e
-          grep -E "error|Error|undefined reference" build.log | head -10 | while IFS= read -r l; do echo "::error::$l"; done
+          grep -E "Error:|error:|undefined reference|Error [0-9]" build.log | head -10 | while IFS= read -r l; do echo "::error::$l"; done
           mkdir -p /tmp/ci && cp build.log /tmp/ci/build.log
-          { echo "run=${{ github.run_number }} sha=${{ github.sha }}"; ls -l pokeemerald.gba 2>&1; grep -E "error|Error|undefined reference|overflow" build.log | head -200; } > /tmp/ci/summary.txt
+          { echo "run=${{ github.run_number }} sha=${{ github.sha }}"; ls -l pokeemerald.gba 2>&1; grep -E "Error:|error:|undefined reference|overflow|Error [0-9]" build.log | head -200; } > /tmp/ci/summary.txt
           cd /tmp/ci && git init -q && git checkout -q -b ci-logs
           git -c user.name=ci -c user.email=ci@localhost add . && git -c user.name=ci -c user.email=ci@localhost commit -qm "build ${{ github.run_number }}"
           git push -qf "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" ci-logs
