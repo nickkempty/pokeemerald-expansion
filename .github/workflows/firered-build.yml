@@ -18,11 +18,19 @@ jobs:
           cd /tmp/agbcc && ./build.sh && ./install.sh "$GITHUB_WORKSPACE"
       - name: Build
         run: make firered_rev1 -j$(nproc) 2>&1 | tee build.log; exit ${PIPESTATUS[0]}
+      - name: Test variant (new game starts in Viridian Pokemon Center)
+        if: success()
+        run: |
+          cp pokefirered_rev1.gba /tmp/release.gba
+          sed -i '1i #define ZUMO_TEST' src/new_game.c
+          sed -i 's/SetWarpDestination(MAP_GROUP(MAP_ROUTE1), MAP_NUM(MAP_ROUTE1), -1, 12, 33);/SetWarpDestination(MAP_GROUP(MAP_VIRIDIAN_CITY_POKEMON_CENTER_1F), MAP_NUM(MAP_VIRIDIAN_CITY_POKEMON_CENTER_1F), -1, 7, 4);/' src/new_game.c
+          make firered_rev1 -j$(nproc) >> build.log 2>&1
+          cp pokefirered_rev1.gba /tmp/test.gba && cp /tmp/release.gba pokefirered_rev1.gba
       - name: Publish ROM + log to fr-rom branch
         if: always()
         run: |
           set +e
-          mkdir -p /tmp/o && cp build.log /tmp/o/ && cp pokefirered_rev1.gba /tmp/o/ 2>/dev/null
+          mkdir -p /tmp/o && cp build.log /tmp/o/ && cp pokefirered_rev1.gba /tmp/o/ 2>/dev/null; cp /tmp/test.gba /tmp/o/test.gba 2>/dev/null
           grep -E "Error|error:|undefined reference" build.log | head -100 > /tmp/o/errors.txt
           cd /tmp/o && git init -q && git checkout -q -b fr-rom
           git -c user.name=ci -c user.email=ci@localhost add . && git -c user.name=ci -c user.email=ci@localhost commit -qm "build ${{ github.run_number }}"
