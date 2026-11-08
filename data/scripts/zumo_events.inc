@@ -690,6 +690,7 @@ EventScript_ZumoNatureChanger::
 	goto_if_ne VAR_RESULT, 0, EventScript_ZumoNatureCant
 	removemoney 5000
 	updatemoneybox
+	bufferpartymonnick STR_VAR_1, VAR_0x8004
 	playse SE_USE_ITEM
 	msgbox Text_ZumoNatureDone
 	hidemoneybox
