@@ -11,7 +11,7 @@ jobs:
       - name: Download npm packages
         run: |
           mkdir -p /tmp/o && cd /tmp/o
-          npm pack @emulatorjs/core-mgba@latest @emulatorjs/emulatorjs@latest
+          npm pack @emulatorjs/core-mgba@latest @emulatorjs/emulatorjs@latest @emulatorjs/core-melonds@latest @emulatorjs/core-desmume2015@latest
           for f in *.tgz; do mkdir -p "${f%.tgz}" && tar -xzf "$f" -C "${f%.tgz}"; done
           rm -f *.tgz
           find . -type f | head -100 > files.txt
