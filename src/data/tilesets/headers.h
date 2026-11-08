@@ -833,7 +833,8 @@ const struct Tileset gTileset_UnionRoom =
     .callback = NULL,
 };
 
-#else
+#endif // !IS_FRLG
+#if HAS_KANTO_DATA
 
 // FRLG tilesets
 const struct Tileset gTileset_BuildingFrlg =

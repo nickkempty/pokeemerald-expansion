@@ -1049,6 +1049,11 @@ gStdScripts_End::
 
 .endif
 
+.if !IS_FRLG
+@ Zumo: placeholder scripts so Kanto maps load in the Emerald build
+	.include "data/maps/zumo_kanto_stubs.inc"
+.endif
+
 	.include "data/scripts/std_msgbox.inc"
 	.include "data/scripts/trainer_battle.inc"
 	.include "data/scripts/new_game.inc"

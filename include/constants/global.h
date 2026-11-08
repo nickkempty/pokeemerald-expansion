@@ -76,6 +76,11 @@ enum Language
     #define IS_FRLG 0
     #endif
 #endif
+
+// Zumo: compile Kanto (FRLG) map data, tilesets and overworld graphics into the Emerald build too,
+// so Hoenn and Kanto live in one ROM. IS_FRLG still means "this is the FireRed/LeafGreen game".
+#define ZUMO_KANTO_MERGE 1
+#define HAS_KANTO_DATA (IS_FRLG || ZUMO_KANTO_MERGE)
 #define GAME_LANGUAGE (LANGUAGE_ENGLISH)
 
 // party sizes
