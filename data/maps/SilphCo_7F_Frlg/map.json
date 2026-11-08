@@ -20,15 +20,15 @@
       "local_id": "LOCALID_SILPH_CO_RIVAL",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BLUE",
-      "x": 2,
-      "y": 6,
+      "x": 23,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
+      "script": "SilphCo_7F_EventScript_ZkRival",
       "flag": "FLAG_HIDE_SILPH_RIVAL"
     },
     {
@@ -217,26 +217,7 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [
-    {
-      "type": "trigger",
-      "x": 2,
-      "y": 4,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_SILPH_CO_7F",
-      "var_value": "0",
-      "script": "SilphCo_7F_EventScript_RivalTriggerTop"
-    },
-    {
-      "type": "trigger",
-      "x": 2,
-      "y": 5,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_SILPH_CO_7F",
-      "var_value": "0",
-      "script": "SilphCo_7F_EventScript_RivalTriggerBottom"
-    }
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",

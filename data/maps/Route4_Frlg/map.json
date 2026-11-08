@@ -117,7 +117,8 @@
       "x": 109,
       "y": 3,
       "target_local_id": "LOCALID_CERULEAN_CAVE_GUARD",
-      "target_map": "MAP_CERULEAN_CITY"
+      "target_map": "MAP_CERULEAN_CITY",
+      "movement_type": null
     }
   ],
   "warp_events": [
@@ -143,9 +144,7 @@
       "dest_warp_id": "1"
     }
   ],
-  "coord_events": [
-
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",

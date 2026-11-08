@@ -2696,4 +2696,6 @@
 #define FLAG_TEMP_HIDE_MIRAGE_ISLAND_BERRY_TREE FLAG_TEMP_11
 
 
+#include "constants/zumo_extra.h" // Zumo Edition flags/vars
+
 #endif // GUARD_CONSTANTS_FLAGS_H

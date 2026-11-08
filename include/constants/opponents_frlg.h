@@ -628,11 +628,32 @@
 #define TRAINER_CHAMPION_REMATCH_CHARMANDER        622
 #define TRAINER_CUE_BALL_PAXTON                    623
 
+// Zumo Edition trainers (ported from Ver 4.2)
+#define TRAINER_BOSS_NOX_FINAL                     624
+#define TRAINER_ZUMO_ROCKET_1                      625
+#define TRAINER_ZUMO_ROCKET_2                      626
+#define TRAINER_ZUMO_ROCKET_3                      627
+#define TRAINER_ZUMO_ROCKET_4                      628
+#define TRAINER_ZK_MTMOON_MAGMA_1                  629
+#define TRAINER_ZK_MTMOON_MAGMA_2                  630
+#define TRAINER_ZK_MTMOON_TABITHA                  631
+#define TRAINER_ZK_ROCKTUNNEL_MAGMA_1              632
+#define TRAINER_ZK_ROCKTUNNEL_MAGMA_2              633
+#define TRAINER_ZK_ROCKTUNNEL_TABITHA              634
+#define TRAINER_ZK_HIDEOUT_RIVAL_SQUIRTLE          635
+#define TRAINER_ZK_HIDEOUT_RIVAL_BULBASAUR         636
+#define TRAINER_ZK_HIDEOUT_RIVAL_CHARMANDER        637
+#define TRAINER_ZK_SSANNE_MAGMA_1                  638
+#define TRAINER_ZK_SSANNE_MAGMA_2                  639
+#define TRAINER_ZK_SSANNE_TABITHA                  640
+#define TRAINER_ZK_MANSION_MAXIE                   641
+#define TRAINER_ZK_NOX_FINAL                       642
+
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is
 //       only space for 25 additional trainers before trainer flag space overflows.
 //       MAX_TRAINERS_COUNT_FRLG can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT_FRLG                      624
+#define TRAINERS_COUNT_FRLG                      643
 #define MAX_TRAINERS_COUNT_FRLG                  768
 
 #endif  // GUARD_CONSTANTS_OPPONENTS_FRLG_H

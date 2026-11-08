@@ -130,8 +130,8 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Nidoran M
-Level: 21
+SPECIES_NIDORAN_M
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YOUNGSTER_EDDIE ===
@@ -634,12 +634,12 @@ Music: Cute
 Double Battle: No
 AI: Check Bad Move
 
-Pidgey
-Level: 18
+SPECIES_PIDGEY
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Nidoran F
-Level: 18
+SPECIES_NIDORAN_F
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_DAWN ===
@@ -651,12 +651,12 @@ Music: Cute
 Double Battle: No
 AI: Check Bad Move
 
-Rattata
-Level: 18
+SPECIES_RATTATA
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Pikachu
-Level: 18
+SPECIES_PIKACHU
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_PAIGE ===
@@ -752,12 +752,12 @@ Music: Cute
 Double Battle: No
 AI: Check Bad Move
 
-Bellsprout
-Level: 23
+SPECIES_BELLSPROUT
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Weepinbell
-Level: 23
+SPECIES_WEEPINBELL
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_LISA ===
@@ -769,12 +769,12 @@ Music: Cute
 Double Battle: No
 AI: Check Bad Move
 
-Oddish
-Level: 23
+SPECIES_ODDISH
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Gloom
-Level: 23
+SPECIES_GLOOM
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SAILOR_EDMOND ===
@@ -786,12 +786,12 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Machop
-Level: 18
+SPECIES_MACHOP
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Shellder
-Level: 18
+SPECIES_SHELLDER
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SAILOR_TREVOR ===
@@ -803,12 +803,12 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Machop
-Level: 17
+SPECIES_MACHOP
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tentacool
-Level: 17
+SPECIES_TENTACOOL
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SAILOR_LEONARD ===
@@ -820,8 +820,8 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Shellder
-Level: 21
+SPECIES_SHELLDER
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SAILOR_DUNCAN ===
@@ -833,16 +833,16 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Horsea
-Level: 17
+SPECIES_HORSEA
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Shellder
-Level: 17
+SPECIES_SHELLDER
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tentacool
-Level: 17
+SPECIES_TENTACOOL
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SAILOR_HUEY ===
@@ -854,12 +854,12 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
-Level: 18
+SPECIES_TENTACOOL
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Staryu
-Level: 18
+SPECIES_STARYU
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SAILOR_DYLAN ===
@@ -871,16 +871,16 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Horsea
-Level: 17
+SPECIES_HORSEA
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Horsea
-Level: 17
+SPECIES_HORSEA
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Horsea
-Level: 17
+SPECIES_HORSEA
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SAILOR_PHILLIP ===
@@ -892,8 +892,8 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Machop
-Level: 20
+SPECIES_MACHOP
+Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SAILOR_DWAYNE ===
@@ -905,12 +905,12 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Pikachu
-Level: 21
+SPECIES_PIKACHU
+Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Pikachu
-Level: 21
+SPECIES_PIKACHU
+Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CAMPER_LIAM ===
@@ -1224,12 +1224,12 @@ Music: Cute
 Double Battle: No
 AI: Check Bad Move
 
-Bulbasaur
-Level: 24
+SPECIES_BULBASAUR
+Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Ivysaur
-Level: 24
+SPECIES_IVYSAUR
+Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_HANNAH ===
@@ -1355,16 +1355,16 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Charmeleon
-Level: 40
+SPECIES_CHARMELEON
+Level: 75
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Lapras
-Level: 40
+SPECIES_LAPRAS
+Level: 75
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Lickitung
-Level: 40
+SPECIES_LICKITUNG
+Level: 75
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_POKEMANIAC_ASHTON ===
@@ -2408,12 +2408,12 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Voltorb
-Level: 21
+SPECIES_VOLTORB
+Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Magnemite
-Level: 21
+SPECIES_MAGNEMITE
+Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ENGINEER_BRAXTON ===
@@ -2459,16 +2459,16 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Goldeen
-Level: 17
+SPECIES_GOLDEEN
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tentacool
-Level: 17
+SPECIES_TENTACOOL
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Goldeen
-Level: 17
+SPECIES_GOLDEEN
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FISHERMAN_BARNY ===
@@ -2480,16 +2480,16 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
-Level: 17
+SPECIES_TENTACOOL
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Staryu
-Level: 17
+SPECIES_STARYU
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Shellder
-Level: 17
+SPECIES_SHELLDER
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FISHERMAN_NED ===
@@ -3244,20 +3244,20 @@ Music: Cute
 Double Battle: No
 AI: Check Bad Move
 
-Oddish
-Level: 21
+SPECIES_ODDISH
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Bellsprout
-Level: 21
+SPECIES_BELLSPROUT
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Oddish
-Level: 21
+SPECIES_ODDISH
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Bellsprout
-Level: 21
+SPECIES_BELLSPROUT
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BEAUTY_TAMIA ===
@@ -3269,12 +3269,12 @@ Music: Cute
 Double Battle: No
 AI: Check Bad Move
 
-Bellsprout
-Level: 24
+SPECIES_BELLSPROUT
+Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Bellsprout
-Level: 24
+SPECIES_BELLSPROUT
+Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BEAUTY_LORI ===
@@ -3286,8 +3286,8 @@ Music: Cute
 Double Battle: No
 AI: Check Bad Move
 
-Exeggcute
-Level: 24
+SPECIES_EXEGGCUTE
+Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BEAUTY_LOLA ===
@@ -3531,20 +3531,20 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Kadabra
-Level: 31
+SPECIES_KADABRA
+Level: 21
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Slowpoke
-Level: 31
+SPECIES_SLOWPOKE
+Level: 21
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Mr Mime
-Level: 31
+SPECIES_MR_MIME
+Level: 21
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Kadabra
-Level: 31
+SPECIES_KADABRA
+Level: 21
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_PSYCHIC_TYRON ===
@@ -3556,12 +3556,12 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Mr Mime
-Level: 34
+SPECIES_MR_MIME
+Level: 24
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Kadabra
-Level: 34
+SPECIES_KADABRA
+Level: 24
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_PSYCHIC_CAMERON ===
@@ -3573,16 +3573,16 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Slowpoke
-Level: 33
+SPECIES_SLOWPOKE
+Level: 23
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Slowpoke
-Level: 33
+SPECIES_SLOWPOKE
+Level: 23
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Slowbro
-Level: 33
+SPECIES_SLOWBRO
+Level: 23
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_PSYCHIC_PRESTON ===
@@ -3594,8 +3594,8 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Slowbro
-Level: 38
+SPECIES_SLOWBRO
+Level: 28
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_ROCKER_RANDALL ===
@@ -3645,12 +3645,12 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Kadabra
-Level: 29
+SPECIES_KADABRA
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Mr Mime
-Level: 29
+SPECIES_MR_MIME
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JUGGLER_NELSON ===
@@ -3662,20 +3662,20 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Drowzee
-Level: 41
+SPECIES_DROWZEE
+Level: 76
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Hypno
-Level: 41
+SPECIES_HYPNO
+Level: 76
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Kadabra
-Level: 41
+SPECIES_KADABRA
+Level: 76
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Kadabra
-Level: 41
+SPECIES_KADABRA
+Level: 76
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JUGGLER_KIRK ===
@@ -3729,13 +3729,13 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Mr Mime
-Level: 48
+SPECIES_MR_MIME
+Level: 83
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Psychic
-- Role Play
-- Double Slap
-- Encore
+- MOVE_PSYCHIC
+- MOVE_ROLE_PLAY
+- MOVE_DOUBLE_SLAP
+- MOVE_ENCORE
 
 === TRAINER_JUGGLER_EDWARD ===
 Name: EDWARD
@@ -3885,12 +3885,12 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Persian
-Level: 44
+SPECIES_PERSIAN
+Level: 79
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Golduck
-Level: 44
+SPECIES_GOLDUCK
+Level: 79
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_TAMER_JOHN ===
@@ -4416,16 +4416,16 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Machoke @ Black Belt
-Level: 43
+SPECIES_MACHOKE @ ITEM_BLACK_BELT
+Level: 78
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Machop @ Black Belt
-Level: 43
+SPECIES_MACHOP @ ITEM_BLACK_BELT
+Level: 78
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Machoke @ Black Belt
-Level: 43
+SPECIES_MACHOKE @ ITEM_BLACK_BELT
+Level: 78
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RIVAL_OAKS_LAB_SQUIRTLE ===
@@ -4673,37 +4673,37 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Grimer
-Level: 26
+SPECIES_GRIMER
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Screech
-- Minimize
-- Sludge
-- Disable
+- MOVE_SCREECH
+- MOVE_MINIMIZE
+- MOVE_SLUDGE
+- MOVE_DISABLE
 
-Weezing
-Level: 26
+SPECIES_WEEZING
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+- MOVE_SMOKESCREEN
+- MOVE_SLUDGE
+- MOVE_SMOG
+- MOVE_TACKLE
 
-Koffing
-Level: 26
+SPECIES_KOFFING
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Self Destruct
+- MOVE_SMOKESCREEN
+- MOVE_SLUDGE
+- MOVE_SMOG
+- MOVE_SELF_DESTRUCT
 
-Weezing
-Level: 26
+SPECIES_WEEZING
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+- MOVE_SMOKESCREEN
+- MOVE_SLUDGE
+- MOVE_SMOG
+- MOVE_TACKLE
 
 === TRAINER_SCIENTIST_JERRY ===
 Name: JERRY
@@ -4714,16 +4714,16 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 28
+SPECIES_MAGNEMITE
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Voltorb
-Level: 28
+SPECIES_VOLTORB
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Magneton
-Level: 28
+SPECIES_MAGNETON
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SCIENTIST_JOSE ===
@@ -4735,21 +4735,21 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Electrode
-Level: 29
+SPECIES_ELECTRODE
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Spark
-- Sonic Boom
-- Screech
-- Tackle
+- MOVE_SPARK
+- MOVE_SONIC_BOOM
+- MOVE_SCREECH
+- MOVE_TACKLE
 
-Weezing
-Level: 29
+SPECIES_WEEZING
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+- MOVE_SMOKESCREEN
+- MOVE_SLUDGE
+- MOVE_SMOG
+- MOVE_TACKLE
 
 === TRAINER_SCIENTIST_RODNEY ===
 Name: RODNEY
@@ -4760,8 +4760,8 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Electrode
-Level: 33
+SPECIES_ELECTRODE
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SCIENTIST_BEAU ===
@@ -4773,37 +4773,37 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Magneton
-Level: 26
+SPECIES_MAGNETON
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Spark
-- Thunder Wave
-- Sonic Boom
-- Supersonic
+- MOVE_SPARK
+- MOVE_THUNDER_WAVE
+- MOVE_SONIC_BOOM
+- MOVE_SUPERSONIC
 
-Koffing
-Level: 26
+SPECIES_KOFFING
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+- MOVE_SMOKESCREEN
+- MOVE_SLUDGE
+- MOVE_SMOG
+- MOVE_TACKLE
 
-Weezing
-Level: 26
+SPECIES_WEEZING
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+- MOVE_SMOKESCREEN
+- MOVE_SLUDGE
+- MOVE_SMOG
+- MOVE_TACKLE
 
-Magnemite
-Level: 26
+SPECIES_MAGNEMITE
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Spark
-- Thunder Wave
-- Sonic Boom
-- Supersonic
+- MOVE_SPARK
+- MOVE_THUNDER_WAVE
+- MOVE_SONIC_BOOM
+- MOVE_SUPERSONIC
 
 === TRAINER_SCIENTIST_TAYLOR ===
 Name: TAYLOR
@@ -4814,45 +4814,45 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Voltorb
-Level: 25
+SPECIES_VOLTORB
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Spark
-- Sonic Boom
-- Screech
-- Tackle
+- MOVE_SPARK
+- MOVE_SONIC_BOOM
+- MOVE_SCREECH
+- MOVE_TACKLE
 
-Koffing
-Level: 25
+SPECIES_KOFFING
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+- MOVE_SMOKESCREEN
+- MOVE_SLUDGE
+- MOVE_SMOG
+- MOVE_TACKLE
 
-Magneton
-Level: 25
+SPECIES_MAGNETON
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Thunder Wave
-- Sonic Boom
-- Supersonic
-- Thunder Shock
+- MOVE_THUNDER_WAVE
+- MOVE_SONIC_BOOM
+- MOVE_SUPERSONIC
+- MOVE_THUNDER_SHOCK
 
-Magnemite
-Level: 25
+SPECIES_MAGNEMITE
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Thunder Wave
-- Sonic Boom
-- Supersonic
-- Thunder Shock
+- MOVE_THUNDER_WAVE
+- MOVE_SONIC_BOOM
+- MOVE_SUPERSONIC
+- MOVE_THUNDER_SHOCK
 
-Koffing
-Level: 25
+SPECIES_KOFFING
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Self Destruct
+- MOVE_SMOKESCREEN
+- MOVE_SLUDGE
+- MOVE_SMOG
+- MOVE_SELF_DESTRUCT
 
 === TRAINER_SCIENTIST_JOSHUA ===
 Name: JOSHUA
@@ -4863,12 +4863,12 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Electrode
-Level: 29
+SPECIES_ELECTRODE
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Muk
-Level: 29
+SPECIES_MUK
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SCIENTIST_PARKER ===
@@ -4880,12 +4880,12 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Grimer
-Level: 29
+SPECIES_GRIMER
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Electrode
-Level: 29
+SPECIES_ELECTRODE
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SCIENTIST_ED ===
@@ -4897,29 +4897,29 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Voltorb
-Level: 28
+SPECIES_VOLTORB
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Spark
-- Sonic Boom
-- Screech
-- Tackle
+- MOVE_SPARK
+- MOVE_SONIC_BOOM
+- MOVE_SCREECH
+- MOVE_TACKLE
 
-Koffing
-Level: 28
+SPECIES_KOFFING
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Smokescreen
-- Sludge
-- Tackle
-- Smog
+- MOVE_SMOKESCREEN
+- MOVE_SLUDGE
+- MOVE_TACKLE
+- MOVE_SMOG
 
-Magneton
-Level: 28
+SPECIES_MAGNETON
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Spark
-- Thunder Wave
-- Sonic Boom
-- Supersonic
+- MOVE_SPARK
+- MOVE_THUNDER_WAVE
+- MOVE_SONIC_BOOM
+- MOVE_SUPERSONIC
 
 === TRAINER_SCIENTIST_TRAVIS ===
 Name: TRAVIS
@@ -4930,12 +4930,12 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 29
+SPECIES_MAGNEMITE
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Koffing
-Level: 29
+SPECIES_KOFFING
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SCIENTIST_BRAYDON ===
@@ -4977,7 +4977,7 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BOSS_GIOVANNI ===
-Name: GIOVANNI
+Name: NOX
 Class: Boss Frlg
 Pic: Leader Giovanni Frlg
 Gender: Male
@@ -4985,20 +4985,20 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Onix
+SPECIES_ONIX
 Level: 25
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
-Rhyhorn
+SPECIES_RHYHORN
 Level: 24
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
-Kangaskhan
+SPECIES_KANGASKHAN
 Level: 29
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
 === TRAINER_BOSS_GIOVANNI_2 ===
-Name: GIOVANNI
+Name: NOX
 Class: Boss Frlg
 Pic: Leader Giovanni Frlg
 Gender: Male
@@ -5006,24 +5006,24 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Nidorino
-Level: 37
+SPECIES_NIDORINO
+Level: 31
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
-Kangaskhan
+SPECIES_KANGASKHAN
+Level: 29
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+
+SPECIES_RHYHORN
+Level: 31
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+
+SPECIES_NIDOQUEEN
 Level: 35
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
-Rhyhorn
-Level: 37
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-
-Nidoqueen
-Level: 41
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-
 === TRAINER_LEADER_GIOVANNI ===
-Name: GIOVANNI
+Name: NOX
 Class: Leader Frlg
 Pic: Leader Giovanni Frlg
 Gender: Male
@@ -5032,45 +5032,45 @@ Items: Hyper Potion / Hyper Potion / Full Heal
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Rhyhorn
+SPECIES_RHYHORN
 Level: 45
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Take Down
-- Rock Blast
-- Scary Face
-- Earthquake
+- MOVE_TAKE_DOWN
+- MOVE_ROCK_BLAST
+- MOVE_SCARY_FACE
+- MOVE_EARTHQUAKE
 
-Dugtrio
+SPECIES_DUGTRIO
 Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Slash
-- Sand Tomb
-- Mud Slap
-- Earthquake
+- MOVE_SLASH
+- MOVE_SAND_TOMB
+- MOVE_MUD_SLAP
+- MOVE_EARTHQUAKE
 
-Nidoqueen
+SPECIES_NIDOQUEEN
 Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Body Slam
-- Double Kick
-- Poison Sting
-- Earthquake
+- MOVE_BODY_SLAM
+- MOVE_DOUBLE_KICK
+- MOVE_POISON_STING
+- MOVE_EARTHQUAKE
 
-Nidoking
+SPECIES_NIDOKING
 Level: 45
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Thrash
-- Double Kick
-- Poison Sting
-- Earthquake
+- MOVE_THRASH
+- MOVE_DOUBLE_KICK
+- MOVE_POISON_STING
+- MOVE_EARTHQUAKE
 
-Rhyhorn
+SPECIES_RHYHORN
 Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Take Down
-- Rock Blast
-- Scary Face
-- Earthquake
+- MOVE_TAKE_DOWN
+- MOVE_ROCK_BLAST
+- MOVE_SCARY_FACE
+- MOVE_EARTHQUAKE
 
 === TRAINER_TEAM_ROCKET_GRUNT ===
 Name: GRUNT
@@ -5544,12 +5544,12 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Cubone
-Level: 29
+SPECIES_CUBONE
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zubat
-Level: 29
+SPECIES_ZUBAT
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_24 ===
@@ -5561,24 +5561,24 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Golbat
-Level: 25
+SPECIES_GOLBAT
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zubat
-Level: 25
+SPECIES_ZUBAT
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zubat
-Level: 25
+SPECIES_ZUBAT
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Raticate
-Level: 25
+SPECIES_RATICATE
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zubat
-Level: 25
+SPECIES_ZUBAT
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_25 ===
@@ -5590,16 +5590,16 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Raticate
-Level: 28
+SPECIES_RATICATE
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Hypno
-Level: 28
+SPECIES_HYPNO
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Raticate
-Level: 28
+SPECIES_RATICATE
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_26 ===
@@ -5611,12 +5611,12 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Machop
-Level: 29
+SPECIES_MACHOP
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Drowzee
-Level: 29
+SPECIES_DROWZEE
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_27 ===
@@ -5628,16 +5628,16 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Ekans
-Level: 28
+SPECIES_EKANS
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zubat
-Level: 28
+SPECIES_ZUBAT
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Cubone
-Level: 28
+SPECIES_CUBONE
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_28 ===
@@ -5649,8 +5649,8 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Arbok
-Level: 33
+SPECIES_ARBOK
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_29 ===
@@ -5662,8 +5662,8 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Hypno
-Level: 33
+SPECIES_HYPNO
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_30 ===
@@ -5675,12 +5675,12 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Machop
-Level: 29
+SPECIES_MACHOP
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Machoke
-Level: 29
+SPECIES_MACHOKE
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_31 ===
@@ -5692,16 +5692,16 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
-Level: 28
+SPECIES_ZUBAT
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zubat
-Level: 28
+SPECIES_ZUBAT
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Golbat
-Level: 28
+SPECIES_GOLBAT
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_32 ===
@@ -5713,37 +5713,37 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Raticate
-Level: 26
+SPECIES_RATICATE
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Scary Face
-- Hyper Fang
-- Quick Attack
-- Tail Whip
+- MOVE_SCARY_FACE
+- MOVE_HYPER_FANG
+- MOVE_QUICK_ATTACK
+- MOVE_TAIL_WHIP
 
-Arbok
-Level: 26
+SPECIES_ARBOK
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Glare
-- Bite
-- Poison Sting
-- Leer
+- MOVE_GLARE
+- MOVE_BITE
+- MOVE_POISON_STING
+- MOVE_LEER
 
-Koffing
-Level: 26
+SPECIES_KOFFING
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+- MOVE_SMOKESCREEN
+- MOVE_SLUDGE
+- MOVE_SMOG
+- MOVE_TACKLE
 
-Golbat
-Level: 26
+SPECIES_GOLBAT
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Wing Attack
-- Bite
-- Astonish
-- Supersonic
+- MOVE_WING_ATTACK
+- MOVE_BITE
+- MOVE_ASTONISH
+- MOVE_SUPERSONIC
 
 === TRAINER_TEAM_ROCKET_GRUNT_33 ===
 Name: GRUNT
@@ -5754,12 +5754,12 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Cubone
-Level: 29
+SPECIES_CUBONE
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Cubone
-Level: 29
+SPECIES_CUBONE
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_34 ===
@@ -5771,12 +5771,12 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
-Level: 29
+SPECIES_SANDSHREW
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Sandslash
-Level: 29
+SPECIES_SANDSLASH
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_35 ===
@@ -5788,20 +5788,20 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Raticate
-Level: 26
+SPECIES_RATICATE
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zubat
-Level: 26
+SPECIES_ZUBAT
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Golbat
-Level: 26
+SPECIES_GOLBAT
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Rattata
-Level: 26
+SPECIES_RATTATA
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_36 ===
@@ -5813,16 +5813,16 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Weezing
-Level: 28
+SPECIES_WEEZING
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Golbat
-Level: 28
+SPECIES_GOLBAT
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Koffing
-Level: 28
+SPECIES_KOFFING
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_37 ===
@@ -5834,16 +5834,16 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Drowzee
-Level: 28
+SPECIES_DROWZEE
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Grimer
-Level: 28
+SPECIES_GRIMER
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Machop
-Level: 28
+SPECIES_MACHOP
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_38 ===
@@ -5855,16 +5855,16 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Golbat
-Level: 28
+SPECIES_GOLBAT
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Drowzee
-Level: 28
+SPECIES_DROWZEE
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Hypno
-Level: 28
+SPECIES_HYPNO
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_39 ===
@@ -5876,8 +5876,8 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Machoke
-Level: 33
+SPECIES_MACHOKE
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_40 ===
@@ -5889,24 +5889,24 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Rattata
-Level: 25
+SPECIES_RATTATA
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Rattata
-Level: 25
+SPECIES_RATTATA
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zubat
-Level: 25
+SPECIES_ZUBAT
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Rattata
-Level: 25
+SPECIES_RATTATA
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Ekans
-Level: 25
+SPECIES_EKANS
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_41 ===
@@ -5918,16 +5918,16 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Cubone
-Level: 32
+SPECIES_CUBONE
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Drowzee
-Level: 32
+SPECIES_DROWZEE
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Marowak
-Level: 32
+SPECIES_MAROWAK
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_COOLTRAINER_SAMUEL ===
@@ -5990,45 +5990,45 @@ Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Exeggutor
-Level: 42
+SPECIES_EXEGGUTOR
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Egg Bomb
-- Confusion
-- Stun Spore
-- Sleep Powder
+- MOVE_EGG_BOMB
+- MOVE_CONFUSION
+- MOVE_STUN_SPORE
+- MOVE_SLEEP_POWDER
 
-Sandslash
-Level: 42
+SPECIES_SANDSLASH
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Fury Swipes
-- Swift
-- Poison Sting
-- Sand Attack
+- MOVE_FURY_SWIPES
+- MOVE_SWIFT
+- MOVE_POISON_STING
+- MOVE_SAND_ATTACK
 
-Cloyster
-Level: 42
+SPECIES_CLOYSTER
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Spike Cannon
-- Spikes
-- Aurora Beam
-- Supersonic
+- MOVE_SPIKE_CANNON
+- MOVE_SPIKES
+- MOVE_AURORA_BEAM
+- MOVE_SUPERSONIC
 
-Electrode
-Level: 42
+SPECIES_ELECTRODE
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Spark
-- Sonic Boom
-- Screech
-- Light Screen
+- MOVE_SPARK
+- MOVE_SONIC_BOOM
+- MOVE_SCREECH
+- MOVE_LIGHT_SCREEN
 
-Arcanine
-Level: 42
+SPECIES_ARCANINE
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Flame Wheel
-- Roar
-- Bite
-- Take Down
+- MOVE_FLAME_WHEEL
+- MOVE_ROAR
+- MOVE_BITE
+- MOVE_TAKE_DOWN
 
 === TRAINER_COOLTRAINER_COLBY ===
 Name: COLBY
@@ -6040,45 +6040,45 @@ Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Kingler
-Level: 41
+SPECIES_KINGLER
+Level: 76
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Guillotine
-- Stomp
-- Mud Shot
-- Bubble
+- MOVE_GUILLOTINE
+- MOVE_STOMP
+- MOVE_MUD_SHOT
+- MOVE_BUBBLE
 
-Poliwhirl
-Level: 42
+SPECIES_POLIWHIRL
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Body Slam
-- Double Slap
-- Water Gun
-- Hypnosis
+- MOVE_BODY_SLAM
+- MOVE_DOUBLE_SLAP
+- MOVE_WATER_GUN
+- MOVE_HYPNOSIS
 
-Tentacruel
-Level: 42
+SPECIES_TENTACRUEL
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Barrier
-- Wrap
-- Bubble Beam
-- Acid
+- MOVE_BARRIER
+- MOVE_WRAP
+- MOVE_BUBBLE_BEAM
+- MOVE_ACID
 
-Seadra
-Level: 42
+SPECIES_SEADRA
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Water Gun
-- Smokescreen
-- Twister
-- Leer
+- MOVE_WATER_GUN
+- MOVE_SMOKESCREEN
+- MOVE_TWISTER
+- MOVE_LEER
 
-Blastoise
-Level: 43
+SPECIES_BLASTOISE
+Level: 78
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Water Gun
-- Bite
-- Rapid Spin
-- Rain Dance
+- MOVE_WATER_GUN
+- MOVE_BITE
+- MOVE_RAPID_SPIN
+- MOVE_RAIN_DANCE
 
 === TRAINER_COOLTRAINER_PAUL ===
 Name: PAUL
@@ -6140,45 +6140,45 @@ Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Raticate
-Level: 42
+SPECIES_RATICATE
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Super Fang
-- Pursuit
-- Scary Face
-- Quick Attack
+- MOVE_SUPER_FANG
+- MOVE_PURSUIT
+- MOVE_SCARY_FACE
+- MOVE_QUICK_ATTACK
 
-Ivysaur
-Level: 42
+SPECIES_IVYSAUR
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Razor Leaf
-- Sleep Powder
-- Sweet Scent
-- Synthesis
+- MOVE_RAZOR_LEAF
+- MOVE_SLEEP_POWDER
+- MOVE_SWEET_SCENT
+- MOVE_SYNTHESIS
 
-Wartortle
-Level: 42
+SPECIES_WARTORTLE
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Water Gun
-- Bite
-- Rapid Spin
-- Tail Whip
+- MOVE_WATER_GUN
+- MOVE_BITE
+- MOVE_RAPID_SPIN
+- MOVE_TAIL_WHIP
 
-Charmeleon
-Level: 42
+SPECIES_CHARMELEON
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Flamethrower
-- Slash
-- Smokescreen
-- Scary Face
+- MOVE_FLAMETHROWER
+- MOVE_SLASH
+- MOVE_SMOKESCREEN
+- MOVE_SCARY_FACE
 
-Charizard
-Level: 42
+SPECIES_CHARIZARD
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Flamethrower
-- Wing Attack
-- Smokescreen
-- Scary Face
+- MOVE_FLAMETHROWER
+- MOVE_WING_ATTACK
+- MOVE_SMOKESCREEN
+- MOVE_SCARY_FACE
 
 === TRAINER_COOLTRAINER_GILBERT ===
 Name: GILBERT
@@ -6440,45 +6440,45 @@ Items: Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Bellsprout
-Level: 22
+SPECIES_BELLSPROUT
+Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Wrap
-- Stun Spore
-- Poison Powder
-- Growth
+- MOVE_WRAP
+- MOVE_STUN_SPORE
+- MOVE_POISON_POWDER
+- MOVE_GROWTH
 
-Oddish
-Level: 22
+SPECIES_ODDISH
+Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Poison Powder
-- Stun Spore
-- Absorb
-- Sweet Scent
+- MOVE_POISON_POWDER
+- MOVE_STUN_SPORE
+- MOVE_ABSORB
+- MOVE_SWEET_SCENT
 
-Weepinbell
-Level: 22
+SPECIES_WEEPINBELL
+Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Vine Whip
-- Stun Spore
-- Poison Powder
-- Growth
+- MOVE_VINE_WHIP
+- MOVE_STUN_SPORE
+- MOVE_POISON_POWDER
+- MOVE_GROWTH
 
-Gloom
-Level: 22
+SPECIES_GLOOM
+Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Absorb
-- Stun Spore
-- Poison Powder
-- Sweet Scent
+- MOVE_ABSORB
+- MOVE_STUN_SPORE
+- MOVE_POISON_POWDER
+- MOVE_SWEET_SCENT
 
-Ivysaur
-Level: 22
+SPECIES_IVYSAUR
+Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Razor Leaf
-- Sleep Powder
-- Vine Whip
-- Leech Seed
+- MOVE_RAZOR_LEAF
+- MOVE_SLEEP_POWDER
+- MOVE_VINE_WHIP
+- MOVE_LEECH_SEED
 
 === TRAINER_COOLTRAINER_CAROLINE ===
 Name: CAROLINE
@@ -6490,45 +6490,45 @@ Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Bellsprout
-Level: 42
+SPECIES_BELLSPROUT
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Razor Leaf
-- Acid
-- Stun Spore
-- Poison Powder
+- MOVE_RAZOR_LEAF
+- MOVE_ACID
+- MOVE_STUN_SPORE
+- MOVE_POISON_POWDER
 
-Weepinbell
-Level: 42
+SPECIES_WEEPINBELL
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Razor Leaf
-- Acid
-- Sleep Powder
-- Poison Powder
+- MOVE_RAZOR_LEAF
+- MOVE_ACID
+- MOVE_SLEEP_POWDER
+- MOVE_POISON_POWDER
 
-Victreebel
-Level: 42
+SPECIES_VICTREEBEL
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Razor Leaf
-- Acid
-- Stun Spore
-- Sleep Powder
+- MOVE_RAZOR_LEAF
+- MOVE_ACID
+- MOVE_STUN_SPORE
+- MOVE_SLEEP_POWDER
 
-Paras
-Level: 42
+SPECIES_PARAS
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Growth
-- Slash
-- Leech Life
-- Stun Spore
+- MOVE_GROWTH
+- MOVE_SLASH
+- MOVE_LEECH_LIFE
+- MOVE_STUN_SPORE
 
-Parasect
-Level: 42
+SPECIES_PARASECT
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Spore
-- Slash
-- Leech Life
-- Poison Powder
+- MOVE_SPORE
+- MOVE_SLASH
+- MOVE_LEECH_LIFE
+- MOVE_POISON_POWDER
 
 === TRAINER_COOLTRAINER_ALEXA ===
 Name: ALEXA
@@ -6540,45 +6540,45 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Clefairy
-Level: 42
+SPECIES_CLEFAIRY
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Light Screen
-- Cosmic Power
-- Double Slap
-- Encore
+- MOVE_LIGHT_SCREEN
+- MOVE_COSMIC_POWER
+- MOVE_DOUBLE_SLAP
+- MOVE_ENCORE
 
-Jigglypuff
-Level: 42
+SPECIES_JIGGLYPUFF
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Sing
-- Body Slam
-- Rollout
-- Disable
+- MOVE_SING
+- MOVE_BODY_SLAM
+- MOVE_ROLLOUT
+- MOVE_DISABLE
 
-Persian
-Level: 42
+SPECIES_PERSIAN
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Pay Day
-- Faint Attack
-- Bite
-- Screech
+- MOVE_PAY_DAY
+- MOVE_FAINT_ATTACK
+- MOVE_BITE
+- MOVE_SCREECH
 
-Dewgong
-Level: 42
+SPECIES_DEWGONG
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Sheer Cold
-- Take Down
-- Rest
-- Aurora Beam
+- MOVE_SHEER_COLD
+- MOVE_TAKE_DOWN
+- MOVE_REST
+- MOVE_AURORA_BEAM
 
-Chansey
-Level: 42
+SPECIES_CHANSEY
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Sing
-- Egg Bomb
-- Soft Boiled
-- Minimize
+- MOVE_SING
+- MOVE_EGG_BOMB
+- MOVE_SOFT_BOILED
+- MOVE_MINIMIZE
 
 === TRAINER_COOLTRAINER_SHANNON ===
 Name: SHANNON
@@ -6640,45 +6640,45 @@ Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Persian
-Level: 42
+SPECIES_PERSIAN
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Fury Swipes
-- Screech
-- Faint Attack
-- Pay Day
+- MOVE_FURY_SWIPES
+- MOVE_SCREECH
+- MOVE_FAINT_ATTACK
+- MOVE_PAY_DAY
 
-Ponyta
-Level: 42
+SPECIES_PONYTA
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Agility
-- Take Down
-- Fire Spin
-- Stomp
+- MOVE_AGILITY
+- MOVE_TAKE_DOWN
+- MOVE_FIRE_SPIN
+- MOVE_STOMP
 
-Rapidash
-Level: 42
+SPECIES_RAPIDASH
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Fury Attack
-- Fire Spin
-- Stomp
-- Growl
+- MOVE_FURY_ATTACK
+- MOVE_FIRE_SPIN
+- MOVE_STOMP
+- MOVE_GROWL
 
-Vulpix
-Level: 42
+SPECIES_VULPIX
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Flamethrower
-- Confuse Ray
-- Quick Attack
-- Imprison
+- MOVE_FLAMETHROWER
+- MOVE_CONFUSE_RAY
+- MOVE_QUICK_ATTACK
+- MOVE_IMPRISON
 
-Ninetales
-Level: 42
+SPECIES_NINETALES
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Safeguard
-- Will O Wisp
-- Confuse Ray
-- Fire Spin
+- MOVE_SAFEGUARD
+- MOVE_WILL_O_WISP
+- MOVE_CONFUSE_RAY
+- MOVE_FIRE_SPIN
 
 === TRAINER_COOLTRAINER_BROOKE ===
 Name: BROOKE
@@ -6839,47 +6839,46 @@ Music: Serious
 Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Purple
 
-Dewgong
-Level: 52
+SPECIES_DEWGONG
+Level: 80
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Ice Beam
-- Surf
-- Hail
-- Safeguard
+- MOVE_ICE_BEAM
+- MOVE_SURF
+- MOVE_HAIL
+- MOVE_SAFEGUARD
 
-Cloyster
-Level: 51
+SPECIES_CLOYSTER
+Level: 79
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Spikes
-- Protect
-- Hail
-- Dive
+- MOVE_SPIKES
+- MOVE_PROTECT
+- MOVE_HAIL
+- MOVE_DIVE
 
-Slowbro
-Level: 52
+SPECIES_SLOWBRO
+Level: 80
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Ice Beam
-- Surf
-- Amnesia
-- Yawn
+- MOVE_ICE_BEAM
+- MOVE_SURF
+- MOVE_AMNESIA
+- MOVE_YAWN
 
-Jynx
-Level: 54
+SPECIES_JYNX
+Level: 82
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Ice Punch
-- Double Slap
-- Lovely Kiss
-- Attract
+- MOVE_ICE_PUNCH
+- MOVE_DOUBLE_SLAP
+- MOVE_LOVELY_KISS
+- MOVE_ATTRACT
 
-Lapras @ Sitrus Berry
-Level: 54
+SPECIES_LAPRAS @ ITEM_SITRUS_BERRY
+Level: 82
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Confuse Ray
-- Ice Beam
-- Surf
-- Body Slam
+- MOVE_CONFUSE_RAY
+- MOVE_ICE_BEAM
+- MOVE_SURF
+- MOVE_BODY_SLAM
 
 === TRAINER_ELITE_FOUR_BRUNO ===
 Name: BRUNO
@@ -6890,47 +6889,46 @@ Music: Serious
 Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Green
 
-Onix
-Level: 51
+SPECIES_ONIX
+Level: 79
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Earthquake
-- Rock Tomb
-- Iron Tail
-- Roar
+- MOVE_EARTHQUAKE
+- MOVE_ROCK_TOMB
+- MOVE_IRON_TAIL
+- MOVE_ROAR
 
-Hitmonchan
-Level: 53
+SPECIES_HITMONCHAN
+Level: 81
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Sky Uppercut
-- Mach Punch
-- Rock Tomb
-- Counter
+- MOVE_SKY_UPPERCUT
+- MOVE_MACH_PUNCH
+- MOVE_ROCK_TOMB
+- MOVE_COUNTER
 
-Hitmonlee
-Level: 53
+SPECIES_HITMONLEE
+Level: 81
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Mega Kick
-- Foresight
-- Brick Break
-- Facade
+- MOVE_MEGA_KICK
+- MOVE_FORESIGHT
+- MOVE_BRICK_BREAK
+- MOVE_FACADE
 
-Onix
-Level: 54
+SPECIES_ONIX
+Level: 82
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Double Edge
-- Earthquake
-- Iron Tail
-- Sand Tomb
+- MOVE_DOUBLE_EDGE
+- MOVE_EARTHQUAKE
+- MOVE_IRON_TAIL
+- MOVE_SAND_TOMB
 
-Machamp @ Sitrus Berry
-Level: 56
+SPECIES_MACHAMP @ ITEM_SITRUS_BERRY
+Level: 84
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Cross Chop
-- Bulk Up
-- Scary Face
-- Rock Tomb
+- MOVE_CROSS_CHOP
+- MOVE_BULK_UP
+- MOVE_SCARY_FACE
+- MOVE_ROCK_TOMB
 
 === TRAINER_ELITE_FOUR_AGATHA ===
 Name: AGATHA
@@ -6941,47 +6939,46 @@ Music: Serious
 Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Pink
 
-Gengar
-Level: 54
+SPECIES_GENGAR
+Level: 82
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Punch
-- Confuse Ray
-- Toxic
-- Double Team
+- MOVE_SHADOW_PUNCH
+- MOVE_CONFUSE_RAY
+- MOVE_TOXIC
+- MOVE_DOUBLE_TEAM
 
-Golbat
-Level: 54
+SPECIES_GOLBAT
+Level: 82
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Confuse Ray
-- Poison Fang
-- Air Cutter
-- Bite
+- MOVE_CONFUSE_RAY
+- MOVE_POISON_FANG
+- MOVE_AIR_CUTTER
+- MOVE_BITE
 
-Haunter
-Level: 53
+SPECIES_HAUNTER
+Level: 81
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hypnosis
-- Dream Eater
-- Curse
-- Mean Look
+- MOVE_HYPNOSIS
+- MOVE_DREAM_EATER
+- MOVE_CURSE
+- MOVE_MEAN_LOOK
 
-Arbok
-Level: 56
+SPECIES_ARBOK
+Level: 84
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Sludge Bomb
-- Screech
-- Iron Tail
-- Bite
+- MOVE_SLUDGE_BOMB
+- MOVE_SCREECH
+- MOVE_IRON_TAIL
+- MOVE_BITE
 
-Gengar @ Sitrus Berry
-Level: 58
+SPECIES_GENGAR @ ITEM_SITRUS_BERRY
+Level: 86
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Sludge Bomb
-- Hypnosis
-- Nightmare
+- MOVE_SHADOW_BALL
+- MOVE_SLUDGE_BOMB
+- MOVE_HYPNOSIS
+- MOVE_NIGHTMARE
 
 === TRAINER_ELITE_FOUR_LANCE ===
 Name: LANCE
@@ -6992,47 +6989,46 @@ Music: Serious
 Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Blue
 
-Gyarados
-Level: 56
+SPECIES_GYARADOS
+Level: 84
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hyper Beam
-- Dragon Rage
-- Twister
-- Bite
+- MOVE_HYPER_BEAM
+- MOVE_DRAGON_RAGE
+- MOVE_TWISTER
+- MOVE_BITE
 
-Dragonair
-Level: 54
+SPECIES_DRAGONAIR
+Level: 82
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hyper Beam
-- Safeguard
-- Dragon Rage
-- Outrage
+- MOVE_HYPER_BEAM
+- MOVE_SAFEGUARD
+- MOVE_DRAGON_RAGE
+- MOVE_OUTRAGE
 
-Dragonair
-Level: 54
+SPECIES_DRAGONAIR
+Level: 82
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hyper Beam
-- Safeguard
-- Thunder Wave
-- Outrage
+- MOVE_HYPER_BEAM
+- MOVE_SAFEGUARD
+- MOVE_THUNDER_WAVE
+- MOVE_OUTRAGE
 
-Aerodactyl
-Level: 58
+SPECIES_AERODACTYL
+Level: 86
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hyper Beam
-- Ancient Power
-- Wing Attack
-- Scary Face
+- MOVE_HYPER_BEAM
+- MOVE_ANCIENT_POWER
+- MOVE_WING_ATTACK
+- MOVE_SCARY_FACE
 
-Dragonite @ Sitrus Berry
-Level: 60
+SPECIES_DRAGONITE @ ITEM_SITRUS_BERRY
+Level: 88
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hyper Beam
-- Safeguard
-- Outrage
-- Wing Attack
+- MOVE_HYPER_BEAM
+- MOVE_SAFEGUARD
+- MOVE_OUTRAGE
+- MOVE_WING_ATTACK
 
 === TRAINER_LEADER_BROCK ===
 Name: BROCK
@@ -7092,29 +7088,29 @@ Items: Super Potion / Full Heal
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Voltorb
-Level: 21
+SPECIES_VOLTORB
+Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Sonic Boom
-- Tackle
-- Screech
-- Shock Wave
+- MOVE_SONIC_BOOM
+- MOVE_TACKLE
+- MOVE_SCREECH
+- MOVE_SHOCK_WAVE
 
-Pikachu
-Level: 18
+SPECIES_PIKACHU
+Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Quick Attack
-- Thunder Wave
-- Double Team
-- Shock Wave
+- MOVE_QUICK_ATTACK
+- MOVE_THUNDER_WAVE
+- MOVE_DOUBLE_TEAM
+- MOVE_SHOCK_WAVE
 
-Raichu
-Level: 24
+SPECIES_RAICHU
+Level: 39
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Quick Attack
-- Thunder Wave
-- Double Team
-- Shock Wave
+- MOVE_QUICK_ATTACK
+- MOVE_THUNDER_WAVE
+- MOVE_DOUBLE_TEAM
+- MOVE_SHOCK_WAVE
 
 === TRAINER_LEADER_ERIKA ===
 Name: ERIKA
@@ -7126,29 +7122,29 @@ Items: Hyper Potion / Full Heal
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Victreebel
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Stun Spore
-- Acid
-- Poison Powder
-- Giga Drain
-
-Tangela
+SPECIES_VICTREEBEL
 Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Poison Powder
-- Constrict
-- Ingrain
-- Giga Drain
+- MOVE_STUN_SPORE
+- MOVE_ACID
+- MOVE_POISON_POWDER
+- MOVE_GIGA_DRAIN
 
-Vileplume
-Level: 29
+SPECIES_TANGELA
+Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Sleep Powder
-- Acid
-- Stun Spore
-- Giga Drain
+- MOVE_POISON_POWDER
+- MOVE_CONSTRICT
+- MOVE_INGRAIN
+- MOVE_GIGA_DRAIN
+
+SPECIES_VILEPLUME
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- MOVE_SLEEP_POWDER
+- MOVE_ACID
+- MOVE_STUN_SPORE
+- MOVE_GIGA_DRAIN
 
 === TRAINER_LEADER_KOGA ===
 Name: KOGA
@@ -7244,37 +7240,37 @@ Items: Hyper Potion / Hyper Potion / Full Heal
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Kadabra
-Level: 38
+SPECIES_KADABRA
+Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Psybeam
-- Reflect
-- Future Sight
-- Calm Mind
+- MOVE_PSYBEAM
+- MOVE_REFLECT
+- MOVE_FUTURE_SIGHT
+- MOVE_CALM_MIND
 
-Mr Mime
-Level: 37
+SPECIES_MR_MIME
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Barrier
-- Psybeam
-- Baton Pass
-- Calm Mind
+- MOVE_BARRIER
+- MOVE_PSYBEAM
+- MOVE_BATON_PASS
+- MOVE_CALM_MIND
 
-Venomoth
-Level: 38
+SPECIES_VENOMOTH
+Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Psybeam
-- Gust
-- Leech Life
-- Supersonic
+- MOVE_PSYBEAM
+- MOVE_GUST
+- MOVE_LEECH_LIFE
+- MOVE_SUPERSONIC
 
-Alakazam
-Level: 43
+SPECIES_ALAKAZAM
+Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Psychic
-- Recover
-- Future Sight
-- Calm Mind
+- MOVE_PSYCHIC
+- MOVE_RECOVER
+- MOVE_FUTURE_SIGHT
+- MOVE_CALM_MIND
 
 === TRAINER_GENTLEMAN_THOMAS ===
 Name: THOMAS
@@ -7285,12 +7281,12 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Growlithe
-Level: 18
+SPECIES_GROWLITHE
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Growlithe
-Level: 18
+SPECIES_GROWLITHE
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GENTLEMAN_ARTHUR ===
@@ -7302,12 +7298,12 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Nidoran M
-Level: 19
+SPECIES_NIDORAN_M
+Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Nidoran F
-Level: 19
+SPECIES_NIDORAN_F
+Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GENTLEMAN_TUCKER ===
@@ -7319,8 +7315,8 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Pikachu
-Level: 23
+SPECIES_PIKACHU
+Level: 38
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GENTLEMAN_NORTON ===
@@ -7524,24 +7520,24 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeot
-Level: 37
+SPECIES_PIDGEOT
+Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Growlithe
-Level: 38
+SPECIES_GROWLITHE
+Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Exeggcute
-Level: 35
+SPECIES_EXEGGCUTE
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Alakazam
-Level: 35
+SPECIES_ALAKAZAM
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Blastoise
-Level: 40
+SPECIES_BLASTOISE
+Level: 34
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_RIVAL_SILPH_BULBASAUR ===
@@ -7553,24 +7549,24 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeot
-Level: 37
+SPECIES_PIDGEOT
+Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Gyarados
-Level: 38
+SPECIES_GYARADOS
+Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Growlithe
-Level: 35
+SPECIES_GROWLITHE
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Alakazam
-Level: 35
+SPECIES_ALAKAZAM
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Venusaur
-Level: 40
+SPECIES_VENUSAUR
+Level: 34
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_RIVAL_SILPH_CHARMANDER ===
@@ -7582,24 +7578,24 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeot
-Level: 37
+SPECIES_PIDGEOT
+Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Exeggcute
-Level: 38
+SPECIES_EXEGGCUTE
+Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Gyarados
-Level: 35
+SPECIES_GYARADOS
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Alakazam
-Level: 35
+SPECIES_ALAKAZAM
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Charizard
-Level: 40
+SPECIES_CHARIZARD
+Level: 34
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_RIVAL_ROUTE22_LATE_SQUIRTLE ===
@@ -7782,55 +7778,54 @@ Music: Serious
 Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Yellow
 
-Pidgeot
-Level: 59
+SPECIES_PIDGEOT
+Level: 85
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
-- Feather Dance
-- Sand Attack
-- Whirlwind
+- MOVE_AERIAL_ACE
+- MOVE_FEATHER_DANCE
+- MOVE_SAND_ATTACK
+- MOVE_WHIRLWIND
 
-Alakazam
-Level: 57
+SPECIES_ALAKAZAM
+Level: 83
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Future Sight
-- Recover
-- Reflect
+- MOVE_PSYCHIC
+- MOVE_FUTURE_SIGHT
+- MOVE_RECOVER
+- MOVE_REFLECT
 
-Rhydon
-Level: 59
+SPECIES_RHYDON
+Level: 85
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Take Down
-- Earthquake
-- Rock Tomb
-- Scary Face
+- MOVE_TAKE_DOWN
+- MOVE_EARTHQUAKE
+- MOVE_ROCK_TOMB
+- MOVE_SCARY_FACE
 
-Arcanine
-Level: 59
+SPECIES_ARCANINE
+Level: 85
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Extreme Speed
-- Flamethrower
-- Roar
-- Bite
+- MOVE_EXTREME_SPEED
+- MOVE_FLAMETHROWER
+- MOVE_ROAR
+- MOVE_BITE
 
-Exeggutor
-Level: 61
+SPECIES_EXEGGUTOR
+Level: 87
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Egg Bomb
-- Sleep Powder
-- Light Screen
+- MOVE_GIGA_DRAIN
+- MOVE_EGG_BOMB
+- MOVE_SLEEP_POWDER
+- MOVE_LIGHT_SCREEN
 
-Blastoise @ Sitrus Berry
-Level: 63
+SPECIES_BLASTOISE @ ITEM_SITRUS_BERRY
+Level: 89
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hydro Pump
-- Rain Dance
-- Skull Bash
-- Bite
+- MOVE_HYDRO_PUMP
+- MOVE_RAIN_DANCE
+- MOVE_SKULL_BASH
+- MOVE_BITE
 
 === TRAINER_CHAMPION_FIRST_BULBASAUR ===
 Name: TERRY
@@ -7841,55 +7836,54 @@ Music: Serious
 Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Yellow
 
-Pidgeot
-Level: 59
+SPECIES_PIDGEOT
+Level: 85
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
-- Feather Dance
-- Sand Attack
-- Whirlwind
+- MOVE_AERIAL_ACE
+- MOVE_FEATHER_DANCE
+- MOVE_SAND_ATTACK
+- MOVE_WHIRLWIND
 
-Alakazam
-Level: 57
+SPECIES_ALAKAZAM
+Level: 83
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Future Sight
-- Recover
-- Reflect
+- MOVE_PSYCHIC
+- MOVE_FUTURE_SIGHT
+- MOVE_RECOVER
+- MOVE_REFLECT
 
-Rhydon
-Level: 59
+SPECIES_RHYDON
+Level: 85
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Take Down
-- Earthquake
-- Rock Tomb
-- Scary Face
+- MOVE_TAKE_DOWN
+- MOVE_EARTHQUAKE
+- MOVE_ROCK_TOMB
+- MOVE_SCARY_FACE
 
-Gyarados
-Level: 59
+SPECIES_GYARADOS
+Level: 85
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hydro Pump
-- Dragon Rage
-- Bite
-- Thrash
+- MOVE_HYDRO_PUMP
+- MOVE_DRAGON_RAGE
+- MOVE_BITE
+- MOVE_THRASH
 
-Arcanine
-Level: 61
+SPECIES_ARCANINE
+Level: 87
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Extreme Speed
-- Flamethrower
-- Roar
-- Bite
+- MOVE_EXTREME_SPEED
+- MOVE_FLAMETHROWER
+- MOVE_ROAR
+- MOVE_BITE
 
-Venusaur @ Sitrus Berry
-Level: 63
+SPECIES_VENUSAUR @ ITEM_SITRUS_BERRY
+Level: 89
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Solar Beam
-- Synthesis
-- Sunny Day
-- Growth
+- MOVE_SOLAR_BEAM
+- MOVE_SYNTHESIS
+- MOVE_SUNNY_DAY
+- MOVE_GROWTH
 
 === TRAINER_CHAMPION_FIRST_CHARMANDER ===
 Name: TERRY
@@ -7900,55 +7894,54 @@ Music: Serious
 Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Yellow
 
-Pidgeot
-Level: 59
+SPECIES_PIDGEOT
+Level: 85
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
-- Feather Dance
-- Sand Attack
-- Whirlwind
+- MOVE_AERIAL_ACE
+- MOVE_FEATHER_DANCE
+- MOVE_SAND_ATTACK
+- MOVE_WHIRLWIND
 
-Alakazam
-Level: 57
+SPECIES_ALAKAZAM
+Level: 83
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Future Sight
-- Recover
-- Reflect
+- MOVE_PSYCHIC
+- MOVE_FUTURE_SIGHT
+- MOVE_RECOVER
+- MOVE_REFLECT
 
-Rhydon
-Level: 59
+SPECIES_RHYDON
+Level: 85
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Take Down
-- Earthquake
-- Rock Tomb
-- Scary Face
+- MOVE_TAKE_DOWN
+- MOVE_EARTHQUAKE
+- MOVE_ROCK_TOMB
+- MOVE_SCARY_FACE
 
-Exeggutor
-Level: 59
+SPECIES_EXEGGUTOR
+Level: 85
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Egg Bomb
-- Sleep Powder
-- Light Screen
+- MOVE_GIGA_DRAIN
+- MOVE_EGG_BOMB
+- MOVE_SLEEP_POWDER
+- MOVE_LIGHT_SCREEN
 
-Gyarados
-Level: 61
+SPECIES_GYARADOS
+Level: 87
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hydro Pump
-- Dragon Rage
-- Bite
-- Thrash
+- MOVE_HYDRO_PUMP
+- MOVE_DRAGON_RAGE
+- MOVE_BITE
+- MOVE_THRASH
 
-Charizard @ Sitrus Berry
-Level: 63
+SPECIES_CHARIZARD @ ITEM_SITRUS_BERRY
+Level: 89
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Fire Blast
-- Aerial Ace
-- Slash
-- Fire Spin
+- MOVE_FIRE_BLAST
+- MOVE_AERIAL_ACE
+- MOVE_SLASH
+- MOVE_FIRE_SPIN
 
 === TRAINER_CHANNELER_PATRICIA ===
 Name: PATRICIA
@@ -8140,12 +8133,12 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Gastly
-Level: 34
+SPECIES_GASTLY
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Haunter
-Level: 34
+SPECIES_HAUNTER
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHANNELER_STACY ===
@@ -8157,8 +8150,8 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Haunter
-Level: 38
+SPECIES_HAUNTER
+Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHANNELER_TASHA ===
@@ -8170,16 +8163,16 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Gastly
-Level: 33
+SPECIES_GASTLY
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Gastly
-Level: 33
+SPECIES_GASTLY
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Haunter
-Level: 33
+SPECIES_HAUNTER
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HIKER_JEREMY ===
@@ -8540,8 +8533,8 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Pikachu
-Level: 23
+SPECIES_PIKACHU
+Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GENTLEMAN_LAMAR ===
@@ -8553,12 +8546,12 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Growlithe
-Level: 17
+SPECIES_GROWLITHE
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Ponyta
-Level: 17
+SPECIES_PONYTA
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TWINS_ELI_ANNE ===
@@ -8587,21 +8580,21 @@ Music: Serious
 Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Nidoqueen
-Level: 45
+SPECIES_NIDOQUEEN
+Level: 80
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Superpower
-- Body Slam
-- Double Kick
-- Poison Sting
+- MOVE_SUPERPOWER
+- MOVE_BODY_SLAM
+- MOVE_DOUBLE_KICK
+- MOVE_POISON_STING
 
-Nidoking
-Level: 45
+SPECIES_NIDOKING
+Level: 80
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Megahorn
-- Thrash
-- Double Kick
-- Poison Sting
+- MOVE_MEGAHORN
+- MOVE_THRASH
+- MOVE_DOUBLE_KICK
+- MOVE_POISON_STING
 
 === TRAINER_YOUNG_COUPLE_GIA_JES ===
 Name: GIA & JES
@@ -8947,8 +8940,12 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Ekans
-Level: 5
+SPECIES_HOUNDOUR
+Level: 79
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+SPECIES_HOUNDOUR
+Level: 79
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_42 ===
@@ -9194,21 +9191,21 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Koffing
-Level: 37
+SPECIES_KOFFING
+Level: 67
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Haze
-- Smokescreen
-- Sludge
-- Tackle
+- MOVE_HAZE
+- MOVE_SMOKESCREEN
+- MOVE_SLUDGE
+- MOVE_TACKLE
 
-Grimer
-Level: 37
+SPECIES_GRIMER
+Level: 67
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Acid Armor
-- Screech
-- Minimize
-- Sludge
+- MOVE_ACID_ARMOR
+- MOVE_SCREECH
+- MOVE_MINIMIZE
+- MOVE_SLUDGE
 
 === TRAINER_BIKER_GOON_2 ===
 Name: GOON
@@ -9219,13 +9216,13 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Koffing
-Level: 38
+SPECIES_KOFFING
+Level: 68
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Haze
-- Smokescreen
-- Sludge
-- Tackle
+- MOVE_HAZE
+- MOVE_SMOKESCREEN
+- MOVE_SLUDGE
+- MOVE_TACKLE
 
 === TRAINER_BIKER_GOON_3 ===
 Name: GOON
@@ -9236,8 +9233,8 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Grimer
-Level: 38
+SPECIES_GRIMER
+Level: 68
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BUG_CATCHER_ANTHONY ===
@@ -9417,16 +9414,16 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
-Level: 38
+SPECIES_ZUBAT
+Level: 68
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zubat
-Level: 38
+SPECIES_ZUBAT
+Level: 68
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Golbat
-Level: 38
+SPECIES_GOLBAT
+Level: 68
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_46 ===
@@ -9438,16 +9435,16 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Muk
-Level: 48
+SPECIES_MUK
+Level: 78
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Golbat
-Level: 48
+SPECIES_GOLBAT
+Level: 78
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Raticate
-Level: 48
+SPECIES_RATICATE
+Level: 78
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_47 ===
@@ -9459,16 +9456,16 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Machop
-Level: 48
+SPECIES_MACHOP
+Level: 78
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Machop
-Level: 48
+SPECIES_MACHOP
+Level: 78
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Machoke
-Level: 48
+SPECIES_MACHOKE
+Level: 78
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_48 ===
@@ -9480,12 +9477,12 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Hypno
-Level: 49
+SPECIES_HYPNO
+Level: 79
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Hypno
-Level: 49
+SPECIES_HYPNO
+Level: 79
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_ADMIN ===
@@ -9498,29 +9495,29 @@ Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Muk
-Level: 52
+SPECIES_MUK
+Level: 82
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Sludge Bomb
-- Screech
-- Minimize
-- Rock Tomb
+- MOVE_SLUDGE_BOMB
+- MOVE_SCREECH
+- MOVE_MINIMIZE
+- MOVE_ROCK_TOMB
 
-Arbok
-Level: 53
+SPECIES_ARBOK
+Level: 83
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Sludge Bomb
-- Bite
-- Earthquake
-- Iron Tail
+- MOVE_SLUDGE_BOMB
+- MOVE_BITE
+- MOVE_EARTHQUAKE
+- MOVE_IRON_TAIL
 
-Vileplume
-Level: 54
+SPECIES_VILEPLUME
+Level: 84
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Sludge Bomb
-- Giga Drain
-- Sleep Powder
-- Stun Spore
+- MOVE_SLUDGE_BOMB
+- MOVE_GIGA_DRAIN
+- MOVE_SLEEP_POWDER
+- MOVE_STUN_SPORE
 
 === TRAINER_TEAM_ROCKET_ADMIN_2 ===
 Name: ADMIN
@@ -9532,29 +9529,29 @@ Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Golbat
-Level: 53
+SPECIES_GOLBAT
+Level: 83
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Confuse Ray
-- Sludge Bomb
-- Air Cutter
-- Shadow Ball
+- MOVE_CONFUSE_RAY
+- MOVE_SLUDGE_BOMB
+- MOVE_AIR_CUTTER
+- MOVE_SHADOW_BALL
 
-Weezing
-Level: 54
+SPECIES_WEEZING
+Level: 84
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Sludge Bomb
-- Thunderbolt
-- Explosion
-- Shadow Ball
+- MOVE_SLUDGE_BOMB
+- MOVE_THUNDERBOLT
+- MOVE_EXPLOSION
+- MOVE_SHADOW_BALL
 
-Houndoom
-Level: 55
+SPECIES_HOUNDOOM
+Level: 85
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Flamethrower
-- Crunch
-- Iron Tail
-- Shadow Ball
+- MOVE_FLAMETHROWER
+- MOVE_CRUNCH
+- MOVE_IRON_TAIL
+- MOVE_SHADOW_BALL
 
 === TRAINER_SCIENTIST_GIDEON ===
 Name: GIDEON
@@ -9565,45 +9562,45 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Voltorb
-Level: 46
+SPECIES_VOLTORB
+Level: 76
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Swift
-- Screech
-- Spark
-- Sonic Boom
+- MOVE_SWIFT
+- MOVE_SCREECH
+- MOVE_SPARK
+- MOVE_SONIC_BOOM
 
-Electrode
-Level: 46
+SPECIES_ELECTRODE
+Level: 76
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Spark
-- Sonic Boom
-- Screech
-- Charge
+- MOVE_SPARK
+- MOVE_SONIC_BOOM
+- MOVE_SCREECH
+- MOVE_CHARGE
 
-Magnemite
-Level: 46
+SPECIES_MAGNEMITE
+Level: 76
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Screech
-- Swift
-- Spark
-- Thunder Wave
+- MOVE_SCREECH
+- MOVE_SWIFT
+- MOVE_SPARK
+- MOVE_THUNDER_WAVE
 
-Magneton
-Level: 46
+SPECIES_MAGNETON
+Level: 76
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Tri Attack
-- Spark
-- Thunder Wave
-- Sonic Boom
+- MOVE_TRI_ATTACK
+- MOVE_SPARK
+- MOVE_THUNDER_WAVE
+- MOVE_SONIC_BOOM
 
-Porygon
-Level: 46
+SPECIES_PORYGON
+Level: 76
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Tri Attack
-- Conversion
-- Recover
-- Psybeam
+- MOVE_TRI_ATTACK
+- MOVE_CONVERSION
+- MOVE_RECOVER
+- MOVE_PSYBEAM
 
 === TRAINER_SWIMMER_FEMALE_AMARA ===
 Name: AMARA
@@ -10020,16 +10017,16 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Rattata
-Level: 48
+SPECIES_RATTATA
+Level: 78
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Grimer
-Level: 48
+SPECIES_GRIMER
+Level: 78
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Muk
-Level: 48
+SPECIES_MUK
+Level: 78
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_50 ===
@@ -10041,21 +10038,21 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Koffing
-Level: 49
+SPECIES_KOFFING
+Level: 79
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Memento
-- Haze
-- Smokescreen
-- Sludge
+- MOVE_MEMENTO
+- MOVE_HAZE
+- MOVE_SMOKESCREEN
+- MOVE_SLUDGE
 
-Weezing
-Level: 49
+SPECIES_WEEZING
+Level: 79
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Haze
-- Smokescreen
-- Sludge
-- Self Destruct
+- MOVE_HAZE
+- MOVE_SMOKESCREEN
+- MOVE_SLUDGE
+- MOVE_SELF_DESTRUCT
 
 === TRAINER_TEAM_ROCKET_GRUNT_51 ===
 Name: GRUNT
@@ -10066,16 +10063,16 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Ekans
-Level: 48
+SPECIES_EKANS
+Level: 78
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Gloom
-Level: 48
+SPECIES_GLOOM
+Level: 78
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Gloom
-Level: 48
+SPECIES_GLOOM
+Level: 78
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_BIRD_KEEPER_MILO ===
@@ -10851,21 +10848,21 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Persian @ Nugget
-Level: 49
+SPECIES_PERSIAN @ ITEM_NUGGET
+Level: 79
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Pay Day
-- Bite
-- Taunt
-- Torment
+- MOVE_PAY_DAY
+- MOVE_BITE
+- MOVE_TAUNT
+- MOVE_TORMENT
 
-Persian @ Nugget
-Level: 49
+SPECIES_PERSIAN @ ITEM_NUGGET
+Level: 79
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Pay Day
-- Scratch
-- Torment
-- Taunt
+- MOVE_PAY_DAY
+- MOVE_SCRATCH
+- MOVE_TORMENT
+- MOVE_TAUNT
 
 === TRAINER_RUIN_MANIAC_LAWSON ===
 Name: LAWSON
@@ -10876,16 +10873,16 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Onix
-Level: 47
+SPECIES_ONIX
+Level: 77
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Graveler
-Level: 48
+SPECIES_GRAVELER
+Level: 78
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Marowak
-Level: 49
+SPECIES_MAROWAK
+Level: 79
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PSYCHIC_LAURA ===
@@ -10897,16 +10894,16 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Natu
-Level: 48
+SPECIES_NATU
+Level: 78
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Natu
-Level: 48
+SPECIES_NATU
+Level: 78
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Xatu
-Level: 49
+SPECIES_XATU
+Level: 79
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_PKMN_BREEDER_BETHANY ===
@@ -10918,8 +10915,8 @@ Music: Cute
 Double Battle: No
 AI: Check Bad Move
 
-Chansey
-Level: 50
+SPECIES_CHANSEY
+Level: 80
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_PKMN_BREEDER_ALLISON ===
@@ -10931,16 +10928,16 @@ Music: Cute
 Double Battle: No
 AI: Check Bad Move
 
-Clefairy
-Level: 48
+SPECIES_CLEFAIRY
+Level: 78
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Clefairy
-Level: 48
+SPECIES_CLEFAIRY
+Level: 78
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Clefable
-Level: 48
+SPECIES_CLEFABLE
+Level: 78
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_BUG_CATCHER_GARRET ===
@@ -10952,8 +10949,8 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Heracross
-Level: 49
+SPECIES_HERACROSS
+Level: 79
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BUG_CATCHER_JONAH ===
@@ -10965,20 +10962,20 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Yanma
-Level: 45
+SPECIES_YANMA
+Level: 75
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Beedrill
-Level: 45
+SPECIES_BEEDRILL
+Level: 75
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Yanma
-Level: 46
+SPECIES_YANMA
+Level: 76
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Beedrill
-Level: 47
+SPECIES_BEEDRILL
+Level: 77
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BUG_CATCHER_VANCE ===
@@ -10990,12 +10987,12 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Venonat
-Level: 48
+SPECIES_VENONAT
+Level: 78
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Venomoth
-Level: 48
+SPECIES_VENOMOTH
+Level: 78
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YOUNGSTER_NASH ===
@@ -11007,16 +11004,16 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Weepinbell
-Level: 47
+SPECIES_WEEPINBELL
+Level: 77
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Weepinbell
-Level: 47
+SPECIES_WEEPINBELL
+Level: 77
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Victreebel
-Level: 49
+SPECIES_VICTREEBEL
+Level: 79
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YOUNGSTER_CORDELL ===
@@ -11028,12 +11025,12 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Farfetchd
-Level: 48
+SPECIES_FARFETCHD
+Level: 78
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Farfetchd
-Level: 48
+SPECIES_FARFETCHD
+Level: 78
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_DALIA ===
@@ -11045,20 +11042,20 @@ Music: Cute
 Double Battle: No
 AI: Check Bad Move
 
-Hoppip
-Level: 46
+SPECIES_HOPPIP
+Level: 76
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Hoppip
-Level: 47
+SPECIES_HOPPIP
+Level: 77
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Skiploom
-Level: 47
+SPECIES_SKIPLOOM
+Level: 77
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Skiploom
-Level: 48
+SPECIES_SKIPLOOM
+Level: 78
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_JOANA ===
@@ -11070,8 +11067,8 @@ Music: Cute
 Double Battle: No
 AI: Check Bad Move
 
-Snubbull
-Level: 49
+SPECIES_SNUBBULL
+Level: 79
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CAMPER_RILEY ===
@@ -11083,12 +11080,12 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Pinsir
-Level: 49
+SPECIES_PINSIR
+Level: 79
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Heracross
-Level: 50
+SPECIES_HERACROSS
+Level: 80
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_MARCY ===
@@ -11100,16 +11097,16 @@ Music: Cute
 Double Battle: No
 AI: Check Bad Move
 
-Paras
-Level: 48
+SPECIES_PARAS
+Level: 78
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Paras
-Level: 48
+SPECIES_PARAS
+Level: 78
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Parasect
-Level: 49
+SPECIES_PARASECT
+Level: 79
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_RUIN_MANIAC_LAYTON ===
@@ -11121,16 +11118,16 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
-Level: 48
+SPECIES_SANDSLASH
+Level: 78
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Onix
-Level: 48
+SPECIES_ONIX
+Level: 78
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Sandslash
-Level: 48
+SPECIES_SANDSLASH
+Level: 78
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_KELSEY_2 ===
@@ -13399,47 +13396,46 @@ Music: Serious
 Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Purple
 
-Dewgong
-Level: 64
+SPECIES_DEWGONG
+Level: 84
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Ice Beam
-- Surf
-- Signal Beam
-- Double Team
+- MOVE_ICE_BEAM
+- MOVE_SURF
+- MOVE_SIGNAL_BEAM
+- MOVE_DOUBLE_TEAM
 
-Cloyster
-Level: 63
+SPECIES_CLOYSTER
+Level: 83
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Ice Beam
-- Surf
-- Supersonic
-- Rain Dance
+- MOVE_ICE_BEAM
+- MOVE_SURF
+- MOVE_SUPERSONIC
+- MOVE_RAIN_DANCE
 
-Piloswine
-Level: 63
+SPECIES_PILOSWINE
+Level: 83
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Blizzard
-- Earthquake
-- Double Edge
-- Rock Slide
+- MOVE_BLIZZARD
+- MOVE_EARTHQUAKE
+- MOVE_DOUBLE_EDGE
+- MOVE_ROCK_SLIDE
 
-Jynx
-Level: 66
+SPECIES_JYNX
+Level: 86
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Ice Beam
-- Psychic
-- Lovely Kiss
-- Attract
+- MOVE_ICE_BEAM
+- MOVE_PSYCHIC
+- MOVE_LOVELY_KISS
+- MOVE_ATTRACT
 
-Lapras @ Cheri Berry
-Level: 66
+SPECIES_LAPRAS @ ITEM_CHERI_BERRY
+Level: 86
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Ice Beam
-- Surf
-- Psychic
-- Thunder
+- MOVE_ICE_BEAM
+- MOVE_SURF
+- MOVE_PSYCHIC
+- MOVE_THUNDER
 
 === TRAINER_ELITE_FOUR_BRUNO_2 ===
 Name: BRUNO
@@ -13450,47 +13446,46 @@ Music: Serious
 Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Green
 
-Steelix
-Level: 65
+SPECIES_STEELIX
+Level: 85
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Iron Tail
-- Crunch
-- Rock Tomb
+- MOVE_EARTHQUAKE
+- MOVE_IRON_TAIL
+- MOVE_CRUNCH
+- MOVE_ROCK_TOMB
 
-Hitmonchan
-Level: 65
+SPECIES_HITMONCHAN
+Level: 85
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sky Uppercut
-- Mach Punch
-- Rock Slide
-- Counter
+- MOVE_SKY_UPPERCUT
+- MOVE_MACH_PUNCH
+- MOVE_ROCK_SLIDE
+- MOVE_COUNTER
 
-Hitmonlee
-Level: 65
+SPECIES_HITMONLEE
+Level: 85
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Mega Kick
-- Foresight
-- Earthquake
-- Rock Slide
+- MOVE_MEGA_KICK
+- MOVE_FORESIGHT
+- MOVE_EARTHQUAKE
+- MOVE_ROCK_SLIDE
 
-Steelix
-Level: 66
+SPECIES_STEELIX
+Level: 86
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Iron Tail
-- Crunch
-- Dragon Breath
+- MOVE_EARTHQUAKE
+- MOVE_IRON_TAIL
+- MOVE_CRUNCH
+- MOVE_DRAGON_BREATH
 
-Machamp @ Persim Berry
-Level: 68
+SPECIES_MACHAMP @ ITEM_PERSIM_BERRY
+Level: 88
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Cross Chop
-- Earthquake
-- Brick Break
-- Rock Slide
+- MOVE_CROSS_CHOP
+- MOVE_EARTHQUAKE
+- MOVE_BRICK_BREAK
+- MOVE_ROCK_SLIDE
 
 === TRAINER_ELITE_FOUR_AGATHA_2 ===
 Name: AGATHA
@@ -13501,47 +13496,46 @@ Music: Serious
 Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Pink
 
-Gengar
-Level: 66
+SPECIES_GENGAR
+Level: 86
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Ball
-- Psychic
-- Confuse Ray
-- Hypnosis
+- MOVE_SHADOW_BALL
+- MOVE_PSYCHIC
+- MOVE_CONFUSE_RAY
+- MOVE_HYPNOSIS
 
-Crobat
-Level: 66
+SPECIES_CROBAT
+Level: 86
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sludge Bomb
-- Air Cutter
-- Shadow Ball
-- Confuse Ray
+- MOVE_SLUDGE_BOMB
+- MOVE_AIR_CUTTER
+- MOVE_SHADOW_BALL
+- MOVE_CONFUSE_RAY
 
-Misdreavus
-Level: 65
+SPECIES_MISDREAVUS
+Level: 85
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Ball
-- Psychic
-- Thunderbolt
-- Attract
+- MOVE_SHADOW_BALL
+- MOVE_PSYCHIC
+- MOVE_THUNDERBOLT
+- MOVE_ATTRACT
 
-Arbok
-Level: 68
+SPECIES_ARBOK
+Level: 88
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sludge Bomb
-- Earthquake
-- Giga Drain
-- Double Team
+- MOVE_SLUDGE_BOMB
+- MOVE_EARTHQUAKE
+- MOVE_GIGA_DRAIN
+- MOVE_DOUBLE_TEAM
 
-Gengar @ Chesto Berry
-Level: 70
+SPECIES_GENGAR @ ITEM_CHESTO_BERRY
+Level: 90
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Ball
-- Psychic
-- Thunderbolt
-- Sludge Bomb
+- MOVE_SHADOW_BALL
+- MOVE_PSYCHIC
+- MOVE_THUNDERBOLT
+- MOVE_SLUDGE_BOMB
 
 === TRAINER_ELITE_FOUR_LANCE_2 ===
 Name: LANCE
@@ -13552,47 +13546,46 @@ Music: Serious
 Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Blue
 
-Gyarados
-Level: 68
+SPECIES_GYARADOS
+Level: 88
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
-- Dragon Dance
-- Earthquake
-- Thunder Wave
+- MOVE_HYPER_BEAM
+- MOVE_DRAGON_DANCE
+- MOVE_EARTHQUAKE
+- MOVE_THUNDER_WAVE
 
-Dragonite
-Level: 66
+SPECIES_DRAGONITE
+Level: 86
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
-- Earthquake
-- Dragon Claw
-- Flamethrower
+- MOVE_HYPER_BEAM
+- MOVE_EARTHQUAKE
+- MOVE_DRAGON_CLAW
+- MOVE_FLAMETHROWER
 
-Kingdra
-Level: 66
+SPECIES_KINGDRA
+Level: 86
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
-- Dragon Dance
-- Surf
-- Ice Beam
+- MOVE_HYPER_BEAM
+- MOVE_DRAGON_DANCE
+- MOVE_SURF
+- MOVE_ICE_BEAM
 
-Aerodactyl
-Level: 70
+SPECIES_AERODACTYL
+Level: 90
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
-- Ancient Power
-- Aerial Ace
-- Earthquake
+- MOVE_HYPER_BEAM
+- MOVE_ANCIENT_POWER
+- MOVE_AERIAL_ACE
+- MOVE_EARTHQUAKE
 
-Dragonite @ Persim Berry
-Level: 72
+SPECIES_DRAGONITE @ ITEM_PERSIM_BERRY
+Level: 92
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
-- Outrage
-- Thunderbolt
-- Ice Beam
+- MOVE_HYPER_BEAM
+- MOVE_OUTRAGE
+- MOVE_THUNDERBOLT
+- MOVE_ICE_BEAM
 
 === TRAINER_CHAMPION_REMATCH_SQUIRTLE ===
 Name: TERRY
@@ -13603,55 +13596,54 @@ Music: Serious
 Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Yellow
 
-Heracross
-Level: 72
+SPECIES_HERACROSS
+Level: 92
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Megahorn
-- Earthquake
-- Counter
-- Rock Tomb
+- MOVE_MEGAHORN
+- MOVE_EARTHQUAKE
+- MOVE_COUNTER
+- MOVE_ROCK_TOMB
 
-Alakazam
-Level: 73
+SPECIES_ALAKAZAM
+Level: 93
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Shadow Ball
-- Calm Mind
-- Reflect
+- MOVE_PSYCHIC
+- MOVE_SHADOW_BALL
+- MOVE_CALM_MIND
+- MOVE_REFLECT
 
-Tyranitar
-Level: 72
+SPECIES_TYRANITAR
+Level: 92
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Crunch
-- Earthquake
-- Thunderbolt
-- Aerial Ace
+- MOVE_CRUNCH
+- MOVE_EARTHQUAKE
+- MOVE_THUNDERBOLT
+- MOVE_AERIAL_ACE
 
-Arcanine
-Level: 73
+SPECIES_ARCANINE
+Level: 93
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Extreme Speed
-- Overheat
-- Aerial Ace
-- Iron Tail
+- MOVE_EXTREME_SPEED
+- MOVE_OVERHEAT
+- MOVE_AERIAL_ACE
+- MOVE_IRON_TAIL
 
-Exeggutor
-Level: 73
+SPECIES_EXEGGUTOR
+Level: 93
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Psychic
-- Sleep Powder
-- Light Screen
+- MOVE_GIGA_DRAIN
+- MOVE_PSYCHIC
+- MOVE_SLEEP_POWDER
+- MOVE_LIGHT_SCREEN
 
-Blastoise @ Sitrus Berry
-Level: 75
+SPECIES_BLASTOISE @ ITEM_SITRUS_BERRY
+Level: 95
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hydro Pump
-- Ice Beam
-- Earthquake
-- Rain Dance
+- MOVE_HYDRO_PUMP
+- MOVE_ICE_BEAM
+- MOVE_EARTHQUAKE
+- MOVE_RAIN_DANCE
 
 === TRAINER_CHAMPION_REMATCH_BULBASAUR ===
 Name: TERRY
@@ -13662,55 +13654,54 @@ Music: Serious
 Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Yellow
 
-Heracross
-Level: 72
+SPECIES_HERACROSS
+Level: 92
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Megahorn
-- Earthquake
-- Counter
-- Rock Tomb
+- MOVE_MEGAHORN
+- MOVE_EARTHQUAKE
+- MOVE_COUNTER
+- MOVE_ROCK_TOMB
 
-Alakazam
-Level: 73
+SPECIES_ALAKAZAM
+Level: 93
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Shadow Ball
-- Calm Mind
-- Reflect
+- MOVE_PSYCHIC
+- MOVE_SHADOW_BALL
+- MOVE_CALM_MIND
+- MOVE_REFLECT
 
-Tyranitar
-Level: 72
+SPECIES_TYRANITAR
+Level: 92
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Crunch
-- Earthquake
-- Thunderbolt
-- Aerial Ace
+- MOVE_CRUNCH
+- MOVE_EARTHQUAKE
+- MOVE_THUNDERBOLT
+- MOVE_AERIAL_ACE
 
-Gyarados
-Level: 73
+SPECIES_GYARADOS
+Level: 93
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hydro Pump
-- Dragon Dance
-- Earthquake
-- Hyper Beam
+- MOVE_HYDRO_PUMP
+- MOVE_DRAGON_DANCE
+- MOVE_EARTHQUAKE
+- MOVE_HYPER_BEAM
 
-Arcanine
-Level: 73
+SPECIES_ARCANINE
+Level: 93
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Extreme Speed
-- Overheat
-- Aerial Ace
-- Iron Tail
+- MOVE_EXTREME_SPEED
+- MOVE_OVERHEAT
+- MOVE_AERIAL_ACE
+- MOVE_IRON_TAIL
 
-Venusaur @ Sitrus Berry
-Level: 75
+SPECIES_VENUSAUR @ ITEM_SITRUS_BERRY
+Level: 95
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Solar Beam
-- Sludge Bomb
-- Earthquake
-- Sunny Day
+- MOVE_SOLAR_BEAM
+- MOVE_SLUDGE_BOMB
+- MOVE_EARTHQUAKE
+- MOVE_SUNNY_DAY
 
 === TRAINER_CHAMPION_REMATCH_CHARMANDER ===
 Name: TERRY
@@ -13721,55 +13712,54 @@ Music: Serious
 Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Yellow
 
-Heracross
-Level: 72
+SPECIES_HERACROSS
+Level: 92
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Megahorn
-- Earthquake
-- Counter
-- Rock Tomb
+- MOVE_MEGAHORN
+- MOVE_EARTHQUAKE
+- MOVE_COUNTER
+- MOVE_ROCK_TOMB
 
-Alakazam
-Level: 73
+SPECIES_ALAKAZAM
+Level: 93
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Shadow Ball
-- Calm Mind
-- Reflect
+- MOVE_PSYCHIC
+- MOVE_SHADOW_BALL
+- MOVE_CALM_MIND
+- MOVE_REFLECT
 
-Tyranitar
-Level: 72
+SPECIES_TYRANITAR
+Level: 92
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Crunch
-- Earthquake
-- Thunderbolt
-- Aerial Ace
+- MOVE_CRUNCH
+- MOVE_EARTHQUAKE
+- MOVE_THUNDERBOLT
+- MOVE_AERIAL_ACE
 
-Exeggutor
-Level: 73
+SPECIES_EXEGGUTOR
+Level: 93
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Psychic
-- Sleep Powder
-- Light Screen
+- MOVE_GIGA_DRAIN
+- MOVE_PSYCHIC
+- MOVE_SLEEP_POWDER
+- MOVE_LIGHT_SCREEN
 
-Gyarados
-Level: 73
+SPECIES_GYARADOS
+Level: 93
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hydro Pump
-- Dragon Dance
-- Earthquake
-- Hyper Beam
+- MOVE_HYDRO_PUMP
+- MOVE_DRAGON_DANCE
+- MOVE_EARTHQUAKE
+- MOVE_HYPER_BEAM
 
-Charizard @ Sitrus Berry
-Level: 75
+SPECIES_CHARIZARD @ ITEM_SITRUS_BERRY
+Level: 95
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Fire Blast
-- Dragon Claw
-- Aerial Ace
-- Earthquake
+- MOVE_FIRE_BLAST
+- MOVE_DRAGON_CLAW
+- MOVE_AERIAL_ACE
+- MOVE_EARTHQUAKE
 
 === TRAINER_CUE_BALL_PAXTON ===
 Name: PAXTON
@@ -13780,10 +13770,487 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Weezing
-Level: 39
+SPECIES_WEEZING
+Level: 69
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Muk
-Level: 39
+SPECIES_MUK
+Level: 69
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+=== TRAINER_BOSS_NOX_FINAL ===
+Name: NOX
+Class: Boss Frlg
+Pic: Leader Giovanni Frlg
+Gender: Male
+Music: Dangerous
+Items: ITEM_FULL_RESTORE / ITEM_FULL_RESTORE / ITEM_FULL_RESTORE
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+SPECIES_SHARPEDO
+Level: 90
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+SPECIES_WALREIN
+Level: 91
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+SPECIES_KINGDRA
+Level: 91
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+SPECIES_NIDOKING
+Level: 92
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+SPECIES_RHYDON
+Level: 93
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+SPECIES_GYARADOS
+Level: 95
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_ZUMO_ROCKET_1 ===
+Name: MUSASHI
+Class: TRAINER_CLASS_PKMN_TRAINER_UNUSED
+Pic: Rocket Grunt F Frlg
+Gender: Male
+Music: Dangerous
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint
+
+SPECIES_EKANS
+Level: 16
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+
+SPECIES_KOFFING
+Level: 16
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+
+SPECIES_MEOWTH
+Level: 17
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+
+=== TRAINER_ZUMO_ROCKET_2 ===
+Name: MUSASHI
+Class: TRAINER_CLASS_PKMN_TRAINER_UNUSED
+Pic: Rocket Grunt F Frlg
+Gender: Male
+Music: Dangerous
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint
+
+SPECIES_ARBOK
+Level: 27
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+
+SPECIES_WEEZING
+Level: 28
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+
+SPECIES_MEOWTH
+Level: 28
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+
+=== TRAINER_ZUMO_ROCKET_3 ===
+Name: MUSASHI
+Class: TRAINER_CLASS_PKMN_TRAINER_UNUSED
+Pic: Rocket Grunt F Frlg
+Gender: Male
+Music: Dangerous
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint
+
+SPECIES_ARBOK
+Level: 38
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+
+SPECIES_WEEZING
+Level: 39
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+
+SPECIES_PERSIAN
+Level: 40
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+
+SPECIES_VICTREEBEL
+Level: 38
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+
+=== TRAINER_ZUMO_ROCKET_4 ===
+Name: MUSASHI
+Class: TRAINER_CLASS_PKMN_TRAINER_UNUSED
+Pic: Rocket Grunt F Frlg
+Gender: Male
+Music: Dangerous
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint
+
+SPECIES_ARBOK
+Level: 50
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+
+SPECIES_WEEZING
+Level: 51
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+
+SPECIES_PERSIAN
+Level: 52
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+
+SPECIES_VICTREEBEL
+Level: 50
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+
+=== TRAINER_ZK_MTMOON_MAGMA_1 ===
+Name: GRUNT
+Class: TRAINER_CLASS_TEAM_MAGMA
+Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Gender: Male
+Music: TRAINER_ENCOUNTER_MUSIC_MAGMA
+Double Battle: No
+AI: Check Bad Move
+
+SPECIES_POOCHYENA
+Level: 12
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
+SPECIES_NUMEL
+Level: 13
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
+=== TRAINER_ZK_MTMOON_MAGMA_2 ===
+Name: GRUNT
+Class: TRAINER_CLASS_TEAM_MAGMA
+Pic: TRAINER_PIC_MAGMA_GRUNT_F
+Gender: Female
+Music: TRAINER_ENCOUNTER_MUSIC_MAGMA
+Double Battle: No
+AI: Check Bad Move
+
+SPECIES_ZUBAT
+Level: 12
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
+SPECIES_POOCHYENA
+Level: 12
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
+SPECIES_NUMEL
+Level: 13
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
+=== TRAINER_ZK_MTMOON_TABITHA ===
+Name: TABITHA
+Class: TRAINER_CLASS_MAGMA_ADMIN
+Pic: TRAINER_PIC_MAGMA_ADMIN_M
+Gender: Male
+Music: TRAINER_ENCOUNTER_MUSIC_MAGMA
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+SPECIES_ZUBAT
+Level: 14
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+
+SPECIES_POOCHYENA
+Level: 15
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+
+SPECIES_NUMEL
+Level: 16
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+
+=== TRAINER_ZK_ROCKTUNNEL_MAGMA_1 ===
+Name: GRUNT
+Class: TRAINER_CLASS_TEAM_MAGMA
+Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Gender: Male
+Music: TRAINER_ENCOUNTER_MUSIC_MAGMA
+Double Battle: No
+AI: Check Bad Move
+
+SPECIES_NUMEL
+Level: 23
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
+SPECIES_MIGHTYENA
+Level: 24
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
+=== TRAINER_ZK_ROCKTUNNEL_MAGMA_2 ===
+Name: GRUNT
+Class: TRAINER_CLASS_TEAM_MAGMA
+Pic: TRAINER_PIC_MAGMA_GRUNT_F
+Gender: Female
+Music: TRAINER_ENCOUNTER_MUSIC_MAGMA
+Double Battle: No
+AI: Check Bad Move
+
+SPECIES_GOLBAT
+Level: 23
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
+SPECIES_KOFFING
+Level: 23
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
+SPECIES_NUMEL
+Level: 24
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
+=== TRAINER_ZK_ROCKTUNNEL_TABITHA ===
+Name: TABITHA
+Class: TRAINER_CLASS_MAGMA_ADMIN
+Pic: TRAINER_PIC_MAGMA_ADMIN_M
+Gender: Male
+Music: TRAINER_ENCOUNTER_MUSIC_MAGMA
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+SPECIES_GOLBAT
+Level: 25
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+
+SPECIES_MIGHTYENA
+Level: 25
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+
+SPECIES_NUMEL
+Level: 27
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+
+=== TRAINER_ZK_HIDEOUT_RIVAL_SQUIRTLE ===
+Name: TERRY
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+SPECIES_PIDGEOTTO
+Level: 25
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- MOVE_TACKLE
+- MOVE_SAND_ATTACK
+- MOVE_GUST
+- MOVE_QUICK_ATTACK
+
+SPECIES_ABRA
+Level: 24
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- MOVE_TELEPORT
+
+SPECIES_RATTATA
+Level: 23
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- MOVE_TACKLE
+- MOVE_TAIL_WHIP
+- MOVE_QUICK_ATTACK
+
+SPECIES_SQUIRTLE
+Level: 26
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- MOVE_TACKLE
+- MOVE_TAIL_WHIP
+- MOVE_WITHDRAW
+- MOVE_WATER_GUN
+
+=== TRAINER_ZK_HIDEOUT_RIVAL_BULBASAUR ===
+Name: TERRY
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+SPECIES_PIDGEOTTO
+Level: 25
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- MOVE_TACKLE
+- MOVE_SAND_ATTACK
+- MOVE_GUST
+- MOVE_QUICK_ATTACK
+
+SPECIES_ABRA
+Level: 24
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- MOVE_TELEPORT
+
+SPECIES_RATTATA
+Level: 23
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- MOVE_TACKLE
+- MOVE_TAIL_WHIP
+- MOVE_QUICK_ATTACK
+
+SPECIES_BULBASAUR
+Level: 26
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- MOVE_SLEEP_POWDER
+- MOVE_POISON_POWDER
+- MOVE_VINE_WHIP
+- MOVE_LEECH_SEED
+
+=== TRAINER_ZK_HIDEOUT_RIVAL_CHARMANDER ===
+Name: TERRY
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+SPECIES_PIDGEOTTO
+Level: 25
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- MOVE_TACKLE
+- MOVE_SAND_ATTACK
+- MOVE_GUST
+- MOVE_QUICK_ATTACK
+
+SPECIES_ABRA
+Level: 24
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- MOVE_TELEPORT
+
+SPECIES_RATTATA
+Level: 23
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- MOVE_TACKLE
+- MOVE_TAIL_WHIP
+- MOVE_QUICK_ATTACK
+
+SPECIES_CHARMANDER
+Level: 26
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- MOVE_METAL_CLAW
+- MOVE_EMBER
+- MOVE_GROWL
+- MOVE_SCRATCH
+
+=== TRAINER_ZK_SSANNE_MAGMA_1 ===
+Name: GRUNT
+Class: TRAINER_CLASS_TEAM_MAGMA
+Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Gender: Male
+Music: TRAINER_ENCOUNTER_MUSIC_MAGMA
+Double Battle: No
+AI: Check Bad Move
+
+SPECIES_MIGHTYENA
+Level: 31
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
+SPECIES_CAMERUPT
+Level: 32
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
+=== TRAINER_ZK_SSANNE_MAGMA_2 ===
+Name: GRUNT
+Class: TRAINER_CLASS_TEAM_MAGMA
+Pic: TRAINER_PIC_MAGMA_GRUNT_F
+Gender: Female
+Music: TRAINER_ENCOUNTER_MUSIC_MAGMA
+Double Battle: No
+AI: Check Bad Move
+
+SPECIES_GOLBAT
+Level: 31
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
+SPECIES_WEEZING
+Level: 31
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
+SPECIES_NUMEL
+Level: 32
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
+=== TRAINER_ZK_SSANNE_TABITHA ===
+Name: TABITHA
+Class: TRAINER_CLASS_MAGMA_ADMIN
+Pic: TRAINER_PIC_MAGMA_ADMIN_M
+Gender: Male
+Music: TRAINER_ENCOUNTER_MUSIC_MAGMA
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+SPECIES_CROBAT
+Level: 34
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+
+SPECIES_MIGHTYENA
+Level: 34
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+
+SPECIES_WEEZING
+Level: 34
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+
+SPECIES_CAMERUPT
+Level: 36
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+
+=== TRAINER_ZK_MANSION_MAXIE ===
+Name: MAXIE
+Class: TRAINER_CLASS_MAGMA_LEADER
+Pic: TRAINER_PIC_MAGMA_LEADER_MAXIE
+Gender: Male
+Music: TRAINER_ENCOUNTER_MUSIC_MAGMA
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+SPECIES_MIGHTYENA
+Level: 43
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+
+SPECIES_CROBAT
+Level: 43
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+
+SPECIES_WEEZING
+Level: 44
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+
+SPECIES_CAMERUPT
+Level: 46
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+
+=== TRAINER_ZK_NOX_FINAL ===
+Name: NOX
+Class: Boss Frlg
+Pic: Leader Giovanni Frlg
+Gender: Male
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+SPECIES_DUGTRIO
+Level: 78
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+
+SPECIES_NIDOQUEEN
+Level: 79
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+
+SPECIES_KANGASKHAN
+Level: 79
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+
+SPECIES_NIDOKING
+Level: 80
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+
+SPECIES_TYRANITAR
+Level: 81
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+
+SPECIES_RHYDON
+Level: 82
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+

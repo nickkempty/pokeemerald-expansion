@@ -22,8 +22,6 @@ RockTunnel_B1F_EventScript_TryRemoveMewtwo::
 	return
 
 RockTunnel_B1F_EventScript_Mewtwo::
-	goto_if_questlog EventScript_ReleaseEnd
-	special QuestLog_CutRecording
 	lock
 	faceplayer
 	waitse
@@ -36,7 +34,7 @@ RockTunnel_B1F_EventScript_Mewtwo::
 	waitbuttonpress
 	setwildbattle SPECIES_MEWTWO, 25
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
-	special StartLegendaryBattle
+	special BattleSetup_StartLegendaryBattle
 	waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome

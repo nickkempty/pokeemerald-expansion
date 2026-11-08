@@ -2,6 +2,7 @@
 #define GUARD_CONSTANTS_MAPS_H
 
 #include "map_groups.h"
+#include "constants/zumo_map_aliases.h"
 
 enum
 {

@@ -1046,6 +1046,9 @@ gStdScripts_End::
 	.include "data/text/ingame_trade_frlg.inc"
 	.include "data/scripts/flavor_text.inc"
 	.include "data/scripts/pkmn_center_nurse_frlg.inc"
+@ Zumo Edition (ported from Ver 4.2)
+	.include "data/scripts/zumo_events.inc"
+	.include "data/zumo_hx_common.inc"
 
 .endif
 

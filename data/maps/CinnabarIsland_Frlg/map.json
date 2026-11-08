@@ -132,6 +132,42 @@
       "var": "VAR_TEMP_1",
       "var_value": "0",
       "script": "CinnabarIsland_EventScript_GymDoorLocked"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "EventScript_HxCinnabarToUnionRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "EventScript_HxCinnabarToUnionRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "EventScript_HxCinnabarToUnionRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "EventScript_HxCinnabarToUnionRoad"
     }
   ],
   "bg_events": [

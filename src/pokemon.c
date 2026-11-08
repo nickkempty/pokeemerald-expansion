@@ -1377,6 +1377,18 @@ void CalculateMonStats(struct Pokemon *mon)
     CalculateMonStatsCont(mon, TRUE);
 }
 
+// Zumo: POKeMON marked as Zumo starters (PROF. OAK's gift) get +50% base stats
+static u32 ZumoBoostBase(struct Pokemon *mon, u32 base)
+{
+    if (GetMonData(mon, MON_DATA_ZUMO_STARTER))
+    {
+        base += base / 2;
+        if (base > 255)
+            base = 255;
+    }
+    return base;
+}
+
 void CalculateMonStatsCont(struct Pokemon *mon, bool32 updateSpeedStat)
 {
     s32 oldMaxHP = GetMonData(mon, MON_DATA_MAX_HP);
@@ -1411,7 +1423,7 @@ void CalculateMonStatsCont(struct Pokemon *mon, bool32 updateSpeedStat)
         if (i == STAT_HP)
             continue;
 
-        u8 baseStat = GetSpeciesBaseStat(species, i);
+        u8 baseStat = ZumoBoostBase(mon, GetSpeciesBaseStat(species, i));
         s32 n = (((2 * baseStat + iv[i] + ev[i] / 4) * level) / 100) + 5;
         n = ModifyStatByNature(nature, n, i);
         if (B_FRIENDSHIP_BOOST == TRUE)
@@ -1430,7 +1442,7 @@ void CalculateMonStatsCont(struct Pokemon *mon, bool32 updateSpeedStat)
     }
     else
     {
-        s32 n = 2 * GetSpeciesBaseHP(species) + iv[STAT_HP];
+        s32 n = 2 * ZumoBoostBase(mon, GetSpeciesBaseHP(species)) + iv[STAT_HP];
         newMaxHP = (((n + ev[STAT_HP] / 4) * level) / 100) + level + 10;
     }
 
@@ -2393,6 +2405,9 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
         case MON_DATA_IS_SHADOW:
             retVal = GetSubstruct3(boxMon)->isShadow;
             break;
+        case MON_DATA_ZUMO_STARTER:
+            retVal = GetSubstruct3(boxMon)->zumoStarter;
+            break;
         case MON_DATA_DYNAMAX_LEVEL:
             retVal = GetSubstruct3(boxMon)->dynamaxLevel;
             break;
@@ -2839,6 +2854,9 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
             break;
         case MON_DATA_IS_SHADOW:
             SET8(GetSubstruct3(boxMon)->isShadow);
+            break;
+        case MON_DATA_ZUMO_STARTER:
+            SET8(GetSubstruct3(boxMon)->zumoStarter);
             break;
         case MON_DATA_DYNAMAX_LEVEL:
             SET8(GetSubstruct3(boxMon)->dynamaxLevel);

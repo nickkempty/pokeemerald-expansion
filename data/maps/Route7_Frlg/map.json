@@ -33,7 +33,8 @@
       "x": -8,
       "y": 12,
       "target_local_id": "LOCALID_CELADON_BORDER_TREE",
-      "target_map": "MAP_CELADON_CITY"
+      "target_map": "MAP_CELADON_CITY",
+      "movement_type": null
     }
   ],
   "warp_events": [

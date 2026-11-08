@@ -638,3 +638,24 @@ gSpecials::
 	def_special UpdateTrainerCardPhotoIcons
 	def_special StickerManGetBragFlags
 	def_special CheckAddCoins
+	@ Zumo Edition
+	def_special GetStarterSpeciesByTypeAndGen
+	def_special GetPlayerStarterSpecies
+	def_special PickRandomRivalStarter
+	def_special CountCaughtMigrantMons
+	def_special SpawnMewSighting
+	def_special CreateMewSightingBattle
+	def_special MarkStarterFromOak
+	def_special ShowDexSellerList
+	def_special SetDexSeenFromSeller
+	def_special BufferQuestText
+	def_special RemoveMewSightingObject
+	def_special SpawnRocketTrio
+	def_special GetRocketTrioStage
+	def_special RemoveRocketTrio
+	def_special HxRaiseCinnabarCauseway
+	def_special Zumo_GachaStatus
+	def_special Zumo_GachaRoll
+	def_special Zumo_GachaWasPC
+	def_special Zumo_GachaRoll3
+	def_special Zumo_GachaScene

@@ -117,7 +117,8 @@
       "x": 6,
       "y": 85,
       "target_local_id": "LOCALID_VIRIDIAN_BORDER_TREE",
-      "target_map": "MAP_VIRIDIAN_CITY"
+      "target_map": "MAP_VIRIDIAN_CITY",
+      "movement_type": null
     }
   ],
   "warp_events": [
@@ -192,9 +193,7 @@
       "dest_warp_id": "1"
     }
   ],
-  "coord_events": [
-
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",

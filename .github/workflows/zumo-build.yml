@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - zumo-hoenn-kanto
+      - zumo-port-wip
   workflow_dispatch:
 
 permissions:
