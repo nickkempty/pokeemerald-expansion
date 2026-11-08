@@ -1,0 +1,35 @@
+name: Zumo ROM Build
+
+on:
+  push:
+    branches:
+      - zumo-hoenn-kanto
+  workflow_dispatch:
+
+jobs:
+  build-rom:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends binutils-arm-none-eabi gcc-arm-none-eabi libnewlib-arm-none-eabi libpng-dev python3
+
+      - name: Build ROM
+        run: make -j$(nproc) -O 2>&1 | tee build.log; exit ${PIPESTATUS[0]}
+
+      - name: Upload ROM
+        uses: actions/upload-artifact@v4
+        with:
+          name: zumo-rom-${{ github.run_number }}
+          path: pokeemerald.gba
+
+      - name: Upload build log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-log-${{ github.run_number }}
+          path: build.log
