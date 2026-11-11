@@ -87,10 +87,10 @@ static const u8 sText_WildFled[] = _("{PLAY_SE SE_FLEE}{B_LINK_OPPONENT1_NAME} f
 static const u8 sText_TwoWildFled[] = _("{PLAY_SE SE_FLEE}{B_LINK_OPPONENT1_NAME} and {B_LINK_OPPONENT2_NAME} fled!"); //not in gen 5+, replaced with match was forfeited text
 static const u8 sText_PlayerDefeatedLinkTrainerTrainer1[] = _("You defeated {B_TRAINER1_NAME_WITH_CLASS}!\p");
 static const u8 sText_OpponentMon1Appeared[] = _("{B_OPPONENT_MON1_NAME} appeared!\p");
-static const u8 sText_WildPkmnAppeared[] = _("You encountered a wild {B_OPPONENT_MON1_NAME}!\p");
-static const u8 sText_LegendaryPkmnAppeared[] = _("You encountered a wild {B_OPPONENT_MON1_NAME}!\p");
+static const u8 sText_WildPkmnAppeared[] = _("You encountered a wild {B_OPPONENT_MON1_NAME}!\nIV total: {B_BUFF1}/186\p");
+static const u8 sText_LegendaryPkmnAppeared[] = _("You encountered a wild {B_OPPONENT_MON1_NAME}!\nIV total: {B_BUFF1}/186\p");
 static const u8 sText_WildPkmnAppearedPause[] = _("You encountered a wild {B_OPPONENT_MON1_NAME}!{PAUSE 127}");
-static const u8 sText_TwoWildPkmnAppeared[] = _("Oh! A wild {B_OPPONENT_MON1_NAME} and {B_OPPONENT_MON2_NAME} appeared!\p");
+static const u8 sText_TwoWildPkmnAppeared[] = _("Oh! A wild {B_OPPONENT_MON1_NAME} and {B_OPPONENT_MON2_NAME} appeared!\pIV total: {B_BUFF1}/186 and {B_BUFF2}/186\p");
 static const u8 sText_GhostAppearedCantId[] = _("The GHOST appeared!\pDarn!\nThe GHOST can't be ID'd!\p");
 static const u8 sText_TheGhostAppeared[] = _("The GHOST appeared!\p");
 static const u8 sText_Trainer1WantsToBattle[] = _("You are challenged by {B_TRAINER1_NAME_WITH_CLASS}!\p");
@@ -2516,6 +2516,24 @@ void BufferStringBattle(enum StringID stringID, enum BattlerId battler)
                 stringPtr = sText_WildPkmnAppearedPause;
             else
                 stringPtr = sText_WildPkmnAppeared;
+            // Zumo: show the wild POKeMON's IV total (0-186)
+            {
+                u32 side, ivSum;
+                for (side = 0; side < 2; side++)
+                {
+                    struct Pokemon *wild = GetBattlerMon(GetBattlerAtPosition(side == 0 ? B_POSITION_OPPONENT_LEFT : B_POSITION_OPPONENT_RIGHT));
+                    ivSum = GetMonData(wild, MON_DATA_HP_IV) + GetMonData(wild, MON_DATA_ATK_IV) + GetMonData(wild, MON_DATA_DEF_IV)
+                          + GetMonData(wild, MON_DATA_SPEED_IV) + GetMonData(wild, MON_DATA_SPATK_IV) + GetMonData(wild, MON_DATA_SPDEF_IV);
+                    if (side == 0)
+                    {
+                        PREPARE_HWORD_NUMBER_BUFFER(gBattleTextBuff1, 3, ivSum);
+                    }
+                    else
+                    {
+                        PREPARE_HWORD_NUMBER_BUFFER(gBattleTextBuff2, 3, ivSum);
+                    }
+                }
+            }
         }
         break;
     case STRINGID_INTROSENDOUT: // poke first send-out

@@ -7309,7 +7309,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GENDER_SWAP] = // Zumo Edition
     {
-        .name = ITEM_NAME("Gender Swap"),
+        .name = ITEM_NAME("Gender Shell"),
         .price = 50000,
         .description = COMPOUND_STRING(
             "Swaps a Pokémon's\n"

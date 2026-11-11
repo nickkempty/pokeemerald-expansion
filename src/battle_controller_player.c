@@ -96,6 +96,17 @@ static u32 CheckTypeEffectiveness(enum BattlerId battlerAtk, enum BattlerId batt
 static u32 CheckTargetTypeEffectiveness(enum BattlerId battler);
 static void MoveSelectionDisplayMoveEffectiveness(u32 foeEffectiveness, enum BattlerId battler);
 
+enum
+{
+    EFFECTIVENESS_CANNOT_VIEW,
+    EFFECTIVENESS_NO_EFFECT,
+    EFFECTIVENESS_MOSTLY_INEFFECTIVE,
+    EFFECTIVENESS_NOT_VERY_EFFECTIVE,
+    EFFECTIVENESS_NORMAL,
+    EFFECTIVENESS_SUPER_EFFECTIVE,
+    EFFECTIVENESS_EXTREMELY_EFFECTIVE,
+};
+
 static void (*const sPlayerBufferCommands[CONTROLLER_CMDS_COUNT])(enum BattlerId battler) =
 {
     [CONTROLLER_GETMONDATA]               = BtlController_HandleGetMonData,
@@ -1734,6 +1745,27 @@ static void MoveSelectionDisplayMoveType(enum BattlerId battler)
     }
     end = StringCopy(txtPtr, gTypesInfo[type].name);
 
+    // Zumo: show the type multiplier against the opponent after the type, e.g. "FIRE ×2"
+    if (!IsBattleMoveStatus(move) && !(gBattleTypeFlags & BATTLE_TYPE_SAFARI))
+    {
+        const u8 *suffix = NULL;
+        switch (CheckTargetTypeEffectiveness(battler))
+        {
+        case EFFECTIVENESS_NO_EFFECT:           suffix = COMPOUND_STRING(" ×0"); break;
+        case EFFECTIVENESS_MOSTLY_INEFFECTIVE:  suffix = COMPOUND_STRING(" ×.25"); break;
+        case EFFECTIVENESS_NOT_VERY_EFFECTIVE:  suffix = COMPOUND_STRING(" ×.5"); break;
+        case EFFECTIVENESS_SUPER_EFFECTIVE:     suffix = COMPOUND_STRING(" ×2"); break;
+        case EFFECTIVENESS_EXTREMELY_EFFECTIVE: suffix = COMPOUND_STRING(" ×4"); break;
+        }
+        if (suffix != NULL)
+        {
+            // drop the "TYPE/" label so the multiplier fits
+            txtPtr = gDisplayedStringBattle;
+            end = StringCopy(txtPtr, gTypesInfo[type].name);
+            end = StringCopy(end, suffix);
+        }
+    }
+
     PrependFontIdToFit(txtPtr, end, FONT_NORMAL, WindowWidthPx(B_WIN_MOVE_TYPE) - 25);
     BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MOVE_TYPE);
 }
@@ -2349,16 +2381,6 @@ static void PlayerHandleBattleDebug(enum BattlerId battler)
 }
 
 // Order based numerically, with EFFECTIVENESS_CANNOT_VIEW at 0 to always prioritize any other effectiveness during comparison
-enum
-{
-    EFFECTIVENESS_CANNOT_VIEW,
-    EFFECTIVENESS_NO_EFFECT,
-    EFFECTIVENESS_MOSTLY_INEFFECTIVE,
-    EFFECTIVENESS_NOT_VERY_EFFECTIVE,
-    EFFECTIVENESS_NORMAL,
-    EFFECTIVENESS_SUPER_EFFECTIVE,
-    EFFECTIVENESS_EXTREMELY_EFFECTIVE,
-};
 
 static bool32 ShouldShowTypeEffectiveness(u32 targetId)
 {

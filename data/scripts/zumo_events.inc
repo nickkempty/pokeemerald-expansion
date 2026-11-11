@@ -654,7 +654,8 @@ Text_ZumoGachaMenuFree::
     .string "with 1 STRONG one guaranteed!$"
 
 Text_ZumoGachaMenuPaid::
-    .string "Welcome back to the GACHA!\p"
+    .string "Welcome to the POKéMON GACHA!\n"
+    .string "Each new BADGE gives 1 FREE spin.\p"
     .string "x1: ¥{STR_VAR_1}   x3: ¥{STR_VAR_2}\n"
     .string "x3 guarantees 1 STRONG one!$"
 

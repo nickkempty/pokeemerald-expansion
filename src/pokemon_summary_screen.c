@@ -3588,8 +3588,70 @@ static void BufferMonTrainerMemo(void)
     }
 }
 
+// Zumo: the memo shows what the nature raises/lowers and the IV / EV totals.
+// The memo window has 3 lines: nature line, met line (joined into one), IV/EV line.
+static void Zumo_DecorateMemo(void)
+{
+    static const u8 sStatAbbr[NUM_STATS][4] = {_("HP"), _("ATK"), _("DEF"), _("SPE"), _("SPA"), _("SPD")};
+    struct Pokemon *mon = &sMonSummaryScreen->currentMon;
+    u8 *tmp = Alloc(0x200);
+    u8 *p = tmp, *rest = gStringVar4;
+    u32 nature = sMonSummaryScreen->summary.nature;
+    u32 ivs, evs;
+
+    if (tmp == NULL)
+        return;
+    // skip the original nature line
+    while (*rest != EOS && *rest != CHAR_NEWLINE)
+        rest++;
+    if (*rest == CHAR_NEWLINE)
+        rest++;
+
+    p = StringCopy(p, COMPOUND_STRING("{FONT_NARROW}"));
+    p = StringCopy(p, sMemoNatureTextColor);
+    p = StringCopy(p, gNaturesInfo[nature].name);
+    p = StringCopy(p, sMemoMiscTextColor);
+    if (gNaturesInfo[nature].statUp == gNaturesInfo[nature].statDown)
+    {
+        p = StringCopy(p, COMPOUND_STRING(" nature: no change"));
+    }
+    else
+    {
+        p = StringCopy(p, COMPOUND_STRING(" nature: +"));
+        p = StringCopy(p, sStatAbbr[gNaturesInfo[nature].statUp]);
+        p = StringCopy(p, COMPOUND_STRING(" -"));
+        p = StringCopy(p, sStatAbbr[gNaturesInfo[nature].statDown]);
+    }
+    if (*rest != EOS)
+    {
+        *p++ = CHAR_NEWLINE;
+        for (; *rest != EOS; rest++)
+        {
+            // keep the met/hatched text on one line so the IV/EV line still fits
+            if (*rest == CHAR_NEWLINE)
+                *p++ = CHAR_SPACE;
+            else
+                *p++ = *rest;
+        }
+    }
+    ivs = GetMonData(mon, MON_DATA_HP_IV) + GetMonData(mon, MON_DATA_ATK_IV) + GetMonData(mon, MON_DATA_DEF_IV)
+        + GetMonData(mon, MON_DATA_SPEED_IV) + GetMonData(mon, MON_DATA_SPATK_IV) + GetMonData(mon, MON_DATA_SPDEF_IV);
+    evs = GetMonData(mon, MON_DATA_HP_EV) + GetMonData(mon, MON_DATA_ATK_EV) + GetMonData(mon, MON_DATA_DEF_EV)
+        + GetMonData(mon, MON_DATA_SPEED_EV) + GetMonData(mon, MON_DATA_SPATK_EV) + GetMonData(mon, MON_DATA_SPDEF_EV);
+    *p++ = CHAR_NEWLINE;
+    p = StringCopy(p, sMemoMiscTextColor);
+    p = StringCopy(p, COMPOUND_STRING("IV "));
+    p = ConvertIntToDecimalStringN(p, ivs, STR_CONV_MODE_LEFT_ALIGN, 3);
+    p = StringCopy(p, COMPOUND_STRING("/186   EV "));
+    p = ConvertIntToDecimalStringN(p, evs, STR_CONV_MODE_LEFT_ALIGN, 3);
+    p = StringCopy(p, COMPOUND_STRING("/510"));
+    StringCopy(gStringVar4, tmp);
+    Free(tmp);
+}
+
 static void PrintMonTrainerMemo(void)
 {
+    Zumo_DecorateMemo();
     PrintTextOnWindow(AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_MEMO), gStringVar4, 0, 1, 0, 0);
 }
 

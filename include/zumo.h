@@ -9,5 +9,7 @@ extern u8 gZumoQuestText[];
 struct Pokemon;
 bool8 Zumo_TryChangeGender(struct Pokemon *mon);
 void Zumo_DaycareGainBattleExp(u32 exp);
+bool32 Zumo_MonCanUseFieldMove(struct Pokemon *mon, u32 move);
+u32 Zumo_RewardPercent(void);
 
 #endif // GUARD_ZUMO_H

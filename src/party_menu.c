@@ -186,7 +186,7 @@ struct PartyMenuInternal
     u32 spriteIdCancelPokeball:7;
     u32 messageId:14;
     u8 windowId[3];
-    u8 actions[8];
+    u8 actions[12];
     u8 numActions;
     // In vanilla Emerald, only the first 0xB0 hwords (0x160 bytes) are actually used.
     // However, a full 0x100 hwords (0x200 bytes) are allocated.
@@ -2969,6 +2969,16 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
                 break;
             }
         }
+    }
+
+    // Zumo: HM field moves usable from the BAG without taking a move slot (at most 4 field moves listed)
+    for (j = 0; j != FIELD_MOVES_COUNT && sPartyMenuInternal->numActions < 5; j++)
+    {
+        enum Move move = FieldMove_GetMoveId(j);
+        if (!FieldMove_IsVisible(j) || MonKnowsMove(&mons[slotId], move))
+            continue;
+        if (Zumo_MonCanUseFieldMove(&mons[slotId], move))
+            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, j + MENU_FIELD_MOVES);
     }
 
     if (!InBattlePike())
@@ -5854,6 +5864,12 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
     {
         BufferMonStatsToTaskData(mon, arrayPtr);
         cannotUseEffect = ExecuteTableBasedItemEffect(mon, *itemPtr, gPartyMenu.slotId, 0);
+        // Zumo: a level up from a RARE CANDY (or EXP. CANDY) refills HP
+        if (!cannotUseEffect && GetMonData(mon, MON_DATA_HP) != 0 && GetMonData(mon, MON_DATA_LEVEL) != sInitialLevel)
+        {
+            u32 zMaxHp = GetMonData(mon, MON_DATA_MAX_HP);
+            SetMonData(mon, MON_DATA_HP, &zMaxHp);
+        }
         BufferMonStatsToTaskData(mon, &ptr->data[NUM_STATS]);
     }
     else

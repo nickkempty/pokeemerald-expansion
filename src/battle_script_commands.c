@@ -2213,6 +2213,7 @@ static void Cmd_getexp(void)
 
             if (GetConfig(B_TRAINER_EXP_MULTIPLIER) <= GEN_7 && gBattleTypeFlags & BATTLE_TYPE_TRAINER)
                 calculatedExp = (calculatedExp * 150) / 100;
+            calculatedExp = calculatedExp * Zumo_RewardPercent() / 100; // Zumo
 
             if (GetConfig(B_SPLIT_EXP) < GEN_6)
             {
@@ -2380,6 +2381,13 @@ static void Cmd_getexp(void)
                 gBattleStruct->battlerExpReward = T1_READ_32(&gBattleResources->bufferB[0][2]);
                 AdjustFriendship(&gParties[B_TRAINER_PLAYER][*expMonId], FRIENDSHIP_EVENT_GROW_LEVEL);
 
+                // Zumo: the POKeMON that leveled up gets its HP fully restored
+                if (GetMonData(&gParties[B_TRAINER_PLAYER][*expMonId], MON_DATA_HP) != 0)
+                {
+                    u32 zMaxHp = GetMonData(&gParties[B_TRAINER_PLAYER][*expMonId], MON_DATA_MAX_HP);
+                    SetMonData(&gParties[B_TRAINER_PLAYER][*expMonId], MON_DATA_HP, &zMaxHp);
+                }
+
                 // update battle mon structure after level up
                 if (battler != MAX_BATTLERS_COUNT)
                 {
@@ -2394,6 +2402,8 @@ static void Cmd_getexp(void)
                     }
                     if (gBattleMons[battler].volatiles.powerTrick)
                         SWAP(gBattleMons[battler].attack, gBattleMons[battler].defense, temp);
+                    if (gBattleMons[battler].hp != 0) // Zumo: show the refilled HP right away
+                        UpdateHealthboxAttribute(gHealthboxSpriteIds[battler], &gParties[B_TRAINER_PLAYER][*expMonId], HEALTHBOX_ALL);
                 }
 
                 gBattleScripting.getexpState = 5;
@@ -4011,6 +4021,47 @@ static void Cmd_hitanimation(void)
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
+// Zumo: EXP / prize money multiplier (percent) by opponent category
+u32 Zumo_RewardPercent(void)
+{
+    u32 id;
+
+    if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER) || TRAINER_BATTLE_PARAM.opponentA == TRAINER_SECRET_BASE)
+        return 100;
+    id = TRAINER_BATTLE_PARAM.opponentA;
+    switch (GetTrainerClassFromId(id))
+    {
+    case TRAINER_CLASS_RIVAL:
+    case TRAINER_CLASS_RIVAL_EARLY_FRLG:
+    case TRAINER_CLASS_RIVAL_LATE_FRLG:
+    case TRAINER_CLASS_CHAMPION:
+    case TRAINER_CLASS_CHAMPION_FRLG:
+    case TRAINER_CLASS_LEADER:
+    case TRAINER_CLASS_LEADER_FRLG:
+    case TRAINER_CLASS_ELITE_FOUR:
+    case TRAINER_CLASS_ELITE_FOUR_FRLG:
+    case TRAINER_CLASS_BOSS_FRLG:
+    case TRAINER_CLASS_AQUA_LEADER:
+    case TRAINER_CLASS_MAGMA_LEADER:
+    case TRAINER_CLASS_AQUA_ADMIN:
+    case TRAINER_CLASS_MAGMA_ADMIN:
+        return 175;
+    case TRAINER_CLASS_TEAM_ROCKET_FRLG:
+    case TRAINER_CLASS_TEAM_AQUA:
+    case TRAINER_CLASS_TEAM_MAGMA:
+        return 145;
+    default:
+        break;
+    }
+#ifdef TRAINER_ZUMO_ROCKET_1
+    if (id >= TRAINER_ZUMO_ROCKET_1 && id <= TRAINER_ZUMO_ROCKET_4)
+        return 145;
+#endif
+    if (gMapHeader.battleType == MAP_BATTLE_SCENE_GYM)
+        return 145;
+    return 125;
+}
+
 static u32 GetTrainerMoneyToGive(u16 trainerId)
 {
     u32 lastMonLevel = 0;
@@ -4052,6 +4103,7 @@ static void Cmd_getmoneyreward(void)
         money = GetTrainerMoneyToGive(TRAINER_BATTLE_PARAM.opponentA);
         if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)
             money += GetTrainerMoneyToGive(TRAINER_BATTLE_PARAM.opponentB);
+        money = money * Zumo_RewardPercent() / 100; // Zumo
         AddMoney(&gSaveBlock1Ptr->money, money);
     }
     else
@@ -8110,6 +8162,7 @@ static u32 ComputeCaptureOdds(u32 wildMonBattler, u32 playerBattler)
     }
     if (battleMon->status1 & STATUS1_CAN_MOVE)
         odds = odds * 15 / 10;
+    odds = odds * 133 / 100; // Zumo: catching is 33% easier
 
     return odds;
 }

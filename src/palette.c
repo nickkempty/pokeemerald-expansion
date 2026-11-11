@@ -1,4 +1,5 @@
 #include "global.h"
+#include "main.h"
 #include "palette.h"
 #include "util.h"
 #include "decompress.h"
@@ -80,6 +81,16 @@ void TransferPlttBuffer(void)
 u32 UpdatePaletteFade(void)
 {
     u32 result;
+    static u32 sZumoFadeVBlank;
+
+    // Zumo: with GAME SPEED x2/x4 the main loop runs several logic passes per VBlank.
+    // The fade state machine assumes one update per VBlank, so advance at most once.
+    if (gSaveBlock2Ptr->optionsGameSpeed != 0)
+    {
+        if (sZumoFadeVBlank == gMain.vblankCounter2)
+            return gPaletteFade.active ? PALETTE_FADE_STATUS_ACTIVE : PALETTE_FADE_STATUS_DONE;
+        sZumoFadeVBlank = gMain.vblankCounter2;
+    }
 
     if (sPlttBufferTransferPending)
         return PALETTE_FADE_STATUS_LOADING;

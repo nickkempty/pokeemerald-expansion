@@ -167,6 +167,18 @@ void AgbMainLoop(void)
             }
         }
 
+        // Zumo: GAME SPEED option - run extra logic frames before waiting for VBlank
+        if (gSaveBlock2Ptr->optionsGameSpeed != 0 && !gReceivedRemoteLinkPlayers && !gLinkTransferringData)
+        {
+            u32 extra = (gSaveBlock2Ptr->optionsGameSpeed == 1) ? 1 : 3;
+
+            while (extra-- != 0)
+            {
+                ReadKeys();
+                CallCallbacks();
+            }
+        }
+
         PlayTimeCounter_Update();
         MapMusicMain();
         WaitForVBlank();

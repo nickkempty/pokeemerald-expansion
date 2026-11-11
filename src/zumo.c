@@ -604,3 +604,21 @@ void Zumo_DaycareWithdraw(void)
     gSpecialVar_Result = 0;
 }
 #undef sDaycareMon
+
+// Zumo: a POKeMON can use an HM's field effect without knowing the move,
+// as long as the HM is in the BAG and the POKeMON is able to learn it.
+bool32 Zumo_MonCanUseFieldMove(struct Pokemon *mon, u32 move)
+{
+    u32 item;
+
+    if (GetMonData(mon, MON_DATA_SPECIES) == SPECIES_NONE || GetMonData(mon, MON_DATA_IS_EGG))
+        return FALSE;
+    if (MonKnowsMove(mon, move))
+        return TRUE;
+    for (item = ITEM_HM01; item <= ITEM_HM08; item++)
+    {
+        if (GetItemTMHMMoveId(item) == move)
+            return CheckBagHasItem(item, 1) && CanLearnTeachableMove(GetMonData(mon, MON_DATA_SPECIES), move);
+    }
+    return FALSE;
+}

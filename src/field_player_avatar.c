@@ -1,4 +1,5 @@
 #include "global.h"
+#include "zumo.h"
 #include "main.h"
 #include "bike.h"
 #include "event_data.h"
@@ -909,8 +910,7 @@ static void PlayerNotOnBikeMoving(enum Direction direction, u16 heldKeys)
     }
 
     if (!(gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_UNDERWATER)
-     && !(heldKeys & B_BUTTON) // Zumo: always run; hold B to walk
-     && FlagGet(FLAG_SYS_B_DASH)
+     && !(heldKeys & B_BUTTON) // Zumo: always run from the start of the game; hold B to walk
      && IsRunningDisallowed(gObjectEvents[gPlayerAvatar.objectEventId].currentMetatileBehavior) == 0
      && !FollowerNPCComingThroughDoor()
      && (I_ORAS_DOWSING_FLAG == 0 || (I_ORAS_DOWSING_FLAG != 0 && !FlagGet(I_ORAS_DOWSING_FLAG))))
@@ -1624,7 +1624,7 @@ bool8 PartyHasMonWithSurf(void)
         {
             if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES) == SPECIES_NONE)
                 break;
-            if (MonKnowsMove(&gParties[B_TRAINER_PLAYER][i], MOVE_SURF))
+            if (Zumo_MonCanUseFieldMove(&gParties[B_TRAINER_PLAYER][i], MOVE_SURF))
                 return TRUE;
         }
     }

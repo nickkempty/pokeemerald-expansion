@@ -186,7 +186,25 @@ static u8 Zumo_GachaGive(u8 slot, u16 species, bool8 strong)
     return result;
 }
 
-// VAR_RESULT: 0 = no badge yet, 1 = next spin is free, 2 = next spin costs money
+// Price steps for this badge: every new BADGE gives 1 free spin, then 5,000, 10,000, +5,000 ...
+// Before the first BADGE there is no free spin: 5,000, 10,000, ...
+static u32 Zumo_GachaStepOffset(void)
+{
+    return Zumo_CountBadges() == 0 ? 1 : 0;
+}
+
+static u32 Zumo_GachaPrice1(void)
+{
+    return (VarGet(ZUMO_GACHA_PULLS) + Zumo_GachaStepOffset()) * ZUMO_GACHA_STEP;
+}
+
+static u32 Zumo_GachaPrice3(void)
+{
+    u32 n = VarGet(ZUMO_GACHA_PULLS) + Zumo_GachaStepOffset();
+    return (3 * n + 3) * ZUMO_GACHA_STEP;
+}
+
+// VAR_RESULT: 0 = (unused), 1 = next spin is free, 2 = next spin costs money
 // STR_VAR_1 = price of x1, STR_VAR_2 = price of x3
 void Zumo_GachaStatus(void)
 {
@@ -198,15 +216,11 @@ void Zumo_GachaStatus(void)
         VarSet(ZUMO_GACHA_BADGES, badges);
         VarSet(ZUMO_GACHA_PULLS, 0);
     }
-    if (badges == 0)
-    {
-        gSpecialVar_Result = 0;
-        return;
-    }
     p = VarGet(ZUMO_GACHA_PULLS);
-    price = p * ZUMO_GACHA_STEP;
+    (void)p;
+    price = Zumo_GachaPrice1();
     ConvertIntToDecimalStringN(gStringVar1, price, STR_CONV_MODE_LEFT_ALIGN, 7);
-    ConvertIntToDecimalStringN(gStringVar2, (3 * p + 3) * ZUMO_GACHA_STEP, STR_CONV_MODE_LEFT_ALIGN, 7);
+    ConvertIntToDecimalStringN(gStringVar2, Zumo_GachaPrice3(), STR_CONV_MODE_LEFT_ALIGN, 7);
     gSpecialVar_Result = (price == 0) ? 1 : 2;
 }
 
@@ -214,7 +228,7 @@ void Zumo_GachaStatus(void)
 // VAR_TEMP_1 = species received
 void Zumo_GachaRoll(void)
 {
-    u32 price = (u32)VarGet(ZUMO_GACHA_PULLS) * ZUMO_GACHA_STEP;
+    u32 price = Zumo_GachaPrice1();
     u16 species;
     u8 result;
 
@@ -245,7 +259,7 @@ void Zumo_GachaRoll(void)
 void Zumo_GachaRoll3(void)
 {
     u32 p = VarGet(ZUMO_GACHA_PULLS);
-    u32 price = (3 * p + 3) * ZUMO_GACHA_STEP;
+    u32 price = Zumo_GachaPrice3();
     u8 i, r, anyPc = 0;
 
     if (!IsEnoughMoney(&gSaveBlock1Ptr->money, price))
